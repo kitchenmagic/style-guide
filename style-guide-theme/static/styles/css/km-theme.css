@@ -1,2 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* Global */
+* {
+  font-family: "Open Sans", helvetica neue, helvetica; }
+
 header {
   background: #fff; }
+  header .container {
+    height: 65px; }
+
+body {
+  background: #F9FAFC;
+  font-family: "Open Sans", helvetica neue, helvetica;
+  color: #222222; }
+
+.container {
+  width: 1170px; }
+  .container.api {
+    border: none; }
+
+.brand {
+  background: url(https://www.kitchenmagic.com/hs-fs/hubfs/images/logo/kitchen-magic-logo-no-inc-2018.jpg) left center no-repeat;
+  background-size: 100px;
+  height: 62px;
+  line-height: 62px; }
+
+footer {
+  background: #222; }
+
+/* Typography */
+h1, h2, h3 {
+  font-family: "Open Sans", helvetica neue, helvetica;
+  font-weight: 600;
+  color: #222222; }
+
+p {
+  font-family: "Open Sans", helvetica neue, helvetica;
+  color: #222222; }
+
+/* Sidebar */
+.sidebar {
+  background: #fff; }
+
+/* Docs */
+.docs .content.docs {
+  border: none; }

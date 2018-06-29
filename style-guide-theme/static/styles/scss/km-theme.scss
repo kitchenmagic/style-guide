@@ -1,3 +1,87 @@
+// VARIABLES 
+// Colors
+$dark-red:      #C30019;
+$red:           #F01834;
+$light-red:     #FF999F;
+
+$text-color:    #222222;
+
+$gray:          #A3A5A8;
+$light-gray:    #E1E5E4;
+$lighter-gray:  #EEF3F5;
+$lightest-gray: #F9FAFC;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$font-family-header:'Open Sans', helvetica neue, helvetica;
+$font-family-text: 'Open Sans', helvetica neue, helvetica;
+
+
+
+/* Global */
+* {
+    font-family: $font-family-text;
+}
+
 header {
     background: #fff;
+
+    .container {
+        height: 65px;
+    }
+}
+
+body {
+    background: $lightest-gray;
+    font-family: $font-family-text;
+    color: $text-color;
+}
+
+.container {
+    width: 1170px; 
+
+    &.api {
+        border: none;
+    }
+}
+
+.brand {
+    background: url(https://www.kitchenmagic.com/hs-fs/hubfs/images/logo/kitchen-magic-logo-no-inc-2018.jpg) left center no-repeat;
+    background-size: 100px;
+    height: 62px;
+    line-height: 62px;
+}
+
+footer {
+    background: #222;
+}
+
+/* Typography */
+
+h1,h2,h3 {
+    font-family: $font-family-header;
+    font-weight: 600;
+    color: $text-color;
+}
+
+p {
+    font-family: $font-family-text;
+    color: $text-color;
+}
+
+/* Sidebar */
+
+.sidebar {
+    background: #fff;
+}
+
+/* Docs */
+
+.docs {
+    .content {
+        &.docs {
+            border: none;
+        }
+    }
 }
