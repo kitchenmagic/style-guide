@@ -1,0 +1,9 @@
+{
+    "sites": {
+        "styles": {
+            "glob": "styles/css/*.{css,md}",
+            "dest": "style-guide",
+            "parent": "styles"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/**
+* @stylesheet buttons.css Buttons
+*
+* There are different button styles that you can use.
+**/
+/**
+* @styles buttons-sizes Button Sizes
+*
+* Use button sizes to define the hierarhy between the actions in your page.
+**/
+.test-btn {
+  color: blue;
+  background: red;
+  padding: 10px; }

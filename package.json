@@ -1,0 +1,17 @@
+{
+  "name": "kitchen-magic-style-guide",
+  "version": "0.0.1",
+  "description": "Kitchen Magic Style Guide",
+  "author": "Joshua Todd",
+  "license": "",
+  "devDependencies": {
+    "documentjs": "^0.5.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "livereload": "^0.7.0"
+  },
+  "scripts": {
+    "start": "documentjs | cd style-guide | python -m SimpleHTTPServer",
+    "compile": "documentjs -w | gulp"
+  }
+}
