@@ -7,11 +7,12 @@
   "devDependencies": {
     "documentjs": "^0.5.2",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1",
-    "livereload": "^0.7.0"
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^4.0.1"
   },
   "scripts": {
-    "start": "documentjs | cd style-guide | python -m SimpleHTTPServer",
-    "compile": "documentjs -w | gulp"
+    "build": "sudo documentjs -f | documentjs",
+    "server": "cd style-guide | python -m SimpleHTTPServer",
+    "compile": "gulp"
   }
 }

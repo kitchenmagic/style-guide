@@ -1,7 +1,11 @@
 {
+    "siteDefaults": {
+        "static": "style-guide-theme",
+        "templates": "style-guide-theme/templates"
+    },
     "sites": {
         "styles": {
-            "glob": "styles/css/*.{css,md}",
+            "glob": "styles/**/*.{css,md}",
             "dest": "style-guide",
             "parent": "styles"
         }
