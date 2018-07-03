@@ -8,3 +8,5 @@
 
 * **Run Server**: npm run server
 * **Update Style Guide with KM Theme**: sudo documentjs -f
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tincidunt ipsum, in laoreet diam. Vivamus pulvinar id massa sed commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.

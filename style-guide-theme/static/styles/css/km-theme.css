@@ -22,6 +22,15 @@
   src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2") format("woff2"); }
 
 /* Global */
+html {
+  font-size: 16px; }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 8 * ((100vw - 320px) / 880)); } }
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 24px; } }
+
 * {
   font-family: "ProximaNova-Regular", helvetica, sans-serif; }
 
@@ -58,6 +67,14 @@ h1, h2, h3 {
 p {
   font-family: "ProximaNova-Regular", helvetica, sans-serif;
   color: #222222; }
+  p {
+    font-size: 20px; }
+    @media screen and (min-width: 600px) {
+      p {
+        font-size: calc(20px + -4 * ((100vw - 600px) / 424)); } }
+    @media screen and (min-width: 1024px) {
+      p {
+        font-size: 16px; } }
 
 /* Header */
 .km-navbar {
