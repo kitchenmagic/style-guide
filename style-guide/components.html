@@ -29,6 +29,11 @@
 	<meta name="author" content="">
 	
 		<link rel="stylesheet" type="text/css" href="./static/bundles/static.css">
+		<!-- BOOTSTRAP 4 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<!-- KM THEME CSS -->
 		<link rel="stylesheet" type="text/css" href="/style-guide-theme/static/styles/css/km-theme.css">
 		<!-- FAVICON -->
@@ -48,21 +53,24 @@
 <body class="docs">
 	
 	<header>
-		<nav class="container">
-			<div class="logo-menu">
-				<a class="brand" href="./index.html">Styles</a>
+		<nav class="navbar km-navbar">
+			<div class="container-fluid">
+				<div class="logo-menu">
+					<a class="brand" href="./index.html">Styles</a>
+				</div>
 			</div>
 		</nav>
 	</header>
 	
 
 	
-<div class="container api">
-
-	
-	<nav class="sidebar">
-		
-		<ul class="api cascading primary-grouping"> 
+<div class="container-fluid api">
+    <div class="row">
+    
+        
+        <nav class="sidebar col-sm-3">
+            
+            <ul class="api cascading primary-grouping"> 
 	
 		
 		<li class="search-container active parent">
@@ -84,16 +92,16 @@
 		
 	
 </ul>
-	</nav>
-	
-	
-	
-	<article class="content docs">
-	
-	
-		
-		<section class="title">
-			<div class="heading">
+        </nav>
+        
+        
+        
+        <article class="content col-sm-9 docs">
+        
+        
+            
+            <section class="title">
+                <div class="heading">
 <h1>Components </h1>
 	<ul class="tags">
 		<li>page</li>
@@ -119,46 +127,47 @@
 	
 </ul>
 <br />
-		</section>
-		
-		
-		
-		<section class="contents">
-		</section>
-		
-		
-		
+            </section>
+            
+            
+            
+            <section class="contents">
+            </section>
+            
+            
+            
 
-		
-		<section class="description">
-			<p><code class=" language-markdown">@page about About</p>
+            
+            <section class="description">
+                <p><code class=" language-markdown">@page about About</p>
 <h2>Hello World!</h2>
 <p>This is the first page of my style guide. Here I can add any type of content that shouldn’t live with the code. Like who are the main contributors of the style guide or contact info.
 For example here's an animated gif inside of an <code>iframe</code>:</p>
 <iframe class="giphy-embed" src="https://giphy.com/embed/3o7TKMt1VVNkHV2PaE" width="480" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe> </code>
 
-		</section>
-		
+            </section>
+            
 
-		
-			
-		
-		
-		
-		
+            
+                
+            
+            
+            
+            
 
-		
-		
+            
+            
 
-		
+            
 
-		
-	
-	
-	</article>
-	
-	
-
+            
+        
+        
+        </article>
+        
+        
+    
+    </div>
 </div>
 
 
@@ -175,7 +184,7 @@ For example here's an animated gif inside of an <code>iframe</code>:</p>
 	
 	
 	<script type="text/javascript">
-		var docObject = {"type":"page","name":"components","src":"styles/components.md","description":"<code class=\" language-markdown\">@page about About\n## Hello World!\nThis is the first page of my style guide. Here I can add any type of content that shouldn’t live with the code. Like who are the main contributors of the style guide or contact info.\nFor example here's an animated gif inside of an `iframe`:\n<iframe class=\"giphy-embed\" src=\"https://giphy.com/embed/3o7TKMt1VVNkHV2PaE\" width=\"480\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe> </code>","title":"Components ","parent":"index","static":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme","templates":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme/templates","glob":{"pattern":"styles/**/*.{css,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide"},"dest":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide","generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
+		var docObject = {"type":"page","name":"components","src":"styles/components.md","description":"<code class=\" language-markdown\">@page about About\n## Hello World!\nThis is the first page of my style guide. Here I can add any type of content that shouldn’t live with the code. Like who are the main contributors of the style guide or contact info.\nFor example here's an animated gif inside of an `iframe`:\n<iframe class=\"giphy-embed\" src=\"https://giphy.com/embed/3o7TKMt1VVNkHV2PaE\" width=\"480\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe> </code>","title":"Components ","parent":"index","static":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme","templates":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme/templates","glob":{"pattern":"styles/**/*.{css,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide"},"dest":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide","forceBuild":true,"generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
 	</script>
 	
 	

@@ -1,7 +1,29 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("//hello.myfonts.net/count/37001a");
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("webfonts/37001A_0_0.eot");
+  src: url("webfonts/37001A_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/37001A_0_0.woff2") format("woff2"), url("webfonts/37001A_0_0.woff") format("woff"), url("webfonts/37001A_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("webfonts/37001A_1_0.eot");
+  src: url("webfonts/37001A_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/37001A_1_0.woff2") format("woff2"), url("webfonts/37001A_1_0.woff") format("woff"), url("webfonts/37001A_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'ProximaNova-RegularIt';
+  src: url("webfonts/37001A_2_0.eot");
+  src: url("webfonts/37001A_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/37001A_2_0.woff2") format("woff2"), url("webfonts/37001A_2_0.woff") format("woff"), url("webfonts/37001A_2_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'DomaineDisplayNarrowBold';
+  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot") format("embedded-opentype");
+  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff") format("woff");
+  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2") format("woff2"); }
+
 /* Global */
 * {
-  font-family: "Open Sans", helvetica neue, helvetica; }
+  font-family: "ProximaNova-Regular", helvetica, sans-serif; }
 
 header {
   background: #fff; }
@@ -9,8 +31,8 @@ header {
     height: 65px; }
 
 body {
-  background: #F9FAFC;
-  font-family: "Open Sans", helvetica neue, helvetica;
+  background: #fff;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
   color: #222222; }
 
 .container {
@@ -19,7 +41,7 @@ body {
     border: none; }
 
 .brand {
-  background: url(https://www.kitchenmagic.com/hs-fs/hubfs/images/logo/kitchen-magic-logo-no-inc-2018.jpg) left center no-repeat;
+  background: url(/style-guide-theme/assets/logo.png) left center no-repeat;
   background-size: 100px;
   height: 62px;
   line-height: 62px; }
@@ -29,13 +51,17 @@ footer {
 
 /* Typography */
 h1, h2, h3 {
-  font-family: "Open Sans", helvetica neue, helvetica;
-  font-weight: 600;
-  color: #222222; }
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+  color: #222222;
+  letter-spacing: 1px; }
 
 p {
-  font-family: "Open Sans", helvetica neue, helvetica;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
   color: #222222; }
+
+/* Header */
+.km-navbar {
+  box-shadow: 0 2px 10px 0 #E1E5E4; }
 
 /* Sidebar */
 .sidebar {

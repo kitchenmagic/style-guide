@@ -29,6 +29,11 @@
 	<meta name="author" content="">
 	
 		<link rel="stylesheet" type="text/css" href="./static/bundles/static.css">
+		<!-- BOOTSTRAP 4 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<!-- KM THEME CSS -->
 		<link rel="stylesheet" type="text/css" href="/style-guide-theme/static/styles/css/km-theme.css">
 		<!-- FAVICON -->
@@ -48,21 +53,24 @@
 <body class="docs">
 	
 	<header>
-		<nav class="container">
-			<div class="logo-menu">
-				<a class="brand" href="./index.html">Styles</a>
+		<nav class="navbar km-navbar">
+			<div class="container-fluid">
+				<div class="logo-menu">
+					<a class="brand" href="./index.html">Styles</a>
+				</div>
 			</div>
 		</nav>
 	</header>
 	
 
 	
-<div class="container api">
-
-	
-	<nav class="sidebar">
-		
-		<ul class="api cascading primary-grouping"> 
+<div class="container-fluid api">
+    <div class="row">
+    
+        
+        <nav class="sidebar col-sm-3">
+            
+            <ul class="api cascading primary-grouping"> 
 	
 		
 		
@@ -72,21 +80,37 @@
 				Styles
 			</a>
 			
+	<ul>
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="stylesheet" href="buttons.css.html" data-search="Buttons">
+						Buttons
+					</a>
+				</li>
+				
+			
+			
+		
+	</ul>
+
 		</li>
 			
 		
 	
 </ul>
-	</nav>
-	
-	
-	
-	<article class="content docs">
-	
-	
-		
-		<section class="title">
-			<div class="heading">
+        </nav>
+        
+        
+        
+        <article class="content col-sm-9 docs">
+        
+        
+            
+            <section class="title">
+                <div class="heading">
 <h1>Styles</h1>
 	<ul class="tags">
 		<li>page</li>
@@ -112,52 +136,53 @@
 	
 </ul>
 <br />
-		</section>
-		
-		
-		
-		<section class="contents">
-		</section>
-		
-		
-		
+            </section>
+            
+            
+            
+            <section class="contents">
+            </section>
+            
+            
+            
 
-		
-		<section class="description">
-			<h2>Welcome to the Kitchen Magic Style Guide!</h2>
+            
+            <section class="description">
+                <h2>Welcome to the Kitchen Magic Style Guide!</h2>
 
-		</section>
-		
+            </section>
+            
 
-		
-			
-		
-		
-		
-		
+            
+                
+            
+            
+            
+            
 
-		
-		<section class="comment">
-			<iframe src="https://giphy.com/embed/oit9mu0v5LqzC" width="480" height="389" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/spider-man-spiderman-oit9mu0v5LqzC">via GIPHY</a></p>
+            
+            <section class="comment">
+                <iframe src="https://giphy.com/embed/oit9mu0v5LqzC" width="480" height="389" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/spider-man-spiderman-oit9mu0v5LqzC">via GIPHY</a></p>
 <h3>How to update style guide</h3>
 <ul>
 <li><strong>Run Server</strong>: npm run server</li>
 <li><strong>Update Style Guide with KM Theme</strong>: sudo documentjs -f</li>
 </ul>
 
-		</section>
-		
-		
+            </section>
+            
+            
 
-		
+            
 
-		
-	
-	
-	</article>
-	
-	
-
+            
+        
+        
+        </article>
+        
+        
+    
+    </div>
 </div>
 
 
@@ -174,7 +199,7 @@
 	
 	
 	<script type="text/javascript">
-		var docObject = {"type":"page","name":"styles","src":"styles/styles.md","description":"## Welcome to the Kitchen Magic Style Guide!","title":"Styles","static":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme","templates":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme/templates","glob":{"pattern":"styles/**/*.{css,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide"},"dest":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide","generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
+		var docObject = {"type":"page","name":"styles","src":"styles/styles.md","description":"## Welcome to the Kitchen Magic Style Guide!","title":"Styles","static":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme","templates":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme/templates","glob":{"pattern":"styles/**/*.{css,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide"},"dest":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide","forceBuild":true,"generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
 	</script>
 	
 	
