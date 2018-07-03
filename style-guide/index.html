@@ -3,8 +3,8 @@
 	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
 
 	INSTEAD CHANGE:
-	source: styles/styles.md
-	@page styles
+	source: styles/overview.md
+	@page overview
 ######################################################################## -->
 
 <!--[if lt IE 7]>
@@ -24,7 +24,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Styles - Styles </title>
+	<title>Overview - Overview </title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -53,10 +53,22 @@
 <body class="docs">
 	
 	<header>
-		<nav class="navbar km-navbar">
+		<nav class="navbar km-navbar navbar-expand-lg">
 			<div class="container-fluid">
-				<div class="logo-menu">
-					<a class="brand" href="./index.html">Styles</a>
+			<a class="navbar-brand" href="./index.html">
+				<img src="/style-guide-theme/assets/km-logo-dev.png" height="50" width="50">
+				Kitchen Magic <span>Docs</span>
+			</a>
+				
+				<div id="navbarNav" class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Overview</a>
+						</li>
+						<li>
+							<a class="nav-link" href="./css.html">CSS</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
@@ -76,26 +88,10 @@
 		
 			
 			<li class="search-container active">
-			<a class="sidebar-title" href="index.html" data-search="Styles">
-				Styles
+			<a class="sidebar-title" href="index.html" data-search="Overview">
+				Overview
 			</a>
 			
-	<ul>
-		
-			
-				
-				
-				<li class="search-container">
-					<a class="stylesheet" href="buttons.css.html" data-search="Buttons">
-						Buttons
-					</a>
-				</li>
-				
-			
-			
-		
-	</ul>
-
 		</li>
 			
 		
@@ -111,7 +107,7 @@
             
             <section class="title">
                 <div class="heading">
-<h1>Styles</h1>
+<h1>Overview</h1>
 	<ul class="tags">
 		<li>page</li>
 	</ul>
@@ -122,7 +118,7 @@
 <div class="sub-heading">
 	
 	
-		<span class="module">styles</span>
+		<span class="module">overview</span>
 	
 	
 	
@@ -148,7 +144,12 @@
 
             
             <section class="description">
-                <h2>Welcome to the Kitchen Magic Style Guide!</h2>
+                <h3>Welcome to the Kitchen Magic Style Guide!</h3>
+<p>The <strong>Kitchen Magic Docs</strong> provide guidelines for the aesthetic, function, and form of our UX/UI to provide a consistent experience on our website. This is a living document and is under constant iteration and remember:</p>
+<blockquote>
+<p>&quot;with great power comes great responsibility&quot;</p>
+</blockquote>
+<iframe src="https://giphy.com/embed/26BRs2WKBMG9pYRFK" width="480" height="343" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
             </section>
             
@@ -162,13 +163,28 @@
 
             
             <section class="comment">
-                <iframe src="https://giphy.com/embed/oit9mu0v5LqzC" width="480" height="389" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/spider-man-spiderman-oit9mu0v5LqzC">via GIPHY</a></p>
-<h3>How to update style guide</h3>
+                <p>This style guide was built using <a href="https://documentcss.com/">DocumentCSS</a>.</p>
+<h3>How to Add/Build the Style Guide</h3>
+<hr />
+<h5>Understanding the File Structure</h5>
 <ul>
-<li><strong>Run Server</strong>: npm run server</li>
-<li><strong>Update Style Guide with KM Theme</strong>: sudo documentjs -f</li>
+<li><strong>/style-guide</strong> - dynamically generated for the style guide.</li>
+<li><strong>/style-guide-theme</strong> - used only to style the style guide itself.</li>
+<li><strong>/styles</strong> - used to build the SCSS/CSS of the website and contain <code>.md</code> files.</li>
+<li><strong>/demos</strong> - build demos for the style guide.</li>
 </ul>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tincidunt ipsum, in laoreet diam. Vivamus pulvinar id massa sed commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h5>How to Run/Update Style Guide</h5>
+<p><strong>Run Server</strong>:</p>
+<pre><code>&gt; npm run server
+</code></pre>
+<p><strong>Update for KM Theme Style Guide Files</strong>:</p>
+<pre><code>&gt; sudo documentjs -f
+</code></pre>
+<ul>
+<li><strong>Compile Style Guide</strong>:</li>
+</ul>
+<pre><code>&gt; document js
+</code></pre>
 
             </section>
             
@@ -200,7 +216,7 @@
 	
 	
 	<script type="text/javascript">
-		var docObject = {"type":"page","name":"styles","src":"styles/styles.md","description":"## Welcome to the Kitchen Magic Style Guide!","title":"Styles","static":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme","templates":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme/templates","glob":{"pattern":"styles/**/*.{css,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide"},"dest":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide","generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
+		var docObject = {"type":"page","name":"overview","src":"styles/overview.md","description":"### Welcome to the Kitchen Magic Style Guide!\nThe **Kitchen Magic Docs** provide guidelines for the aesthetic, function, and form of our UX/UI to provide a consistent experience on our website. This is a living document and is under constant iteration and remember: \n>\"with great power comes great responsibility\"\n<iframe src=\"https://giphy.com/embed/26BRs2WKBMG9pYRFK\" width=\"480\" height=\"343\" frameBorder=\"0\" class=\"giphy-embed\" allowFullScreen></iframe>","title":"Overview","static":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme","templates":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme/templates","glob":{"pattern":"styles/**/*.{css,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide"},"dest":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide","generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
 	</script>
 	
 	

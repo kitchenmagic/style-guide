@@ -1,5 +1,10 @@
 /* ============================================================
-   Typography
+  Typography
+
+  @stylesheet base/typography.css Typography
+  @parent css
+  This is some typography stuff.
+  @demo demos/typography.html
 /* ============================================================ */
 @import url("//hello.myfonts.net/count/37001a");
 @font-face {
@@ -32,3 +37,15 @@ html {
   @media screen and (min-width: 1200px) {
     html {
       font-size: 24px; } }
+
+h1, h2, h3, h4, h5 {
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+  color: #222222;
+  letter-spacing: 1px; }
+
+p {
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  color: #222222; }
+
+strong {
+  font-family: "ProximaNova-Bold", helvetica, sans-serif; }

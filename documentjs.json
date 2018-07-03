@@ -7,7 +7,7 @@
         "styles": {
             "glob": "styles/**/*.{css,md}",
             "dest": "style-guide",
-            "parent": "styles"
+            "parent": "overview"
         }
     }
 }

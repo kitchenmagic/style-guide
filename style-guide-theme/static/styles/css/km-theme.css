@@ -1,3 +1,11 @@
+/* ============================================================
+  Typography
+
+  @stylesheet base/typography.css Typography
+  @parent css
+  This is some typography stuff.
+  @demo demos/typography.html
+/* ============================================================ */
 @import url("//hello.myfonts.net/count/37001a");
 @font-face {
   font-family: 'ProximaNova-Bold';
@@ -21,7 +29,30 @@
   src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff") format("woff");
   src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2") format("woff2"); }
 
-/* Global */
+html {
+  font-size: 16px; }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 8 * ((100vw - 320px) / 880)); } }
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 24px; } }
+
+h1, h2, h3, h4, h5 {
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+  color: #222222;
+  letter-spacing: 1px; }
+
+p {
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  color: #222222; }
+
+strong {
+  font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+
+/* ============================================================
+   GLOBAL
+/* ============================================================ */
 html {
   font-size: 16px; }
   @media screen and (min-width: 320px) {
@@ -49,41 +80,88 @@ body {
   .container.api {
     border: none; }
 
-.brand {
-  background: url(/style-guide-theme/assets/logo.png) left center no-repeat;
-  background-size: 100px;
-  height: 62px;
-  line-height: 62px; }
-
-footer {
-  background: #222; }
-
-/* Typography */
-h1, h2, h3 {
-  font-family: "DomaineDisplayNarrowBold", helvetica, serif;
-  color: #222222;
-  letter-spacing: 1px; }
-
+/* ============================================================
+   TYPOGRAPHY
+/* ============================================================ */
 p {
-  font-family: "ProximaNova-Regular", helvetica, sans-serif;
-  color: #222222; }
-  p {
-    font-size: 20px; }
-    @media screen and (min-width: 600px) {
-      p {
-        font-size: calc(20px + -4 * ((100vw - 600px) / 424)); } }
-    @media screen and (min-width: 1024px) {
-      p {
-        font-size: 16px; } }
+  margin: 0 0 10px; }
 
-/* Header */
+blockquote {
+  border-left: 5px solid #E1E5E4; }
+  blockquote p {
+    font-family: "ProximaNova-RegularIt", helvetica, sans-serif;
+    padding-left: 10px;
+    color: #A3A5A8; }
+
+code, code *, pre, pre * {
+  color: #222222;
+  font-size: 16px; }
+
+pre {
+  background: #EEF3F5;
+  border: 1px solid #E1E5E4; }
+
+/* ============================================================
+   HEADER
+/* ============================================================ */
 .km-navbar {
   box-shadow: 0 2px 10px 0 #E1E5E4; }
 
+.navbar-brand {
+  font-size: 19px;
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+  color: #222222; }
+  .navbar-brand:hover {
+    color: #222222; }
+  .navbar-brand span {
+    font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+    color: #F01834; }
+
+a.nav-link {
+  font-size: 16px;
+  color: #222222;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  text-transform: uppercase; }
+  a.nav-link:hover {
+    color: #F01834; }
+
+/* ============================================================
+   CONTENT
+/* ============================================================ */
 /* Sidebar */
 .sidebar {
   background: #fff; }
 
-/* Docs */
+.sidebar .api li.active > a.sidebar-title {
+  background: #fff;
+  color: #222222;
+  font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+
+.sidebar .api.cascading > .active:before, .sidebar .api.cascading > .active:nth-child(2):before, .sidebar .api.cascading > .active:nth-child(3):before, .sidebar .api.cascading > .active:nth-child(4):before, .sidebar .api.cascading > .active:nth-child(5):before {
+  display: none; }
+
+.sidebar .api li.active:nth-child(2) > a.sidebar-title {
+  background: #F01834;
+  border-radius: 4px;
+  color: #fff; }
+
 .docs .content.docs {
   border: none; }
+
+.docs .title {
+  border-bottom: 1px solid #E1E5E4; }
+  .docs .title .tags li {
+    background-color: #A3A5A8; }
+
+.docs .module {
+  color: #A3A5A8; }
+
+/* ============================================================
+   TO BE SORTED
+/* ============================================================ */
+footer {
+  display: none; }

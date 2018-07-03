@@ -47,10 +47,22 @@
 <body class="docs">
 	{{#unless hideHeader}}
 	<header>
-		<nav class="navbar km-navbar">
+		<nav class="navbar km-navbar navbar-expand-lg">
 			<div class="container-fluid">
-				<div class="logo-menu">
-					<a class="brand" href="./index.html">{{makeParentTitle}}</a>
+			<a class="navbar-brand" href="./index.html">
+				<img src="/style-guide-theme/assets/km-logo-dev.png" height="50" width="50">
+				Kitchen Magic <span>Docs</span>
+			</a>
+				
+				<div id="navbarNav" class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Overview</a>
+						</li>
+						<li>
+							<a class="nav-link" href="./css.html">CSS</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>

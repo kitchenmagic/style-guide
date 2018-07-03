@@ -1,5 +1,12 @@
+@import "../helpers/_variables.scss";
+
 /* ============================================================
-   Typography
+  Typography
+
+  @stylesheet base/typography.css Typography
+  @parent css
+  This is some typography stuff.
+  @demo demos/typography.html
 /* ============================================================ */
 
 @import url("//hello.myfonts.net/count/37001a");
@@ -15,15 +22,11 @@
     src: url('/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2') format('woff2');
 }
 
+// Font Variables
 $font-family-header:      'DomaineDisplayNarrowBold', helvetica, serif;
 $font-family-text:        'ProximaNova-Regular', helvetica, sans-serif;
 $font-family-text-bold:   'ProximaNova-Bold', helvetica, sans-serif;
 $font-family-text-i:      'ProximaNova-RegularIt', helvetica, sans-serif;
-
-$min_width: 320px;
-$max_width: 1200px;
-$min_font: 16px;
-$max_font: 24px;
 
 // Fluid Typography Mixin
 $min_width: 320px;
@@ -56,4 +59,19 @@ $max_font: 24px;
 
 html {
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: $font-family-header;
+  color: $text-color;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: $font-family-text;
+  color: $text-color;
+}
+
+strong {
+  font-family: $font-family-text-bold;
 }
