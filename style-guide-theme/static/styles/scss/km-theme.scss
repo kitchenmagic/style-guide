@@ -54,6 +54,10 @@ blockquote {
     }
 }
 
+hr {
+    border-color: $border-color;
+}
+
 // code elements
 code, code *, pre, pre * {
     color: $text-color;
@@ -106,6 +110,54 @@ a.nav-link {
 /* Sidebar */
 .sidebar {
     background: #fff;
+
+    .api {
+
+        .heading span {
+            color: $text-color;
+        }
+
+        ul ul li a {
+
+            &:hover {
+                background: $lighter-gray;
+                color: $text-color;
+            }
+        }
+
+        li {
+            a {
+                border: none;
+                color: $text-color;
+            }
+            &.active>a {
+                background: $red;
+                color: #fff;
+
+                &:hover {
+                    background: $red !important;
+                }
+
+                &:before, &:after {
+                    display: none !important;
+                }
+            }
+
+            li li a {
+                padding: 20px 0px;
+                line-height: 0px;
+                border-radius: 5px;
+                text-indent: 14px;
+                margin: 7px 0;
+            }
+            
+        }
+    }
+}
+
+// Change top title on sidebar
+.sidebar .api.cascading>li:nth-child(1) > a {
+    text-transform: uppercase;
 }
 
 .sidebar .api li.active>a.sidebar-title {
@@ -119,9 +171,8 @@ a.nav-link {
 }
 
 .sidebar .api li.active:nth-child(2)>a.sidebar-title {
-    background: $red;
-    border-radius: 4px;
-    color: #fff;
+    color: $text-color;
+    background: transparent;
 }
 
 .docs {

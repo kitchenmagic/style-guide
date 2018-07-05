@@ -5,34 +5,39 @@
 */
 /* ============================================================
   Typography
-
-  @stylesheet base/typography.css Typography
-  @parent css
-  This is some typography stuff.
-  @demo demos/typography.html
 /* ============================================================ */
+/**
+* @stylesheet typography.css Typography
+* @parent css.theme
+*
+* @description 
+* This is some typography stuff.
+*
+* @iframe /demos/typography.html
+* @demo /demos/typography.html
+**/
 @import url("//hello.myfonts.net/count/37001a");
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url("webfonts/37001A_0_0.eot");
-  src: url("webfonts/37001A_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/37001A_0_0.woff2") format("woff2"), url("webfonts/37001A_0_0.woff") format("woff"), url("webfonts/37001A_0_0.ttf") format("truetype"); }
+  src: url("/styles/assets/fonts/webfonts/37001A_0_0.eot");
+  src: url("/styles/assets/fonts/webfonts/37001A_0_0.eot?#iefix") format("embedded-opentype"), url("/styles/assets/fonts/webfonts/37001A_0_0.woff2") format("woff2"), url("/styles/assets/fonts/webfonts/37001A_0_0.woff") format("woff"), url("/styles/assets/fonts/webfonts/37001A_0_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'ProximaNova-Regular';
-  src: url("webfonts/37001A_1_0.eot");
-  src: url("webfonts/37001A_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/37001A_1_0.woff2") format("woff2"), url("webfonts/37001A_1_0.woff") format("woff"), url("webfonts/37001A_1_0.ttf") format("truetype"); }
+  src: url("/styles/assets/fonts/webfonts/37001A_1_0.eot");
+  src: url("/styles/assets/fonts/webfonts/37001A_1_0.eot?#iefix") format("embedded-opentype"), url("/styles/assets/fonts/webfonts/37001A_1_0.woff2") format("woff2"), url("/styles/assets/fonts/webfonts/37001A_1_0.woff") format("woff"), url("/styles/assets/fonts/webfonts/37001A_1_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'ProximaNova-RegularIt';
-  src: url("webfonts/37001A_2_0.eot");
-  src: url("webfonts/37001A_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/37001A_2_0.woff2") format("woff2"), url("webfonts/37001A_2_0.woff") format("woff"), url("webfonts/37001A_2_0.ttf") format("truetype"); }
+  src: url("/styles/assets/fonts/webfonts/37001A_2_0.eot");
+  src: url("/styles/assets/fonts/webfonts/37001A_2_0.eot?#iefix") format("embedded-opentype"), url("/styles/assets/fonts/webfonts/37001A_2_0.woff2") format("woff2"), url("/styles/assets/fonts/webfonts/37001A_2_0.woff") format("woff"), url("/styles/assets/fonts/webfonts/37001A_2_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'DomaineDisplayNarrowBold';
-  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot") format("embedded-opentype");
-  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot?#iefix") format("embedded-opentype");
-  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff") format("woff");
-  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2") format("woff2"); }
+  src: url("/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot") format("embedded-opentype");
+  src: url("/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff") format("woff");
+  src: url("/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2") format("woff2"); }
 
 html {
   font-size: 16px; }
@@ -54,3 +59,17 @@ p {
 
 strong {
   font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+
+em {
+  font-family: "ProximaNova-RegularIt", helvetica, sans-serif; }
+
+/* ============================================================
+   BUTTONS
+/* ============================================================ */
+/**
+* @stylesheet buttons.css Buttons
+* @parent css.theme
+* @description This is some button stuff
+* @demo demos/color-palette.html
+* 
+**/

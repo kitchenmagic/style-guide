@@ -5,9 +5,9 @@
     },
     "sites": {
         "styles": {
-            "glob": "styles/**/*.{css,md}",
+            "glob": "styles/**/*.{css,.scss,md}",
             "dest": "style-guide",
-            "parent": "overview"
+            "parent": "index"
         }
     }
 }

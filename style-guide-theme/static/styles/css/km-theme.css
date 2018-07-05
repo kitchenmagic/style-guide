@@ -1,33 +1,38 @@
 /* ============================================================
   Typography
-
-  @stylesheet base/typography.css Typography
-  @parent css
-  This is some typography stuff.
-  @demo demos/typography.html
 /* ============================================================ */
+/**
+* @stylesheet typography.css Typography
+* @parent css.theme
+*
+* @description 
+* This is some typography stuff.
+*
+* @iframe /demos/typography.html
+* @demo /demos/typography.html
+**/
 @import url("//hello.myfonts.net/count/37001a");
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url("webfonts/37001A_0_0.eot");
-  src: url("webfonts/37001A_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/37001A_0_0.woff2") format("woff2"), url("webfonts/37001A_0_0.woff") format("woff"), url("webfonts/37001A_0_0.ttf") format("truetype"); }
+  src: url("/styles/assets/fonts/webfonts/37001A_0_0.eot");
+  src: url("/styles/assets/fonts/webfonts/37001A_0_0.eot?#iefix") format("embedded-opentype"), url("/styles/assets/fonts/webfonts/37001A_0_0.woff2") format("woff2"), url("/styles/assets/fonts/webfonts/37001A_0_0.woff") format("woff"), url("/styles/assets/fonts/webfonts/37001A_0_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'ProximaNova-Regular';
-  src: url("webfonts/37001A_1_0.eot");
-  src: url("webfonts/37001A_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/37001A_1_0.woff2") format("woff2"), url("webfonts/37001A_1_0.woff") format("woff"), url("webfonts/37001A_1_0.ttf") format("truetype"); }
+  src: url("/styles/assets/fonts/webfonts/37001A_1_0.eot");
+  src: url("/styles/assets/fonts/webfonts/37001A_1_0.eot?#iefix") format("embedded-opentype"), url("/styles/assets/fonts/webfonts/37001A_1_0.woff2") format("woff2"), url("/styles/assets/fonts/webfonts/37001A_1_0.woff") format("woff"), url("/styles/assets/fonts/webfonts/37001A_1_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'ProximaNova-RegularIt';
-  src: url("webfonts/37001A_2_0.eot");
-  src: url("webfonts/37001A_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/37001A_2_0.woff2") format("woff2"), url("webfonts/37001A_2_0.woff") format("woff"), url("webfonts/37001A_2_0.ttf") format("truetype"); }
+  src: url("/styles/assets/fonts/webfonts/37001A_2_0.eot");
+  src: url("/styles/assets/fonts/webfonts/37001A_2_0.eot?#iefix") format("embedded-opentype"), url("/styles/assets/fonts/webfonts/37001A_2_0.woff2") format("woff2"), url("/styles/assets/fonts/webfonts/37001A_2_0.woff") format("woff"), url("/styles/assets/fonts/webfonts/37001A_2_0.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'DomaineDisplayNarrowBold';
-  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot") format("embedded-opentype");
-  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot?#iefix") format("embedded-opentype");
-  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff") format("woff");
-  src: url("/style-guide-theme/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2") format("woff2"); }
+  src: url("/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot") format("embedded-opentype");
+  src: url("/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff") format("woff");
+  src: url("/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2") format("woff2"); }
 
 html {
   font-size: 16px; }
@@ -49,6 +54,9 @@ p {
 
 strong {
   font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+
+em {
+  font-family: "ProximaNova-RegularIt", helvetica, sans-serif; }
 
 /* ============================================================
    GLOBAL
@@ -93,6 +101,9 @@ blockquote {
     padding-left: 10px;
     color: #A3A5A8; }
 
+hr {
+  border-color: #E1E5E4; }
+
 code, code *, pre, pre * {
   color: #222222;
   font-size: 16px; }
@@ -135,6 +146,30 @@ a.nav-link {
 /* Sidebar */
 .sidebar {
   background: #fff; }
+  .sidebar .api .heading span {
+    color: #222222; }
+  .sidebar .api ul ul li a:hover {
+    background: #EEF3F5;
+    color: #222222; }
+  .sidebar .api li a {
+    border: none;
+    color: #222222; }
+  .sidebar .api li.active > a {
+    background: #F01834;
+    color: #fff; }
+    .sidebar .api li.active > a:hover {
+      background: #F01834 !important; }
+    .sidebar .api li.active > a:before, .sidebar .api li.active > a:after {
+      display: none !important; }
+  .sidebar .api li li li a {
+    padding: 20px 0px;
+    line-height: 0px;
+    border-radius: 5px;
+    text-indent: 14px;
+    margin: 7px 0; }
+
+.sidebar .api.cascading > li:nth-child(1) > a {
+  text-transform: uppercase; }
 
 .sidebar .api li.active > a.sidebar-title {
   background: #fff;
@@ -145,9 +180,8 @@ a.nav-link {
   display: none; }
 
 .sidebar .api li.active:nth-child(2) > a.sidebar-title {
-  background: #F01834;
-  border-radius: 4px;
-  color: #fff; }
+  color: #222222;
+  background: transparent; }
 
 .docs .content.docs {
   border: none; }

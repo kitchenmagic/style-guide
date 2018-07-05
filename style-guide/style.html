@@ -3,8 +3,8 @@
 	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
 
 	INSTEAD CHANGE:
-	source: styles/css/base/typography.css
-	@stylesheet typography.css
+	source: styles/overview.md
+	@page style
 ######################################################################## -->
 
 <!--[if lt IE 7]>
@@ -24,7 +24,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Styles - Typography </title>
+	<title>Styles - Styles </title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -95,8 +95,8 @@
 		
 			
 			<li class="search-container active">
-			<a class="sidebar-title" href="css.html" data-search="CSS">
-				CSS
+			<a class="sidebar-title" href="style.html" data-search="Styles">
+				Styles
 			</a>
 			
 	<ul>
@@ -106,46 +106,6 @@
 					<li class="heading search-container">
 						<span>Theme</span>
 						
-	<ul>
-		
-			
-				
-				
-				<li class="search-container">
-					<a class="stylesheet" href="buttons.css.html" data-search="Buttons">
-						Buttons
-					</a>
-				</li>
-				
-			
-			
-		
-			
-				
-				
-				<li class="search-container">
-					<a class="stylesheet" href="colors.css.html" data-search="Color Palette">
-						Color Palette
-					</a>
-				</li>
-				
-			
-			
-		
-			
-				
-				
-				<li class="search-container active ">
-					<a class="stylesheet" href="typography.css.html" data-search="Typography">
-						Typography
-					</a>
-				</li>
-				
-			
-			
-		
-	</ul>
-
 					</li>
 				
 				
@@ -169,9 +129,9 @@
             
             <section class="title">
                 <div class="heading">
-<h1>Typography</h1>
+<h1>Styles</h1>
 	<ul class="tags">
-		<li>stylesheet</li>
+		<li>page</li>
 	</ul>
 	
 	
@@ -180,7 +140,7 @@
 <div class="sub-heading">
 	
 	
-		<span class="module">typography.css</span>
+		<span class="module">style</span>
 	
 	
 	
@@ -206,7 +166,9 @@
 
             
             <section class="description">
-                <p>This is some typography stuff.</p>
+                <h3>Welcome to the Kitchen Magic Style Guide!</h3>
+<p>The <strong>Kitchen Magic Docs</strong> provide guidelines for the aesthetic, function, and form of our UX/UI to provide a consistent experience on our website. This is a living document and is under constant iteration.</p>
+<iframe src="https://giphy.com/embed/26BRs2WKBMG9pYRFK" width="480" height="343" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
             </section>
             
@@ -220,14 +182,35 @@
 
             
             <section class="comment">
-                <div class='iframe_wrapper' data-iframe-src='/demos/typography.html' data-iframe-height='320'></div><div class='demo_wrapper' data-demo-src='/demos/typography.html'></div>
+                <h3>How to Add/Build the Style Guide</h3>
+<hr />
+<h5>Understanding the File Structure</h5>
+<ul>
+<li><strong>/style-guide</strong> - dynamically generated for the style guide.</li>
+<li><strong>/style-guide-theme</strong> - used only to style the style guide itself.</li>
+<li><strong>/styles</strong> - used to build the SCSS/CSS of the website and contain <code>.md</code> files.</li>
+<li><strong>/demos</strong> - build demos for the style guide.</li>
+</ul>
+<h5>How to Run/Update Style Guide</h5>
+<p><strong>Run Server</strong>:
+Use this to run the server and then open <em>localhost:8000/style-guide</em> in your browser.</p>
+<pre><code>&gt; npm run server
+</code></pre>
+<p><strong>Update for KM Theme Style Guide Files</strong>:</p>
+<pre><code>&gt; documentjs -f
+</code></pre>
+<p><strong>Compile Style Guide</strong>:</p>
+<pre><code>&gt; document js
+</code></pre>
+<p><strong>Compile SCSS</strong>:</p>
+<pre><code>&gt; npm run compile
+</code></pre>
+<p>If you need further documentation, visit <a href="https://documentcss.com/">DocumentCSS</a>.</p>
 
             </section>
             
             
 
-            
-                
             
 
             
@@ -254,7 +237,7 @@
 	
 	
 	<script type="text/javascript">
-		var docObject = {"src":"styles/css/base/typography.css","line":3,"codeLine":13,"type":"stylesheet","description":"This is some typography stuff.","name":"typography.css","title":"Typography","showChildrenInPage":true,"hideChildrenInMenu":true,"parent":"css.theme","static":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme","templates":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme/templates","glob":{"pattern":"styles/**/*.{css,.scss,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide"},"dest":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide","generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
+		var docObject = {"type":"page","name":"style","src":"styles/overview.md","description":"### Welcome to the Kitchen Magic Style Guide!\nThe **Kitchen Magic Docs** provide guidelines for the aesthetic, function, and form of our UX/UI to provide a consistent experience on our website. This is a living document and is under constant iteration.\n<iframe src=\"https://giphy.com/embed/26BRs2WKBMG9pYRFK\" width=\"480\" height=\"343\" frameBorder=\"0\" class=\"giphy-embed\" allowFullScreen></iframe>","title":"Styles","static":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme","templates":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide-theme/templates","glob":{"pattern":"styles/**/*.{css,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide"},"dest":"/Volumes/Samsung_T5/web-dev/style-guide-brand-ui-kit/km-style-guide/style-guide","generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
 	</script>
 	
 	

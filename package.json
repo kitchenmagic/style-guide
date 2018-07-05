@@ -11,8 +11,11 @@
     "gulp-sass": "^4.0.1"
   },
   "scripts": {
-    "build": "sudo documentjs -f | documentjs",
+    "build": "documentjs",
     "server": "cd style-guide | python -m SimpleHTTPServer",
     "compile": "gulp"
+  },
+  "dependencies": {
+    "documentjs": "^0.5.4"
   }
 }
