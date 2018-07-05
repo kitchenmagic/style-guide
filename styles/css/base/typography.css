@@ -6,10 +6,11 @@
 * @parent css.theme
 *
 * @description 
-* This is some typography stuff.
+* We use 4 primary fonts `Domaine Display Narrow Bold`, `Proxima Nova Regular`, `Proxima Nova Regular Italic` and `Proxima Nova Bold`. 
+* Maintaining typographic clarity and hierarchy is important; here is a showcase of different ways to structure content.
 *
-* @iframe /demos/typography.html
-* @demo /demos/typography.html
+* @styles typography-headers Typography
+* @iframe demos/base/typography/headers.html
 **/
 @import url("//hello.myfonts.net/count/37001a");
 @font-face {
@@ -48,6 +49,13 @@ h1, h2, h3, h4, h5 {
   color: #222222;
   letter-spacing: 1px; }
 
+/**
+* @styles typography-body Body Copy
+*
+* @description
+* Body copy description
+* @iframe demos/base/typography/body-copy.html
+*/
 p {
   font-family: "ProximaNova-Regular", helvetica, sans-serif;
   color: #222222; }
@@ -57,3 +65,11 @@ strong {
 
 em {
   font-family: "ProximaNova-RegularIt", helvetica, sans-serif; }
+
+/**
+* @styles typography-body Lists
+*
+* @description
+* List description
+* @iframe demos/base/typography/lists.html
+*/

@@ -1,3 +1,5 @@
+@import "../helpers/_variables.scss";
+
 /* ============================================================
    BUTTONS
 /* ============================================================ */
@@ -5,7 +7,25 @@
 /**
 * @stylesheet buttons.css Buttons
 * @parent css.theme
-* @description This is some button stuff
-* @demo demos/color-palette.html
 * 
+* @iframe /demos/buttons.html
 **/
+
+.km-btn {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+/* Button Overrides for current website 
+** These will eventually be removed over time as old buttons are deleted and new button classes are added */
