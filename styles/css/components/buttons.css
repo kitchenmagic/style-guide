@@ -9,7 +9,6 @@
 **/
 .km-btn {
   display: inline-block;
-  font-weight: bold;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -17,10 +16,43 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: .375rem .75rem;
+  padding: .7rem 2rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: .25rem; }
+  border-radius: 0;
+  border: none;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .km-btn.km-btn---primary {
+    background-color: #F01834;
+    color: #fff; }
+    .km-btn.km-btn---primary:hover {
+      background-color: #222222; }
+    .km-btn.km-btn---primary:active {
+      background-color: #C30019; }
+  .km-btn.km-btn--secondary {
+    background-color: #222222;
+    color: #fff; }
+    .km-btn.km-btn--secondary:hover {
+      background-color: #F01834; }
+    .km-btn.km-btn--secondary:active {
+      background-color: #4a4a4a; }
+  .km-btn.km-btn--ghost {
+    background-color: #fff;
+    border: 1px solid #222222;
+    color: #222222; }
+    .km-btn.km-btn--ghost:hover {
+      background-color: #222222;
+      border: 1px solid #222222;
+      color: #fff; }
+    .km-btn.km-btn--ghost:active {
+      background-color: #4a4a4a;
+      border: 1px solid #4a4a4a;
+      color: #fff; }
+  .km-btn .km-btn-block {
+    display: block; }
 
 /* Button Overrides for current website 
 ** These will eventually be removed over time as old buttons are deleted and new button classes are added */

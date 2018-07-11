@@ -12,8 +12,8 @@
 **/
 
 .km-btn {
+    // alignment
     display: inline-block;
-    font-weight: bold;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -21,10 +21,81 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    padding: .375rem .75rem;
+    // button styling
+    padding: .7rem 2rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: 0;
+    border: none;
+    // font styling
+    font-family: $font-family-text;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    // button colors
+    &.km-btn---primary {
+        background-color: $red;
+        color: #fff;
+
+        &:hover {
+            background-color: $text-color;
+        }
+
+        &:active {
+            background-color: $dark-red;
+        }
+    }
+
+    &.km-btn--secondary {
+        background-color: $text-color;
+        color: #fff;
+
+        &:hover {
+            background-color: $red;
+        }
+
+        &:active {
+            background-color: $text-color-light;
+        }
+
+    }
+
+    &.km-btn--ghost {
+        background-color: #fff;
+        border: 1px solid $text-color;
+        color: $text-color;
+
+        &:hover {
+            background-color: $text-color;
+            border: 1px solid $text-color;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: $text-color-light;
+            border: 1px solid $text-color-light;
+            color: #fff;
+        }
+    }
+
+    // button sizes
+    // .km-btn-large {
+
+    // }
+
+    // .km-btn-med {
+
+    // }
+
+    // .km-btn-sm {
+
+    // }
+
+    // button helpers
+    .km-btn-block {
+        display: block;
+    }
 }
 
 /* Button Overrides for current website 

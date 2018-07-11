@@ -6,7 +6,7 @@ $red:              #F01834;
 $light-red:        #FF999F;
 
 $text-color:       #222222;
-$text-color-light: #A3A5A8;
+$text-color-light: #4a4a4a;
 
 $gray:             #A3A5A8;
 $light-gray:       #E1E5E4;
@@ -14,3 +14,9 @@ $lighter-gray:     #EEF3F5;
 $lightest-gray:    #F9FAFC;
 
 $border-color:     #E1E5E4;
+
+// Typography
+$font-family-header:      'DomaineDisplayNarrowBold', helvetica, serif;
+$font-family-text:        'ProximaNova-Regular', helvetica, sans-serif;
+$font-family-text-bold:   'ProximaNova-Bold', helvetica, sans-serif;
+$font-family-text-i:      'ProximaNova-RegularIt', helvetica, sans-serif;

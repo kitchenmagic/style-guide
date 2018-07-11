@@ -29,12 +29,6 @@
     src: url('/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2') format('woff2');
 }
 
-// Font Variables
-$font-family-header:      'DomaineDisplayNarrowBold', helvetica, serif;
-$font-family-text:        'ProximaNova-Regular', helvetica, sans-serif;
-$font-family-text-bold:   'ProximaNova-Bold', helvetica, sans-serif;
-$font-family-text-i:      'ProximaNova-RegularIt', helvetica, sans-serif;
-
 // Fluid Typography Mixin
 $min_width: 320px;
 $max_width: 1200px;
@@ -102,3 +96,4 @@ em {
 * List description
 * @iframe demos/base/typography/lists.html
 */
+

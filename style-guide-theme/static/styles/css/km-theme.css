@@ -114,7 +114,7 @@ blockquote {
   blockquote p {
     font-family: "ProximaNova-RegularIt", helvetica, sans-serif;
     padding-left: 10px;
-    color: #A3A5A8; }
+    color: #4a4a4a; }
 
 hr {
   border-color: #E1E5E4; }
@@ -207,7 +207,7 @@ a.nav-link {
     background-color: #A3A5A8; }
 
 .docs .module {
-  color: #A3A5A8; }
+  color: #4a4a4a; }
 
 /* ============================================================
    TO BE SORTED
