@@ -40,7 +40,7 @@
     .km-btn.km-btn--secondary:active {
       background-color: #4a4a4a; }
   .km-btn.km-btn--ghost {
-    background-color: #fff;
+    background-color: transparent;
     border: 1px solid #222222;
     color: #222222; }
     .km-btn.km-btn--ghost:hover {

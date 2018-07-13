@@ -16,57 +16,95 @@
 * @iframe demos/base/typography/headers.html
 **/
 
+
 @import url("//hello.myfonts.net/count/37001a");
 
-@font-face {font-family: 'ProximaNova-Bold';src: url('/styles/assets/fonts/webfonts/37001A_0_0.eot');src: url('/styles/assets/fonts/webfonts/37001A_0_0.eot?#iefix') format('embedded-opentype'),url('/styles/assets/fonts/webfonts/37001A_0_0.woff2') format('woff2'),url('/styles/assets/fonts/webfonts/37001A_0_0.woff') format('woff'),url('/styles/assets/fonts/webfonts/37001A_0_0.ttf') format('truetype');}
-@font-face {font-family: 'ProximaNova-Regular';src: url('/styles/assets/fonts/webfonts/37001A_1_0.eot');src: url('/styles/assets/fonts/webfonts/37001A_1_0.eot?#iefix') format('embedded-opentype'),url('/styles/assets/fonts/webfonts/37001A_1_0.woff2') format('woff2'),url('/styles/assets/fonts/webfonts/37001A_1_0.woff') format('woff'),url('/styles/assets/fonts/webfonts/37001A_1_0.ttf') format('truetype');}
-@font-face {font-family: 'ProximaNova-RegularIt';src: url('/styles/assets/fonts/webfonts/37001A_2_0.eot');src: url('/styles/assets/fonts/webfonts/37001A_2_0.eot?#iefix') format('embedded-opentype'),url('/styles/assets/fonts/webfonts/37001A_2_0.woff2') format('woff2'),url('/styles/assets/fonts/webfonts/37001A_2_0.woff') format('woff'),url('/styles/assets/fonts/webfonts/37001A_2_0.ttf') format('truetype');}
+// Local dev only 
+// @font-face {font-family: 'ProximaNova-Bold';src: url('/styles/assets/fonts/webfonts/proxima-nova-bold.eot');src: url('/styles/assets/fonts/webfonts/proxima-nova-bold.eot?#iefix') format('embedded-opentype'),url('/styles/assets/fonts/webfonts/proxima-nova-bold.woff2') format('woff2'),url('/styles/assets/fonts/webfonts/proxima-nova-bold.woff') format('woff'),url('/styles/assets/fonts/webfonts/proxima-nova-bold.ttf') format('truetype');}
+// @font-face {font-family: 'ProximaNova-Regular';src: url('/styles/assets/fonts/webfonts/proxima-nova-regular.eot');src: url('/styles/assets/fonts/webfonts/proxima-nova-regular.eot?#iefix') format('embedded-opentype'),url('/styles/assets/fonts/webfonts/proxima-nova-regular.woff2') format('woff2'),url('/styles/assets/fonts/webfonts/proxima-nova-regular.woff') format('woff'),url('/styles/assets/fonts/webfonts/proxima-nova-regular.ttf') format('truetype');}
+// @font-face {font-family: 'ProximaNova-RegularIt';src: url('/styles/assets/fonts/webfonts/proxima-nova-regular-italic.eot');src: url('/styles/assets/fonts/webfonts/proxima-nova-regular-italic.eot?#iefix') format('embedded-opentype'),url('/styles/assets/fonts/webfonts/proxima-nova-regular-italic.woff2') format('woff2'),url('/styles/assets/fonts/webfonts/proxima-nova-regular-italic.woff') format('woff'),url('/styles/assets/fonts/webfonts/proxima-nova-regular-italic.ttf') format('truetype');}
+// @font-face {
+//     font-family: 'DomaineDisplayNarrowBold';
+//     src: url('/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot') format('embedded-opentype');
+//     src: url('/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot?#iefix') format('embedded-opentype');
+//     src: url('/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff') format('woff');
+//     src: url('/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2') format('woff2');
+// }
+
+/* For Hubspot dev - in production */
 @font-face {
-    font-family: 'DomaineDisplayNarrowBold';
-    src: url('/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot') format('embedded-opentype');
-    src: url('/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.eot?#iefix') format('embedded-opentype');
-    src: url('/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff') format('woff');
-    src: url('/styles/assets/fonts/DomaineDisplayNarrowWeb-Bold.woff2') format('woff2');
+  font-family: 'DomaineDisplayNarrowBold';
+  src: url('https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff') format('embedded-opentype');
+  src: url('https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff?#iefix') format('embedded-opentype');
+  src: url('https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff') format('woff');
+  src: url('https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff2') format('woff2');
 }
+@font-face {font-family: 'ProximaNova-Bold';src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.eot');src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.eot?#iefix') format('embedded-opentype'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.woff2') format('woff2'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.woff') format('woff'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.ttf') format('truetype');}
+@font-face {font-family: 'ProximaNova-Regular';src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.eot');src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.eot?#iefix') format('embedded-opentype'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.woff2') format('woff2'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.woff') format('woff'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.ttf') format('truetype');}
+@font-face {font-family: 'ProximaNova-RegularIt';src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.eot');src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.eot?#iefix') format('embedded-opentype'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.woff2') format('woff2'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.woff') format('woff'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.ttf') format('truetype');}
 
-// Fluid Typography Mixin
-$min_width: 320px;
-$max_width: 1200px;
-$min_font: 16px;
-$max_font: 24px;
 
-@function strip-unit($value) {
-    @return $value / ($value * 0 + 1);
-  }
+// Fluid Typography Mixin (NOT SURE IF I WANT TO USE THIS YET...)
+// $min_width: 320px;
+// $max_width: 1200px;
+// $min_font: 16px;
+// $max_font: 16px;
+
+// @function strip-unit($value) {
+//     @return $value / ($value * 0 + 1);
+//   }
   
-  @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
-    $u1: unit($min-vw);
-    $u2: unit($max-vw);
-    $u3: unit($min-font-size);
-    $u4: unit($max-font-size);
+//   @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+//     $u1: unit($min-vw);
+//     $u2: unit($max-vw);
+//     $u3: unit($min-font-size);
+//     $u4: unit($max-font-size);
   
-    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-      & {
-        font-size: $min-font-size;
-        @media screen and (min-width: $min-vw) {
-          font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-        }
-        @media screen and (min-width: $max-vw) {
-          font-size: $max-font-size;
-        }
-      }
-    }
-  }
+//     @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+//       & {
+//         font-size: $min-font-size;
+//         @media screen and (min-width: $min-vw) {
+//           font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+//         }
+//         @media screen and (min-width: $max-vw) {
+//           font-size: $max-font-size;
+//         }
+//       }
+//     }
+//   }
 
-html {
-    @include fluid-type($min_width, $max_width, $min_font, $max_font);
-}
+// html {
+//     @include fluid-type($min_width, $max_width, $min_font, $max_font);
+// }
 
 h1,h2,h3,h4,h5 {
   font-family: $font-family-header;
   color: $text-color;
   letter-spacing: 1px;
+  margin: 1.414rem 0 0.5rem;
 }
+
+h1 {
+  font-size: 4.375rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.875rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
 
 /**
 * @styles typography-body Body Copy
@@ -79,6 +117,10 @@ h1,h2,h3,h4,h5 {
 p {
   font-family: $font-family-text;
   color: $text-color;
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+  // only for test
+  max-width: 40rem;
 }
 
 strong {
@@ -88,6 +130,21 @@ strong {
 em {
   font-family: $font-family-text-i;
 }
+
+a {
+  color: $red;
+  text-decoration: none;
+  
+  &:hover {
+    border-bottom: 1px solid $red;
+  }
+
+  &:active {
+    color: $dark-red;
+  }
+}
+
+
 
 /**
 * @styles typography-body Lists

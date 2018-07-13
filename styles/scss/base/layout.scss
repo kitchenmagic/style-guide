@@ -1,0 +1,25 @@
+/* ============================================================
+  LAYOUT
+/* ============================================================ */
+
+.km-row, .km-row-narrow, .km-row-wide, .km-row-full, .km-row .row-fluid,
+.km-row-wide .row-fluid,
+.km-row-full .row-fluid, .km-wrapper, .km-wrapper-inner {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 71.25rem;
+  width: 100%;
+  float: none !important;
+}
+
+.km-row-narrow {
+  max-width: 60rem;
+}
+
+.km-row-wide {
+  max-width: 83.75rem;
+}
+
+.km-row-full {
+  max-width: 100% !important;
+}
