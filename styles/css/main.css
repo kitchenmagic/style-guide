@@ -9,7 +9,8 @@
 @import url("//hello.myfonts.net/count/37001a");
 html {
   font-size: 16px;
-  line-height: 1.45; }
+  line-height: 1.45;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif; }
 
 /* ============================================================
   LAYOUT
@@ -103,6 +104,7 @@ p {
   color: #222222;
   font-size: 1rem;
   margin-bottom: 1.3rem;
+  line-height: 1.75rem;
   max-width: 40rem; }
 
 strong {
@@ -119,13 +121,45 @@ a {
   a:active {
     color: #C30019; }
 
-/**
-* @styles typography-body Lists
-*
-* @description
-* List description
-* @iframe demos/base/typography/lists.html
-*/
+ul.km-list {
+  padding: 0 0 0 25px;
+  margin: 0; }
+  ul.km-list li {
+    line-height: 2.5rem;
+    padding-left: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    ul.km-list li:before {
+      content: "\f111";
+      font-family: fontawesome;
+      margin-right: 18px;
+      font-size: .5rem;
+      vertical-align: center; }
+  ul.km-list--red li:before {
+    color: #F01834; }
+
+ol {
+  margin: 0;
+  list-style: none;
+  counter-reset: li; }
+  ol.km-list {
+    padding: 0 0 0 25px;
+    margin: 0; }
+    ol.km-list li {
+      line-height: 2.5rem;
+      padding-left: 18px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-increment: li; }
+      ol.km-list li:before {
+        content: counter(li);
+        margin-right: 18px;
+        vertical-align: center; }
+    ol.km-list--red li:before {
+      color: #F01834; }
+
 /* ============================================================
    BUTTONS
 /* ============================================================ */

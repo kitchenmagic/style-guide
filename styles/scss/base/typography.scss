@@ -105,7 +105,6 @@ h5 {
   font-size: 1.5rem;
 }
 
-
 /**
 * @styles typography-body Body Copy
 *
@@ -119,6 +118,7 @@ p {
   color: $text-color;
   font-size: 1rem;
   margin-bottom: 1.3rem;
+  line-height: 1.75rem;
   // only for test
   max-width: 40rem;
 }
@@ -144,13 +144,69 @@ a {
   }
 }
 
+// lists
+ul {
+
+  &.km-list {
+    padding: 0 0 0 25px;
+    margin: 0;
+
+    li {
+      line-height: 2.5rem;
+      padding-left: 18px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      &:before {
+        content: "\f111";
+        font-family: fontawesome;
+        margin-right: 18px;
+        font-size: .5rem;
+        vertical-align: center;
+      }
+    }
+
+    &--red {
+      li:before {
+        color: $red;
+      }
+    }
+
+  }
+}
 
 
-/**
-* @styles typography-body Lists
-*
-* @description
-* List description
-* @iframe demos/base/typography/lists.html
-*/
+ol {
+  margin: 0;
+  list-style: none;
+  counter-reset: li;
+
+  &.km-list {
+    padding: 0 0 0 25px;
+    margin: 0;
+
+    li {
+      line-height: 2.5rem;
+      padding-left: 18px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-increment: li;
+
+      &:before {
+        content: counter(li);
+        margin-right: 18px;
+        vertical-align: center;
+      }
+    }
+
+    &--red {
+      li:before {
+        color: $red;
+      }
+    }
+
+  }
+}
 
