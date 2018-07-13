@@ -1,0 +1,21 @@
+@import "../helpers/_variables.scss";
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+  FORMS
+/* ============================================================ */
+
+div.input {
+
+    input {
+        border: 1px solid $gray;
+        padding: .8rem;
+        border-radius: 0;
+        box-shadow: none;
+
+        @include placeholder {
+            color: $gray;
+            font-size: 1rem;
+        }
+    }
+}

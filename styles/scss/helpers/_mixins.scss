@@ -1,7 +1,16 @@
+// Transitions
 @mixin transition($props) {
     -webkit-transition: $props;
     -moz-transition: $props;
     -ms-transition: $props;
     -o-transition: $props;
     transition: $props;
-  }
+}
+
+// Forms
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}

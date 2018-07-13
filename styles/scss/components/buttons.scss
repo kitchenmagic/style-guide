@@ -22,7 +22,7 @@
     -ms-user-select: none;
     user-select: none;
     // button styling
-    padding: .7rem 2rem;
+    padding: .9rem 1.5rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
@@ -37,26 +37,34 @@
     &.km-btn---primary {
         background-color: $red;
         color: #fff;
+        border: 1px solid $red;
 
         &:hover {
             background-color: $text-color;
+            text-decoration: none;
+            border: 1px solid $text-color;
         }
 
         &:active {
             background-color: $dark-red;
+            border-color: $dark-red;
         }
     }
 
     &.km-btn--secondary {
         background-color: $text-color;
         color: #fff;
+        border: 1px solid $text-color;
 
         &:hover {
             background-color: $red;
+            text-decoration: none;
+            border: 1px solid $red;
         }
 
         &:active {
             background-color: $text-color-light;
+            border-color: $text-color-light;
         }
 
     }
@@ -70,6 +78,7 @@
             background-color: $text-color;
             border: 1px solid $text-color;
             color: #fff;
+            text-decoration: none;
         }
 
         &:active {
@@ -79,24 +88,22 @@
         }
     }
 
-    // button sizes
-    // .km-btn-large {
+    //button sizes
+    .km-btn--large {
+        padding: 1rem 3rem;
+    }
 
-    // }
-
-    // .km-btn-med {
-
-    // }
-
-    // .km-btn-sm {
-
-    // }
+    .km-btn--sm {
+        padding: .5rem 1rem;
+        font-size: .8rem;
+    }
 
     // button helpers
     .km-btn-block {
         display: block;
     }
 }
+
 
 /* Button Overrides for current website 
 ** These will eventually be removed over time as old buttons are deleted and new button classes are added */

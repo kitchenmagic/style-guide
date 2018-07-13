@@ -81,7 +81,12 @@ em {
 
 a {
   color: #F01834;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
   a:hover {
     border-bottom: 1px solid #F01834; }
   a:active {
@@ -125,6 +130,13 @@ ol {
         vertical-align: center; }
     ol.km-list--red li:before {
       color: #F01834; }
+
+hr {
+  border: solid #E1E5E4;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+  margin: 1.25rem 0 1.1875rem; }
 
 /* ============================================================
    GLOBAL

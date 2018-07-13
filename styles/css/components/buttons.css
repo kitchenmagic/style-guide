@@ -16,7 +16,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: .7rem 2rem;
+  padding: .9rem 1.5rem;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0;
@@ -27,18 +27,26 @@
   text-transform: uppercase; }
   .km-btn.km-btn---primary {
     background-color: #F01834;
-    color: #fff; }
+    color: #fff;
+    border: 1px solid #F01834; }
     .km-btn.km-btn---primary:hover {
-      background-color: #222222; }
+      background-color: #222222;
+      text-decoration: none;
+      border: 1px solid #222222; }
     .km-btn.km-btn---primary:active {
-      background-color: #C30019; }
+      background-color: #C30019;
+      border-color: #C30019; }
   .km-btn.km-btn--secondary {
     background-color: #222222;
-    color: #fff; }
+    color: #fff;
+    border: 1px solid #222222; }
     .km-btn.km-btn--secondary:hover {
-      background-color: #F01834; }
+      background-color: #F01834;
+      text-decoration: none;
+      border: 1px solid #F01834; }
     .km-btn.km-btn--secondary:active {
-      background-color: #4a4a4a; }
+      background-color: #4a4a4a;
+      border-color: #4a4a4a; }
   .km-btn.km-btn--ghost {
     background-color: transparent;
     border: 1px solid #222222;
@@ -46,11 +54,17 @@
     .km-btn.km-btn--ghost:hover {
       background-color: #222222;
       border: 1px solid #222222;
-      color: #fff; }
+      color: #fff;
+      text-decoration: none; }
     .km-btn.km-btn--ghost:active {
       background-color: #4a4a4a;
       border: 1px solid #4a4a4a;
       color: #fff; }
+  .km-btn .km-btn--large {
+    padding: 1rem 3rem; }
+  .km-btn .km-btn--sm {
+    padding: .5rem 1rem;
+    font-size: .8rem; }
   .km-btn .km-btn-block {
     display: block; }
 
