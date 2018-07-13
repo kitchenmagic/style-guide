@@ -1,4 +1,5 @@
 @import "../helpers/_variables.scss";
+@import 'styles/scss/helpers/_mixins.scss';
 
 /* ============================================================
    BUTTONS
@@ -32,9 +33,14 @@
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    @include transition(all 300ms ease)
+
+    &:hover {
+        cursor: pointer;
+    }
 
     // button colors
-    &.km-btn---primary {
+    &.km-btn--primary {
         background-color: $red;
         color: #fff;
         border: 1px solid $red;

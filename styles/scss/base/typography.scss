@@ -1,6 +1,6 @@
 @import "../helpers/_variables.scss";
 @import 'styles/scss/helpers/_mixins.scss';
-
+ 
 /* ============================================================
   Typography
 /* ============================================================ */
@@ -81,7 +81,7 @@
 h1,h2,h3,h4,h5 {
   font-family: $font-family-header;
   color: $text-color;
-  letter-spacing: 1px;
+  letter-spacing: 1px !important;
   margin: 1.414rem 0 0.5rem;
 }
 
@@ -135,7 +135,7 @@ em {
 a {
   color: $red;
   text-decoration: none;
-  @include transition(all 300ms ease)
+  @include transition(all 300ms ease);
   
   &:hover {
     border-bottom: 1px solid $red;

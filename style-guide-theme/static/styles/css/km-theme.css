@@ -39,7 +39,7 @@
 h1, h2, h3, h4, h5 {
   font-family: "DomaineDisplayNarrowBold", helvetica, serif;
   color: #222222;
-  letter-spacing: 1px;
+  letter-spacing: 1px !important;
   margin: 1.414rem 0 0.5rem; }
 
 h1 {

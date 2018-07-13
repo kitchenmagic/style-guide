@@ -5,17 +5,82 @@
   FORMS
 /* ============================================================ */
 
+// input
 div.input {
 
-    input {
+    input.hs-input {
         border: 1px solid $gray;
         padding: .8rem;
         border-radius: 0;
         box-shadow: none;
+        font-size: 1rem;
+        font-family: $font-family-text;
+        @include transition(all 300ms ease);
 
         @include placeholder {
             color: $gray;
             font-size: 1rem;
+            font-family: $font-family-text;
+        }
+
+        &:valid {
+            color: $text-color;
+        }
+
+        &:focus {
+            border-color: $text-color;
+            color: $text-color;
+            box-shadow: none;
+            outline: none;
+        }
+
+        &.error{
+            border: 1px solid $warning;
         }
     }
+
+    // select
+    select {
+        padding: .8rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 1rem;
+        height: 46px;
+        background: #fff;
+        color: $gray;
+        border-radius: 0;
+        border-color: $gray;
+        width: 100% !important;
+
+        &:focus {
+            border-color: $text-color;
+            color: $text-color;
+            box-shadow: none;
+            outline: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+// labels
+div.hs-form-field label {
+    font-family: $font-family-text-bold;
+    color: #222;
+    font-size: .8rem;
+}
+
+// errors
+ul.hs-error-msgs li label {
+    color: $warning;
+    font-family: $font-family-text;
+}
+
+// messages
+
+.hs-richtext p {
+
 }
