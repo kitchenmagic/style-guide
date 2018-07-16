@@ -92,6 +92,14 @@ a {
   a:active {
     color: #C30019; }
 
+::selection {
+  background: #F01834;
+  color: #fff; }
+
+::-moz-selection {
+  background: #F01834;
+  color: #fff; }
+
 ul.km-list {
   padding: 0 0 0 25px;
   margin: 0; }

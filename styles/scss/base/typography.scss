@@ -1,4 +1,4 @@
-@import "../helpers/_variables.scss";
+@import "styles/scss/helpers/_variables.scss";
 @import 'styles/scss/helpers/_mixins.scss';
  
 /* ============================================================
@@ -144,6 +144,16 @@ a {
   &:active {
     color: $dark-red;
   }
+}
+
+::selection {
+  background: $red;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $red;
+  color: #fff;
 }
 
 // lists

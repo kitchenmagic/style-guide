@@ -8,3 +8,9 @@ html {
     line-height: 1.45;
     font-family: $font-family-text;
 }
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}

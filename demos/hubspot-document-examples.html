@@ -57,19 +57,28 @@ It's just used a temporary fix and used in Hubspot's design manager
 <!-- FORMS -->
 <h2>Forms</h2>
 <hr>
-<!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 <script>
-  hbspt.forms.create({
-	portalId: "126868",
-	formId: "86170978-5cec-47f5-bec9-428ad4bf722c",
-    submitButtonClass: "km-btn km-btn--primary",
-    translations: {
-        en: {
-          required: "Oops, look like you forgot this one.",
+$.getScript("//js.hsforms.net/forms/v2.js",function(){
+    hbspt.forms.create({ 
+        
+        portalId: '126868',
+        formId: 'd690f750-7326-4f94-aa53-232899822554',
+        css:"",
+        redirectUrl:"https://www.kitchenmagic.com/thank-you/self-set-appointment-details",
+        translations: {
+            en: {
+            required: "Oops, look like you forgot this one.",
+            }
+        },
+        target: '[id=km-form-self-set]',
+        onFormReady: function($form){
+            $.getScript('https://cdn2.hubspot.net/hubfs/126868/js/availability_widget/availabilityWidget.min.js', function(){
+                var a = SelfSetWidget()
+                a.init();
+            })
         }
-      }
+    });
 });
 </script>
+    
+<div id="self-set-form"><h2 class="hs_cos_wrapper form-title">Schedule Your FREE Consultation Now</h2><div id="km-form-self-set"></div></div>

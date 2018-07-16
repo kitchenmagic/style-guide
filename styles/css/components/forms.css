@@ -43,6 +43,8 @@ div.input select {
   padding: .8rem;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -o-appearance: none;
+  -ms-apprerance: none;
   appearance: none;
   font-size: 1rem;
   height: 46px;
@@ -50,14 +52,33 @@ div.input select {
   color: #A3A5A8;
   border-radius: 0;
   border-color: #A3A5A8;
-  width: 100% !important; }
+  width: 100% !important;
+  background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center; }
   div.input select:focus {
     border-color: #222222;
     color: #222222;
     box-shadow: none;
     outline: none; }
   div.input select:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    border-color: #222222; }
+  div.input select :valid {
+    color: #222222; }
+
+div.hs-dateinput input {
+  background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/calendar.png) no-repeat 95% center; }
+  div.hs-dateinput input:hover {
+    cursor: pointer;
+    border-color: #222222; }
+
+div.hs-datepicker div.fn-date-picker.pika-single.is-bound {
+  box-shadow: 0 2px 20px #D9DFF0;
+  border: 1px solid #DDE3E6;
+  border-radius: 0;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+
+.fn-date-picker .pika-title .pika-label {
+  font-weight: normal; }
 
 div.hs-form-field label {
   font-family: "ProximaNova-Bold", helvetica, sans-serif;
