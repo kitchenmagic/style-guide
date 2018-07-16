@@ -2,13 +2,12 @@
   LAYOUT
 /* ============================================================ */
 .km-row, .km-row-narrow, .km-row-wide, .km-row-full, .km-row .row-fluid,
-.km-row-wide .row-fluid,
-.km-row-full .row-fluid, .km-wrapper, .km-wrapper-inner {
+.km-row-wide .row-fluid, .km-wrapper, .km-wrapper-inner {
+  width: 100%;
+  float: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  max-width: 71.25rem;
-  width: 100%;
-  float: none !important; }
+  max-width: 71.25rem; }
 
 .km-row-narrow {
   max-width: 60rem; }
