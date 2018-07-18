@@ -12,9 +12,6 @@
   
   /**** Navigation ***/
   
-  li.hs-menu-item.hs-menu-depth-1 > a {
-    transition: all 300ms ease;
-  }
   
   li.hs-menu-item.hs-menu-depth-1:not(.hs-item-has-children) > a:hover {
     color: #222;
@@ -36,29 +33,20 @@
       margin: 0 auto;
   }
   
-  .title-alt-font {
-      font-family: helvetica neue, helvetica;
-      font-weight: bold;
-  }
-  
   .callout {
       font-size: 1.2em;
   }
   
   
   /* used to stack multiple h tags */
-  
+
   .km-stack-title {
       margin-bottom: 0;
       padding-bottom: 0;
   }
   
-  /** font colors **/
-  
-  .text-gray {
-      color: #969696;
-  }
-  
+  /** Used to force white font on hero sections - primarily used on landing pages **/
+
   .km-white-font h1, .km-white-font h2, .km-white-font h3, .km-white-font h4, .km-white-font p {
       color: #fff !important;
   }
@@ -66,30 +54,8 @@
   .km-white-font {
       color: #fff !important;
   }
-  
-  .km-green-font {
-      color: #799A05;
-  }
-  
-  
-  /** text properties **/
-  
-  .uppercase {
-      text-transform: uppercase;
-  }
-  
-  .km-small-text {
-      font-size: 11px;
-  }
-  
-  
-  /** email subscription preferences **/
-  
-  .widget-type-email_subscriptions h2 {
-      font-size: 24px;
-  }
-  
-  /** ordered lists **/
+
+  /** List is used on www.kitchenmagic.com/cabinet-refacing page **/
   
   ol.km-ol {
     padding-left: 75px;
