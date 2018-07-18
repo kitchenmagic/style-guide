@@ -2161,3 +2161,15 @@ th.hide-for-touch {
 
 .km-small-text {
   font-size: 11px; }
+
+.lg-margin-t {
+  margin-top: 20px; }
+
+.margin-t {
+  margin-top: 10px; }
+
+.no-margin-b {
+  margin-bottom: 0; }
+
+.hide {
+  display: none; }

@@ -1,0 +1,45 @@
+@import "../helpers/_variables.scss";
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   PRODUCT CARDS
+/* ============================================================ */
+
+/**
+* This file will live on Hubspot Modules only.
+* DO NOT compile to the main.css
+**/
+
+.product-card {
+    padding: 18px 10px 20px;
+    border: 1px solid $border-color;
+    width: 100%;
+
+    img {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+
+    .product-title {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 12px;
+        padding-bottom: 2px;
+        font-family: $font-family-header;
+      }
+
+      // used for accessories - knobs & pulls
+      .product-number {
+        font-size: 0.6875rem;
+        text-align: center;
+        margin-bottom: -9px;
+        font-style: $font-family-text-i;
+        color: $text-color-light;
+    }
+}
+
+.product-hide {
+    display: none !important;
+}
+

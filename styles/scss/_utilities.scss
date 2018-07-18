@@ -11,3 +11,21 @@
 .km-small-text {
     font-size: 11px;
 }
+
+
+// Margins - I want to eventually remove this and standardize spacing but for Phase 1 leave it.
+.lg-margin-t {
+    margin-top: 20px;
+}
+
+.margin-t {
+    margin-top: 10px;
+}
+
+.no-margin-b {
+  margin-bottom: 0;
+}
+
+.hide {
+  display: none;
+}

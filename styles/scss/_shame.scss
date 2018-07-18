@@ -1,51 +1,26 @@
 /*****************************************/
-/*               MISC                    */
-/*                                       */
-/*  This section is from temp-global.css */
-/*  and needs to sorted/added into the   */
-/*  new .scss files                      */
+/*               MISC                    
+/*                                       
+/*  This section is from temp-global.css 
+/*  and needs to sorted/added into the   
+/*  new .scss files
+/*  -- also used for hacks that need 
+/*  to be fixed later                     
 /*****************************************/
 
-  .header-container-wrapper .row-fluid [class*="span"] { min-height: 0 !important; }
-  body .off-canvas-wrap:nth-child(1) { overflow: visible; }
   
-  
-  /**** Navigation ***/
-  
-  
-  li.hs-menu-item.hs-menu-depth-1:not(.hs-item-has-children) > a:hover {
-    color: #222;
-  }
-  
-  /** breadcrumbs **/
-  .hs-breadcrumb-menu-item.first-crumb {
-      padding-left: 0;
-  }
-  
-  /*****************************************/
-  /*             TYPOGRAPHY                */
-  /*****************************************/
-  
-  /** headers **/
+  /** used to center subtitles - used on www.kitchenmagic.com/cabinet-refacing **/
   
   .km-subtitle-centered {
     max-width: 800px;
-      margin: 0 auto;
-  }
-  
-  .callout {
-      font-size: 1.2em;
-  }
-  
-  
-  /* used to stack multiple h tags */
-
-  .km-stack-title {
-      margin-bottom: 0;
-      padding-bottom: 0;
-  }
-  
-  /** Used to force white font on hero sections - primarily used on landing pages **/
+    margin: 0 auto;
+}
+   
+/**
+ * Hero section font fix
+ *
+ * Used to force white font on hero sections - primarily used on landing pages
+ */
 
   .km-white-font h1, .km-white-font h2, .km-white-font h3, .km-white-font h4, .km-white-font p {
       color: #fff !important;
@@ -103,17 +78,7 @@
   ol.km-ol li:last-child::after {
       border: none;
   }
-  
-  
-  /*****************************************/
-  /*                LAYOUT                 */
-  /*****************************************/
-  
-  .km-row-full-width {
-    padding: 30px 0;
-  }
-  
-  
+
   /*****************************************/
   /*               MOBILE                  */
   /*****************************************/
@@ -307,27 +272,6 @@
   /*****************************************/
   /*               HOMEPAGE                */
   /*****************************************/
-  
-  /* added this to subheader to FREE IN-HOME ESTIMATE section*/
-  .sub-header {
-      margin-top: -9px;
-      font-size: 14px;
-  }    
-  
-  
-  /* CTA slider */
-  
-  .cta-slider-title {
-      font-family: helvetica neue, helvetica;
-      font-weight: bold;
-      font-size: 2.5em;
-  }
-  
-  .cta-slider-description {
-      font-size: 1.4em;
-  }
-  
-  
   /* hero */
   
   .hero-wrapper { z-index: 1;position: relative;border-bottom: 7px solid #c7c7c7;color: white;font-family: 'Open Sans', sans-serif; }
@@ -445,14 +389,7 @@
   
   html .row-fluid .last-cta { margin:0;border-bottom: 1px solid #DDDDDD; }
   
-  
-  /*****************************************/
-  /*          Search Results               */
-  /*****************************************/
-  
-  #addsearch-results-bottom { display: none; }
-  
-  
+   
   
   /******* Simple Menu*********/
   
@@ -698,19 +635,6 @@
   
   
   
-  /*****************************************/
-  /*            SEARCH BAR                 */
-  /*****************************************/
-  
-  /** Input Height **/
-  
-  /* the actual styling is inline, I don't know if you added them on the google CSE page. So I used important tags to override*/
-  input#gsc-i-id1 {
-      height: 32px !important;
-      margin: 0 !important;
-  }
-  
-  
   
   /*****************************************/
   /*               FORMS                   */
@@ -767,8 +691,6 @@
       outline: none;
   }
   
-  
-  
   /* buttons */
   
   .km-orange-submit {
@@ -786,56 +708,11 @@
       display: block;
       margin: 0 auto;
   }
-  
-  /*****************************************/
-  /*            HACKS/FIX                  */
-  /*****************************************/
-  
-  /* added class to state/local/praise page templates*/
-  .margin-fix {
-      margin-bottom: 0 !important;
-  }
-  /* bolded "state" for blockquote module*/
-  cite span {
-      font-weight: bold;
-  }
-  
-  
-  /*****************************************/
-  /*            CONTENT CHANGES            */
-  /*****************************************/
-  
-  
-  /**********  CTA graphics *************/
-  .cta-button img {
-      max-width: 820px;
-  }
-  
-  .km-sidebar-cta {
-      max-width: 255px;
-  }
-  
-  
+    
   /*****************************************/
   /*               UTILITIES               */
   /*****************************************/
   
-  /** margins **/
-  .lg-margin-t {
-      margin-top: 20px;
-  }
-  
-  .margin-t {
-      margin-top: 10px;
-  }
-  
-  .no-margin-b {
-    margin-bottom: 0;
-  }
-  
-  .hide {
-    display: none;
-  }
   
   
   /*****************************************/
@@ -858,64 +735,6 @@
   .product-row > .span4:nth-child(3n+1) {
       margin-left: 0;
       
-  }
-  
-  .product-card {
-    background: white;
-    width: 100%;
-    border: 2px solid #ccc;
-    transition: all .4s ease;
-    padding: 18px 20px 20px 20px;
-  }
-  
-  .product-card-clickable {
-      cursor: pointer;
-  }
-  
-  .product-card img {
-      margin: 0 auto;
-      display: block;
-      width: 100%;
-  }
-  
-  .product-card:hover {
-    transform: scale(1.1);
-    z-index: 999;
-    border: 2px solid #85695b;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    margin-top: 0;
-  } 
-  
-  .product-card:focus {
-   outline: none;
-  }
-  
-  
-  .product-title {
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 12px;
-    padding-bottom: 2px;
-    color: #555;
-  }
-  
-  .product-description {
-      text-align: center;
-      font-size: 13px;
-      color: #85695b;
-  }
-  
-  .product-hide {
-      display: none !important;
-  }
-  
-  .product-number {
-      font-size: 11px;
-      text-align: center;
-      margin-bottom: -9px;
-      font-style: italic;
-      color: #555;
   }
   
   /* before and after module */
