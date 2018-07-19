@@ -12,6 +12,12 @@
     font-size: 11px;
 }
 
+  /* used to center subtitles - used on www.kitchenmagic.com/cabinet-refacing */
+  .km-subtitle-centered {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 
 // Margins - I want to eventually remove this and standardize spacing but for Phase 1 leave it.
 .lg-margin-t {

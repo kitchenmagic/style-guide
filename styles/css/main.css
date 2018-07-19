@@ -1746,6 +1746,60 @@ ul.hs-error-msgs li label {
   font-family: "ProximaNova-Regular", helvetica, sans-serif; }
 
 /* ============================================================
+   LISTS
+/* ============================================================ */
+/**
+ * Unordered list
+ */
+ul.km-list {
+  padding: 0 0 0 25px;
+  margin: 0;
+  /**
+        * Red list item
+        */ }
+  ul.km-list li {
+    line-height: 2.5rem;
+    padding-left: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    ul.km-list li:before {
+      content: "\f111";
+      font-family: fontawesome;
+      margin-right: 18px;
+      font-size: .5rem;
+      vertical-align: center; }
+  ul.km-list--red li:before {
+    color: #F01834; }
+
+/**
+ * Ordered list
+ */
+ol {
+  margin: 0;
+  list-style: none;
+  counter-reset: li; }
+  ol.km-list {
+    padding: 0 0 0 25px;
+    margin: 0;
+    /**
+        * Red list item
+        */ }
+    ol.km-list li {
+      line-height: 2.5rem;
+      padding-left: 18px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-increment: li; }
+      ol.km-list li:before {
+        content: counter(li);
+        margin-right: 18px;
+        vertical-align: center; }
+    ol.km-list--red li:before {
+      color: #F01834; }
+
+/* ============================================================
   FOUNDATION - VISIBILITY 
 /* ============================================================ */
 /* small displays */
@@ -2161,6 +2215,11 @@ th.hide-for-touch {
 
 .km-small-text {
   font-size: 11px; }
+
+/* used to center subtitles - used on www.kitchenmagic.com/cabinet-refacing */
+.km-subtitle-centered {
+  max-width: 800px;
+  margin: 0 auto; }
 
 .lg-margin-t {
   margin-top: 20px; }
