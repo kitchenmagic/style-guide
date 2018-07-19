@@ -5,7 +5,9 @@
   FORMS
 /* ============================================================ */
 
-// input
+/**
+ * Inputs
+ */
 div.input {
 
     input.hs-input {
@@ -39,7 +41,9 @@ div.input {
         }
     }
 
-    // select
+    /**
+     * Select fields
+     */
     select {
         padding: .8rem;
         -webkit-appearance: none;
@@ -75,7 +79,9 @@ div.input {
     
 }
 
-// date input - calendar
+ /**
+  * Date input - calendar for self set forms
+  */
 div.hs-dateinput {
     input {
         background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/calendar.png) no-repeat 95% center;
@@ -98,21 +104,19 @@ div.hs-datepicker div.fn-date-picker.pika-single.is-bound {
     font-weight: normal;
 }
 
-// labels
+/**
+ * Form labels
+ */
 div.hs-form-field label {
     font-family: $font-family-text-bold;
     color: #222;
     font-size: .8rem;
 }
 
-// errors
+/**
+ * Form errors
+ */
 ul.hs-error-msgs li label {
     color: $warning;
     font-family: $font-family-text;
-}
-
-// messages
-
-.hs-richtext p {
- 
 }

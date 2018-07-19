@@ -29,7 +29,10 @@
         font-family: $font-family-header;
       }
 
-      // used for accessories - knobs & pulls
+      /**
+        * Product numbers
+        * This is used to tag the accesories with serial numbers - used on knobs & pulls page
+        */
       .product-number {
         font-size: 0.6875rem;
         text-align: center;
@@ -39,6 +42,11 @@
     }
 }
 
+/**
+ * Helper class
+ * Hides card if there is too many in one row.
+ * When the new dynamic product system is put into place, this will be removed.
+ */
 .product-hide {
     display: none !important;
 }

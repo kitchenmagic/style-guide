@@ -1,70 +1,79 @@
 /* ============================================================
   FORMS
 /* ============================================================ */
-div.input input.hs-input {
-  border: 1px solid #A3A5A8;
-  padding: .8rem;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 1rem;
-  font-family: "ProximaNova-Regular", helvetica, sans-serif;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease; }
-  div.input input.hs-input::-webkit-input-placeholder {
-    color: #A3A5A8;
-    font-size: 1rem;
-    font-family: "ProximaNova-Regular", helvetica, sans-serif; }
-  div.input input.hs-input:-moz-placeholder {
-    color: #A3A5A8;
-    font-size: 1rem;
-    font-family: "ProximaNova-Regular", helvetica, sans-serif; }
-  div.input input.hs-input::-moz-placeholder {
-    color: #A3A5A8;
-    font-size: 1rem;
-    font-family: "ProximaNova-Regular", helvetica, sans-serif; }
-  div.input input.hs-input:-ms-input-placeholder {
-    color: #A3A5A8;
-    font-size: 1rem;
-    font-family: "ProximaNova-Regular", helvetica, sans-serif; }
-  div.input input.hs-input:valid {
-    color: #222222; }
-  div.input input.hs-input:focus {
-    border-color: #222222;
-    color: #222222;
+/**
+ * Inputs
+ */
+div.input {
+  /**
+     * Select fields
+     */ }
+  div.input input.hs-input {
+    border: 1px solid #A3A5A8;
+    padding: .8rem;
+    border-radius: 0;
     box-shadow: none;
-    outline: none; }
-  div.input input.hs-input.error {
-    border: 1px solid #F35B62; }
+    font-size: 1rem;
+    font-family: "ProximaNova-Regular", helvetica, sans-serif;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease; }
+    div.input input.hs-input::-webkit-input-placeholder {
+      color: #A3A5A8;
+      font-size: 1rem;
+      font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+    div.input input.hs-input:-moz-placeholder {
+      color: #A3A5A8;
+      font-size: 1rem;
+      font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+    div.input input.hs-input::-moz-placeholder {
+      color: #A3A5A8;
+      font-size: 1rem;
+      font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+    div.input input.hs-input:-ms-input-placeholder {
+      color: #A3A5A8;
+      font-size: 1rem;
+      font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+    div.input input.hs-input:valid {
+      color: #222222; }
+    div.input input.hs-input:focus {
+      border-color: #222222;
+      color: #222222;
+      box-shadow: none;
+      outline: none; }
+    div.input input.hs-input.error {
+      border: 1px solid #F35B62; }
+  div.input select {
+    padding: .8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-apprerance: none;
+    appearance: none;
+    font-size: 1rem;
+    height: 46px;
+    background: #fff;
+    color: #A3A5A8;
+    border-radius: 0;
+    border-color: #A3A5A8;
+    width: 100% !important;
+    background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center; }
+    div.input select:focus {
+      border-color: #222222;
+      color: #222222;
+      box-shadow: none;
+      outline: none; }
+    div.input select:hover {
+      cursor: pointer;
+      border-color: #222222; }
+    div.input select :valid {
+      color: #222222; }
 
-div.input select {
-  padding: .8rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  -ms-apprerance: none;
-  appearance: none;
-  font-size: 1rem;
-  height: 46px;
-  background: #fff;
-  color: #A3A5A8;
-  border-radius: 0;
-  border-color: #A3A5A8;
-  width: 100% !important;
-  background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center; }
-  div.input select:focus {
-    border-color: #222222;
-    color: #222222;
-    box-shadow: none;
-    outline: none; }
-  div.input select:hover {
-    cursor: pointer;
-    border-color: #222222; }
-  div.input select :valid {
-    color: #222222; }
-
+/**
+  * Date input - calendar for self set forms
+  */
 div.hs-dateinput input {
   background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/calendar.png) no-repeat 95% center; }
   div.hs-dateinput input:hover {
@@ -80,11 +89,17 @@ div.hs-datepicker div.fn-date-picker.pika-single.is-bound {
 .fn-date-picker .pika-title .pika-label {
   font-weight: normal; }
 
+/**
+ * Form labels
+ */
 div.hs-form-field label {
   font-family: "ProximaNova-Bold", helvetica, sans-serif;
   color: #222;
   font-size: .8rem; }
 
+/**
+ * Form errors
+ */
 ul.hs-error-msgs li label {
   color: #F35B62;
   font-family: "ProximaNova-Regular", helvetica, sans-serif; }

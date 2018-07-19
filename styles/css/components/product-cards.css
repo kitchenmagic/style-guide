@@ -8,7 +8,11 @@
 .product-card {
   padding: 18px 10px 20px;
   border: 1px solid #E1E5E4;
-  width: 100%; }
+  width: 100%;
+  /**
+        * Product numbers
+        * This is used to tag the accesories with serial numbers - used on knobs & pulls page
+        */ }
   .product-card img {
     margin: 0 auto;
     display: block;
@@ -26,5 +30,10 @@
     font-style: "ProximaNova-RegularIt", helvetica, sans-serif;
     color: #4a4a4a; }
 
+/**
+ * Helper class
+ * Hides card if there is too many in one row.
+ * When the new dynamic product system is put into place, this will be removed.
+ */
 .product-hide {
   display: none !important; }

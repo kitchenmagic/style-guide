@@ -3,7 +3,9 @@
 /* ============================================================ */
 
 
-// Typography
+/**
+ * Typography
+ */
 .uppercase {
     text-transform: uppercase;
 }
@@ -12,14 +14,20 @@
     font-size: 11px;
 }
 
-  /* used to center subtitles - used on www.kitchenmagic.com/cabinet-refacing */
+  /**
+    * A helper class used to center subtitles under main titles
+    * example: www.kitchenmagic.com/cabinet-refacing
+    */  
   .km-subtitle-centered {
     max-width: 800px;
     margin: 0 auto;
 }
 
 
-// Margins - I want to eventually remove this and standardize spacing but for Phase 1 leave it.
+/**
+ * Margins
+ * This section should eventually be cleaned up once we standardize more of the spacing
+ */
 .lg-margin-t {
     margin-top: 20px;
 }

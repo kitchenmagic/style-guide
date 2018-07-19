@@ -17,7 +17,9 @@
 * @iframe demos/base/typography/headers.html
 **/
 
-
+/**
+ * Import for font springs traffic counter
+ */
 @import url("//hello.myfonts.net/count/37001a");
 
 // Local dev only 
@@ -78,6 +80,9 @@
 //     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 // }
 
+/**
+ * Headers
+ */
 h1,h2,h3,h4,h5 {
   font-family: $font-family-header;
   color: $text-color;
@@ -114,6 +119,9 @@ h5 {
 * @iframe demos/base/typography/body-copy.html
 */
 
+/**
+ * Body text
+ */
 p {
   font-family: $font-family-text;
   color: $text-color;
@@ -156,72 +164,9 @@ a {
   color: #fff;
 }
 
-// lists
-ul {
-
-  &.km-list {
-    padding: 0 0 0 25px;
-    margin: 0;
-
-    li {
-      line-height: 2.5rem;
-      padding-left: 18px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      &:before {
-        content: "\f111";
-        font-family: fontawesome;
-        margin-right: 18px;
-        font-size: .5rem;
-        vertical-align: center;
-      }
-    }
-
-    &--red {
-      li:before {
-        color: $red;
-      }
-    }
-
-  }
-}
-
-
-ol {
-  margin: 0;
-  list-style: none;
-  counter-reset: li;
-
-  &.km-list {
-    padding: 0 0 0 25px;
-    margin: 0;
-
-    li {
-      line-height: 2.5rem;
-      padding-left: 18px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      counter-increment: li;
-
-      &:before {
-        content: counter(li);
-        margin-right: 18px;
-        vertical-align: center;
-      }
-    }
-
-    &--red {
-      li:before {
-        color: $red;
-      }
-    }
-
-  }
-}
-
+/**
+ * Horizontal rule
+ */
 hr {
   border: solid $light-gray;
   border-width: 1px 0 0;

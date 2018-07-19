@@ -12,6 +12,9 @@
 * @styles typography-headers Typography
 * @iframe demos/base/typography/headers.html
 **/
+/**
+ * Import for font springs traffic counter
+ */
 @import url("//hello.myfonts.net/count/37001a");
 /* For Hubspot dev - in production */
 @font-face {
@@ -36,6 +39,9 @@
   src: url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.eot");
   src: url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.eot?#iefix") format("embedded-opentype"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.woff2") format("woff2"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.woff") format("woff"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.ttf") format("truetype"); }
 
+/**
+ * Headers
+ */
 h1, h2, h3, h4, h5 {
   font-family: "DomaineDisplayNarrowBold", helvetica, serif;
   color: #222222;
@@ -65,6 +71,9 @@ h5 {
 * Body copy description
 * @iframe demos/base/typography/body-copy.html
 */
+/**
+ * Body text
+ */
 p {
   font-family: "ProximaNova-Regular", helvetica, sans-serif;
   color: #222222;
@@ -100,45 +109,9 @@ a {
   background: #F01834;
   color: #fff; }
 
-ul.km-list {
-  padding: 0 0 0 25px;
-  margin: 0; }
-  ul.km-list li {
-    line-height: 2.5rem;
-    padding-left: 18px;
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    ul.km-list li:before {
-      content: "\f111";
-      font-family: fontawesome;
-      margin-right: 18px;
-      font-size: .5rem;
-      vertical-align: center; }
-  ul.km-list--red li:before {
-    color: #F01834; }
-
-ol {
-  margin: 0;
-  list-style: none;
-  counter-reset: li; }
-  ol.km-list {
-    padding: 0 0 0 25px;
-    margin: 0; }
-    ol.km-list li {
-      line-height: 2.5rem;
-      padding-left: 18px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      counter-increment: li; }
-      ol.km-list li:before {
-        content: counter(li);
-        margin-right: 18px;
-        vertical-align: center; }
-    ol.km-list--red li:before {
-      color: #F01834; }
-
+/**
+ * Horizontal rule
+ */
 hr {
   border: solid #E1E5E4;
   border-width: 1px 0 0;

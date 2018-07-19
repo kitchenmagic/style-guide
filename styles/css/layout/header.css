@@ -1,11 +1,16 @@
 /* ============================================================
   HEADER
 /* ============================================================ */
-/* logo */
+/**
+ * Logo
+ */
 #hs-link-logo img {
   max-width: 170px; }
 
-/********* OLD MENU - NEEDS TO BE REDONE *******/
+/**
+ * Old Menu
+ * Needs to be redone.
+ */
 .hs-menu-wrapper.flyouts ul li > a {
   background-color: #EEE;
   padding: 0.4rem 2rem 0.4rem 1rem;
