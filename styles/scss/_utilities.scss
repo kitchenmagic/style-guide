@@ -23,6 +23,17 @@
     margin: 0 auto;
 }
 
+// Colors 
+// Used to force white font on hero sections - primarily used on landing pages
+// This is a hack, needs to be fixed
+
+.km-white-font {
+  color: #fff !important;
+  h1, & h2, & h3, & h4, & p {
+    color: #fff !important;
+  }
+}
+
 
 /**
  * Margins

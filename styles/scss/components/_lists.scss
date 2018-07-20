@@ -82,4 +82,57 @@ ul {
     }
   }
 
+/**
+ * One-off custom ordered list with circle numbers 
+ * (www.kitchenmagic.com/cabinet-refacing)
+ */
+ 
+ol.km-ol {
+  padding-left: 75px;
+  counter-reset: section;
+  
+  li {
+    padding-bottom: 40px;
+    position: relative;
+    list-style: none;
+
+    &>img {
+      padding-top: 17px;
+    }
+
+    &::before {
+      content: counters(section,".");
+      counter-increment: section;
+      position: absolute;
+      font-size: 1.5rem;
+      left: -75px;
+      top: 0;
+      height: 50px;
+      width: 50px;
+      background: #4e4e4e;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      z-index: 50;
+      font-family: perpetua;
+    }
+
+    &::after {
+      content: "";
+      border-left: 1px solid #4e4e4e;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -50px;
+      z-index: 0;
+    }
+
+    &::last-child::after {
+      border: none;
+    }
+
+  }
+}
+
  
