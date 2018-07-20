@@ -1,3 +1,5 @@
+// REM converter
+// converts px values to rem values
 @function px-to-rem($target, $context: $base-font-size) {
     @return ($target / $context) * 1rem;
 }

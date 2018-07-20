@@ -1,10 +1,6 @@
-// VARIABLES 
-// colors
-// typography
-// ui elements
-// form 
-
-// colors
+// ============================================================
+//  COLORS
+// ============================================================ 
 $dark-red:         #C30019;
 $red:              #F01834;
 $light-red:        #FF999F;
@@ -14,7 +10,10 @@ $light-gray:       #E1E5E4;
 $lighter-gray:     #EEF3F5;
 $lightest-gray:    #F9FAFC;
 
-// typography
+
+// ============================================================
+//  TYPOGRAPHY
+// ============================================================ 
 $base-font-size: 16px;
 
 $font-family-header:      'DomaineDisplayNarrowBold', helvetica, serif;
@@ -25,16 +24,36 @@ $font-family-text-i:      'ProximaNova-RegularIt', helvetica, sans-serif;
 $text-color:       #222222;
 $text-color-light: #4a4a4a;
 
-// ui element colors
+// ============================================================
+//  LAYOUT
+// ============================================================ 
+
+// Breakpoints
+// !!! replace this with relative units
+$breakpoints: (
+    'xs': 575px,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px
+);
+
+
+// ============================================================
+//  UI ELEMENTS
+// ============================================================ 
 $border-color:     #E1E5E4;
 $shadow:           #D9DFF0;
 
-// form colors
+
+// ============================================================
+//  FORMS
+// ============================================================ 
 $warning:          #F35B62;
 
 
-// OLD VARIABLES - NEED TO BE SORTED AND REMOVED 
-// We use these as default colors throughout
+// ============================================================
+//  OLD VARIABLES - NEED TO BE SORTED AND REMOVED 
+// ============================================================ 
 $primary-color: 	#88441D;
 $secondary-color: 	#85695b;
 $tertiary-color:	lighten($secondary-color, 20);

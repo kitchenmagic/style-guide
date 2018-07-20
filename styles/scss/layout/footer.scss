@@ -11,7 +11,7 @@
 
     h2, h3, p, a {
         color: #fff;
-        margin-bottom: 0;
+        margin-bottom: px-to-rem(10px);
         @include transition(all 300ms ease);
     }
 
@@ -30,9 +30,8 @@
     .hs-menu-flow-vertical {
         margin-top: 7px;
     }
-
 }
-  
+
  .footer-container-wrapper .row-fluid [class*="span"], .footer-container .row-fluid [class*="span"] { min-height: 0; }
  .footer-container-wrapper .km-footer>.row-fluid-wrapper .widget-span { padding: 0; }
  .footer-container-wrapper .km-footer>.row-fluid-wrapper .dark-footer .widget-span { margin-bottom: 0;padding: 0; }

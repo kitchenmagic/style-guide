@@ -8,7 +8,6 @@
 /*  to be fixed later                     
 /*****************************************/
 
-
   /*****************************************/
   /*               MOBILE                  */
   /*****************************************/
@@ -200,116 +199,6 @@
   }
 
   
-   
-  
-  /******* Simple Menu*********/
-  
-  /* restyled anchors, added hover effects & pseudo element */
-  .km-footer-simple-nav ul li>a {
-      font-size: .9rem;
-      padding: 0 2px !important;
-      -moz-transition: all .2s ease-in;
-      -o-transition: all .2s ease-in;
-      -webkit-transition: all .2s ease-in;
-      transition: all .2s ease-in;
-  }
-  
-  .km-footer-simple-nav ul li>a:hover {
-      color: #FFFFFF;
-      
-  }
-  
-  .km-footer-simple-nav ul li>a:after {
-      content: "/";
-      padding-left: 10px;
-      opacity: .5;
-      font-size: 10px;
-  }
-  
-  .km-footer-simple-nav li:nth-last-child(1)>a:after {
-      content: "";
-  }
-  
-  /** Footer Mobile ***/
-  
-  /*** mobile -  max-width 640px, mobile-only styles, use when QAing mobile issues ***/
-  @media only screen and (max-width: 40em)  { 
-      
-      .km-footer .km-footer-wrapper-inner {
-          padding: 0 !important;
-      }
-      
-      .km-footer h2 {
-          text-align: center;
-      }
-      
-      .km-footer button {
-          width: 100%;
-      }
-      
-      .km-footer-col-1 {
-          border-right: none !important;
-      }
-      
-      .km-footer-col-2 h2 {
-          border-top: 2px solid #9c8477;
-          margin-top: 29px;
-      }
-      
-      form#hsForm_757a36fb-ee8e-4d27-a531-040172cc2965 .hs_email input {
-          width: 100% !important;
-      }
-      
-      form#hsForm_757a36fb-ee8e-4d27-a531-040172cc2965 > .hs_submit input {
-          width: 100%;
-      }
-      
-      .footer-social-media > a > i {
-          font-size: 2.2em;
-      }
-      
-  }
-  
-  .km-footer {
-      color: #fff;
-  }
-  
-  .km-footer .km-footer-wrapper-inner {
-      background: #a18b7e;
-  }
-  
-  .km-footer i {
-      font-size: 1.5em;
-  }
-  
-  button > a:hover {
-      color: #fff !important;
-  }
-  
-  .hr-footer {
-      border-top: 2px solid #9c8477;
-      margin-top: 29px;
-  }
-  
-  
-  /****** blog subscription ******/
-  
-  
-  .km-footer-col-1 {
-      border-right: 2px solid #9c8477;
-      margin-bottom: 0 !important;
-  }
-  
-  .km-footer-col-1 h2 {
-     padding-bottom: 0;
-  }
-  
-  /***** referral program *****/
-  
-  .km-footer-col-2 {
-      
-  }
-  
   /* blog form */
   
   form#hsForm_757a36fb-ee8e-4d27-a531-040172cc2965 .hs_email input {
@@ -401,7 +290,6 @@
       padding-left: 1em !important;
   }
   
-  
   /*****************************************/
   /*             BUTTONS                   */
   /*****************************************/
@@ -443,9 +331,6 @@
       padding-left: 9px;
       font-size: .9rem;
   }
-  
-  
-  
   
   /*****************************************/
   /*               FORMS                   */
