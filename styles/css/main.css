@@ -2,7 +2,6 @@
    SUMMARY
 /* ============================================================
 
-/
 
 */
 /* ============================================================
@@ -1630,8 +1629,10 @@ html .footer-container .dark-footer .km-sub-footer a {
   .km-btn .km-btn-block {
     display: block; }
 
-/* Button Overrides for current website 
-** These will eventually be removed over time as old buttons are deleted and new button classes are added */
+/** 
+ * Button Overrides for current website 
+ * These will eventually be removed over time as old buttons are deleted and new button classes are added 
+ */
 /* ============================================================
   FORMS
 /* ============================================================ */

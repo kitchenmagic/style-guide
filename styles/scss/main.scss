@@ -1,12 +1,12 @@
-// Variables & Mixins
+// Variables, Mixins & Functions
 @import 'styles/scss/helpers/_variables.scss';
 @import 'styles/scss/helpers/_mixins.scss';
+@import 'styles/scss/helpers/_functions.scss';
 
 /* ============================================================
    SUMMARY
 /* ============================================================
 
-/
 
 */
 // Base
@@ -29,3 +29,4 @@
 
 // Utilities 
 @import '_utilities.scss';
+
