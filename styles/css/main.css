@@ -355,7 +355,7 @@ body {
  */
 h1, h2, h3, h4, h5 {
   font-family: "DomaineDisplayNarrowBold", helvetica, serif;
-  color: #222222;
+  color: font(text-color, base);
   letter-spacing: 1px !important;
   margin: 1.414rem 0 0.5rem; }
 
@@ -394,10 +394,10 @@ p {
   max-width: 40rem; }
 
 strong {
-  font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+  font-family: font(bold); }
 
 em {
-  font-family: "ProximaNova-RegularIt", helvetica, sans-serif; }
+  font-family: font(italic); }
 
 a {
   color: #F01834;
@@ -441,7 +441,7 @@ hr {
 
 /**
  * Old Menu
- * Needs to be redone.
+ * !!! Needs to be redone.
  */
 .hs-menu-wrapper.flyouts ul li > a {
   background-color: #EEE;
@@ -2030,7 +2030,6 @@ html .row-fluid .last-cta {
   border-radius: 0;
   border: none;
   font-family: "ProximaNova-Regular", helvetica, sans-serif;
-  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 300ms ease;
@@ -2038,9 +2037,6 @@ html .row-fluid .last-cta {
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease; }
-  @media (max-width: 575px) {
-    .km-btn {
-      display: none; } }
   .km-btn:hover {
     cursor: pointer; }
   .km-btn.km-btn--primary {
@@ -2062,9 +2058,6 @@ html .row-fluid .last-cta {
       background-color: #F01834;
       text-decoration: none;
       border: 1px solid #F01834; }
-    .km-btn.km-btn--secondary:active {
-      background-color: #4a4a4a;
-      border-color: #4a4a4a; }
   .km-btn.km-btn--ghost {
     background-color: transparent;
     border: 1px solid #222222;
@@ -2075,8 +2068,8 @@ html .row-fluid .last-cta {
       color: #fff;
       text-decoration: none; }
     .km-btn.km-btn--ghost:active {
-      background-color: #4a4a4a;
-      border: 1px solid #4a4a4a;
+      background-color: #222222;
+      border: 1px solid #222222;
       color: #fff; }
   .km-btn .km-btn--large {
     padding: 1rem 3rem; }
@@ -2278,7 +2271,7 @@ ol.km-ol {
       text-align: center;
       line-height: 50px;
       z-index: 50;
-      font-family: perpetua; }
+      font-family: "ProximaNova-Regular", helvetica, sans-serif; }
     ol.km-ol li::after {
       content: "";
       border-left: 1px solid #4e4e4e;

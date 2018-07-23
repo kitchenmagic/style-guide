@@ -10,9 +10,9 @@
 
 */
 // Base
-@import 'base/reset.scss';
-@import 'base/global.scss';
-@import 'base/layout.scss';
+@import 'base/_reset.scss';
+@import 'base/_global.scss';
+@import 'base/_layout.scss';
 @import 'base/_typography.scss';
 
 // Layout
@@ -23,7 +23,7 @@
 @import 'pages/homepage.scss';
 
 // Components
-@import 'components/buttons.scss';
+@import 'components/_buttons.scss';
 @import 'components/forms.scss';
 @import 'components/lists.scss';
 

@@ -44,7 +44,7 @@
  */
 h1, h2, h3, h4, h5 {
   font-family: "DomaineDisplayNarrowBold", helvetica, serif;
-  color: #222222;
+  color: font(text-color, base);
   letter-spacing: 1px !important;
   margin: 1.414rem 0 0.5rem; }
 
@@ -83,10 +83,10 @@ p {
   max-width: 40rem; }
 
 strong {
-  font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+  font-family: font(bold); }
 
 em {
-  font-family: "ProximaNova-RegularIt", helvetica, sans-serif; }
+  font-family: font(italic); }
 
 a {
   color: #F01834;

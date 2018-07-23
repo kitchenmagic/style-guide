@@ -11,8 +11,13 @@
 // Color Map Retriever 
 // retrieves color from $km-colors map ie. color(primary, base)
 @function color($color-name, $color-variant: null) {
+$color-map: map-get($km-colors, $color-name);
+
+    @if $color-map == null {
+        @error "'#{$color-map}' is not a valid color choice!";
+    }
     //color variant is optional
-    @if ($color-variant != null) {
+    @else if ($color-variant != null) {
         @return map-get(map-get($km-colors, $color-name), $color-variant);
     }
     @else {
@@ -22,7 +27,7 @@
 
 // Font map
 // retrieves font familiy from $km-fonts map ie. font(header)
-@function font($font) {
+@function family($font) {
 $font-map: map-get($km-fonts, $font);
 
     @if $font-map == null {

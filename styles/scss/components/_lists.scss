@@ -2,7 +2,6 @@
    LISTS
 /* ============================================================ */
 
-
 /**
  * Unordered list
  */
@@ -115,7 +114,7 @@ ol.km-ol {
       text-align: center;
       line-height: 50px;
       z-index: 50;
-      font-family: perpetua;
+      font-family: family(body);
     }
 
     &::after {

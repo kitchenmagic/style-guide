@@ -26,14 +26,10 @@
     border-radius: 0;
     border: none;
     // font styling
-    font-family: $font-family-text;
-    font-weight: bold;
+    font-family: family(body);
     text-decoration: none;
     text-transform: uppercase;
     @include transition(all 300ms ease);
-    @include mq('xs') {
-        display: none;
-    }
 
     &:hover {
         cursor: pointer;
@@ -41,55 +37,55 @@
 
     // button colors
     &.km-btn--primary {
-        background-color: $red;
+        background-color: color(primary, base);
         color: #fff;
-        border: 1px solid $red;
+        border: 1px solid color(primary, base);
 
         &:hover {
-            background-color: $text-color;
+            background-color: color(text, base);
             text-decoration: none;
-            border: 1px solid $text-color;
+            border: 1px solid color(text, base);
         }
 
         &:active {
-            background-color: $dark-red;
-            border-color: $dark-red;
+            background-color: color(primary, dark);
+            border-color: color(primary, dark);
         }
     }
 
     &.km-btn--secondary {
-        background-color: $text-color;
+        background-color: color(text, base);
         color: #fff;
-        border: 1px solid $text-color;
+        border: 1px solid color(text, base);
 
         &:hover {
-            background-color: $red;
+            background-color: color(primary, base);
             text-decoration: none;
-            border: 1px solid $red;
+            border: 1px solid color(primary, base);
         }
 
         &:active {
-            background-color: $text-color-light;
-            border-color: $text-color-light;
+            // background-color: color(text, base);
+            // border-color: color(text, base);
         }
 
     }
 
     &.km-btn--ghost {
         background-color: transparent;
-        border: 1px solid $text-color;
-        color: $text-color;
+        border: 1px solid color(text, base);
+        color: color(text, base);
 
         &:hover {
-            background-color: $text-color;
-            border: 1px solid $text-color;
+            background-color: color(text, base);
+            border: 1px solid color(text, base);
             color: #fff;
             text-decoration: none;
         }
 
         &:active {
-            background-color: $text-color-light;
-            border: 1px solid $text-color-light;
+            background-color: color(text, base);
+            border: 1px solid color(text, base);
             color: #fff;
         }
     }

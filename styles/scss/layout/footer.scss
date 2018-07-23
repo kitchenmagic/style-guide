@@ -18,7 +18,7 @@
     a:hover {
         border-color: #fff;
         border-bottom: none;
-        color: $red;
+        color: color(primary, base);
     }
 
     span i {
@@ -35,7 +35,7 @@
  .footer-container-wrapper .row-fluid [class*="span"], .footer-container .row-fluid [class*="span"] { min-height: 0; }
  .footer-container-wrapper .km-footer>.row-fluid-wrapper .widget-span { padding: 0; }
  .footer-container-wrapper .km-footer>.row-fluid-wrapper .dark-footer .widget-span { margin-bottom: 0;padding: 0; }
- html .footer-container-wrapper .km-footer>.row-fluid-wrapper .dark-footer { margin-bottom: 0;padding: 15px 20px 0;background: $text-color;font-size: 0.875rem;font-family: $font-family-text; }
+ html .footer-container-wrapper .km-footer>.row-fluid-wrapper .dark-footer { margin-bottom: 0;padding: 15px 20px 0;background: color(text, base);font-size: 0.875rem;font-family: family(body); }
  html .footer-container-wrapper .km-footer>.row-fluid-wrapper .dark-footer p { font-size: 0.875rem; }
  .dark-footer strong { font-weight: 600; }
  .dark-footer .top-left h2 { padding-bottom:0; }
@@ -48,8 +48,8 @@
  .dark-footer form#hsForm_757a36fb-ee8e-4d27-a531-040172cc2965 .hs_email input { width: 100%;border: none;height: auto; }
  .dark-footer form ul.hs-error-msgs { display: block !important;color: white;list-style-type: none; margin: 7px 0 0 0; padding: 0; }
  .dark-footer form ul.hs-error-msgs label { color: white; font-size: .75rem; }
- .dark-footer form input[type="submit"] { background: $red;border-radius: 0;border: 2px solid $red;padding:11px 28px;font-family: $font-family-text;font-size: 1rem; color: #fff;position: relative; top: 14px; }
- .dark-footer form input[type="submit"]:hover { background:$dark-red;border: 2px solid $dark-red; cursor: pointer; }
+ .dark-footer form input[type="submit"] { background: color(primary, base);border-radius: 0;border: 2px solid color(primary, base);padding:11px 28px;font-family: family(body);font-size: 1rem; color: #fff;position: relative; top: 14px; }
+ .dark-footer form input[type="submit"]:hover { background:color(primary, dark);border: 2px solid color(primary, dark); cursor: pointer; }
  .dark-footer form input[type="submit"]:focus { outline: none; }
  .dark-footer input::-webkit-input-placeholder { color: #555555;font-style: italic; }
  .dark-footer input::-moz-placeholder { color: #555555;font-style: italic; }
@@ -64,12 +64,12 @@
  .dark-footer ul { font-size: 0.875rem; }
  .dark-footer .footer-solutions-menu { border-right: 1px solid rgba(255,255,255, .7); }
  .dark-footer .footer-solutions-menu ul { -webkit-columns: 150px 2;-moz-columns: 150px 2;columns: 150px 2; }
- .dark-footer .hs-menu-wrapper.flyouts ul li>a { padding: 2px 0; background: $text-color; color: #fff; line-height: 1.5; @include transition(all 300ms ease); }
- .dark-footer .hs-menu-wrapper.flyouts ul li>a:hover {color: $red; text-decoration: none; }
+ .dark-footer .hs-menu-wrapper.flyouts ul li>a { padding: 2px 0; background: color(text, base); color: #fff; line-height: 1.5; @include transition(all 300ms ease); }
+ .dark-footer .hs-menu-wrapper.flyouts ul li>a:hover {color: color(primary, base); text-decoration: none; }
  .footer-social { padding: 12px 0 20px; }
  .footer-social a { margin-right: 10px; }
  .footer-social a i {font-size: 1rem;}
- .footer-social a:hover {color: $red; text-decoration: none;}
+ .footer-social a:hover {color: color(primary, base); text-decoration: none;}
  html .footer-container .dark-footer .km-sub-footer { border-top: 1px solid rgba(255,255,255, .7);padding: 12px 0 !important; }
  html .footer-container .dark-footer .km-sub-footer a { font-size: 0.75rem; }
  .dark-footer .mobile-flag { display: none; }
