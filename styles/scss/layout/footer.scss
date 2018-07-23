@@ -74,3 +74,11 @@
  html .footer-container .dark-footer .km-sub-footer a { font-size: 0.75rem; }
  .dark-footer .mobile-flag { display: none; }
  .dark-footer .mobile-flag img { width: 100px; }
+
+/**
+ * Style the bottom left menu of the footer
+ */
+ .km-menu-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

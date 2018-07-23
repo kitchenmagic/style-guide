@@ -1,6 +1,43 @@
+@import 'styles/scss/helpers/_functions.scss';
+
 // ============================================================
 //  COLORS
 // ============================================================ 
+
+$km-colors: (
+
+    // base colors
+    primary: (
+        'base':        #F01834,
+        'light':       #FF999F,
+        'dark':        #C30019,
+    ),
+
+    // grays
+    gray: (
+        'base':        #A3A5A8,
+        'light':       #E1E5E4,
+        'lighter':     #EEF3F5,
+        'lightest':    #F9FAFC,
+    ),
+    
+    // typography
+    text: (
+        'base':        #222222,
+        'light':       #4a4a4a,
+    ), 
+
+    // ui elements
+    border-color:     #E1E5E4,
+    shadow:           #D9DFF0,
+    background:       #F9FAFC,
+
+    // forms
+    warning:          #F35B62,
+    success:          #1ABE6F,
+);
+
+// !! REMOVE THESE AFTER ADDING IN NEW MAPS
 $dark-red:         #C30019;
 $red:              #F01834;
 $light-red:        #FF999F;
@@ -16,11 +53,20 @@ $lightest-gray:    #F9FAFC;
 // ============================================================ 
 $base-font-size: 16px;
 
+$km-fonts: (
+  'header': ('DomaineDisplayNarrowBold', helvetica, serif),
+  'body':   ('ProximaNova-Regular', helvetica, sans-serif),
+  'bold':   ('ProximaNova-Bold', helvetica, sans-serif),
+  'italic': ('ProximaNova-RegularIt', helvetica, sans-serif),
+);
+
+// !! REMOVE THESE AFTER ADDING IN NEW MAPS
 $font-family-header:      'DomaineDisplayNarrowBold', helvetica, serif;
 $font-family-text:        'ProximaNova-Regular', helvetica, sans-serif;
 $font-family-text-bold:   'ProximaNova-Bold', helvetica, sans-serif;
 $font-family-text-i:      'ProximaNova-RegularIt', helvetica, sans-serif;
 
+// !! REMOVE THESE AFTER ADDING IN NEW MAPS
 $text-color:       #222222;
 $text-color-light: #4a4a4a;
 
@@ -34,13 +80,15 @@ $breakpoints: (
     'xs': 575px,
     'sm': 576px,
     'md': 768px,
-    'lg': 992px
+    'lg': 992px,
+    'xlg': 1200px,
 );
 
 
 // ============================================================
 //  UI ELEMENTS
 // ============================================================ 
+// !! REMOVE THESE AFTER ADDING IN NEW MAPS
 $border-color:     #E1E5E4;
 $shadow:           #D9DFF0;
 
@@ -48,6 +96,7 @@ $shadow:           #D9DFF0;
 // ============================================================
 //  FORMS
 // ============================================================ 
+// !! REMOVE THESE AFTER ADDING IN NEW MAPS
 $warning:          #F35B62;
 
 

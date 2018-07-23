@@ -30,8 +30,7 @@
     width: 100%;
     box-sizing: border-box;
   }
-  
-  /* line 23, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper > li > a, .hs-menu-flow-horizontal.flyouts > ul li ul.hs-menu-children-wrapper li a {
     -moz-transition: max-height 0.5s ease-in-out, max-width 0.5s ease-in-out, padding 0.4s ease-in-out, visibility 0.5s linear 0s;
     -o-transition: max-height 0.5s ease-in-out, max-width 0.5s ease-in-out, padding 0.4s ease-in-out, visibility 0.5s linear 0s;
@@ -41,7 +40,6 @@
     visibility: hidden;
   }
   
-  /* line 28, ../scss/module/_navigation.scss */
   .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper > li > a {
     max-width: 0;
     border-left: none;
@@ -50,7 +48,6 @@
     padding-right: 0;
   }
   
-  /* line 37, ../scss/module/_navigation.scss */
   .hs-menu-flow-horizontal.flyouts > ul li ul.hs-menu-children-wrapper li a {
     max-height: 0;
     border-top: none;
@@ -59,52 +56,51 @@
     padding-bottom: 0;
   }
   
-  /* line 61, ../scss/module/_navigation.scss */
   .hs-menu-wrapper.flyouts ul {
     list-style: none;
     padding: 0 !important;
     margin: 0 !important;
   }
-  /* line 66, ../scss/module/_navigation.scss */
+
   .hs-menu-wrapper.flyouts ul li {
     position: relative;
     padding: 0 !important;
     margin: 0 !important;
   }
   
-  /* line 92, ../scss/module/_navigation.scss */
+ 
   .hs-menu-flow-horizontal {
     position: relative;
     z-index: 100;
   }
-  /* line 100, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-horizontal.flyouts > ul li {
     float: left;
   }
-  /* line 103, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-horizontal.flyouts > ul li ul.hs-menu-children-wrapper {
     width: 100%;
     position: absolute;
     z-index: 3;
     display: inline-table;
   }
-  /* line 109, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-horizontal.flyouts > ul li ul.hs-menu-children-wrapper li {
     width: 100%;
   }
-  /* line 118, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-horizontal.flyouts > ul li ul.hs-menu-children-wrapper li.hs-item-has-children ul.hs-menu-children-wrapper {
     top: 0;
     left: 100%;
   }
-  /* line 123, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-horizontal.flyouts > ul li ul.hs-menu-children-wrapper li.hs-item-has-children > a:after {
     font-family: "FontAwesome";
     content: "\f105";
     position: absolute;
     padding-left: 1rem;
   }
-  /* line 131, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-horizontal.flyouts > ul li.hs-item-has-children {
                     /*
                     //Horizontal Items Hover States
@@ -117,7 +113,7 @@
                         }
                     }*/
   }
-  /* line 143, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-horizontal.flyouts > ul li.hs-item-has-children > a:after {
     font-family: "FontAwesome";
     content: "\f107";
@@ -125,11 +121,10 @@
     padding-left: 1rem;
   }
   
-  /* line 159, ../scss/module/_navigation.scss */
   .hs-menu-flow-vertical > ul {
     float: left;
   }
-  /* line 175, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-vertical.flyouts li.hs-item-has-children {
     position: relative;
     /*
@@ -142,14 +137,14 @@
     }
     */
   }
-  /* line 179, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-vertical.flyouts li.hs-item-has-children > a:after {
     font-family: "FontAwesome";
     content: "\f105";
     position: absolute;
     padding-left: 1rem;
   }
-  /* line 184, ../scss/module/_navigation.scss */
+
   .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper {
     position: absolute;
     z-index: 3;
@@ -157,12 +152,11 @@
     left: 100%;
   }
   
-  /* line 219, ../scss/module/_navigation.scss */
   .hs-menu-children-wrapper:hover ~ a {
     background: url("http://landing.kitchenmagic.com/hubfs/graphics/textures/img-noise-100x100_2.png") #947565;
   }
   
-  /* line 223, ../scss/module/_navigation.scss */
+ 
   .km-nav-primary.km-navigation {
     width: 100%;
     background-color: #85695b;
@@ -173,23 +167,23 @@
     -webkit-box-shadow: 0 0px 3px rgba(0, 0, 0, 0.6), inset 0 -1px 2px #483932, inset 0 0px 1px #f2efed;
     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.6), inset 0 -1px 2px #483932, inset 0 0px 1px #f2efed;
   }
-  /* line 231, ../scss/module/_navigation.scss */
+ 
   .km-nav-primary.km-navigation > span {
     position: relative;
   }
-  /* line 235, ../scss/module/_navigation.scss */
+
   .km-nav-primary.km-navigation .hs-menu-wrapper {
     max-width: 71.25rem;
     position: static;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 243, ../scss/module/_navigation.scss */
+ 
   .km-nav-primary.km-navigation .hs-menu-wrapper ul > li {
     width: 20% !important;
     position: static;
   }
-  /* line 247, ../scss/module/_navigation.scss */
+ 
   .km-nav-primary.km-navigation .hs-menu-wrapper ul > li a {
     padding: 0 1em;
     margin: 0;
@@ -203,11 +197,11 @@
     transition: background 0.4s ease-in-out;
     letter-spacing: 1.2px;
   }
-  /* line 262, ../scss/module/_navigation.scss */
+
   .km-nav-primary.km-navigation .hs-menu-wrapper > ul > li > a {
     text-shadow: 0 -1px #0c0908;
   }
-  /* line 265, ../scss/module/_navigation.scss */
+
   .km-nav-primary.km-navigation .hs-menu-wrapper > ul > li > a:hover,
   .km-nav-primary.km-navigation .hs-menu-wrapper > ul > li > a ul:hover + a {
     background: url("http://landing.kitchenmagic.com/hubfs/graphics/textures/img-noise-100x100_2.png") #947565;
@@ -215,7 +209,7 @@
     -webkit-box-shadow: inset 0 -3px #FFFFFF;
     box-shadow: inset 0 -3px #FFFFFF;
   }
-  /* line 276, ../scss/module/_navigation.scss */
+
   .km-nav-primary.km-navigation .hs-menu-wrapper .hs-item-has-children > ul {
     -moz-transition: max-height 1s ease-in-out, visibility 1s linear 0s;
     -o-transition: max-height 1s ease-in-out, visibility 1s linear 0s;
@@ -237,11 +231,11 @@
     top: 60px;
     visibility: hidden;
   }
-  /* line 290, ../scss/module/_navigation.scss */
+
   .km-nav-primary.km-navigation .hs-menu-wrapper .hs-item-has-children > ul > li {
     display: inline-block;
   }
-  /* line 293, ../scss/module/_navigation.scss */
+ 
   .km-nav-primary.km-navigation .hs-menu-wrapper .hs-item-has-children > ul > li > a {
     transition: color 0.4s ease-in-out;
     font-size: 1em;
@@ -259,20 +253,20 @@
                                     right: 0;
                             }*/
   }
-  /* line 311, ../scss/module/_navigation.scss */
+
   .km-nav-primary.km-navigation .hs-menu-wrapper .hs-item-has-children > ul > li > a:hover {
     background: #618edc;
   }
-  /* line 321, ../scss/module/_navigation.scss */
+
   .km-nav-primary.km-navigation .hs-menu-wrapper .hs-item-has-children > a:hover + ul, .km-nav-primary.km-navigation .hs-menu-wrapper .hs-item-has-children > ul:hover {
     z-index: 10;
     visibility: visible;
     max-height: 300px;
   }
 
-
-
-  /* navigation */
+/**
+ * Navigation
+ */
 .new-kitchen-header .header-top { background: #F4F4F4;color: #4D4D4D; }
 .new-kitchen-header .header-bottom { background: white; border-bottom: 1px solid $border-color; font-family: $font-family-text; }
 .km-page-full-width .off-canvas-wrap { overflow: visible; }
@@ -310,6 +304,7 @@
 
 .new-kitchen-header .hs-menu-wrapper.hs-menu-flow-horizontal > ul { text-align: left;display: inline-block; }
 .new-kitchen-header .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a { max-width:100%;text-transform: uppercase;color: $text-color;font-size:16px;padding: 0.4rem 1.7rem; background: #fff; border-bottom: none; font-size: 0.9375rem; letter-spacing: .47px;   }
+.new-kitchen-header .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a:hover {text-decoration: none;}
 .new-kitchen-header .hs-menu-wrapper.hs-menu-flow-horizontal > ul li:nth-last-child(1) a { padding-right:0; }
 .new-kitchen-header .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children > a:after { content:'\f107';font-family: fontawesome;padding-left: 6px; position: static;}
 .new-kitchen-header .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul { padding-top: 15px;width: 250px;display: block;overflow:hidden;height:0;-webkit-transition: all .3s ease-in-out; -moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
