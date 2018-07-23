@@ -142,3 +142,25 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
   border: 3px solid color(primary, dark);
   color: #fff;
 }
+
+
+// gallery popup
+.gallery-popup-btn {
+    position: fixed;
+    bottom: 0;
+    left: 3vh;
+    z-index: 9999;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+}
+
+.gallery-popup-btn:focus {
+    outline: none;
+}
+
+/* form buttons */
+.km-orange-submit {
+    background-color: #f98e2b !important;
+    border-color: #e37106 !important;
+    width: 100%;
+    margin-top: 4.8em !important;
+}

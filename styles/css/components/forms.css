@@ -103,3 +103,34 @@ div.hs-form-field label {
 ul.hs-error-msgs li label {
   color: #F35B62;
   font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+
+/**** register warranty ******/
+form#hsForm_91b32f48-8b59-4b22-b8d2-a6dcd84ad271 {
+  background: #fff;
+  border: none; }
+
+/** all tier 3 lead nurturing forms **/
+form#hsForm_5272d80c-70a0-4342-b97e-283e5eac1b4d, form#hsForm_b9180cb5-6d33-4207-9f3e-6df5dd2f76ae, form#hsForm_be98610c-79ad-4add-b2dc-752eb24d353b, form#hsForm_ab652419-eced-4162-9c45-73d3c442d38d, form#hsForm_681556be-bff4-4dd6-bfbf-0592418d0692, form#hsForm_81abae39-7ecb-422c-a0da-0eb928df681b {
+  background: none;
+  border: none;
+  max-width: 532px; }
+
+/* gallery modal estimate popup */
+form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 label {
+  display: none; }
+
+form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 select, form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 input {
+  width: 100%; }
+
+form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 input.hs-button {
+  width: 90%; }
+
+form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
+  border: 1px solid #F35B62;
+  margin: 0 0 1rem 0; }
+
+.form-fine-print {
+  max-width: 500px;
+  font-size: 0.625rem;
+  display: block;
+  margin: 0 auto; }
