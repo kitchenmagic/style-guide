@@ -201,29 +201,6 @@
   // END OF REPSONSIVE SECTION 
 
   
-  /***** sub footer *****/
-  
-  .km-sub-footer {
-      padding-top: 7px !important;
-  }
-  
-  .km-sub-footer p {
-      font-size: .75em;
-      color: #8d7165;
-  }
-  
-  .km-sub-footer a {
-      color: #8d7165;
-      font-size: .75em;
-  }
-  
-  .km-icon-divider {
-      font-size: 4px !important;
-      padding: 0 6px 0 12px;
-      color: #8d7165;
-      vertical-align: middle;
-  }
-  
   /****** accordion (mobile-only) ******/
   
   #accordion > .accordion-toggle {
@@ -251,48 +228,7 @@
       padding-left: 1em !important;
   }
   
-  /*****************************************/
-  /*             BUTTONS                   */
-  /*****************************************/
-  
-  .km-button:focus {
-      outline: none;
-  }
-  
-  a.km-btn-clear, button.km-btn-clear, .km-btn-clear {
-      background: transparent;
-      border: 3px solid #fff;
-      border-radius: 3px;
-      color: #fff;
-  }
-  
-  a.km-btn-clear:hover, button.km-btn-clear:hover, .km-btn-clear:hover {
-      background: rgba(0,0,0,.3);
-        border: 3px solid #fff;
-  }
-  
-  a.km-btn-clear-green, button.km-btn-clear-green, .km-btn-clear-green {
-    background: transparent;
-    border: 3px solid #799805;
-    border-radius: 3px;
-    color: #799805;
-  }
-  
-  a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green:hover {
-    background: rgba(121,152,5,.1);
-    border: 3px solid #799805;
-    color: #799805;
-  }
-  
-  /** icons **/
-  
-  .arrow-right::after {
-      content: "\f054";
-      font-family: fontawesome;
-      padding-left: 9px;
-      font-size: .9rem;
-  }
-  
+
   /*****************************************/
   /*               FORMS                   */
   /*****************************************/

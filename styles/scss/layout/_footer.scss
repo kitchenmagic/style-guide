@@ -19,8 +19,8 @@
     }
 
     span i {
-        font-size: .5rem;
-        padding: 0 5px 0 9px;
+        font-size: px-to-rem(4px);
+        padding: 0 5px;
     }
 
     // margin fix for Service Areas
@@ -78,4 +78,21 @@
  .km-menu-title {
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+/**
+ * sub-footer
+ */
+.km-sub-footer {
+    padding-top: 7px !important;
+
+    p, a {
+        font-size: px-to-rem(12px);
+        color: #fff;
+    }
+}
+
+// divides privacy policy and sitemap on bottom of footer
+i.km-icon-divider {
+    vertical-align: middle;
 }

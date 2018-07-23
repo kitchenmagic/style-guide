@@ -109,5 +109,36 @@
 
 /** 
  * Button Overrides for current website 
- * These will eventually be removed over time as old buttons are deleted and new button classes are added 
+ * !!! These will eventually be removed over time as old buttons are deleted and new button classes are added 
  */
+
+ .km-button:focus {
+    outline: none;
+}
+
+a.km-btn-clear, button.km-btn-clear, .km-btn-clear {
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+}
+
+a.km-btn-clear:hover, button.km-btn-clear:hover, .km-btn-clear:hover {
+    background: rgba(0,0,0,.3);
+      border: 3px solid #fff;
+}
+
+// used on the homepage
+a.km-btn-clear-green, button.km-btn-clear-green, .km-btn-clear-green {
+  background: transparent;
+  border: 3px solid color(primary, base);
+  border-radius: 3px;
+  color: color(primary, base);
+}
+
+// used on the homepage
+a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green:hover {
+  background: color(primary, dark);
+  border: 3px solid color(primary, dark);
+  color: #fff;
+}

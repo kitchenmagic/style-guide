@@ -1357,8 +1357,8 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
     border-bottom: none;
     color: #F01834; }
   .dark-footer span i {
-    font-size: .5rem;
-    padding: 0 5px 0 9px; }
+    font-size: 0.25rem;
+    padding: 0 5px; }
   .dark-footer .hs-menu-flow-vertical {
     margin-top: 7px; }
 
@@ -1534,6 +1534,18 @@ html .footer-container .dark-footer .km-sub-footer a {
 .km-menu-title {
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+/**
+ * sub-footer
+ */
+.km-sub-footer {
+  padding-top: 7px !important; }
+  .km-sub-footer p, .km-sub-footer a {
+    font-size: 0.75rem;
+    color: #fff; }
+
+i.km-icon-divider {
+  vertical-align: middle; }
 
 /* ============================================================
    HOMEPAGE
@@ -2081,8 +2093,32 @@ html .row-fluid .last-cta {
 
 /** 
  * Button Overrides for current website 
- * These will eventually be removed over time as old buttons are deleted and new button classes are added 
+ * !!! These will eventually be removed over time as old buttons are deleted and new button classes are added 
  */
+.km-button:focus {
+  outline: none; }
+
+a.km-btn-clear, button.km-btn-clear, .km-btn-clear {
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  color: #fff; }
+
+a.km-btn-clear:hover, button.km-btn-clear:hover, .km-btn-clear:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border: 3px solid #fff; }
+
+a.km-btn-clear-green, button.km-btn-clear-green, .km-btn-clear-green {
+  background: transparent;
+  border: 3px solid #F01834;
+  border-radius: 3px;
+  color: #F01834; }
+
+a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green:hover {
+  background: #C30019;
+  border: 3px solid #C30019;
+  color: #fff; }
+
 /* ============================================================
   FORMS
 /* ============================================================ */
