@@ -77,6 +77,12 @@ $sm: map-get($breakpoints, 'sm');
 	}
 }
 
+@mixin box-shadow($value) {
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	box-shadow: $value;
+}
+
 
 // OLD VARIABLES - NEED TO BE SORTED AND REMOVED 
 // Shadows
@@ -93,9 +99,5 @@ $sm: map-get($breakpoints, 'sm');
 
 
 
-// @mixin box-shadow($value) {
-//   -webkit-box-shadow: $value;
-//   -moz-box-shadow: $value;
-//   box-shadow: $value;
-// }
+
 

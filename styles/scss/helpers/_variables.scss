@@ -29,13 +29,18 @@ $km-colors: (
 
     // ui elements
     border:           #E1E5E4,
-    shadow:           #D9DFF0,
+    shadow:           #E1E5E4,
     background:       #F9FAFC,
 
     // forms
     warning:          #F35B62,
     success:          #1ABE6F,
 );
+
+$shadow-sm:           0 2px 10px 0 #E1E5E4;
+$shadow-md:           0 2px 20px 0 #E1E5E4;
+$shadow-lg:           0 2px 30px 0 #E1E5E4;
+
 
 // !! REMOVE THESE AFTER ADDING IN NEW MAPS
 $dark-red:         #C30019;
@@ -46,6 +51,8 @@ $gray:             #A3A5A8;
 $light-gray:       #E1E5E4;
 $lighter-gray:     #EEF3F5;
 $lightest-gray:    #F9FAFC;
+
+
 
 
 // ============================================================

@@ -51,42 +51,6 @@
           }
           
           /** Back to Top **/
-       
-          
-          a.km-mobile-to-top {
-          position: fixed !important;
-          bottom: 8px;
-          padding: 10px 5px 10px 1px;
-          right: 8px;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          border-radius: 0;
-          border-style: solid;
-          border-width: 1px;
-          cursor: pointer;
-          font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
-          font-weight: normal;
-          line-height: normal;
-          text-align: center;
-          text-decoration: none;
-          background-color: #f98e2b;
-          border-color: #e37106;
-          border-radius: 2px;
-          -moz-transition: background-color 1s;
-          -o-transition: background-color 1s;
-          -webkit-transition: background-color 1s;
-          transition: background-color 1s;
-          background: 0;
-          border: solid 1px #f98e2b;
-          margin-top: 15px;
-          color: #f98e2b;
-          z-index: 9999;
-          background: #fff;
-          }
-        
-            a.km-mobile-to-top > i {
-             color: #f98e2b;
-            }
           
           .full-width-mobile {
               width: 100% !important;
@@ -198,29 +162,8 @@
     }
   }
 
-  // END OF REPSONSIVE SECTION 
+  // END OF REPSONSIVE SECTION !!!!!!!!!!!!!!!!!!!!!!!
 
-  
-  /****** accordion (mobile-only) ******/
-  
-  #accordion > .accordion-toggle {
-      border-bottom: 2px solid #9c8477;
-      margin-top: 13px;
-  }
-  
-  #accordion > .accordion-toggle > i {
-      font-size: 17px;
-      float: right;
-      vertical-align: bottom;
-      padding-top: 5px;
-  }
-  
-  .accordion-content {
-      background: #ad988c;
-      padding-left: 21px;
-      padding: 6px 0 10px 21px;
-      margin-bottom: 11px;
-  }
   
   /******* back to top ******/
   

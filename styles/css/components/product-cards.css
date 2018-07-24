@@ -1,10 +1,10 @@
-/**
-* This file will live on Hubspot Modules only.
-* DO NOT compile to the main.css
-**/
 /* ============================================================
    PRODUCT CARDS
 /* ============================================================ */
+/**
+* This file will live on Hubspot Modules only.
+* !!! REMOVE from main.scss 
+**/
 .product-card {
   padding: 18px 10px 20px;
   border: 1px solid #E1E5E4;
