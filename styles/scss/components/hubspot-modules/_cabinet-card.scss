@@ -1,0 +1,23 @@
+/* ============================================================
+   CABINET CARDS
+/* ============================================================ */
+
+/**
+* This file will live on Hubspot Modules only.
+* !!! REMOVE from main.scss 
+* example: https://www.kitchenmagic.com/kitchen-cabinets/doors/wood
+**/
+
+.cabinet-card {
+    width: 100%;
+
+    img {
+        @include box-shadow($shadow-md);
+    }
+    .product-title {
+        font-size: px-to-rem(18px);
+        text-align: center;
+        margin-top: px-to-rem(12px);
+        padding-bottom: px-to-rem(2px);
+    }
+}
