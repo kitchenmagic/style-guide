@@ -436,3 +436,12 @@ html .row-fluid .new-mobile-contact form input.error { margin-bottom: 25px; }
 
 html #addsearch-results .addsearch-result-item-sub { font-size: 16px; }
 html #addsearch-results .addsearch-result-item-sub h1 a { font-size: 1.5em; color: color(text, base); }
+
+
+// !!! THIS NEEDS TO BE REMOVE - OLD CODE
+// uses a media query we are not using in the new version of the site
+@media (min-width: 1025px) {
+  .new-mobile, html .row-fluid .new-mobile-contact, html .row-fluid .new-mobile-navigation, .new-mobile-group {
+    display: none !important;
+  }
+}
