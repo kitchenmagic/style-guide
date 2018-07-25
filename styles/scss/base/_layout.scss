@@ -22,3 +22,11 @@
 .km-row-full {
   max-width: 100% !important;
 }
+
+// used for mobile padding 
+.km-mobile-padding-horizontal {
+  @include respond-below ('md') {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

@@ -192,27 +192,6 @@
   
   /* Module Values */
   
-  .hide-border {
-      border: none!important;
-  }
-  
-  .product-card.hide-border:hover {
-      box-shadow: none;
-  }
-  
-  .product-card.hide-border img {
-      -webkit-box-shadow: 0 10px 6px -6px #777;
-      -moz-box-shadow: 0 10px 6px -6px #777;
-      box-shadow: 0 10px 6px -6px #777;
-      transition: all .3s ease-out;
-  }
-  
-  .product-card.hide-border img:hover {
-      box-shadow: none;
-  }
-  
-  
-  
   .testimonial-card {
       background: #4268a0;
       max-width: 315px;
@@ -383,31 +362,7 @@
          -moz-box-shadow: 0 10px 6px -6px #777;
          box-shadow: 0 10px 6px -6px #777;
      }
-  
-  
   }
-  
-  /************************************ CABINET-GALLERY.CSS */
-  
-  .cabinet-card {
-      width: 100%;
-  }
-  
-  .cabinet-card img {
-      -webkit-box-shadow: 0 10px 6px -6px #777;
-      -moz-box-shadow: 0 10px 6px -6px #777;
-      box-shadow: 0 10px 6px -6px #777;
-  }
-  
-  .product-title {
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 12px;
-    padding-bottom: 2px;
-    color: #555;
-  }
-  
   
   /********** RESPONSIVE ************/
   
@@ -669,32 +624,6 @@
   .icon-box__title{
     color: #333;
     font-weight: bold;
-  }
-      
-  
-  /*****************************************/
-  /*         FORM FIXES / ADD-ONS          */
-  /*****************************************/    
-  
-  /** added icon to date field **/
-  .km-form-calender {
-      position: relative;
-      top: 1.6em;
-      left: 5.8em;
-      font-size: 19px;
-  }    
-  
-  input#appointment_date_forms_only-d404769a-b244-4245-9adf-882a6dfd6104_8278:hover {
-      cursor: pointer;
-  }
-  
-  
-  /*****************************************/
-  /*          LEAD IN POPUPS               */
-  /*****************************************/
-  
-  .leadin-preview-wrapper h4, .leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner.leadinModal-form h4 {
-      font-family: helvetica neue, helvetica, sans-serif;
   }
   
   
@@ -1869,3 +1798,21 @@
       .dark-footer .small-6 { width: 100%;text-align: center !important; }
       .dark-footer .middle-right em { padding: 20px 0 0;width: 100%; }
    }
+   
+
+
+   /* global top footer */
+
+   .top-footer-cta {
+    background-color: #F8F8F8;
+    padding: 40px 10px;
+  }
+  
+  .km-footer .km-btn-info {
+      padding: 16px 19px !important;
+      text-align: center;
+  }
+  
+  .km-footer .km-btn-info:hover {
+    color: #fff;
+  }

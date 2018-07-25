@@ -53,8 +53,6 @@ $lighter-gray:     #EEF3F5;
 $lightest-gray:    #F9FAFC;
 
 
-
-
 // ============================================================
 //  TYPOGRAPHY
 // ============================================================ 
@@ -81,14 +79,13 @@ $text-color-light: #4a4a4a;
 //  LAYOUT
 // ============================================================ 
 
-// Breakpoints
+// Map of breakpoints
 // !!! replace this with relative units
 $breakpoints: (
-    'xs': 575px,
-    'sm': 576px,
-    'md': 768px,
-    'lg': 992px,
-    'xlg': 1200px,
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
 );
 
 

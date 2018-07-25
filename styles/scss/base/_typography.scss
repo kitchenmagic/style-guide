@@ -39,7 +39,10 @@
   src: url('https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff') format('woff');
   src: url('https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff2') format('woff2');
 }
-@font-face {font-family: 'ProximaNova-Bold';src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.eot');src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.eot?#iefix') format('embedded-opentype'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.woff2') format('woff2'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.woff') format('woff'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.ttf') format('truetype');}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.eot');
+  src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.eot?#iefix') format('embedded-opentype'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.woff2') format('woff2'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.woff') format('woff'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.ttf') format('truetype');}
 @font-face {font-family: 'ProximaNova-Regular';src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.eot');src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.eot?#iefix') format('embedded-opentype'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.woff2') format('woff2'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.woff') format('woff'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.ttf') format('truetype');}
 @font-face {font-family: 'ProximaNova-RegularIt';src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.eot');src: url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.eot?#iefix') format('embedded-opentype'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.woff2') format('woff2'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.woff') format('woff'),url('https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.ttf') format('truetype');}
 
@@ -82,9 +85,13 @@
  */
 h1,h2,h3,h4,h5 {
   font-family: family(header);
-  color: font(text-color, base);
+  color: font(text, base);
   letter-spacing: 1px !important;
   margin: 1.414rem 0 0.5rem;
+
+  @include respond-below('md') {
+    font-weight: normal;
+  }
 }
 
 h1 {
@@ -139,11 +146,12 @@ em {
 
 a {
   color: color(primary, base);
-  text-decoration: none;
   @include transition(all 300ms ease);
   
   &:hover {
     border-bottom: 1px solid color(primary, base);
+    color: color(primary, base);
+    text-decoration: none;
   }
 
   &:active {

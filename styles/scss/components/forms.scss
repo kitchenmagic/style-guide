@@ -122,6 +122,22 @@ ul.hs-error-msgs li label {
 }
 
 // ============================================================
+//  FORM FIXES
+// ============================================================ */
+
+  /** added icon to date field **/
+  .km-form-calender {
+    position: relative;
+    top: 1.6em;
+    left: 5.8em;
+    font-size: 19px;
+}    
+
+input#appointment_date_forms_only-d404769a-b244-4245-9adf-882a6dfd6104_8278:hover {
+    cursor: pointer;
+}
+
+// ============================================================
 //  ONE-OFF FORMS
 // ============================================================ */
 

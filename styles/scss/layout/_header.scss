@@ -17,7 +17,6 @@
  * !!! Needs to be redone.
  */
 .hs-menu-wrapper.flyouts ul li > a {
-    background-color: #EEE;
     padding: 0.4rem 2rem 0.4rem 1rem;
     max-width: 100%;
     max-height: 100%;
@@ -267,6 +266,13 @@
 /**
  * Navigation
  */
+
+ .new-kitchen-header {
+   @include respond-below('lg') {
+     display: none !important;
+   }
+ }
+
 .new-kitchen-header .header-top { background: #F4F4F4;color: #4D4D4D; }
 .new-kitchen-header .header-bottom { background: white; border-bottom: 1px solid color(border); font-family: family(body); }
 .km-page-full-width .off-canvas-wrap { overflow: visible; }
@@ -339,12 +345,9 @@
     -moz-transform: scale(1); -ms-transform: scale(1);  -o-transform: scale(1); -webkit-transform: scale(1); transform: scale(1);
 }
 }
-@media (min-width: 1025px) {
-    .new-mobile, html .row-fluid .new-mobile-contact, html .row-fluid .new-mobile-navigation, .new-mobile-group { display: none !important; }
-}
 html body.no-scroll { height: 100vh;overflow: hidden;position: fixed; }
 
-.new-mobile { position: fixed;top:0;z-index: 100200;background: white;padding: 15px 30px;box-shadow: 0px 1px 8px rgba(0,0,0, .3);width: 100% !important;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; }
+.new-mobile { position: fixed;top:0;z-index: 100200;background: white;padding: 15px 30px; @include box-shadow($shadow-md);width: 100% !important;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; }
 .new-mobile.top { padding: 30px 30px; position: relative;}
 .new-mobile .row-fluid [class*="span"] { min-height: 0; }
 .new-mobile> .row-fluid-wrapper > .row-fluid { display: -webkit-flex; display: flex;-webkit-align-items: center; align-items: center; }
@@ -353,7 +356,7 @@ html body.no-scroll { height: 100vh;overflow: hidden;position: fixed; }
 html .new-mobile .mobile-logo-mini { display: block; }
 html .new-mobile.top .mobile-logo-mini { display: none; }
 html .new-mobile .mobile-logo-large { height:0;opacity:0;overflow: hidden;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; }
-html .new-mobile .mobile-logo-large img { width: 150px !important;margin-top: -15px;margin-bottom: -15px; }
+html .new-mobile .mobile-logo-large img { width: 107px !important; margin-top: -19px; margin-bottom: -10px; }
 html .new-mobile.top .mobile-logo-large { height:auto;opacity:1;overflow: visible; }
 .new-mobile .contact-trigger { text-align: right; }
 .new-mobile .contact-trigger .mobile-contact-btn { cursor:pointer;display: inline-block;width: 30px;height: 30px;background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/phone-grey.png) center no-repeat;background-size: contain; }
@@ -380,21 +383,21 @@ html .row-fluid .new-mobile-navigation.open { left: 0;width: 100%; }
 html .row-fluid .new-mobile-navigation.open > div { width: 90%; }
 html .row-fluid .new-mobile-navigation > div:nth-child(1) { height: 100%;overflow: auto;background: white;box-sizing: border-box;padding: 65px 0 55px;box-shadow: 5px 0px 20px rgba(0,0,0, 0);-webkit-transition: all .3s ease-in-out; -moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out; }
 html .row-fluid .new-mobile-navigation.open > div:nth-child(1) { box-shadow: 5px 0px 20px rgba(0,0,0, .2); }
-html .row-fluid .new-mobile-group.top .new-mobile-navigation > div:nth-child(1) { padding: 118px 0 55px; }
+html .row-fluid .new-mobile-group.top .new-mobile-navigation > div:nth-child(1) { padding: 97px 0 55px; }
 
 .new-mobile-navigation ul { width: 100%; }
 .new-mobile-navigation ul a { color: color(text,base);text-transform: uppercase;font-size: 18px;font-family: family(body); }
-.new-mobile-navigation .hs-menu-wrapper > ul > li { border-bottom: 2px solid #F4F4F4; }
-.new-mobile-navigation .hs-menu-wrapper.flyouts ul li > a { padding: 10px 30px;margin: 0;width: 100%;max-width: 100%;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; font-size: 0.9375rem; letter-spacing: .47px; }
+.new-mobile-navigation .hs-menu-wrapper > ul > li { border-bottom: 2px solid color(border); }
+.new-mobile-navigation .hs-menu-wrapper.flyouts ul li > a { padding: 10px 30px;margin: 0;width: 100%;max-width: 100%;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; font-size: px-to-rem(18px); letter-spacing: .47px; color: color(text, base); }
 .new-mobile-navigation .hs-menu-wrapper.flyouts ul > li:nth-child(1) > a { padding-top: 15px; }
-.new-mobile-navigation .hs-menu-wrapper.flyouts ul li > a:hover { background: #E0E0E0; }
+.new-mobile-navigation .hs-menu-wrapper.flyouts ul li > a:hover { border-color: transparent; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children { position: relative;z-index:1; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children > a { position: relative;z-index:2; }
-.new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children > a:after { content: '\f067';right: 30px; font-size: 20px;line-height: 45px;bottom: 0;font-weight: 100; }
+.new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children > a:after { content: '\f067';right: 30px; font-size: px-to-rem(19px);line-height: 45px;bottom: 0;}
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children.open > a:after { content: '\f068'; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children > ul { position: relative;z-index:1; }
-.new-mobile-navigation .hs-item-has-children.open { background: #E0E0E0; }
-.new-mobile-navigation .hs-item-has-children.open > a { background: #E0E0E0;box-shadow: 0px 2px 4px rgba(0,0,0, .1); }
+.new-mobile-navigation .hs-item-has-children.open { background: color(gray, light); }
+.new-mobile-navigation .hs-item-has-children.open > a { background: color(gray, light); @include box-shadow($shadow-sm); color: #fff; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper { position: static;display: none;box-shadow: 0px 2px 6px rgba(0,0,0, .05) inset;background: #F7F9F9; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper li { border-top: 2px solid #F4F4F4; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper li:nth-child(1) { border-top: none; }
@@ -416,20 +419,20 @@ html .row-fluid .new-mobile-contact.open { right:0;width: 100%; }
 html .row-fluid .new-mobile-contact.open > div { width: 90%;box-shadow: -5px 0px 20px rgba(0,0,0, .2); }
 html .row-fluid .new-mobile-contact .scroll-wrapper { height: 100%;overflow: auto;padding-right: 20px;-webkit-overflow-scrolling: touch; }
 .new-mobile-contact .mobile-call-btns { text-align: center; }
-.new-mobile-contact .mobile-call-btns a { display: inline-block;width: 49%;box-shadow: 1px 1px 2px rgba(0,0,0, .3);background: #EF4136 url(https://www.kitchenmagic.com/hubfs/graphics/icons/phone-white.png) 96% 50% no-repeat;background-size: 30px;color: white;margin-bottom: 25px;padding: 15px 40px 15px 20px;border-radius: 3px;text-transform: uppercase;font-family: family(body);font-weight: 600; }
+.new-mobile-contact .mobile-call-btns a { display: block ;background: color(primary,base) url(https://www.kitchenmagic.com/hubfs/graphics/icons/phone-white.png) 92% 50% no-repeat;background-size: 30px;color: white;margin-bottom: 25px;padding: 15px 40px 15px 20px;border-radius: 3px;text-transform: uppercase;font-family: family(body); }
 html .row-fluid .new-mobile-contact .widget-type-form { border-top: 1px solid #E0E0E0; }
 html .row-fluid .new-mobile-contact .widget-type-form h3, html .row-fluid .new-mobile-contact .contact-header { font-family: family(body);font-weight: 600;font-size: 18px;padding: 15px 0;text-align: center; }
 
 html .row-fluid .new-mobile-contact form .field > label { display: none; }
-html .row-fluid .new-mobile-contact form .field input { border: .5px solid rgba(0,0,0, .05);box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);padding: 20px 25px;height: auto;margin-bottom: 25px;border-radius: 3px; }
-html .row-fluid .new-mobile-contact form .actions input { width: 100%;background: #555555;box-shadow: 1px 1px 2px rgba(0,0,0, .3);border-color: #555555;padding: 20px 25px;height: auto;font-family: family(body);font-weight: 600;border-radius: 3px; }
+html .row-fluid .new-mobile-contact form .field input { border: 1px solid color(border);  padding: .8rem; border-radius: 0; height: auto; margin-bottom: 25px;border-radius: 0; width: 100%; }
+html .row-fluid .new-mobile-contact form .actions input { width: 100%;background: color(primary, base);padding: 20px 25px;height: auto;font-family: family(body);border-radius: 0; border: none; color: #fff; text-transform: uppercase; }
 html .row-fluid .new-mobile-contact form input.error { margin-bottom: 25px; }
-.new-mobile-contact input::-webkit-input-placeholder { color: #555555; }
-.new-mobile-contact input::-moz-placeholder { color: #555555; }
-.new-mobile-contact input:-ms-input-placeholder { color: #555555; }
-.new-mobile-contact input:-moz-placeholder { color: #555555; }
+.new-mobile-contact input::-webkit-input-placeholder { color: color(text, base); }
+.new-mobile-contact input::-moz-placeholder { color: color(text, base); }
+.new-mobile-contact input:-ms-input-placeholder { color: color(text, base); }
+.new-mobile-contact input:-moz-placeholder { color: color(text, base); }
 
 /* Search Results */
 
 html #addsearch-results .addsearch-result-item-sub { font-size: 16px; }
-html #addsearch-results .addsearch-result-item-sub h1 a { font-size: 1.5em;Color: #555555; }
+html #addsearch-results .addsearch-result-item-sub h1 a { font-size: 1.5em; color: color(text, base); }

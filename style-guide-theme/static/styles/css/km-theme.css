@@ -44,9 +44,12 @@
  */
 h1, h2, h3, h4, h5 {
   font-family: "DomaineDisplayNarrowBold", helvetica, serif;
-  color: font(text-color, base);
+  color: font(text, base);
   letter-spacing: 1px !important;
   margin: 1.414rem 0 0.5rem; }
+  @media (max-width: 991px) {
+    h1, h2, h3, h4, h5 {
+      font-weight: normal; } }
 
 h1 {
   font-size: 4.375rem;
@@ -90,14 +93,15 @@ em {
 
 a {
   color: #F01834;
-  text-decoration: none;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease; }
   a:hover {
-    border-bottom: 1px solid #F01834; }
+    border-bottom: 1px solid #F01834;
+    color: #F01834;
+    text-decoration: none; }
   a:active {
     color: #C30019; }
 

@@ -104,6 +104,16 @@ ul.hs-error-msgs li label {
   color: #F35B62;
   font-family: "ProximaNova-Regular", helvetica, sans-serif; }
 
+/** added icon to date field **/
+.km-form-calender {
+  position: relative;
+  top: 1.6em;
+  left: 5.8em;
+  font-size: 19px; }
+
+input#appointment_date_forms_only-d404769a-b244-4245-9adf-882a6dfd6104_8278:hover {
+  cursor: pointer; }
+
 /**** register warranty ******/
 form#hsForm_91b32f48-8b59-4b22-b8d2-a6dcd84ad271 {
   background: #fff;
