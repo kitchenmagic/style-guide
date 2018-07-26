@@ -1,7 +1,7 @@
-// Variables, Mixins & Functions
+// Variables, Mixins, Functions
 @import 'styles/scss/helpers/_variables.scss';
-@import 'styles/scss/helpers/_mixins.scss';
 @import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
 
 /* ============================================================
    SUMMARY
@@ -24,14 +24,13 @@
 
 // Components
 @import 'components/_buttons.scss';
-@import 'components/forms.scss';
-@import 'components/lists.scss';
+@import 'components/_forms.scss';
+@import 'components/_lists.scss';
 @import 'components/icons.scss';
 
 // Hubspot Modules
 @import 'components/hubspot-modules/_before-and-after.scss';
 @import 'components/hubspot-modules/_product-cards.scss';
-
 
 // Foundation 
 @import 'vendors/foundation-visibility.scss';

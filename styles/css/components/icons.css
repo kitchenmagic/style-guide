@@ -8,5 +8,5 @@
 .arrow-right::after {
   content: "\f054";
   font-family: fontawesome;
-  padding-left: 9px;
+  padding-left: 15px;
   font-size: .9rem; }

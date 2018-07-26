@@ -44,7 +44,7 @@
  */
 h1, h2, h3, h4, h5 {
   font-family: "DomaineDisplayNarrowBold", helvetica, serif;
-  color: font(text, base);
+  color: #222222;
   letter-spacing: 1px !important;
   margin: 1.414rem 0 0.5rem; }
   @media (max-width: 991px) {

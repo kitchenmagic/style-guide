@@ -365,7 +365,7 @@ body {
  */
 h1, h2, h3, h4, h5 {
   font-family: "DomaineDisplayNarrowBold", helvetica, serif;
-  color: font(text, base);
+  color: #222222;
   letter-spacing: 1px !important;
   margin: 1.414rem 0 0.5rem; }
   @media (max-width: 991px) {
@@ -2146,14 +2146,17 @@ html .row-fluid .last-cta {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: .9rem 1.5rem;
-  font-size: 1rem;
+  margin: 0 0 1.25rem;
+  padding: .9rem 1.8rem;
   line-height: 1.5;
   border-radius: 0;
   border: none;
+  font-size: 1rem;
   font-family: "ProximaNova-Regular", helvetica, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -2320,6 +2323,35 @@ div.input {
       color: #222222; }
 
 /**
+  * Submit button
+  */
+.hs_submit.hs-submit div.actions input {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 0 1.25rem;
+  padding: .9rem 1.8rem;
+  line-height: 1.5;
+  border-radius: 0;
+  border: none;
+  font-size: 1rem;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+
+/**
   * Date input - calendar for self set forms
   */
 div.hs-dateinput input {
@@ -2392,6 +2424,76 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
   font-size: 0.625rem;
   display: block;
   margin: 0 auto; }
+
+/* FORM
+  ****************************************/
+/* Validation
+  ****************/
+.body-container-wrapper form .hs-input.suggest,
+.body-container-wrapper form .input.suggest,
+.body-container-wrapper .hs-form .hs-input.suggest,
+.body-container-wrapper .hs-form .input.suggest {
+  border: solid 1px solid 1px #00d00d; }
+
+/* Helper Classes
+   ******************************/
+.km-post-header-fix {
+  margin-top: -47px; }
+
+.km-remove-child-menu [data-widget-type="menu"] {
+  display: none; }
+
+.km-remove-child-mobile-menu [class="mobile-trigger"] {
+  display: none; }
+
+/* ALERT BOXES
+  ****************************************/
+.alert-box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  /*font-size: 0.72222rem;*/
+  font-weight: normal;
+  margin-bottom: 1.11111rem;
+  padding: 0.77778rem 1.33333rem 0.77778rem 0.77778rem;
+  position: relative;
+  transition: opacity 300ms ease-out;
+  background-color: #008CBA;
+  border-color: #0078a0;
+  color: #fff; }
+
+.alert-box.success {
+  /*background-color: #43AC6A;*/
+  /*border-color: #3a945b;*/
+  background-color: #93AE37;
+  border-color: #617C03;
+  color: #fff; }
+
+.alert-box.warning {
+  /*background-color: #f08a24;*/
+  background-color: #FBA455;
+  /*border-color: #de770f;*/
+  border-color: #C77223;
+  color: #fff; }
+
+.alert-box.info {
+  /*background-color: #a0d3e8;*/
+  background-color: #7BA0E2;
+  /*border-color: #74bfdd;*/
+  border-color: #476CAE;
+  color: #FFF; }
+
+.alert-box.alert {
+  /*background-color: #f04124;*/
+  background-color: #EE3454;
+  /*border-color: #de2d0f;*/
+  border-color: #BC0022;
+  color: #fff; }
+
+.alert-box.secondary {
+  background-color: #E1E5E4;
+  border-color: #E1E5E4;
+  color: #4a4a4a; }
 
 /* ============================================================
    LISTS
@@ -2497,7 +2599,7 @@ ol.km-ol {
 .arrow-right::after {
   content: "\f054";
   font-family: fontawesome;
-  padding-left: 9px;
+  padding-left: 15px;
   font-size: .9rem; }
 
 /* ============================================================

@@ -85,7 +85,7 @@
  */
 h1,h2,h3,h4,h5 {
   font-family: family(header);
-  color: font(text, base);
+  color: color(text, base);
   letter-spacing: 1px !important;
   margin: 1.414rem 0 0.5rem;
 
