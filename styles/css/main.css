@@ -2793,8 +2793,8 @@ ol.km-ol {
    PRODUCT CARDS
 /* ============================================================ */
 /**
-* This file will live on Hubspot Modules only.
-* !!! REMOVE from main.scss 
+ * This file will live on Hubspot Modules only.
+ * !!! REMOVE from main.scss 
 **/
 .product-card {
   padding: 18px 10px 20px;
@@ -3464,9 +3464,6 @@ th.hide-for-touch {
 /* ============================================================
   UTITILIES
 /* ============================================================ */
-/**
- * Typography
- */
 .uppercase {
   text-transform: uppercase; }
 
@@ -3481,10 +3478,55 @@ th.hide-for-touch {
   max-width: 800px;
   margin: 0 auto; }
 
+/**
+ * Used to force white font on hero sections - primarily used on landing pages
+ * This is a hack, needs to be fixed
+ */
 .km-white-font {
   color: #fff !important; }
   .km-white-font h1, .km-white-font h2, .km-white-font h3, .km-white-font h4, .km-white-font p {
     color: #fff !important; }
+
+/**
+ * Fancy title
+ * This title has lines on each side
+ */
+.km-fancy-title {
+  text-align: center; }
+  .km-fancy-title span {
+    display: inline-block;
+    position: relative; }
+  .km-fancy-title:before {
+    right: 100%;
+    margin-right: 15px; }
+  .km-fancy-title:after {
+    left: 100%;
+    margin-left: 15px; }
+  .km-fancy-title:before, .km-fancy-title:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid #bfbfbf;
+    top: 50%;
+    width: 35%; }
+
+.flex-row {
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
+.flex-column {
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+.flex-center {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.km-vertical-align {
+  display: inline-block;
+  vertical-align: middle; }
 
 /**
  * Margins

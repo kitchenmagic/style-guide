@@ -3,9 +3,9 @@
 /* ============================================================ */
 
 
-/**
- * Typography
- */
+//
+//  Typography
+//––––––––––––––––––––––––––––––––––––––––––––––––––
 .uppercase {
     text-transform: uppercase;
 }
@@ -23,10 +23,10 @@
     margin: 0 auto;
 }
 
-// Colors 
-// Used to force white font on hero sections - primarily used on landing pages
-// This is a hack, needs to be fixed
-
+/**
+ * Used to force white font on hero sections - primarily used on landing pages
+ * This is a hack, needs to be fixed
+ */
 .km-white-font {
   color: #fff !important;
   h1, & h2, & h3, & h4, & p {
@@ -34,11 +34,72 @@
   }
 }
 
+/**
+ * Fancy title
+ * This title has lines on each side
+ */
+.km-fancy-title {
+  text-align: center;
+
+  span {
+    display: inline-block;
+    position: relative;  
+  }
+
+  &:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+
+  &:after {
+    left: 100%;
+    margin-left: 15px;  
+  }
+
+  &:before, &:after {
+    content: "";
+    position: absolute; 
+    height: 5px;
+    border-top: 1px solid #bfbfbf;
+    top: 50%;
+    width: 35%;
+  }
+}
+
+//
+//  Layout
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+// Flexbox
+.flex-row {
+  -webkit-flex-direction: row;
+   flex-direction: row;
+}
+
+.flex-column {
+  -webkit-flex-direction: column;
+   flex-direction: column; 
+}
+
+.flex-center {
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+// Vertical align
+.km-vertical-align {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /**
  * Margins
  * This section should eventually be cleaned up once we standardize more of the spacing
  */
+
 .lg-margin-t {
     margin-top: 20px;
 }

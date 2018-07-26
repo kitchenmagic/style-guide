@@ -183,57 +183,14 @@
       opacity: .5;
   }
   
-  .km-vertical-align {
-      display: inline-block;
-      vertical-align: middle;
-  }
+
   
   /********** Flexbox *********/
   
-  .flex-row {
-    -webkit-flex-direction: row;
-     flex-direction: row;
-  }
-  
-  .flex-column {
-    -webkit-flex-direction: column;
-     flex-direction: column; 
-  }
-  
-  .flex-center {
-     -webkit-align-items: center;
-     align-items: center;
-     -webkit-justify-content: center;
-     justify-content: center;
-  }
       
   /***** Title with Lines*****/
   
-  .km-fancy-title {
-      text-align: center;
-  }
   
-  .km-fancy-title span {
-    display: inline-block;
-    position: relative;  
-  }
-  .km-fancy-title span:before,
-  .km-fancy-title span:after {
-    content: "";
-    position: absolute; 
-    height: 5px;
-    border-top: 1px solid #bfbfbf;
-    top: 50%;
-    width: 35%;
-  }
-  .km-fancy-title span:before {
-    right: 100%;
-    margin-right: 15px;
-  }
-  .km-fancy-title span:after {
-    left: 100%;
-    margin-left: 15px;
-  }   
   
   
   /********* Hero Titles *********/
