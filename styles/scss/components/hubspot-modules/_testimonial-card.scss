@@ -1,0 +1,127 @@
+/* ============================================================
+   TESTIMONIALS
+/* ============================================================ */
+
+/**
+ * Testimonial Card
+ * This is only used on the careers page.
+ * This file will live on Hubspot Modules only.
+ * !!! REMOVE from main.scss 
+ * example: https://www.kitchenmagic.com/careers
+**/
+  .testimonial-card {
+    background: #4268a0;
+    max-width: 315px;
+    min-width: 235px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    padding-top: 120px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    width: 100%;
+    background-color: #38598A;
+    padding: 25px 25px 40px 25px;
+    position: relative;
+}
+
+.testimonial-container:before {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 55px 0 0 400px;
+    border-color: transparent transparent transparent #38598A; 
+}
+
+.profile {
+    position: absolute;
+    max-width: 90px;
+    bottom: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+    border-radius: 50%;
+}
+
+.testimonial:after {
+    font-family: 'FontAwesome';
+    content: "\f10e";
+    position: absolute;
+    font-size: 54px;
+    line-height: 1em;
+    color: #4268A0;
+    font-style: normal;
+    right: 26px;
+    bottom: 0px;
+}
+
+.testimonial-name {
+    font-size: 1.3em;
+    margin: 25px;
+    font-weight: 300;
+    position: absolute;
+    top: -11px;
+    right: 0;
+    text-align: right;
+    color: #fff;
+}
+
+.testimonial-job {
+    font-size: .7em;
+    display: block;
+    color: #F98E2B;
+}
+
+/**
+ * Testimonial Card with image
+ * This file will live on Hubspot Modules only.
+ * !!! REMOVE from main.scss 
+ * example: https://www.kitchenmagic.com/estimate-specials
+**/
+  
+ .tc-top-box {
+    max-width: 400px;
+    height: 250px;
+    background-position: center center !important;
+    background-size: cover !important;
+  }
+  
+  .tc-bottom-box {
+    background: color(gray, light);
+    max-width: 400px;
+    color: color(text, base);
+    text-align: left;
+    padding: 65px 30px 30px;
+    border-top: 4px solid #fff;
+  }
+  
+  .tc-bottom-box h4 {
+    text-align: center;
+  }
+  
+  .tc-bottom-box p:after {
+    font-family: 'FontAwesome';
+    content: "\f10d";
+    position: absolute;
+    font-size: 38px;
+    color: color(gray, lighter);
+    font-style: normal;
+    top: 265px;
+    left: 30px;
+  }
+  
+  .testimonial-avatar {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid #fff;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,-50%);
+  }

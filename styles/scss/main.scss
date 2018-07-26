@@ -30,7 +30,10 @@
 
 // Hubspot Modules
 @import 'components/hubspot-modules/_before-and-after.scss';
-@import 'components/hubspot-modules/_product-cards.scss';
+@import 'components/hubspot-modules/_cabinet-card.scss';
+@import 'components/hubspot-modules/_event-card.scss';
+@import 'components/hubspot-modules/_product-card.scss';
+@import 'components/hubspot-modules/_testimonial-card.scss';
 
 // Foundation 
 @import 'vendors/foundation-visibility.scss';

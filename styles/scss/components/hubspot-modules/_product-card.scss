@@ -141,3 +141,59 @@ border: none!important;
 .product-card.hide-border img:hover {
     box-shadow: none;
 }
+
+// ============================================================
+//  RESPONSIVE
+// !!! This section needs to be redone with new media queries
+// ============================================================ */
+  
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+     
+    .product-card {
+     border: none;
+     width: 100%;
+     padding: 0;
+     border: 1px solid color(border);
+ }
+ 
+   .product-card:hover {
+       transform: none;
+   }
+    
+    .product-card img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+    
+    .product-card .product-title {
+         font-size: 1.7em;
+    }
+    
+    .product-number {
+        font-size:.9em;
+        margin-bottom: 5px;
+    }
+ }
+ 
+ /* iPads (portrait and landscape) ----------- */
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+     
+    .product-card {
+        border: none;
+        width: 100%;
+        padding: 0;
+ }
+ 
+   .product-card:hover {
+       transform: none;
+   }
+    
+    .product-card img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        @include box-shadow($shadow-md);
+    }
+ }

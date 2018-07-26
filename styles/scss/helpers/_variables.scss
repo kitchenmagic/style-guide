@@ -24,7 +24,7 @@ $km-colors: (
     //typography
     text: (
         'base':        #222222,
-        'light':       #4a4a4a
+        'light':       #4a4a4a,
     ), 
 
     // ui elements
@@ -35,6 +35,10 @@ $km-colors: (
     // forms
     error:            #F35B62,
     success:          #1ABE6F,
+    info:             #0099FA,
+    warning:          #FFA800,
+    focus:            #222222,
+
 );
 
 $shadow-sm:           0 2px 10px 0 #E1E5E4;
@@ -71,7 +75,7 @@ $font-family-text:        'ProximaNova-Regular', helvetica, sans-serif;
 $font-family-text-bold:   'ProximaNova-Bold', helvetica, sans-serif;
 $font-family-text-i:      'ProximaNova-RegularIt', helvetica, sans-serif;
 
-// !! REMOVE THESE AFTER ADDING IN NEW MAPS
+// !! REMOVE THESE AFTER ADDING IN NEW MAPS TO PARTIALS
 $text-color:       #222222;
 $text-color-light: #4a4a4a;
 

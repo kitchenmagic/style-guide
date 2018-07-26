@@ -2260,7 +2260,7 @@ div.input {
      * Select fields
      */ }
   div.input input.hs-input {
-    border: 1px solid #A3A5A8;
+    border: 1px solid #E1E5E4;
     padding: .8rem;
     border-radius: 0;
     box-shadow: none;
@@ -2272,23 +2272,21 @@ div.input {
     -o-transition: all 300ms ease;
     transition: all 300ms ease; }
     div.input input.hs-input::-webkit-input-placeholder {
-      color: #A3A5A8;
+      color: #4a4a4a;
       font-size: 1rem;
       font-family: "ProximaNova-Regular", helvetica, sans-serif; }
     div.input input.hs-input:-moz-placeholder {
-      color: #A3A5A8;
+      color: #4a4a4a;
       font-size: 1rem;
       font-family: "ProximaNova-Regular", helvetica, sans-serif; }
     div.input input.hs-input::-moz-placeholder {
-      color: #A3A5A8;
+      color: #4a4a4a;
       font-size: 1rem;
       font-family: "ProximaNova-Regular", helvetica, sans-serif; }
     div.input input.hs-input:-ms-input-placeholder {
-      color: #A3A5A8;
+      color: #4a4a4a;
       font-size: 1rem;
       font-family: "ProximaNova-Regular", helvetica, sans-serif; }
-    div.input input.hs-input:valid {
-      color: #222222; }
     div.input input.hs-input:focus {
       border-color: #222222;
       color: #222222;
@@ -2319,8 +2317,6 @@ div.input {
     div.input select:hover {
       cursor: pointer;
       border-color: #222222; }
-    div.input select :valid {
-      color: #222222; }
 
 /**
   * Submit button
@@ -2361,8 +2357,10 @@ div.hs-dateinput input {
     border-color: #222222; }
 
 div.hs-datepicker div.fn-date-picker.pika-single.is-bound {
-  box-shadow: 0 2px 20px #D9DFF0;
-  border: 1px solid #DDE3E6;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4;
+  border: 1px solid #E1E5E4;
   border-radius: 0;
   font-family: "ProximaNova-Regular", helvetica, sans-serif; }
 
@@ -2433,7 +2431,7 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
 .body-container-wrapper form .input.suggest,
 .body-container-wrapper .hs-form .hs-input.suggest,
 .body-container-wrapper .hs-form .input.suggest {
-  border: solid 1px solid 1px #00d00d; }
+  border: solid 1px #00d00d; }
 
 /* Helper Classes
    ******************************/
@@ -2471,29 +2469,58 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
 
 .alert-box.warning {
   /*background-color: #f08a24;*/
-  background-color: #FBA455;
+  background-color: #FFA800;
   /*border-color: #de770f;*/
-  border-color: #C77223;
+  border-color: #FFA800;
   color: #fff; }
 
 .alert-box.info {
   /*background-color: #a0d3e8;*/
-  background-color: #7BA0E2;
+  background-color: #0099FA;
   /*border-color: #74bfdd;*/
-  border-color: #476CAE;
+  border-color: #0099FA;
   color: #FFF; }
 
 .alert-box.alert {
   /*background-color: #f04124;*/
-  background-color: #EE3454;
+  background-color: #F35B62;
   /*border-color: #de2d0f;*/
-  border-color: #BC0022;
+  border-color: #F35B62;
   color: #fff; }
 
 .alert-box.secondary {
   background-color: #E1E5E4;
   border-color: #E1E5E4;
   color: #4a4a4a; }
+
+/* DATEPICKER
+****************************************/
+.ui-datepicker-title {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 15px; }
+
+a.ui-datepicker-prev.ui-corner-all, a.ui-datepicker-next.ui-corner-all {
+  color: #fff;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 14px; }
+
+a.ui-datepicker-next.ui-corner-all {
+  float: right; }
+
+table.ui-datepicker-calendar {
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+  background: #476CAE;
+  padding: 2px 10px;
+  border-radius: 5px 5px 0px 0px; }
+
+.ui-datepicker-unselectable.ui-state-disabled.undefined {
+  color: #ccc; }
 
 /* ============================================================
    LISTS
@@ -2662,6 +2689,72 @@ ol.km-ol {
   box-shadow: 0 2px 20px 0 #E1E5E4; }
 
 /* ============================================================
+   CABINET CARD
+/* ============================================================ */
+/**
+* Cabinet Card
+* This file will live on Hubspot Modules only.
+* !!! REMOVE from main.scss 
+* example: https://www.kitchenmagic.com/kitchen-cabinets/doors/wood
+**/
+.cabinet-card {
+  width: 100%; }
+  .cabinet-card img {
+    -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+    -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+    box-shadow: 0 2px 20px 0 #E1E5E4;
+    display: block;
+    margin: 0 auto; }
+  .cabinet-card .product-title {
+    font-size: 1.125rem;
+    text-align: center;
+    margin-top: 0.75rem;
+    padding-bottom: 0.125rem; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .cabinet-card img {
+    width: 100%; } }
+
+/* ============================================================
+   EVENTS
+/* ============================================================ */
+.event-card {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 9px 0 20px 0;
+  border-radius: 4px; }
+
+.event-card p {
+  padding: 0;
+  margin: 0; }
+
+.event-card p:nth-child(1) {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #85695b; }
+
+.event-card p:nth-child(2) {
+  font-size: 2.8em;
+  line-height: .925em;
+  font-weight: 300; }
+
+.event-card p > span {
+  font-size: 15px;
+  display: block; }
+
+.event-info-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px; }
+
+.event-info-card h3 {
+  padding-bottom: 0; }
+
+.event-info-card p:nth-child(2) {
+  font-style: italic; }
+
+/* ============================================================
    PRODUCT CARDS
 /* ============================================================ */
 /**
@@ -2776,6 +2869,154 @@ ol.km-ol {
 
 .product-card.hide-border img:hover {
   box-shadow: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .product-card {
+    border: none;
+    width: 100%;
+    padding: 0;
+    border: 1px solid #E1E5E4; }
+  .product-card:hover {
+    transform: none; }
+  .product-card img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+  .product-card .product-title {
+    font-size: 1.7em; }
+  .product-number {
+    font-size: .9em;
+    margin-bottom: 5px; } }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .product-card {
+    border: none;
+    width: 100%;
+    padding: 0; }
+  .product-card:hover {
+    transform: none; }
+  .product-card img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+    -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+    box-shadow: 0 2px 20px 0 #E1E5E4; } }
+
+/* ============================================================
+   TESTIMONIALS
+/* ============================================================ */
+/**
+ * Testimonial Card
+ * This is only used on the careers page.
+ * This file will live on Hubspot Modules only.
+ * !!! REMOVE from main.scss 
+ * example: https://www.kitchenmagic.com/careers
+**/
+.testimonial-card {
+  background: #4268a0;
+  max-width: 315px;
+  min-width: 235px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  padding-top: 120px;
+  color: #fff;
+  margin-bottom: 20px; }
+
+.testimonial-container {
+  width: 100%;
+  background-color: #38598A;
+  padding: 25px 25px 40px 25px;
+  position: relative; }
+
+.testimonial-container:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #38598A; }
+
+.profile {
+  position: absolute;
+  max-width: 90px;
+  bottom: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 50%; }
+
+.testimonial:after {
+  font-family: 'FontAwesome';
+  content: "\f10e";
+  position: absolute;
+  font-size: 54px;
+  line-height: 1em;
+  color: #4268A0;
+  font-style: normal;
+  right: 26px;
+  bottom: 0px; }
+
+.testimonial-name {
+  font-size: 1.3em;
+  margin: 25px;
+  font-weight: 300;
+  position: absolute;
+  top: -11px;
+  right: 0;
+  text-align: right;
+  color: #fff; }
+
+.testimonial-job {
+  font-size: .7em;
+  display: block;
+  color: #F98E2B; }
+
+/**
+ * Testimonial Card with image
+ * This file will live on Hubspot Modules only.
+ * !!! REMOVE from main.scss 
+ * example: https://www.kitchenmagic.com/estimate-specials
+**/
+.tc-top-box {
+  max-width: 400px;
+  height: 250px;
+  background-position: center center !important;
+  background-size: cover !important; }
+
+.tc-bottom-box {
+  background: #E1E5E4;
+  max-width: 400px;
+  color: #222222;
+  text-align: left;
+  padding: 65px 30px 30px;
+  border-top: 4px solid #fff; }
+
+.tc-bottom-box h4 {
+  text-align: center; }
+
+.tc-bottom-box p:after {
+  font-family: 'FontAwesome';
+  content: "\f10d";
+  position: absolute;
+  font-size: 38px;
+  color: #EEF3F5;
+  font-style: normal;
+  top: 265px;
+  left: 30px; }
+
+.testimonial-avatar {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  position: relative;
+  border: 5px solid #fff;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%); }
 
 /* ============================================================
   FOUNDATION - VISIBILITY 
