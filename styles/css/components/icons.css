@@ -10,3 +10,16 @@
   font-family: fontawesome;
   padding-left: 15px;
   font-size: .9rem; }
+
+/* example: www.kitchenmagic.com/cabinet-refacing */
+.icon-box {
+  text-align: center;
+  padding: 0 10px; }
+
+.icon-box__icon {
+  max-height: 80px;
+  margin-bottom: 30px; }
+
+.icon-box__title {
+  color: color(primary, base);
+  font-weight: bold; }

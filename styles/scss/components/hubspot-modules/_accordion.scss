@@ -1,10 +1,30 @@
 /* ============================================================
-   PRODUCT CARDS
+   ACCORDION
 /* ============================================================ */
+
+/**
+ * This file will live on Hubspot Modules only.
+ * !!! REMOVE from main.scss 
+ * example: https://www.kitchenmagic.com/cabinet-refacing
+ **/
 .accordion {
     font-size: 1rem;
     margin: 0 auto;
     border-radius: 5px;
+
+    .accordion__item {
+      border: 1px solid color(border);
+      border-bottom: none;
+
+      &:last-child {
+        border-bottom: 1px solid color(border);
+      }
+
+      &.active .accordion-header {
+        background: #fff;
+        color: color(primary, base);
+      }
+    }
   }
   
   .accordion-header,
@@ -19,7 +39,8 @@
     cursor: pointer;
     font-size: 1.2rem;
     transition: all .3s;
-    border-bottom: 1px solid color(border);
+    font-family: family(header);
+    letter-spacing: 1px;
   }
   
   .accordion-header:hover {
@@ -35,14 +56,13 @@
   }
   
   .accordion-body__contents {
-    padding: px-to-rem(23px);
-    border: 1px solid color(border);
+    padding: 0 px-to-rem(23px) px-to-rem(23px);
     border-top: none;
   }
   
   .accordion__item.active:last-child .accordion-header {
     border-radius: none;
-      border-bottom: 1px solid transparent;
+    border-bottom: 1px solid transparent;
   }
   
   /** .accordion:first-child > .accordion__item > .accordion-header {

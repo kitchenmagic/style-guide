@@ -2629,6 +2629,19 @@ ol.km-ol {
   padding-left: 15px;
   font-size: .9rem; }
 
+/* example: www.kitchenmagic.com/cabinet-refacing */
+.icon-box {
+  text-align: center;
+  padding: 0 10px; }
+
+.icon-box__icon {
+  max-height: 80px;
+  margin-bottom: 30px; }
+
+.icon-box__title {
+  color: #F01834;
+  font-weight: bold; }
+
 /* ============================================================
    CONTENT BOX
 /* ============================================================ */
@@ -2663,6 +2676,81 @@ ol.km-ol {
 
 .content-box p {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+
+/* ============================================================
+   ACCORDION
+/* ============================================================ */
+/**
+ * This file will live on Hubspot Modules only.
+ * !!! REMOVE from main.scss 
+ * example: https://www.kitchenmagic.com/cabinet-refacing
+ **/
+.accordion {
+  font-size: 1rem;
+  margin: 0 auto;
+  border-radius: 5px; }
+  .accordion .accordion__item {
+    border: 1px solid #E1E5E4;
+    border-bottom: none; }
+    .accordion .accordion__item:last-child {
+      border-bottom: 1px solid #E1E5E4; }
+    .accordion .accordion__item.active .accordion-header {
+      background: #fff;
+      color: #F01834; }
+
+.accordion-header,
+.accordion-body {
+  background: white; }
+
+.accordion-header {
+  padding: 1.4375rem;
+  background: #fff;
+  color: #222222;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all .3s;
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+  letter-spacing: 1px; }
+
+.accordion-header:hover {
+  background: #fff;
+  position: relative;
+  z-index: 5;
+  color: #4a4a4a; }
+
+.accordion-body {
+  background: #fff;
+  display: none; }
+
+.accordion-body__contents {
+  padding: 0 1.4375rem 1.4375rem;
+  border-top: none; }
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+  border-bottom: 1px solid transparent; }
+
+/** .accordion:first-child > .accordion__item > .accordion-header {
+    border-bottom: 1px solid transparent;
+  } **/
+.accordion__item > .accordion-header:after {
+  content: "\f078";
+  font-family: fontawesome;
+  font-size: 1rem;
+  float: right;
+  position: relative;
+  top: 50%;
+  transition: .3s all;
+  transform: rotate(0deg); }
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg); }
+
+.accordion__item.active .accordion-header {
+  background: #79961D; }
+
+.accordion__item .accordion__item .accordion-header {
+  background: #fff; }
 
 /* ============================================================
    BEFORE AND AFTER MODULE
