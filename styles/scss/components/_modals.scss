@@ -1,0 +1,75 @@
+/* ============================================================
+   MODALS
+/* ============================================================ */
+  
+//
+//  Product Modal Slider
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.reveal-modal {
+    border-radius: 4px;
+
+    &:focus {
+        outline: none;
+    }
+
+    .close-reveal-modal {
+        color: color(gray, light);
+        @include transition(all 300ms ease);
+
+        &:hover {
+            color: color(gray, base);
+        }
+    }
+}
+
+.km-slide-title {
+    font-family: family(header);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.km-product-slider {
+
+    > .slick-prev, .km-product-slider > .slick-next {
+        background-color: rgba(255,255,255,.4) !important;
+        color: transparent;
+        width: 62px !important;
+        transition: all 300ms ease;
+        height: 662px !important;
+        border: none !important;
+        top: 12% !important;
+    }
+
+    > .slick-prev:focus, .km-product-slider > .slick-next:focus {
+        outline: none;
+    }
+
+    .slick-prev:hover, .km-product-slider .slick-next:hover {
+        box-shadow: none;
+        background-color: rgba(255,255,255,.6) !important;
+    }
+
+    .slick-prev::before {
+        content: "\f053";
+        font-family: FontAwesome;
+        padding-right: 15px;
+        position: relative;
+        top: 1px;
+        color: #fff;
+        left: -15px;
+        font-size: 45px;
+        text-shadow: 0 0 6px rgba(0,0,0,.7);
+    }
+    
+    .slick-next::after {
+        content: "\f054";
+        font-family: FontAwesome;
+        padding-left: 15px;
+        position: relative;
+        top: 1px;
+        right: 56px;
+        font-size: 45px;
+        color: #fff;
+        text-shadow: 0 0 6px rgba(0,0,0,.7);
+    }
+}
