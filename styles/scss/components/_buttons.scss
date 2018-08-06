@@ -95,6 +95,13 @@
 /* !!! These will eventually be removed over time as old buttons 
 /*     are deleted and new button classes are added. */
 
+.km-button {
+    @include btn();
+
+    .km-btn-info, .km-btn-warning {
+    }
+}
+
 
  .km-button:focus {
     outline: none;

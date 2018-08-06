@@ -2638,6 +2638,32 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* !!! These will eventually be removed over time as old buttons 
 /*     are deleted and new button classes are added. */
+.km-button {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 0 1.25rem;
+  padding: .9rem 1.8rem;
+  line-height: 1.5;
+  border-radius: 0;
+  border: none;
+  font-size: 1rem;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+
 .km-button:focus {
   outline: none; }
 
