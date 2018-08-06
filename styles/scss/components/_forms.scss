@@ -191,18 +191,20 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
   /* FORM
   ****************************************/
   
-  /* Validation
-  ****************/
+/*
+/*  Validation
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
   
   .body-container-wrapper form .hs-input.suggest, 
   .body-container-wrapper form .input.suggest, 
   .body-container-wrapper .hs-form .hs-input.suggest, 
   .body-container-wrapper .hs-form .input.suggest{
-      border: solid 1px #00d00d;
+      border: solid 1px color(success);
   }
   
-  /* Helper Classes
-   ******************************/
+/*
+/*  Helper Classes
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .km-post-header-fix{
       margin-top:-47px;
   }
@@ -215,8 +217,9 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
   }
   
   
-  /* ALERT BOXES
-  ****************************************/
+/*
+/* Alert Boxes
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
   
   .alert-box {
       border-style: solid;
@@ -269,8 +272,9 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
       color: color(text, light);
   }
 
-/* DATEPICKER
-****************************************/
+/*
+/*  Date Picker
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .ui-datepicker-title {
     color: #fff;
     text-align: center;
