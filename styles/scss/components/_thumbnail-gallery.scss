@@ -1,0 +1,59 @@
+/* ============================================================
+THUMBNAIL GALLERY
+/* ============================================================ */
+
+.km-slider .km-slide-title{
+    text-align: center;
+}
+
+.km-slider .slick-prev,
+.km-slider .slick-next{
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    background-color: rgba(0,0,0,.5);
+    border: solid 1px rgba(0,0,0,.6);
+    width: 100px;
+}
+
+.km-slider .slick-prev{
+    left:0;
+}
+.km-slider .slick-next{
+    right:0;
+}
+.km-slider .km-slider-img{}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0);
+    border: 0;
+    outline: none;
+    background: rgba(0, 0, 0, 0);
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+    }
+}
