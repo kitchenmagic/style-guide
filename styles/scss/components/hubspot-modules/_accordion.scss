@@ -92,3 +92,15 @@
   .accordion__item .accordion__item .accordion-header {
     background: #fff;
   }
+
+/** linked to accordion.js **/  
+.accordion-toggle {
+  cursor: pointer;
+}
+.accordion-content {
+  display: none;
+}
+.accordion-content.default {
+  display: block;
+}
+  
