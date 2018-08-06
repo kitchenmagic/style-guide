@@ -1,0 +1,150 @@
+/* ============================================================
+   PROGRESS BARS
+/* ============================================================  */
+
+.progress {
+    background-color: #f2f2f2;
+    height: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 9px rgba(255,255,255,0.1), inset 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+.meter {
+    position: relative;
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: color(primary, base);
+    border-radius: 3px;
+}
+
+.progress-meter-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #fefefe;
+    white-space: nowrap;
+}
+
+.progress-bar-title {
+    font-size: px-to-rem(18px);
+    margin-bottom: 11px;   
+    font-family: family(bold);
+} 
+
+/* tree donation progress bar */
+
+.tree-progress {
+    height: 40px;
+}
+
+
+.meter-tree-progress {
+    -o-animation: meter-tree-progress 2s 1 forwards;
+    -moz-animation: meter-tree-progress 2s 1 forwards;
+    -webkit-animation: meter-tree-progress 2s 1 forwards;
+    animation: meter-tree-progress 2s 1 forwards;
+    background-color: #009b42;
+    height: 40px;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);
+}
+
+span.meter-tree-progress p {
+    font-size: 21px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding-top: 3px;
+}
+
+@keyframes meter-tree-progress {
+    from { width: 0; }
+    to   { width: 100%; }
+}
+
+.progress-bar-rating > ul {
+    width: 100%;
+    margin-left: 0;
+    clear: both;
+
+    > li {
+        list-style: none;
+        color: #8a8a8a;
+        display: inline-block;
+
+        &:last-child {
+            float: right;
+        }
+    }
+}
+
+
+/* animation */
+
+.meter-25 {
+    -o-animation: meter-25 2s 1 forwards;
+    -moz-animation: meter-25 2s 1 forwards;
+    -webkit-animation: meter-25 2s 1 forwards;
+    animation: meter-25 2s 1 forwards;
+}
+
+
+@keyframes meter-25 {
+  from {width: 0; }
+  to { width: 25%; }
+}
+
+.meter-50 {
+    animation: meter-50 2s 1 forwards;
+    -o-animation: meter-50 2s 1 forwards;
+    -moz-animation: meter-50 2s 1 forwards;
+    -webkit-animation: meter-50 2s 1 forwards;
+}
+
+@keyframes meter-50 {
+    from { width: 0; }
+    to { width: 50%; }
+}
+
+
+.meter-75 {
+    animation: meter-75 2s 1 forwards;
+    -o-animation: meter-75 2s 1 forwards;
+    -moz-animation: meter-75 2s 1 forwards;
+    -webkit-animation: meter-75 2s 1 forwards;
+}
+
+@keyframes meter-75 {
+    from { width: 0; }
+    to { width: 75%; }
+}
+
+.meter-100 {
+    animation: meter-100 2s 1 forwards;
+    -o-animation: meter-100 2s 1 forwards;
+    -moz-animation: meter-100 2s 1 forwards;
+    -webkit-animation: meter-100 2s 1 forwards;
+}
+
+@keyframes meter-100 {
+    from {width: 0;}
+    to { width: 100%; }
+}
+
+/* rating */ 
+
+.meter p {
+    font-size: px-to-rem(12px);
+    float: right;
+    padding-right: 5px;
+    color: #fff;
+}
