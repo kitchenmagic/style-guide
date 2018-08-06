@@ -2,7 +2,24 @@
    CAREERS - www.kitchenmagic.com/careers
 /* ============================================================ */  
   
-  .km-mini-nav ul {
+/*
+/*  Hero section
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.km-hero-title-large {
+    font-size: 2.75rem;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+
+.km-hero-button-large {
+   padding: 1em 3em;
+}   
+
+/*
+/*  Sub Nav
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-mini-nav ul {
     list-style: none;
     margin: 1em 0;
     text-align: center;
@@ -20,18 +37,9 @@
     }
 }
 
-.km-white-box {
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-div#jobs-widget {
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-}
-
+/*
+/*  White panels/cards
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-white-panel {
     -moz-box-shadow: 0 1px 2px #ddd;
     -webkit-box-shadow: 0 1px 2px #ddd;
@@ -44,7 +52,9 @@ div#jobs-widget {
     border-radius: 2px
 }
 
-
+/*
+/*  Quote section
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-blockquote-icon {
     color: color(text, light);
     margin-bottom: 10px;
@@ -60,4 +70,19 @@ div#jobs-widget {
 .km-cite-lg {
     text-align: center;
     color: color(text, base);
+}
+
+/*
+/*  Misc
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-white-box {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+div#jobs-widget {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }

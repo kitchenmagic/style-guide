@@ -1,0 +1,62 @@
+/* ============================================================
+   NEW PRODUCT SHOWCASE
+/* ============================================================  */
+
+/* example: https://www.kitchenmagic.com/kitchen-cabinets/doors/wood */
+
+  .new-product-wrapper {
+    border: 2px solid color(border);
+    padding: 25px 20px 0;
+}
+
+.km-ribbon-wrapper {
+    width: 108px;
+    height: 108px;
+    overflow: hidden;
+    position: absolute;
+    top: -6px;
+    right: -6px
+}
+
+.km-ribbon {
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -4px;
+    top: 26px;
+    width: 150px;
+    background-color: color(primary, base);
+    color: #fff;
+    letter-spacing: 0.5px;
+    @include box-shadow(-3px 5px 6px -5px rgba(0, 0, 0, 0.5));
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        z-index: -1;
+        border-left: 4px solid color(primary, base);
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid color(primary, base);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 7px;
+        top: 100%;
+        z-index: -1;
+        border-left: 4px solid transparent;
+        border-right: 4px solid  color(primary, base);
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid  color(primary, base);
+    }
+}
