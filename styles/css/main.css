@@ -2257,6 +2257,24 @@ div#jobs-widget {
   display: inline-block; }
 
 /* ============================================================
+   ESTIMATE SPECIALS - www.kitchenmagic.com/estimate-specials
+/* ============================================================ */
+.km-img-circle {
+  border-radius: 150%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em; }
+
+form#hsForm_f12190c4-922f-4690-9ea0-03846d0b08c3, form#hsForm_78097024-1985-4808-a17a-17a95564f915 {
+  background: #fff;
+  border: none; }
+
+.km-button-orange {
+  background-color: #F01834 !important;
+  border-color: #F01834 !important;
+  width: 100%; }
+
+/* ============================================================
    BUTTONS
 /* ============================================================ */
 /**
