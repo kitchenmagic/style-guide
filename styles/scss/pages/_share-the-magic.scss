@@ -1,0 +1,87 @@
+/* ============================================================
+   SHARE THE MAGIC - www.kitchenmagic.com/share
+/* ============================================================ */  
+
+.km-hero-title {
+    color: #fff;
+    text-align: left;
+    padding: 0;
+    text-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+
+.km-hero-description {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.km-hero-button {
+    background: none;
+    border: 1px solid #fff;
+
+    &:hover {
+        background: rgba(0,0,0,.3);
+        border: 1px solid #fff;
+    }
+}
+
+.km-orange {
+    color: color(primary, base);
+}
+
+.km-blue {
+    color: color(primary, base);
+}
+
+.km-btn-fw {
+    display: block;
+    margin: 0 auto;
+}
+
+.learn-more {
+    color: white; 
+    padding: .2rem; 
+    max-width: 100%; 
+    display: inline-block; 
+    text-align: center; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin-bottom: 4px;
+}
+
+.learn-more:before, .learn-more:after {
+    content: "";
+    border: solid 6px transparent;
+    border-top-color: #fff;
+    border-bottom-width: 2px;
+    margin: 0 8px;
+    width: 0;
+    height: 0;
+    display: inline-block;
+}
+
+.learn-more-dark {
+    color: #8a939e; 
+    padding: .2rem; 
+    max-width: 100%; 
+    display: inline-block; 
+    text-align: center; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin-bottom: 4px;
+}
+
+.learn-more-dark:before, .learn-more-dark:after {
+    content: "";
+    border: solid 6px transparent;
+    border-top-color: #8a939e;
+    border-bottom-width: 2px;
+    margin: 0 8px;
+    width: 0;
+    height: 0;
+    display: inline-block;
+}

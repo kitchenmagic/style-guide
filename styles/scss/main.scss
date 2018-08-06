@@ -20,8 +20,9 @@
 @import 'layout/footer.scss';
 
 // Pages
-@import 'pages/homepage.scss';
-@import 'pages/careers.scss';
+@import 'pages/_homepage.scss';
+@import 'pages/_careers.scss';
+@import 'pages/_share-the-magic.scss';
 
 // Components
 @import 'components/_buttons.scss';
