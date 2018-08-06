@@ -228,16 +228,16 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
       padding: 0.77778rem 1.33333rem 0.77778rem 0.77778rem;
       position: relative;
       transition: opacity 300ms ease-out;
-      background-color: #008CBA;
-      border-color: #0078a0;
+      background-color: color(info);
+      border-color: color(info);
       color: #fff;
   }
   
   .alert-box.success {
       /*background-color: #43AC6A;*/
       /*border-color: #3a945b;*/
-      background-color: #93AE37;
-      border-color: #617C03;
+      background-color: color(success);
+      border-color: color(success);
       color: #fff;
   }
   .alert-box.warning {
