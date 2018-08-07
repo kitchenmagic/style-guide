@@ -6,13 +6,15 @@
 /*  Global Top Footer CTA
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .top-footer-cta {
-    background-color: #F8F8F8;
+    background-color: color(background);
     padding: 40px 10px;
+    text-align: center;
 }
   
 .km-footer .km-btn-info {
     padding: 16px 19px !important;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .km-footer .km-btn-info:hover {

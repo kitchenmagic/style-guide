@@ -102,6 +102,12 @@
     }
 }
 
+//override green cta used on the homepage
+.green-cta {
+    @include btn();
+    @include km-btn--primary();
+}
+
 
  .km-button:focus {
     outline: none;

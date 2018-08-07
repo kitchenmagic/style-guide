@@ -320,6 +320,9 @@ body {
     padding-right: 16px;
     padding-left: 16px; } }
 
+.body-container .widget-span {
+  margin-bottom: 35px; }
+
 /* ============================================================
   Typography
 /* ============================================================ */
@@ -1644,12 +1647,14 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
 /*  Global Top Footer CTA
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .top-footer-cta {
-  background-color: #F8F8F8;
-  padding: 40px 10px; }
+  background-color: #F9FAFC;
+  padding: 40px 10px;
+  text-align: center; }
 
 .km-footer .km-btn-info {
   padding: 16px 19px !important;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0; }
 
 .km-footer .km-btn-info:hover {
   color: #fff; }
@@ -1952,6 +1957,100 @@ i.km-icon-divider {
   .dark-footer .mobile-flag {
     display: inline-block;
     margin-bottom: 1.25rem; } }
+
+/* ============================================================
+   CAREERS - www.kitchenmagic.com/careers
+/* ============================================================ */
+/*
+/*  Hero section
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-hero-title-large {
+  font-size: 2.75rem;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
+
+.km-hero-button-large {
+  padding: 1em 3em; }
+
+/*
+/*  Sub Nav
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-mini-nav ul {
+  list-style: none;
+  margin: 1em 0;
+  text-align: center; }
+  .km-mini-nav ul li {
+    display: inline;
+    padding: 0 20px;
+    color: #F01834;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 2rem;
+    height: 2rem;
+    text-align: center; }
+
+/*
+/*  White panels/cards
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-white-panel {
+  -moz-box-shadow: 0 1px 2px #ddd;
+  -webkit-box-shadow: 0 1px 2px #ddd;
+  box-shadow: 0 1px 2px #ddd;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 2px; }
+
+/*
+/*  Quote section
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-blockquote-icon {
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  opacity: .4; }
+
+.km-blockquote-lg {
+  text-align: center;
+  font-size: 2.1rem;
+  color: #4a4a4a; }
+
+.km-cite-lg {
+  text-align: center;
+  color: #222222; }
+
+/*
+/*  Misc
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-white-box {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px; }
+
+div#jobs-widget {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+
+/* ============================================================
+   ESTIMATE SPECIALS - www.kitchenmagic.com/estimate-specials
+/* ============================================================ */
+.km-img-circle {
+  border-radius: 150%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em; }
+
+form#hsForm_f12190c4-922f-4690-9ea0-03846d0b08c3, form#hsForm_78097024-1985-4808-a17a-17a95564f915 {
+  background: #fff;
+  border: none; }
+
+.km-button-orange {
+  background-color: #F01834 !important;
+  border-color: #F01834 !important;
+  width: 100%; }
 
 /* ============================================================
    HOMEPAGE
@@ -2425,82 +2524,6 @@ html .row-fluid .last-cta {
   border-bottom: 1px solid #DDDDDD; }
 
 /* ============================================================
-   CAREERS - www.kitchenmagic.com/careers
-/* ============================================================ */
-/*
-/*  Hero section
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.km-hero-title-large {
-  font-size: 2.75rem;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
-
-.km-hero-button-large {
-  padding: 1em 3em; }
-
-/*
-/*  Sub Nav
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.km-mini-nav ul {
-  list-style: none;
-  margin: 1em 0;
-  text-align: center; }
-  .km-mini-nav ul li {
-    display: inline;
-    padding: 0 20px;
-    color: #F01834;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    line-height: 2rem;
-    height: 2rem;
-    text-align: center; }
-
-/*
-/*  White panels/cards
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.km-white-panel {
-  -moz-box-shadow: 0 1px 2px #ddd;
-  -webkit-box-shadow: 0 1px 2px #ddd;
-  box-shadow: 0 1px 2px #ddd;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px 20px;
-  border-radius: 2px; }
-
-/*
-/*  Quote section
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.km-blockquote-icon {
-  color: #4a4a4a;
-  margin-bottom: 10px;
-  opacity: .4; }
-
-.km-blockquote-lg {
-  text-align: center;
-  font-size: 2.1rem;
-  color: #4a4a4a; }
-
-.km-cite-lg {
-  text-align: center;
-  color: #222222; }
-
-/*
-/*  Misc
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.km-white-box {
-  border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 10px; }
-
-div#jobs-widget {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-
-/* ============================================================
    SHARE THE MAGIC - www.kitchenmagic.com/share
 /* ============================================================ */
 .km-hero-title {
@@ -2574,24 +2597,6 @@ div#jobs-widget {
   width: 0;
   height: 0;
   display: inline-block; }
-
-/* ============================================================
-   ESTIMATE SPECIALS - www.kitchenmagic.com/estimate-specials
-/* ============================================================ */
-.km-img-circle {
-  border-radius: 150%;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 2em; }
-
-form#hsForm_f12190c4-922f-4690-9ea0-03846d0b08c3, form#hsForm_78097024-1985-4808-a17a-17a95564f915 {
-  background: #fff;
-  border: none; }
-
-.km-button-orange {
-  background-color: #F01834 !important;
-  border-color: #F01834 !important;
-  width: 100%; }
 
 /* ============================================================
    SELF SET
@@ -2759,6 +2764,43 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
       background-color: #C30019;
       border-color: #C30019;
       color: #fff; }
+
+.green-cta {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 0 1.25rem;
+  padding: .9rem 1.8rem;
+  line-height: 1.5;
+  border-radius: 0;
+  border: none;
+  font-size: 1rem;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  background-color: #F01834;
+  color: #fff;
+  border: 1px solid #F01834; }
+  .green-cta:hover {
+    background-color: #222222;
+    border: 1px solid #222222;
+    color: #fff; }
+  .green-cta:active {
+    background-color: #C30019;
+    border-color: #C30019;
+    color: #fff; }
 
 .km-button:focus {
   outline: none; }
@@ -2950,8 +2992,47 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
     margin-right: 0; } }
 
 /* ============================================================
+   CONTENT BOX
+/* ============================================================ */
+.content-box {
+  height: 333px;
+  padding: 25px 30px;
+  text-align: center;
+  color: #fff;
+  transition: all 300ms ease; }
+
+.content-box-sidebar {
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  transition: all 300ms ease;
+  padding: 1px 20px 6px 20px; }
+
+.content-box:hover {
+  transform: scale(1.03);
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
+
+.content-box h3, .content-box-sidebar h3 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 25%;
+  margin-top: 25px; }
+
+.content-box-sidebar h3 {
+  margin-bottom: 8px; }
+
+.content-box p {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+
+/* ============================================================
   FORMS
 /* ============================================================ */
+.form-title {
+  font-size: 1.6875rem;
+  text-align: center; }
+
 /**
  * Inputs
  */
@@ -3227,6 +3308,32 @@ table.ui-datepicker-calendar {
   color: #ccc; }
 
 /* ============================================================
+   ICONS
+/* ============================================================ */
+/**
+ * Arrow right on icons
+ * !!! this is old code, needs to be refactored
+ */
+.arrow-right::after {
+  content: "\f054";
+  font-family: fontawesome;
+  padding-left: 15px;
+  font-size: .9rem; }
+
+/* example: www.kitchenmagic.com/cabinet-refacing */
+.icon-box {
+  text-align: center;
+  padding: 0 10px; }
+
+.icon-box__icon {
+  max-height: 80px;
+  margin-bottom: 30px; }
+
+.icon-box__title {
+  color: #F01834;
+  font-weight: bold; }
+
+/* ============================================================
    LISTS
 /* ============================================================ */
 /**
@@ -3319,67 +3426,6 @@ ol.km-ol {
       z-index: 0; }
     ol.km-ol li::last-child::after {
       border: none; }
-
-/* ============================================================
-   ICONS
-/* ============================================================ */
-/**
- * Arrow right on icons
- * !!! this is old code, needs to be refactored
- */
-.arrow-right::after {
-  content: "\f054";
-  font-family: fontawesome;
-  padding-left: 15px;
-  font-size: .9rem; }
-
-/* example: www.kitchenmagic.com/cabinet-refacing */
-.icon-box {
-  text-align: center;
-  padding: 0 10px; }
-
-.icon-box__icon {
-  max-height: 80px;
-  margin-bottom: 30px; }
-
-.icon-box__title {
-  color: #F01834;
-  font-weight: bold; }
-
-/* ============================================================
-   CONTENT BOX
-/* ============================================================ */
-.content-box {
-  height: 333px;
-  padding: 25px 30px;
-  text-align: center;
-  color: #fff;
-  transition: all 300ms ease; }
-
-.content-box-sidebar {
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  transition: all 300ms ease;
-  padding: 1px 20px 6px 20px; }
-
-.content-box:hover {
-  transform: scale(1.03);
-  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
-  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
-  box-shadow: 0 2px 20px 0 #E1E5E4; }
-
-.content-box h3, .content-box-sidebar h3 {
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 25%;
-  margin-top: 25px; }
-
-.content-box-sidebar h3 {
-  margin-bottom: 8px; }
-
-.content-box p {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
 
 /* ============================================================
    MODALS
@@ -3791,7 +3837,7 @@ THUMBNAIL GALLERY
     display: block;
     margin: 0 auto; }
   .cabinet-card .product-title {
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 0.75rem;
     padding-bottom: 0.125rem; }
@@ -3848,7 +3894,6 @@ THUMBNAIL GALLERY
 **/
 .product-card {
   padding: 18px 10px 20px;
-  border: 1px solid #E1E5E4;
   width: 100%;
   /**
         * Product numbers
@@ -3863,7 +3908,16 @@ THUMBNAIL GALLERY
     text-align: center;
     margin-top: 12px;
     padding-bottom: 2px;
-    font-family: "DomaineDisplayNarrowBold", helvetica, serif; }
+    font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+    background: #fff;
+    padding: .8em;
+    position: relative;
+    top: -30px;
+    max-width: 80%;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
+    -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
+    box-shadow: 0 2px 10px 0 #E1E5E4; }
   .product-card .product-number {
     font-size: 0.6875rem;
     text-align: center;
@@ -4109,7 +4163,11 @@ THUMBNAIL GALLERY
 /* example: https://www.kitchenmagic.com/kitchen-cabinets/doors/wood */
 .new-product-wrapper {
   border: 2px solid #E1E5E4;
-  padding: 25px 20px 0; }
+  padding: 25px 20px 0;
+  position: relative; }
+  .new-product-wrapper img {
+    max-width: 100%;
+    height: auto; }
 
 .km-ribbon-wrapper {
   width: 108px;
@@ -4641,6 +4699,12 @@ th.hide-for-touch {
 .km-vertical-align {
   display: inline-block;
   vertical-align: middle; }
+
+.right {
+  float: right !important; }
+
+.left {
+  float: left !important; }
 
 /** This section should eventually be cleaned up once we standardize more of the spacing */
 .lg-margin-t {

@@ -22,22 +22,22 @@
 @import 'layout/_footer.scss';
 
 // Pages
-@import 'pages/_homepage.scss';
 @import 'pages/_careers.scss';
-@import 'pages/_share-the-magic.scss';
 @import 'pages/_estimate-specials.scss';
+@import 'pages/_homepage.scss';
+@import 'pages/_share-the-magic.scss';
 @import 'pages/_self-set.scss';
 
 // Components
 @import 'components/_buttons.scss';
-@import 'components/_forms.scss';
-@import 'components/_lists.scss';
-@import 'components/_icons.scss';
 @import 'components/_content-box.scss';
+@import 'components/_forms.scss';
+@import 'components/_icons.scss';
+@import 'components/_lists.scss';
 @import 'components/_modals.scss';
 @import 'components/_progress-bars.scss';
 @import 'components/_tables.scss';
-@import 'components/thumbnail-gallery.scss';
+@import 'components/_thumbnail-gallery.scss';
 
 // Hubspot Modules
 @import 'components/hubspot-modules/_accordion.scss';

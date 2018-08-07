@@ -4,9 +4,15 @@
 
 /* example: https://www.kitchenmagic.com/kitchen-cabinets/doors/wood */
 
-  .new-product-wrapper {
+.new-product-wrapper {
     border: 2px solid color(border);
     padding: 25px 20px 0;
+    position: relative;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .km-ribbon-wrapper {

@@ -9,7 +9,6 @@
 
 .product-card {
     padding: 18px 10px 20px;
-    border: 1px solid color(border);
     width: 100%;
 
     img {
@@ -24,6 +23,13 @@
         margin-top: 12px;
         padding-bottom: 2px;
         font-family: family(header);
+        background: #fff;
+        padding: .8em;
+        position: relative;
+        top: -30px;
+        max-width: 80%;
+        margin: 0 auto;
+        @include box-shadow($shadow-sm);
       }
 
       /**
