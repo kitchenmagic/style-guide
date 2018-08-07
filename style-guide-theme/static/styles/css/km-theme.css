@@ -165,7 +165,7 @@ code, code *, pre, pre * {
   font-size: 16px; }
 
 pre {
-  background: #EEF3F5;
+  background: #E1E5E4;
   border: 1px solid #E1E5E4; }
 
 /* ============================================================
@@ -248,7 +248,7 @@ a.nav-link {
     background-color: #A3A5A8; }
 
 .docs .module {
-  color: #4a4a4a; }
+  color: #222222; }
 
 /* ============================================================
    TO BE SORTED

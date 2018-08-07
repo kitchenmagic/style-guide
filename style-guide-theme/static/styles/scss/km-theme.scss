@@ -11,7 +11,7 @@
 // }
 
 * {
-    font-family: $font-family-text;
+    font-family: family(body);
 }
 
 header {
@@ -24,8 +24,8 @@ header {
 
 body {
     background: #fff;
-    font-family: $font-family-text;
-    color: $text-color;
+    font-family: family(body);
+    color: color(text, base);
 }
 
 
@@ -45,28 +45,28 @@ p {
 }
 
 blockquote {
-    border-left: 5px solid $border-color;
+    border-left: 5px solid color(border);
 
     p {
-        font-family: $font-family-text-i;
+        font-family: family(italic);
         padding-left: 10px;
-        color: $text-color-light;
+        color: color(text, light);
     }
 }
 
 hr {
-    border-color: $border-color;
+    border-color: color(border);
 }
 
 // code elements
 code, code *, pre, pre * {
-    color: $text-color;
+    color: color(text, base);
     font-size: 16px;
 }
 
 pre {
-    background: $lighter-gray;
-    border: 1px solid $border-color;
+    background: color(gray, light);
+    border: 1px solid color(border);
 }
 
 /* ============================================================
@@ -79,27 +79,27 @@ pre {
 
 .navbar-brand {
     font-size: 19px;
-    font-family: $font-family-header;
-    color: $text-color;
+    font-family: family(header);
+    color: color(text, base);
 
     &:hover {
-        color: $text-color;
+        color: color(text, base);
     }
 
     span {
-        font-family: $font-family-header;
-        color: $red;
+        font-family: family(header);
+        color: color(primary, base);
     }
 }
 
 a.nav-link {
     font-size: 16px;
-    color: $text-color;
+    color: color(text, base);
     @include transition(color .3s ease);
     text-transform: uppercase;
 
     &:hover {
-        color: $red;
+        color: color(primary, base);
     }
 }
 
@@ -114,28 +114,28 @@ a.nav-link {
     .api {
 
         .heading span {
-            color: $text-color;
+            color: color(text, base);
         }
 
         ul ul li a {
 
             &:hover {
-                background: $lighter-gray;
-                color: $text-color;
+                background: color(gray, lighter);
+                color: color(text, base);
             }
         }
 
         li {
             a {
                 border: none;
-                color: $text-color;
+                color: color(text, base);
             }
             &.active>a {
-                background: $red;
+                background: color(primary, base);
                 color: #fff;
 
                 &:hover {
-                    background: $red !important;
+                    background: color(primary, base) !important;
                 }
 
                 &:before, &:after {
@@ -162,8 +162,8 @@ a.nav-link {
 
 .sidebar .api li.active>a.sidebar-title {
     background: #fff;
-    color: $text-color;
-    font-family: $font-family-text-bold;
+    color: color(text, base);
+    font-family: family(bold);
 }
 // removes all pseudo elements from sidebar 
 .sidebar .api.cascading>.active:before, .sidebar .api.cascading>.active:nth-child(2):before, .sidebar .api.cascading>.active:nth-child(3):before, .sidebar .api.cascading>.active:nth-child(4):before, .sidebar .api.cascading>.active:nth-child(5):before {
@@ -171,7 +171,7 @@ a.nav-link {
 }
 
 .sidebar .api li.active:nth-child(2)>a.sidebar-title {
-    color: $text-color;
+    color: color(text, base);
     background: transparent;
 }
 
@@ -183,17 +183,17 @@ a.nav-link {
     }
 
     .title {
-        border-bottom: 1px solid $border-color;
+        border-bottom: 1px solid color(border);
 
         .tags {
             li {
-                background-color: $gray;
+                background-color: color(gray, base);
             }
         }
     }
 
     .module { 
-        color: $text-color-light;
+        color: color(text, base);
     }
 }
 

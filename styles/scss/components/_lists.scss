@@ -33,7 +33,7 @@ ul {
         */
       &--red {
         li:before {
-          color: $red;
+          color: color(primary, base);
         }
       }
   
@@ -74,7 +74,7 @@ ul {
   
       &--red {
         li:before {
-          color: $red;
+          color: color(primary, base);
         }
       }
   

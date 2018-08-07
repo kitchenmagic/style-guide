@@ -9,7 +9,7 @@
 
 .product-card {
     padding: 18px 10px 20px;
-    border: 1px solid $border-color;
+    border: 1px solid color(border);
     width: 100%;
 
     img {
@@ -23,7 +23,7 @@
         text-align: center;
         margin-top: 12px;
         padding-bottom: 2px;
-        font-family: $font-family-header;
+        font-family: family(header);
       }
 
       /**
@@ -34,8 +34,8 @@
         font-size: 0.6875rem;
         text-align: center;
         margin-bottom: -9px;
-        font-style: $font-family-text-i;
-        color: $text-color-light;
+        font-style: family(italic);
+        color: color(text, light);
     }
 }
 

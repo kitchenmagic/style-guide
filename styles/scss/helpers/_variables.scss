@@ -47,17 +47,6 @@ $shadow-md:           0 2px 20px 0 #E1E5E4;
 $shadow-lg:           0 2px 30px 0 #E1E5E4;
 
 
-// !! REMOVE THESE AFTER ADDING IN NEW MAPS
-$dark-red:         #C30019;
-$red:              #F01834;
-$light-red:        #FF999F;
-
-$gray:             #A3A5A8;
-$light-gray:       #E1E5E4;
-$lighter-gray:     #EEF3F5;
-$lightest-gray:    #F9FAFC;
-
-
 // ============================================================
 //  TYPOGRAPHY
 // ============================================================ 
@@ -70,21 +59,12 @@ $km-fonts: (
   'italic': ('ProximaNova-RegularIt', helvetica, sans-serif),
 );
 
-// !! REMOVE THESE AFTER ADDING IN NEW MAPS
-$font-family-header:      'DomaineDisplayNarrowBold', helvetica, serif;
-$font-family-text:        'ProximaNova-Regular', helvetica, sans-serif;
-$font-family-text-bold:   'ProximaNova-Bold', helvetica, sans-serif;
-$font-family-text-i:      'ProximaNova-RegularIt', helvetica, sans-serif;
-
-// !! REMOVE THESE AFTER ADDING IN NEW MAPS TO PARTIALS
-$text-color:       #222222;
-$text-color-light: #4a4a4a;
 
 // ============================================================
 //  LAYOUT
 // ============================================================ 
 
-// Map of breakpoints
+// Map of breakpoints - Media Queries
 // !!! replace this with relative units
 $breakpoints: (
   xs: 576px,
@@ -92,22 +72,6 @@ $breakpoints: (
   md: 992px,
   lg: 1200px
 );
-
-
-// ============================================================
-//  UI ELEMENTS
-// ============================================================ 
-// !! REMOVE THESE AFTER ADDING IN NEW MAPS
-$border-color:     #E1E5E4;
-$shadow:           #D9DFF0;
-
-
-// ============================================================
-//  FORMS
-// ============================================================ 
-// !! REMOVE THESE AFTER ADDING IN NEW MAPS
-$warning:          #F35B62;
-
 
 // ============================================================
 //  OLD VARIABLES - NEED TO BE SORTED AND REMOVED 
