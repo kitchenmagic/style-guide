@@ -423,9 +423,8 @@ a {
   -o-transition: all 300ms ease;
   transition: all 300ms ease; }
   a:hover {
-    border-bottom: 1px solid #F01834;
     color: #F01834;
-    text-decoration: none; }
+    text-decoration: underline; }
   a:active {
     color: #C30019; }
 
@@ -1614,12 +1613,14 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
     display: inline-block; }
     .km-nav-deeper li a {
       margin: 0;
-      padding: .7em 0 .7em 1em;
+      padding: .8em 0 .7em 1em;
       display: inline-block; }
     .km-nav-deeper li:after {
       content: '|';
       color: #E1E5E4;
       padding: 0 0 0 1em; }
+    .km-nav-deeper li:last-child:after {
+      display: none; }
 
 /*
 /*  Breadcrumbs
