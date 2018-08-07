@@ -169,13 +169,40 @@ a {
   color: #fff;
 }
 
-/**
- * Horizontal rule
- */
+/*
+/*  Horizontal Rule
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   border: solid color(border);
   border-width: 1px 0 0;
   clear: both;
   height: 0;
   margin: 1.25rem 0 1.1875rem;
+}
+
+/*
+/*  Blockquotes
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+blockquote, .reviews-blockquote {
+  border: 0;
+  text-align: left;
+  background: color(background);
+  background: rgba(0,0,0,0.05);
+  border-left: solid 8px color(gray, light);
+  padding: 25px 25px 10px;
+  font-family: family(italic);
+
+  cite {
+    text-align: right;
+    padding: 1em 0;
+    display: block;
+    font-size: .8125rem;
+    color: color(text, light);
+
+    &:before {
+      content: "\2014 \0020";
+      padding-right: .5em;
+    }
+  }
 }

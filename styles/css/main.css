@@ -434,15 +434,36 @@ a {
   background: #F01834;
   color: #fff; }
 
-/**
- * Horizontal rule
- */
+/*
+/*  Horizontal Rule
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   border: solid #E1E5E4;
   border-width: 1px 0 0;
   clear: both;
   height: 0;
   margin: 1.25rem 0 1.1875rem; }
+
+/*
+/*  Blockquotes
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote, .reviews-blockquote {
+  border: 0;
+  text-align: left;
+  background: #F9FAFC;
+  background: rgba(0, 0, 0, 0.05);
+  border-left: solid 8px #E1E5E4;
+  padding: 25px 25px 10px;
+  font-family: "ProximaNova-RegularIt", helvetica, sans-serif; }
+  blockquote cite, .reviews-blockquote cite {
+    text-align: right;
+    padding: 1em 0;
+    display: block;
+    font-size: .8125rem;
+    color: #4a4a4a; }
+    blockquote cite:before, .reviews-blockquote cite:before {
+      content: "\2014 \0020";
+      padding-right: .5em; }
 
 /* ============================================================
    RESPONSIVE
@@ -1565,6 +1586,9 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
 /* ============================================================
    PAGES
 /* ============================================================ */
+/*
+/*  Page Titles
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-page-header {
   background: none;
   padding: 16px 16px;
@@ -1573,6 +1597,9 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
 .section-header {
   text-align: center; }
 
+/*
+/*  Page Navigation
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-nav-deeper {
   border: solid 1px #E1E5E4;
   list-style: none;
@@ -1590,6 +1617,25 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
       content: '|';
       color: #E1E5E4;
       padding: 0 0 0 1em; }
+
+/*
+/*  Breadcrumbs
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-nav-breadcrumb a {
+  color: #F01834;
+  text-decoration: underline; }
+
+.km-nav-breadcrumb .hs-breadcrumb-menu {
+  list-style-type: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-transform: uppercase;
+  font-size: .8rem; }
+  .km-nav-breadcrumb .hs-breadcrumb-menu.first-crumb {
+    padding-left: 0; }
+  .km-nav-breadcrumb .hs-breadcrumb-menu .hs-breadcrumb-menu-item {
+    float: left;
+    padding: 10px 0px 10px 10px; }
 
 /* ============================================================
   FOOTER

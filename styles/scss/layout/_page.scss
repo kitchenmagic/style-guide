@@ -2,9 +2,9 @@
    PAGES
 /* ============================================================ */
 
-//
-//  Page Titles
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+/*
+/*  Page Titles
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .km-page-header {
     background: none;
@@ -16,9 +16,9 @@
     text-align: center;
 }
 
-//
-//  Page Navigation
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+/*
+/*  Page Navigation
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .km-nav-deeper {
     border: solid 1px color(border);
@@ -41,6 +41,32 @@
             content: '|';
             color: color(border);
             padding: 0 0 0 1em;
+        }
+    }
+}
+
+/*
+/*  Breadcrumbs
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-nav-breadcrumb {
+    a {
+        color: color(primary, base);
+        text-decoration: underline;
+    }
+    .hs-breadcrumb-menu {
+        list-style-type: none;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        text-transform: uppercase;
+        font-size: .8rem;
+
+        &.first-crumb {
+            padding-left: 0;
+        }
+
+        .hs-breadcrumb-menu-item {
+            float: left;
+            padding: 10px 0px 10px 10px;
         }
     }
 }
