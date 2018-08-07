@@ -95,10 +95,11 @@
   vertical-align: middle;
 }
 
-/**
- * Margins
- * This section should eventually be cleaned up once we standardize more of the spacing
- */
+//
+//  Margins
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+/** This section should eventually be cleaned up once we standardize more of the spacing */
 
 .lg-margin-t {
     margin-top: 20px;
@@ -114,4 +115,24 @@
 
 .hide {
   display: none;
+}
+
+//
+//  Borders
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.km-border-top {
+  border-top: solid 1px color(border);
+}
+
+.km-border-right {
+  border-right: solid 1px color(border);
+}
+
+.km-border-bottom {
+  border-bottom: solid 1px color(border);
+}
+
+.km-border-left {
+  border-left: solid 1px color(border);
 }

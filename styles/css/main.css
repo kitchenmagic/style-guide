@@ -1566,12 +1566,30 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
    PAGES
 /* ============================================================ */
 .km-page-header {
-  background: url(https://cdn2.hubspot.net/hubfs/126868/images_old/transparent-square-tiles-1.png?t=1513359002491) #f6f6f6;
+  background: none;
   padding: 16px 16px;
-  border-bottom: solid 1px #e5e5e5; }
+  border: none; }
 
 .section-header {
   text-align: center; }
+
+.km-nav-deeper {
+  border: solid 1px #E1E5E4;
+  list-style: none;
+  margin-left: 0;
+  padding: 0 1em;
+  text-align: center;
+  line-height: initial; }
+  .km-nav-deeper li {
+    display: inline-block; }
+    .km-nav-deeper li a {
+      margin: 0;
+      padding: .7em 0 .7em 1em;
+      display: inline-block; }
+    .km-nav-deeper li:after {
+      content: '|';
+      color: #E1E5E4;
+      padding: 0 0 0 1em; }
 
 /* ============================================================
   FOOTER
@@ -2677,20 +2695,24 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
   border: 1px solid #F01834; }
   .km-button:hover {
     background-color: #222222;
-    border: 1px solid #222222; }
+    border: 1px solid #222222;
+    color: #fff; }
   .km-button:active {
     background-color: #C30019;
-    border-color: #C30019; }
+    border-color: #C30019;
+    color: #fff; }
   .km-button.km-btn-info, .km-button.km-btn-warning {
     background-color: #F01834;
     color: #fff;
     border: 1px solid #F01834; }
     .km-button.km-btn-info:hover, .km-button.km-btn-warning:hover {
       background-color: #222222;
-      border: 1px solid #222222; }
+      border: 1px solid #222222;
+      color: #fff; }
     .km-button.km-btn-info:active, .km-button.km-btn-warning:active {
       background-color: #C30019;
-      border-color: #C30019; }
+      border-color: #C30019;
+      color: #fff; }
 
 .km-button:focus {
   outline: none; }
@@ -4574,10 +4596,7 @@ th.hide-for-touch {
   display: inline-block;
   vertical-align: middle; }
 
-/**
- * Margins
- * This section should eventually be cleaned up once we standardize more of the spacing
- */
+/** This section should eventually be cleaned up once we standardize more of the spacing */
 .lg-margin-t {
   margin-top: 20px; }
 
@@ -4589,3 +4608,15 @@ th.hide-for-touch {
 
 .hide {
   display: none; }
+
+.km-border-top {
+  border-top: solid 1px #E1E5E4; }
+
+.km-border-right {
+  border-right: solid 1px #E1E5E4; }
+
+.km-border-bottom {
+  border-bottom: solid 1px #E1E5E4; }
+
+.km-border-left {
+  border-left: solid 1px #E1E5E4; }

@@ -2,12 +2,45 @@
    PAGES
 /* ============================================================ */
 
+//
+//  Page Titles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
 .km-page-header {
-    background: url(https://cdn2.hubspot.net/hubfs/126868/images_old/transparent-square-tiles-1.png?t=1513359002491) #f6f6f6;
+    background: none;
     padding: 16px 16px;
-    border-bottom: solid 1px #e5e5e5;
+    border: none;
 }
 
 .section-header {
     text-align: center;
+}
+
+//
+//  Page Navigation
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.km-nav-deeper {
+    border: solid 1px color(border);
+    list-style: none;
+    margin-left: 0;
+    padding: 0 1em;
+    text-align: center;
+    line-height: initial;
+
+    li {
+        display: inline-block;
+
+        a {
+            margin: 0;
+            padding: .7em 0 .7em 1em;
+            display: inline-block;
+        }
+
+        &:after {
+            content: '|';
+            color: color(border);
+            padding: 0 0 0 1em;
+        }
+    }
 }

@@ -185,7 +185,7 @@
   @include transition(all 300ms ease);
 }
 
-// used to override old button classes
+// Primary Button Color - used to override old button classes
 @mixin km-btn--primary() {
   background-color: color(primary, base);
   color: #fff;
@@ -194,14 +194,15 @@
   &:hover {
       background-color: color(text, base);
       border: 1px solid color(text, base);
+      color: #fff;
   }
 
   &:active {
       background-color: color(primary, dark);
       border-color: color(primary, dark);
+      color: #fff;
   }
 }
-
 
 // OLD VARIABLES - NEED TO BE SORTED AND REMOVED 
 // Shadows
