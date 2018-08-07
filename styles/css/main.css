@@ -1563,6 +1563,17 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
     display: none !important; } }
 
 /* ============================================================
+   PAGES
+/* ============================================================ */
+.km-page-header {
+  background: url(https://cdn2.hubspot.net/hubfs/126868/images_old/transparent-square-tiles-1.png?t=1513359002491) #f6f6f6;
+  padding: 16px 16px;
+  border-bottom: solid 1px #e5e5e5; }
+
+.section-header {
+  text-align: center; }
+
+/* ============================================================
   FOOTER
 /* ============================================================ */
 /*
@@ -2592,14 +2603,14 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
   -o-transition: all 300ms ease;
   transition: all 300ms ease; }
   .km-btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
   .km-btn.km-btn--primary {
     background-color: #F01834;
     color: #fff;
     border: 1px solid #F01834; }
     .km-btn.km-btn--primary:hover {
       background-color: #222222;
-      text-decoration: none;
       border: 1px solid #222222; }
     .km-btn.km-btn--primary:active {
       background-color: #C30019;
@@ -2610,7 +2621,6 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
     border: 1px solid #222222; }
     .km-btn.km-btn--secondary:hover {
       background-color: #F01834;
-      text-decoration: none;
       border: 1px solid #F01834; }
   .km-btn.km-btn--ghost {
     background-color: transparent;
@@ -2619,8 +2629,7 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
     .km-btn.km-btn--ghost:hover {
       background-color: #222222;
       border: 1px solid #222222;
-      color: #fff;
-      text-decoration: none; }
+      color: #fff; }
     .km-btn.km-btn--ghost:active {
       background-color: #222222;
       border: 1px solid #222222;
@@ -2662,7 +2671,26 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
-  transition: all 300ms ease; }
+  transition: all 300ms ease;
+  background-color: #F01834;
+  color: #fff;
+  border: 1px solid #F01834; }
+  .km-button:hover {
+    background-color: #222222;
+    border: 1px solid #222222; }
+  .km-button:active {
+    background-color: #C30019;
+    border-color: #C30019; }
+  .km-button.km-btn-info, .km-button.km-btn-warning {
+    background-color: #F01834;
+    color: #fff;
+    border: 1px solid #F01834; }
+    .km-button.km-btn-info:hover, .km-button.km-btn-warning:hover {
+      background-color: #222222;
+      border: 1px solid #222222; }
+    .km-button.km-btn-info:active, .km-button.km-btn-warning:active {
+      background-color: #C30019;
+      border-color: #C30019; }
 
 .km-button:focus {
   outline: none; }

@@ -15,6 +15,7 @@
 
     &:hover {
         cursor: pointer;
+        text-decoration: none;
     }
 
     // button colors
@@ -25,7 +26,6 @@
 
         &:hover {
             background-color: color(text, base);
-            text-decoration: none;
             border: 1px solid color(text, base);
         }
 
@@ -42,7 +42,6 @@
 
         &:hover {
             background-color: color(primary, base);
-            text-decoration: none;
             border: 1px solid color(primary, base);
         }
 
@@ -62,7 +61,6 @@
             background-color: color(text, base);
             border: 1px solid color(text, base);
             color: #fff;
-            text-decoration: none;
         }
 
         &:active {
@@ -97,8 +95,10 @@
 
 .km-button {
     @include btn();
+    @include km-btn--primary();
 
-    .km-btn-info, .km-btn-warning {
+    &.km-btn-info, &.km-btn-warning {
+        @include km-btn--primary();
     }
 }
 
