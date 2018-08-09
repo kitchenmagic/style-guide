@@ -35,6 +35,14 @@ h1 a {
     @include transition(all 300ms ease);
 }
 
+.blog-title {
+    border-top: 1px solid color(border);
+    border-bottom: 1px solid color(border);
+    padding: 22px 0 22px 0;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
 // author 
 p#hubspot-author_data, a.author-link {
     font-size: px-to-rem(12px);
@@ -82,4 +90,40 @@ figure {
   
 figcaption {
     font-size: 12px;
+}
+
+// Twitter quote
+.twitter-quote {
+    font-family: family(body);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 15px 0 0 0;
+    color: color(primary, base);
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &-q {
+        padding-right: 11px;
+        color: color(text, light);
+        opacity: .6;
+    }
+}
+
+.quote-gray {
+    color: color(text, light);
+}
+
+.post-twitter-quote {
+    padding-bottom: 15px;
+}
+
+// CTA
+.anchor-cta {
+    color: color(primary, base);
+    font-family: perpetua,"Times New Roman",Times,serif;
+    font-size: 1.6875rem;
+
+    &:hover {
+        color: color(primary, dark);    
+    }
 }
