@@ -7,7 +7,6 @@
    SUMMARY
 /* ============================================================
 
-
 */
 // Base
 @import 'base/_reset.scss';
@@ -51,6 +50,7 @@
 
 // Vendors
 @import 'vendors/_foundation-visibility.scss';
+@import 'vendors/_foundation-grid.scss';
 
 // Utilities 
 @import '_utilities.scss';

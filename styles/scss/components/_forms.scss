@@ -5,15 +5,15 @@
   FORMS
 /* ============================================================ */
 
+// form title
 .form-title {
     font-size: 1.6875rem;
     text-align: center;
 }
 
-
-/**
- * Inputs
- */
+/*
+/* Inputs 
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 div.input {
 
     input.hs-input {
@@ -43,9 +43,7 @@ div.input {
         }
     }
 
-    /**
-     * Select fields
-     */
+    // select inputs
     select {
         padding: .8rem;
         -webkit-appearance: none;
@@ -77,16 +75,12 @@ div.input {
     }
     
 }
- /**
-  * Submit button
-  */
+// Submit button
 .hs_submit.hs-submit div.actions input {
     @include btn();
 }
 
- /**
-  * Date input - calendar for self set forms
-  */
+// Date input
 div.hs-dateinput {
     input {
         background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/calendar.png) no-repeat 95% center;
@@ -98,6 +92,7 @@ div.hs-dateinput {
     }
 }
 
+// Datepicker
 div.hs-datepicker div.fn-date-picker.pika-single.is-bound {
     @include box-shadow($shadow-md);
     border: 1px solid color(border);
@@ -109,18 +104,22 @@ div.hs-datepicker div.fn-date-picker.pika-single.is-bound {
     font-weight: normal;
 }
 
-/**
- * Form labels
- */
+/*
+/* Labels
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 div.hs-form-field label {
     font-family: family(bold);
     color: #222;
     font-size: .8rem;
 }
+// required
+.hs-form-required {
+    color: color(text, base);
+}
 
-/**
- * Form errors
- */
+/*
+/* Errors or States
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul.hs-error-msgs li label {
     color: color(error);
     font-family: family(body);
