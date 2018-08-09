@@ -1,3 +1,202 @@
+@charset "UTF-8";
 /* ============================================================
    BLOG SUMMARY
 /* ============================================================ */
+/* ============================================================
+   BLOG GLOBAL
+/* ============================================================ */
+body.hs-blog-listing.hs-blog-name-primary-blog, body.hs-blog-listing.hs-blog-name-recipe-blog, body.hs-blog-listing.hs-blog-name-in-the-press, body.hs-blog-listing.hs-blog-name-wescue, body.hs-blog-listing.hs-blog-name-remodel-of-the-month {
+  background-color: #F9FAFC; }
+
+/* ============================================================
+   BLOG TYPOGRAPHY 
+/* ============================================================ */
+/*
+/* BLOG LISTING
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+div.post-header h2 {
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  line-height: 1.1em; }
+  div.post-header h2 > a {
+    color: #222222; }
+    div.post-header h2 > a:hover {
+      color: #F01834; }
+
+/*
+/* POST
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section.post-header h1 {
+  text-align: left;
+  padding-bottom: 0; }
+
+h1 a {
+  color: #222222;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+
+p#hubspot-author_data, a.author-link {
+  font-size: 0.75rem; }
+
+h6.date {
+  font-size: 0.75rem;
+  display: inline-block; }
+
+.section.post-body img {
+  margin: .8rem 0; }
+
+.houzz-caption {
+  margin-bottom: 0;
+  color: #4a4a4a; }
+
+.pic-accred {
+  font-size: 0.6875rem;
+  color: #4a4a4a;
+  margin-bottom: 1em; }
+
+.pic-caption {
+  font-size: 0.75rem;
+  color: #4a4a4a; }
+
+div#comments-listing {
+  display: none; }
+
+figure {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.8rem; }
+
+figcaption {
+  font-size: 12px; }
+
+/* ============================================================
+   BLOG LISTING
+/* ============================================================ */
+/*
+/* List Card
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.post-item {
+  padding: 0;
+  margin-bottom: 2rem;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
+
+.featured-image-listing {
+  padding: 0;
+  margin-bottom: 10px; }
+
+.km-blog-image-listing {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 353px;
+  border-radius: 3px 0 0 3px; }
+
+.km-right-card {
+  padding: 15px 25px 10px 25px; }
+
+p#hubspot-topic_data {
+  margin-bottom: 0;
+  font-size: 0.8125rem; }
+
+a.topic-link {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  color: #F01834; }
+  a.topic-link:nth-last-child(1) {
+    border-right: none; }
+  a.topic-link:nth-child(n+2):before {
+    content: "/ ";
+    color: #4a4a4a; }
+
+/* ============================================================
+   BLOG VIDEO
+/* ============================================================ */
+iframe {
+  margin-bottom: 30px; }
+
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin: 30px 0; }
+
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; }
+
+/* ============================================================
+   RESPONSIVE
+/* ============================================================ */
+/** 
+ * !!! This section will be removed and added to it's specific partial.
+ * It's only a temporary for launch.
+*/
+/*** mobile -  max-width 640px, mobile-only styles, use when QAing mobile issues ***/
+@media only screen and (max-width: 40em) {
+  /** Posts **/
+  .body-container-wrapper {
+    padding-top: 0; }
+  .section.post-header h1, .post-header h2 {
+    line-height: 1.2;
+    margin-bottom: .3em;
+    font-size: 2.4rem; }
+  .blog-section h2 {
+    font-size: 1.9rem;
+    padding: 1.5em 0 .5em; }
+  h3 {
+    font-size: 1.9rem;
+    padding: 1.5em 0 .5em; }
+  .section.post-body img {
+    margin: 1rem 0; }
+  .section.post-body p {
+    font-size: 1.2rem; }
+  p {
+    font-size: 1.2rem; }
+  .mobile-cta {
+    margin: 2em 0; }
+  /** read-more **/
+  .large-6.columns {
+    padding-left: 0;
+    padding-right: 0; }
+  .km-blog-image-listing {
+    height: 200px !important;
+    border-radius: 3px 0 0 3px; }
+  .post-item {
+    padding-bottom: 10px !important;
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1); }
+  div.read-more {
+    bottom: 7px !important; }
+  .featured-image-listing {
+    margin: 1rem 0; }
+  .post-header h2 {
+    padding-top: .4em; }
+  /*button fix*/
+  p.right {
+    float: none !important;
+    text-align: center; }
+  /* make giphys work for mobile */
+  iframe {
+    width: 100%; } }
+
+/* Medium only - iPad*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .post-item {
+    padding-bottom: 15px !important; } }
+
+/* Medium only - iPad: landscape view */
+/* ============================================================
+   BLOG UTILITIES
+/* ============================================================ */
+.clear {
+  clear: both; }

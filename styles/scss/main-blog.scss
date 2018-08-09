@@ -7,3 +7,18 @@
    BLOG SUMMARY
 /* ============================================================ */
 
+// base
+@import 'styles/scss/blog/base/_global.scss';
+@import 'styles/scss/blog/base/_typography.scss';
+
+// layout 
+@import 'styles/scss/blog/layout/_blog-listing.scss';
+
+// components
+@import 'styles/scss/blog/components/_video.scss';
+
+// responsive
+@import 'styles/scss/blog/_responsive.scss';
+
+// utilities
+@import 'styles/scss/blog/_utilities';
