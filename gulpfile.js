@@ -22,6 +22,13 @@ gulp.task('main-compile', function() {
         .pipe(gulp.dest('styles/css'));
 });
 
+// Compiles to main-blog.css which will be the CSS file for the primary blog
+gulp.task('blog-compile', function() {
+    gulp.src('styles/scss/main-blog.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('styles/css'));
+});
+
 gulp.task('default', function() {
     gulp.watch(['styles/scss/**/*.scss','style-guide-theme/static/styles/scss/km-theme.scss', 'styles/sass/main.scss'],  ['styles', 'theme-styles', 'main-compile']);
 });

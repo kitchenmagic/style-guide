@@ -1,0 +1,106 @@
+/* ============================================================
+   RESPONSIVE
+/* ============================================================ */
+
+/*** mobile -  max-width 640px, mobile-only styles, use when QAing mobile issues ***/
+@media only screen and (max-width: 40em) {
+    
+    /** Posts **/
+    
+    .body-container-wrapper {
+        padding-top: 0;
+    }
+    
+    .section.post-header h1, .post-header h2 {
+        line-height: 1.2;
+        margin-bottom: .3em;
+        font-size: 2.4rem;
+    }
+    
+    .blog-section h2 {
+        font-size: 1.9rem;
+        padding: 1.5em 0 .5em;
+    }
+    
+    
+    h3 {
+        font-size: 1.9rem;    
+        padding: 1.5em 0 .5em;
+    }
+    
+    .section.post-body img {
+        margin: 1rem 0;
+    }
+    
+    .section.post-body p {
+        font-size: 1.2rem;
+    }
+    
+    p {
+    font-size: 1.2rem;
+    }
+    
+    .mobile-cta {
+        margin: 2em 0;
+    }
+    
+    /** read-more **/
+    
+    .large-6.columns {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+     .km-blog-image-listing {
+        height: 200px !important;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .post-item {
+        padding-bottom: 10px !important;
+        border-radius: 0 3px 3px 0;
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,.10);
+    }
+    
+    div.read-more {
+        bottom: 7px !important;
+    }
+    
+    .featured-image-listing {
+        margin: 1rem 0;
+    }
+    
+    .post-header h2 {
+    padding-top: .4em;
+    }
+    
+    /*button fix*/
+    p.right {
+    float: none !important;
+    text-align: center;
+    }
+    
+    /* make giphys work for mobile */
+    iframe {
+        width: 100%;
+    }
+    
+   
+    
+} 
+
+/* Medium only - iPad*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    
+    .post-item {
+        padding-bottom: 15px !important;
+    }
+}
+
+/* Medium only - iPad: landscape view */ 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    
+}
