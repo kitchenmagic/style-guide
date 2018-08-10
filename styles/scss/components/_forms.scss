@@ -5,10 +5,26 @@
   FORMS
 /* ============================================================ */
 
+
 // form title
 .form-title {
     font-size: 1.6875rem;
     text-align: center;
+    background: color(primary, base);
+    color: #fff;
+    border: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: .5em;
+}
+
+// form container
+.body-container-wrapper form, .body-container-wrapper .hs-form {
+    background-color: color(background);
+    padding: 1em 1em .5em 1em !important;
+    border: 1px solid color(border);
+    border-top: 0;
+    border-radius: 0;
 }
 
 /*
@@ -53,12 +69,13 @@ div.input {
         appearance: none;
         font-size: 1rem;
         height: 46px;
-        background: #fff;
+        background-color: #fff;
         color: color(gray, base);
         border-radius: 0;
         border-color: color(gray, base);
         width: 100% !important;
         background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center;
+        background-size: 14px;
 
         &:focus {
             border-color: color(focus);
@@ -78,6 +95,7 @@ div.input {
 // Submit button
 .hs_submit.hs-submit div.actions input {
     @include btn();
+    margin-bottom: 0;
 }
 
 // Date input

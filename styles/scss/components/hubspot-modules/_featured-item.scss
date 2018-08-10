@@ -1,0 +1,30 @@
+/* ============================================================
+   FEATURED ITEM
+/* ============================================================ */
+/**
+ * This file will live on Hubspot Modules only.
+ * !!! REMOVE from main.scss 
+ * example: https://www.kitchenmagic.com/products
+ **/
+ 
+.km-featured-item .km-featured-item-title {
+    color: #FFF;
+    text-align: center;
+    padding-top: .3em;
+    padding-bottom: .2em;
+    position: absolute;
+    width: 100%
+}
+
+.km-featured-item a:hover {
+    text-decoration: none
+}
+
+.km-featured-item .km-featured-item-image {
+    position: relative
+}
+
+.km-featured-item .km-featured-item-caption {
+    padding: 1em 1.3em;
+    background-color: #fff
+}
