@@ -6,14 +6,18 @@
  * !!! REMOVE from main.scss 
  * example: https://www.kitchenmagic.com/products
  **/
- 
+
 .km-featured-item .km-featured-item-title {
     color: #FFF;
     text-align: center;
     padding-top: .3em;
     padding-bottom: .2em;
     position: absolute;
-    width: 100%
+    width: 100%;
+}
+
+.km-featured-item-title {
+    background: rgba(0,0,0,.5);
 }
 
 .km-featured-item a:hover {
@@ -26,5 +30,6 @@
 
 .km-featured-item .km-featured-item-caption {
     padding: 1em 1.3em;
-    background-color: #fff
+    background-color: #fff;
+    @include box-shadow($shadow-sm);
 }

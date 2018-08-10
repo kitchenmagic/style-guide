@@ -1,0 +1,131 @@
+/* ============================================================
+   COMPARISON TABLE
+/* ============================================================ */
+
+/*** MOBILE QUERIES ***/ 
+@media only screen and (max-width: 40em)  { 
+  
+    .km-table .km-row-th td {
+      padding: 10px 0 !important;
+    }
+   
+    .km-table .km-row-th td a.km-button {
+      display: none;
+    }
+ }
+ 
+ /*** TABLE ***/
+ .km-table {
+   border-collapse: collapse;
+   border: none;
+   table-layout: fixed;
+   width: 100%;
+ }
+ 
+ /*** ROW ***/
+ .km-table > tbody > tr {
+   border-bottom: 1px solid color(border);
+ }
+ 
+ .km-table>tbody>tr:nth-of-type(even) {
+   background: #FFF;
+ }
+ 
+ .km-table tr.km-row-ts{
+   vertical-align: bottom;
+   padding-bottom: 9px;
+   padding-left: 0;
+   border: none;
+   border-bottom: 3px solid color(border);
+ }
+ 
+ 
+ /*** CELL ***/
+ .km-table > tbody > tr > td {
+   padding: 15px 10px;
+   font-size: 1rem;
+   font-weight: bold;
+   border: 1px solid color(border);
+ }
+ 
+ .km-table .km-row-th td{
+     background: #f2f2f2;
+   color: inherit;
+   padding: 27px 20px;
+   text-align: center;
+   font-size: 1.1rem;
+   border: 1px solid color(border);
+ }
+ 
+ .km-table .km-row-th .km-cell-text{
+   display:inline-block;
+ }
+ 
+ .km-table .km-row-ts > td {
+   border-right: none;
+   padding: 26px 0 5px 0;
+ }
+ 
+ .km-table .km-cell-prefix {
+   font-weight: lighter;
+   font-style: italic;
+   color: color(success);
+   margin-right:7px;
+ }
+ 
+ .km-table td.km-cell-blank{
+     border-bottom: 1px solid #fff;
+   background-color: transparent;
+   visibility: hidden
+ }
+ 
+ .km-table>tbody>tr>td:first-child {
+     border-left: none;
+ }
+ 
+ .km-table tr.km-row-dr > td > span {
+   font-weight: normal;
+ }
+ 
+ 
+ /*** BUTTON ***/
+ .km-table .km-button{
+   margin:0;
+   margin-top: 20px;
+ }
+ 
+ .km-table .km-button .fa{
+     font-size: 1rem;
+ }
+ 
+ .km-button.km-btn-clear {
+   background: #fff;
+   color: #70AD47;
+   border: 1px solid #d9d9d9;
+   transition: all 300ms ease-in;
+ }
+ 
+ .km-button.km-btn-clear:hover {
+   background: #d9d9d9;
+   color: #70AD47;
+   border: 1px solid #d9d9d9;
+ }
+ 
+ /*** ICONS ***/
+ .km-table .fa {
+   font-size: 1.4rem;
+ }
+ 
+ .km-table .fa.fa-check {
+   color: color(success);
+ }
+ 
+ .km-table span.tooltip i{
+   font-size: 1rem;
+   padding-left: 3px;
+   color: color(text, light);
+ }
+ 
+ .km-clear{
+     clear:both;
+ }

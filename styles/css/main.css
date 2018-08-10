@@ -4284,6 +4284,9 @@ THUMBNAIL GALLERY
   position: absolute;
   width: 100%; }
 
+.km-featured-item-title {
+  background: rgba(0, 0, 0, 0.5); }
+
 .km-featured-item a:hover {
   text-decoration: none; }
 
@@ -4292,7 +4295,10 @@ THUMBNAIL GALLERY
 
 .km-featured-item .km-featured-item-caption {
   padding: 1em 1.3em;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
+  box-shadow: 0 2px 10px 0 #E1E5E4; }
 
 /* ============================================================
   FOUNDATION - VISIBILITY 
