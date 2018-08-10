@@ -18,9 +18,8 @@
     max-width: 1170px;
     margin: 0 auto;
     padding: 2em 0;
-  }
-  
-  .cd-timeline__container::before {
+
+    &::before {
     /* this is the vertical line */
     content: '';
     position: absolute;
@@ -29,6 +28,7 @@
     height: 100%;
     width: 4px;
     background: #d6d4d4;
+    }
   }
   
   .cd-timeline__button {
@@ -36,7 +36,6 @@
     left: 50%;
     transform: translate(-50%);
   }
-  
   
   @media only screen and (min-width: 1170px) {
     .cd-timeline {

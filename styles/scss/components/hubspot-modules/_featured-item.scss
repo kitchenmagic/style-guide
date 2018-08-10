@@ -7,17 +7,18 @@
  * example: https://www.kitchenmagic.com/products
  **/
 
-.km-featured-item .km-featured-item-title {
+.km-featured-item-title {
     color: #FFF;
     text-align: center;
     padding-top: .3em;
     padding-bottom: .2em;
     position: absolute;
     width: 100%;
-}
-
-.km-featured-item-title {
     background: rgba(0,0,0,.5);
+    margin: 0;
+    font-family: family(body);
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .km-featured-item a:hover {
@@ -32,4 +33,9 @@
     padding: 1em 1.3em;
     background-color: #fff;
     @include box-shadow($shadow-sm);
+
+    h3, h4 {
+        margin-top: 0;
+        font-size: 1.875rem;
+    }
 }
