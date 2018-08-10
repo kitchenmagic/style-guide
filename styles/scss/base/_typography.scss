@@ -173,10 +173,25 @@ a {
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   border: solid color(border);
-  border-width: 1px 0 0;
+  border-width: 2px 0 0;
   clear: both;
   height: 0;
-  margin: 1.25rem 0 1.1875rem;
+  margin: 1.25rem 0 px-to-rem(30px);
+  position: relative;
+
+  &:after {
+    content: "";
+    height: 10px;
+    text-align: center;
+    transform: rotate(45deg);
+    width: 10px;
+    display: inline-block;
+    position: absolute;
+    border: 2px solid #e1e5e4;
+    left: 50%;
+    background: #fff;
+    top: -6px;
+  }
 }
 
 /*
