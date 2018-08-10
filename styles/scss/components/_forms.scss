@@ -92,16 +92,55 @@ div.hs-dateinput {
     }
 }
 
-// Datepicker
-div.hs-datepicker div.fn-date-picker.pika-single.is-bound {
-    @include box-shadow($shadow-md);
-    border: 1px solid color(border);
+/*
+/* Datepicker / Calendar
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+// calendar box
+.gldp-flatwhite {
     border-radius: 0;
-    font-family: family(body);
+    font-family: family(body) !important;
 }
 
-.fn-date-picker .pika-title .pika-label {
-    font-weight: normal;
+// header 
+.gldp-flatwhite .monyear, .gldp-flatwhite .monyear select {
+    background: #fff !important;
+}
+
+.gldp-flatwhite .border {
+    border-color: color(border) !important;
+}
+
+// weeks 
+.gldp-flatwhite .dow {
+    background: #fff !important;
+    font-family: family(bold);
+}
+
+// days
+.gldp-flatwhite .core {
+    font-size: px-to-rem(12px) !important;
+}
+
+// weekends
+.gldp-flatwhite .sat, .gldp-flatwhite .sun {
+    color: color(gray, base) !important;
+}
+
+// selected
+.gldp-flatwhite .selected {
+    background: color(primary, base) !important;
+}
+
+// hover 
+.gldp-flatwhite .mon:hover, .gldp-flatwhite .tue:hover, .gldp-flatwhite .wed:hover, .gldp-flatwhite .thu:hover, .gldp-flatwhite .fri:hover, .gldp-flatwhite .sat:hover, .gldp-flatwhite .sun:hover {
+    background: color(text, base) !important;
+    color: #fff !important;
+}
+
+// disabled state
+.gldp-flatwhite .noday {
+    background: color(background) !important;
+    color: color(gray, light) !important;
 }
 
 /*

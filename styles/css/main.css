@@ -3139,16 +3139,39 @@ div.hs-dateinput input {
     cursor: pointer;
     border-color: #222222; }
 
-div.hs-datepicker div.fn-date-picker.pika-single.is-bound {
-  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
-  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
-  box-shadow: 0 2px 20px 0 #E1E5E4;
-  border: 1px solid #E1E5E4;
+/*
+/* Datepicker / Calendar
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.gldp-flatwhite {
   border-radius: 0;
-  font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+  font-family: "ProximaNova-Regular", helvetica, sans-serif !important; }
 
-.fn-date-picker .pika-title .pika-label {
-  font-weight: normal; }
+.gldp-flatwhite .monyear, .gldp-flatwhite .monyear select {
+  background: #fff !important; }
+
+.gldp-flatwhite .border {
+  border-color: #E1E5E4 !important; }
+
+.gldp-flatwhite .dow {
+  background: #fff !important;
+  font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+
+.gldp-flatwhite .core {
+  font-size: 0.75rem !important; }
+
+.gldp-flatwhite .sat, .gldp-flatwhite .sun {
+  color: #A3A5A8 !important; }
+
+.gldp-flatwhite .selected {
+  background: #F01834 !important; }
+
+.gldp-flatwhite .mon:hover, .gldp-flatwhite .tue:hover, .gldp-flatwhite .wed:hover, .gldp-flatwhite .thu:hover, .gldp-flatwhite .fri:hover, .gldp-flatwhite .sat:hover, .gldp-flatwhite .sun:hover {
+  background: #222222 !important;
+  color: #fff !important; }
+
+.gldp-flatwhite .noday {
+  background: #F9FAFC !important;
+  color: #E1E5E4 !important; }
 
 /*
 /* Labels
