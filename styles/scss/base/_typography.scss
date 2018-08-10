@@ -199,24 +199,41 @@ hr {
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 blockquote, .reviews-blockquote {
-  border: 0;
-  text-align: left;
-  background: color(background);
-  background: rgba(0,0,0,0.05);
-  border-left: solid 8px color(gray, light);
-  padding: 25px 25px 10px;
+  border: 1px solid color(text, base);
+  text-align: center;
   font-family: family(italic);
+  padding: 3em 5em 3.5em;
+  line-height: 1.75rem;
+  font-size: px-to-rem(18px);
+  position: relative;
 
   cite {
-    text-align: right;
-    padding: 1em 0;
-    display: block;
+    padding: 0 15px;
     font-size: .8125rem;
-    color: color(text, light);
-
-    &:before {
-      content: "\2014 \0020";
-      padding-right: .5em;
-    }
+    background: #fff;
+    color: color(primary, base);
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+    bottom: -16px;
   }
+}
+
+// add quotation to the top
+.reviews-blockquote::before {
+  content: "\f10e";
+  font-size: px-to-rem(25px);
+  font-family: fontawesome;
+  border: 1px solid #222;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -25px;
+  height: 50px;
+  width: 50px;
+  line-height: 55px;
+  color: color(primary, base);
+  border-radius: 150px;
 }

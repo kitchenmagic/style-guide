@@ -462,22 +462,39 @@ hr {
 /*  Blockquotes
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 blockquote, .reviews-blockquote {
-  border: 0;
-  text-align: left;
-  background: #F9FAFC;
-  background: rgba(0, 0, 0, 0.05);
-  border-left: solid 8px #E1E5E4;
-  padding: 25px 25px 10px;
-  font-family: "ProximaNova-RegularIt", helvetica, sans-serif; }
+  border: 1px solid #222222;
+  text-align: center;
+  font-family: "ProximaNova-RegularIt", helvetica, sans-serif;
+  padding: 3em 5em 3.5em;
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+  position: relative; }
   blockquote cite, .reviews-blockquote cite {
-    text-align: right;
-    padding: 1em 0;
-    display: block;
+    padding: 0 15px;
     font-size: .8125rem;
-    color: #4a4a4a; }
-    blockquote cite:before, .reviews-blockquote cite:before {
-      content: "\2014 \0020";
-      padding-right: .5em; }
+    background: #fff;
+    color: #F01834;
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+    bottom: -16px; }
+
+.reviews-blockquote::before {
+  content: "\f10e";
+  font-size: 1.5625rem;
+  font-family: fontawesome;
+  border: 1px solid #222;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -25px;
+  height: 50px;
+  width: 50px;
+  line-height: 55px;
+  color: #F01834;
+  border-radius: 150px; }
 
 /* ============================================================
    RESPONSIVE
