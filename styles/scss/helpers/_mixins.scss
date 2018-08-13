@@ -187,6 +187,11 @@
   &:hover {
     text-decoration: none;
   }
+
+      // makes button full width for mobile
+      @include respond-below(xs) {
+        width: 100%;
+    }
   
 }
 

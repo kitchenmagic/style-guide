@@ -12,10 +12,7 @@
 .km-btn {
     // this style is in _placeholders.scss
     @include btn();
-    // makes button full width for mobile
-    @include respond-below(xs) {
-        width: 100%;
-    }
+    
     &:hover {
         cursor: pointer;
         text-decoration: none;

@@ -39,6 +39,8 @@ div.input {
         box-shadow: none;
         font-size: 1rem;
         font-family: family(body);
+        box-sizing:border-box;
+        height: px-to-rem(45px);
         @include transition(all 300ms ease);
 
         @include placeholder {
@@ -68,13 +70,12 @@ div.input {
         -ms-apprerance: none;
         appearance: none;
         font-size: 1rem;
-        height: 46px;
-        background-color: #fff;
+        height: px-to-rem(45px);
         color: color(gray, base);
         border-radius: 0;
         border-color: color(gray, base);
         width: 100% !important;
-        background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center;
+        background: #fff url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center;
         background-size: 14px;
 
         &:focus {
@@ -90,6 +91,15 @@ div.input {
         }
 
     }
+
+    // checkboxes 
+    input[type=checkbox] {
+        @include respond-below(xs) {
+            width: auto !important;
+            transform: scale(2.2);
+        }
+    }
+
     
 }
 // Submit button

@@ -284,15 +284,18 @@ html {
   line-height: 1.45;
   font-family: "ProximaNova-Regular", helvetica, sans-serif; }
 
-body {
+@media (max-width: 991px) {
+  body {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased; } }
+
+html, body {
   overflow-x: hidden;
   margin: 0;
-  padding: 0; }
-  @media (max-width: 991px) {
-    body {
-      text-rendering: optimizeLegibility;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased; } }
+  padding: 0;
+  height: 100%;
+  width: 100%; }
 
 /* ============================================================
   LAYOUT
@@ -1475,24 +1478,28 @@ html .row-fluid .new-mobile-group.top .new-mobile-navigation > div:nth-child(1) 
 
 .new-mobile-navigation .mobile-search .header-search {
   margin-bottom: 0;
-  background: #e6e6e6 url(https://www.kitchenmagic.com/hubfs/graphics/icons/search-dark.png) 20px center no-repeat;
+  background: #fff url(https://www.kitchenmagic.com/hubfs/graphics/icons/search-dark.png) 20px center no-repeat;
   border: none;
   border-radius: 0;
   box-shadow: none;
   padding: 17px 20px 17px 60px;
-  height: 55px; }
+  height: 55px;
+  width: 100%; }
 
 .mobile-search .header-search::-webkit-input-placeholder {
-  color: #555555; }
+  color: #222222; }
 
 .mobile-search .header-search::-moz-placeholder {
-  color: #555555; }
+  color: #222222; }
 
 .mobile-search .header-search:-ms-input-placeholder {
-  color: #555555; }
+  color: #222222; }
 
 .mobile-search .header-search:-moz-placeholder {
-  color: #555555; }
+  color: #222222; }
+
+.new-mobile-navigation .mobile-search .header-search:focus {
+  outline: none; }
 
 html .row-fluid .new-mobile-contact {
   position: fixed;
@@ -2781,6 +2788,9 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
   border: 1px solid #F01834; }
   .km-button:hover {
     text-decoration: none; }
+  @media (max-width: 575px) {
+    .km-button {
+      width: 100%; } }
   .km-button:hover {
     background-color: #222222;
     border: 1px solid #222222;
@@ -2832,6 +2842,9 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
   border: 1px solid #F01834; }
   .green-cta:hover {
     text-decoration: none; }
+  @media (max-width: 575px) {
+    .green-cta {
+      width: 100%; } }
   .green-cta:hover {
     background-color: #222222;
     border: 1px solid #222222;
@@ -3095,6 +3108,8 @@ div.input input.hs-input {
   box-shadow: none;
   font-size: 1rem;
   font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  box-sizing: border-box;
+  height: 2.8125rem;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -3132,13 +3147,12 @@ div.input select {
   -ms-apprerance: none;
   appearance: none;
   font-size: 1rem;
-  height: 46px;
-  background-color: #fff;
+  height: 2.8125rem;
   color: #A3A5A8;
   border-radius: 0;
   border-color: #A3A5A8;
   width: 100% !important;
-  background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center;
+  background: #fff url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center;
   background-size: 14px; }
   div.input select:focus {
     border-color: #222222;
@@ -3148,6 +3162,11 @@ div.input select {
   div.input select:hover {
     cursor: pointer;
     border-color: #222222; }
+
+@media (max-width: 575px) {
+  div.input input[type=checkbox] {
+    width: auto !important;
+    transform: scale(2.2); } }
 
 .hs_submit.hs-submit div.actions input {
   display: inline-block;
@@ -3177,6 +3196,9 @@ div.input select {
   margin-bottom: 0; }
   .hs_submit.hs-submit div.actions input:hover {
     text-decoration: none; }
+  @media (max-width: 575px) {
+    .hs_submit.hs-submit div.actions input {
+      width: 100%; } }
 
 div.hs-dateinput input {
   background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/calendar.png) no-repeat 95% center; }

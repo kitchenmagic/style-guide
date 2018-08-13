@@ -405,11 +405,14 @@ html .row-fluid .new-mobile-group.top .new-mobile-navigation > div:nth-child(1) 
 
 .new-mobile-navigation .row-fluid-wrapper { position: static; }
 .new-mobile-navigation .mobile-search { position: absolute;z-index:2;left:0;bottom:0;width: 90% !important;box-shadow: 0px -1px 8px rgba(0,0,0, .3); }
-.new-mobile-navigation .mobile-search .header-search { margin-bottom: 0;background: #e6e6e6 url(https://www.kitchenmagic.com/hubfs/graphics/icons/search-dark.png) 20px center no-repeat;border: none;border-radius: 0;box-shadow: none;padding: 17px 20px 17px 60px;height: 55px; }
-.mobile-search .header-search::-webkit-input-placeholder { color: #555555; }
-.mobile-search .header-search::-moz-placeholder { color: #555555; }
-.mobile-search .header-search:-ms-input-placeholder { color: #555555; }
-.mobile-search .header-search:-moz-placeholder { color: #555555; }
+.new-mobile-navigation .mobile-search .header-search { margin-bottom: 0;background: #fff url(https://www.kitchenmagic.com/hubfs/graphics/icons/search-dark.png) 20px center no-repeat;border: none;border-radius: 0;box-shadow: none;padding: 17px 20px 17px 60px;height: 55px; width: 100%; }
+.mobile-search .header-search::-webkit-input-placeholder { color: color(text, base); }
+.mobile-search .header-search::-moz-placeholder { color: color(text, base); }
+.mobile-search .header-search:-ms-input-placeholder { color: color(text, base); }
+.mobile-search .header-search:-moz-placeholder { color: color(text, base); }
+.new-mobile-navigation .mobile-search .header-search:focus{
+  outline: none;
+}
 
 html .row-fluid .new-mobile-contact { position: fixed;top:0;bottom:0;right:-100%;z-index: 10000;background: rgba(0,0,0, 0);width: 90%;box-sizing: border-box;-webkit-transition: all .3s ease-in-out; -moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out; }
 html .row-fluid .new-mobile-contact > div { background: #F7F9F9;width: 100%;box-sizing: border-box;padding: 65px 0px 20px 20px;box-shadow: -5px 0px 20px rgba(0,0,0, 0);margin-left: auto;-webkit-transition: all .3s ease-in-out; -moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out; }
