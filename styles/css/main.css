@@ -661,10 +661,6 @@ blockquote, .reviews-blockquote {
   /** hero section **/
   .hero-section {
     padding: 7em 0 4em 0 !important; }
-  /** accordion **/
-  .accordion__item > .accordion-header:after {
-    top: -36px !important;
-    left: 9px; }
   /*** ordered lists ***/
   ol.km-ol {
     padding-left: 0; }
