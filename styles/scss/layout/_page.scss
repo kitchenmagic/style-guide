@@ -30,6 +30,15 @@
 
     li {
         display: inline-block;
+        // turns navigation into a vertical list for mobile
+        @include respond-below(xs) {
+            display: block;
+            border-bottom: 1px solid color(border);
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
 
         a {
             margin: 0;
@@ -41,6 +50,10 @@
             content: '|';
             color: color(border);
             padding: 0 0 0 1em;
+            // hides dividers for mobile
+            @include respond-below(xs) {
+                display: none;
+            }
         }
 
         &:last-child:after {

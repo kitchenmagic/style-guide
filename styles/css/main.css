@@ -1647,6 +1647,12 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
   line-height: initial; }
   .km-nav-deeper li {
     display: inline-block; }
+    @media (max-width: 575px) {
+      .km-nav-deeper li {
+        display: block;
+        border-bottom: 1px solid #E1E5E4; }
+        .km-nav-deeper li:last-child {
+          border-bottom: 0; } }
     .km-nav-deeper li a {
       margin: 0;
       padding: .8em 0 .7em 1em;
@@ -1655,6 +1661,9 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
       content: '|';
       color: #E1E5E4;
       padding: 0 0 0 1em; }
+      @media (max-width: 575px) {
+        .km-nav-deeper li:after {
+          display: none; } }
     .km-nav-deeper li:last-child:after {
       display: none; }
 
