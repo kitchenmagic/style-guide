@@ -2709,13 +2709,13 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
   -o-transition: all 300ms ease;
   transition: all 300ms ease; }
   .km-btn:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
+  .km-btn:focus {
+    outline: none; }
   @media (max-width: 575px) {
     .km-btn {
       width: 100%; } }
-  .km-btn:hover {
-    cursor: pointer;
-    text-decoration: none; }
   .km-btn.km-btn--primary {
     background-color: #F01834;
     color: #fff;
@@ -2787,7 +2787,10 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
   color: #fff;
   border: 1px solid #F01834; }
   .km-button:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
+  .km-button:focus {
+    outline: none; }
   @media (max-width: 575px) {
     .km-button {
       width: 100%; } }
@@ -2841,7 +2844,10 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
   color: #fff;
   border: 1px solid #F01834; }
   .green-cta:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
+  .green-cta:focus {
+    outline: none; }
   @media (max-width: 575px) {
     .green-cta {
       width: 100%; } }
@@ -3104,11 +3110,14 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
 div.input input.hs-input {
   border: 1px solid #E1E5E4;
   padding: .8rem;
+  background-color: #fff;
+  color: #222222;
   border-radius: 0;
   box-shadow: none;
   font-size: 1rem;
   font-family: "ProximaNova-Regular", helvetica, sans-serif;
   box-sizing: border-box;
+  width: 100% !important;
   height: 2.8125rem;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -3148,12 +3157,23 @@ div.input select {
   appearance: none;
   font-size: 1rem;
   height: 2.8125rem;
-  color: #A3A5A8;
-  border-radius: 0;
-  border-color: #A3A5A8;
   width: 100% !important;
+  border-radius: 0;
   background: #fff url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center;
-  background-size: 14px; }
+  background-size: 14px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  div.input select::-webkit-input-placeholder {
+    color: #222222; }
+  div.input select:-moz-placeholder {
+    color: #222222; }
+  div.input select::-moz-placeholder {
+    color: #222222; }
+  div.input select:-ms-input-placeholder {
+    color: #222222; }
   div.input select:focus {
     border-color: #222222;
     color: #222222;
@@ -3163,10 +3183,16 @@ div.input select {
     cursor: pointer;
     border-color: #222222; }
 
-@media (max-width: 575px) {
-  div.input input[type=checkbox] {
-    width: auto !important;
-    transform: scale(2.2); } }
+div.input input[type=checkbox] {
+  height: auto;
+  width: auto !important; }
+  @media (max-width: 575px) {
+    div.input input[type=checkbox] {
+      width: auto !important;
+      transform: scale(2.2);
+      margin-bottom: 1.25rem !important; } }
+  div.input input[type=checkbox] + span {
+    margin-left: 10px; }
 
 .hs_submit.hs-submit div.actions input {
   display: inline-block;
@@ -3193,9 +3219,13 @@ div.input select {
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  box-sizing: border-box; }
   .hs_submit.hs-submit div.actions input:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
+  .hs_submit.hs-submit div.actions input:focus {
+    outline: none; }
   @media (max-width: 575px) {
     .hs_submit.hs-submit div.actions input {
       width: 100%; } }

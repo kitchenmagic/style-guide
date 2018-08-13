@@ -35,11 +35,15 @@ div.input {
     input.hs-input {
         border: 1px solid color(border);
         padding: .8rem;
+        background-color: #fff;
+        color: color(text, base);
         border-radius: 0;
         box-shadow: none;
         font-size: 1rem;
         font-family: family(body);
         box-sizing:border-box;
+        // overrides hubspots width
+        width: 100% !important;
         height: px-to-rem(45px);
         @include transition(all 300ms ease);
 
@@ -71,12 +75,16 @@ div.input {
         appearance: none;
         font-size: 1rem;
         height: px-to-rem(45px);
-        color: color(gray, base);
-        border-radius: 0;
-        border-color: color(gray, base);
+        // overrides hubspots width
         width: 100% !important;
+        border-radius: 0;
         background: #fff url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/arrow-down.png) no-repeat 95% center;
         background-size: 14px;
+        @include transition(all 300ms ease);
+
+        @include placeholder {
+            color: color(text, base);
+        }
 
         &:focus {
             border-color: color(focus);
@@ -94,9 +102,18 @@ div.input {
 
     // checkboxes 
     input[type=checkbox] {
+        height: auto;
+        // overrides hubspots width
+        width: auto !important;
+
         @include respond-below(xs) {
             width: auto !important;
             transform: scale(2.2);
+            margin-bottom: px-to-rem(20px) !important;
+        }
+
+        + span {
+            margin-left: 10px;
         }
     }
 
@@ -106,6 +123,7 @@ div.input {
 .hs_submit.hs-submit div.actions input {
     @include btn();
     margin-bottom: 0;
+    box-sizing: border-box;
 }
 
 // Date input

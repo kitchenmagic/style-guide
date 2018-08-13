@@ -12,11 +12,6 @@
 .km-btn {
     // this style is in _placeholders.scss
     @include btn();
-    
-    &:hover {
-        cursor: pointer;
-        text-decoration: none;
-    }
 
     // button colors
     &.km-btn--primary {
