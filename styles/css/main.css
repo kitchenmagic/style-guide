@@ -4719,8 +4719,7 @@ THUMBNAIL GALLERY
   .product-card {
     border: none;
     width: 100%;
-    padding: 0;
-    border: 1px solid #E1E5E4; }
+    padding: 0; }
   .product-card:hover {
     transform: none; }
   .product-card img {
