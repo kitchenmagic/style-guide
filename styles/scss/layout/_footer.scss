@@ -150,6 +150,7 @@
 
     a {
         margin-right: 10px;
+        font-size: 0;
         @include transition(all 300ms ease);
 
         &:hover {
