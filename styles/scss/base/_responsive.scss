@@ -28,7 +28,7 @@
     html .row-fluid .month-body-reorder > .row-fluid-wrapper > .row-fluid { display: -webkit-flex; display: flex;-webkit-flex-wrap: wrap; flex-wrap: wrap; }
     html .row-fluid .month-body-reorder > .row-fluid-wrapper > .row-fluid > div:nth-child(1) { order: 2; }
  }
- 
+
   @media (max-width: 767px) {
     .hero-wrapper h1 { font-size: 2rem; }
     .hero-wrapper .tagline { font-size: 1.5em; }

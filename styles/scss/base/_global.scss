@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  // fix font rendering for iOS
   @include respond-below('md') {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -21,6 +22,5 @@ html, body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
 }

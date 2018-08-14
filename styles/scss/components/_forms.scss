@@ -324,42 +324,35 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
       background-color: color(info);
       border-color: color(info);
       color: #fff;
-  }
-  
-  .alert-box.success {
-      /*background-color: #43AC6A;*/
-      /*border-color: #3a945b;*/
-      background-color: color(success);
-      border-color: color(success);
-      color: #fff;
-  }
-  .alert-box.warning {
-      /*background-color: #f08a24;*/
+
+      &.success {
+        background-color: color(success);
+        border-color: color(success);
+        color: #fff;
+      }
+
+      &.warning {
       background-color: color(warning);
-      /*border-color: #de770f;*/
       border-color: color(warning);
       color: #fff;
-  }
-  
-  .alert-box.info {
-      /*background-color: #a0d3e8;*/
+      }
+
+      &.info {
       background-color: color(info);
-      /*border-color: #74bfdd;*/
       border-color: color(info);
       color: #FFF;
-  }
-  .alert-box.alert {
-      /*background-color: #f04124;*/
-      background-color: color(error);
-      /*border-color: #de2d0f;*/
-      border-color: color(error);
-      color: #fff;
-  }
-  
-  .alert-box.secondary {
-      background-color: color(gray, light);
-      border-color: color(border);
-      color: color(text, light);
+      }
+
+      &.alert {
+        background-color: color(error);
+        border-color: color(error);
+      }
+
+      &.secondary {
+        background-color: color(gray, light);
+        border-color: color(border);
+        color: color(text, light);
+      }
   }
 
 /*
@@ -396,8 +389,6 @@ table.ui-datepicker-calendar {
 .ui-datepicker-unselectable.ui-state-disabled.undefined {
     color: #ccc;
 }
-
-
 
 
 // ============================================================

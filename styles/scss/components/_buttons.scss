@@ -161,7 +161,7 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
 /*  Button Groups
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.button-group {
+.km-btn-group {
     margin-bottom: 1rem;
     display: -ms-flexbox;
     display: flex;
@@ -171,8 +171,8 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
     align-items: stretch;
     list-style: none;
 }
-.button-group::before,
-.button-group::after {
+.km-btn-group::before,
+.km-btn-group::after {
     display: table;
     content: ' ';
     -ms-flex-preferred-size: 0;
@@ -180,10 +180,10 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
     -ms-flex-order: 1;
     order: 1;
 }
-.button-group::after {
+.km-btn-group::after {
     clear: both;
 }
-.button-group .button {
+.km-btn-group .km-btn {
     margin: 0;
     margin-right: 1px;
     margin-bottom: 1px;
@@ -191,105 +191,105 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
 }
-.button-group .button:last-child {
+.km-btn-group .km-btn:last-child {
     margin-right: 0;
 }
-.button-group.tiny .button {
+.km-btn-group.tiny .km-btn {
     font-size: 0.6rem;
 }
-.button-group.small .button {
+.km-btn-group.small .km-btn {
     font-size: 0.75rem;
 }
-.button-group.large .button {
+.km-btn-group.large .km-btn {
     font-size: 1.25rem;
 }
-.button-group.expanded .button {
+.km-btn-group.expanded .km-btn {
     -ms-flex: 1 1 0px;
     flex: 1 1 0px;
 }
-.button-group.primary .button {
+.km-btn-group.primary .km-btn {
     background-color: #2ba6cb;
     color: #0a0a0a;
 }
-.button-group.primary .button:hover,
-.button-group.primary .button:focus {
+.km-btn-group.primary .km-btn:hover,
+.km-btn-group.primary .km-btn:focus {
     background-color: #2285a2;
     color: #0a0a0a;
 }
-.button-group.secondary .button {
+.km-btn-group.secondary .km-btn {
     background-color: #e9e9e9;
     color: #0a0a0a;
 }
-.button-group.secondary .button:hover,
-.button-group.secondary .button:focus {
+.km-btn-group.secondary .km-btn:hover,
+.km-btn-group.secondary .km-btn:focus {
     background-color: #bababa;
     color: #0a0a0a;
 }
-.button-group.alert .button {
+.km-btn-group.alert .km-btn {
     background-color: #c60f13;
     color: #fefefe;
 }
-.button-group.alert .button:hover,
-.button-group.alert .button:focus {
+.km-btn-group.alert .km-btn:hover,
+.km-btn-group.alert .km-btn:focus {
     background-color: #9e0c0f;
     color: #fefefe;
 }
-.button-group.success .button {
+.km-btn-group.success .km-btn {
     background-color: #5da423;
     color: #0a0a0a;
 }
-.button-group.success .button:hover,
-.button-group.success .button:focus {
+.km-btn-group.success .km-btn:hover,
+.km-btn-group.success .km-btn:focus {
     background-color: #4a831c;
     color: #0a0a0a;
 }
-.button-group.warning .button {
+.km-btn-group.warning .km-btn {
     background-color: #ffae00;
     color: #0a0a0a;
 }
-.button-group.warning .button:hover,
-.button-group.warning .button:focus {
+.km-btn-group.warning .km-btn:hover,
+.km-btn-group.warning .km-btn:focus {
     background-color: #cc8b00;
     color: #0a0a0a;
 }
-.button-group.body-font .button {
+.km-btn-group.body-font .km-btn {
     background-color: #222222;
     color: #fefefe;
 }
-.button-group.body-font .button:hover,
-.button-group.body-font .button:focus {
+.km-btn-group.body-font .km-btn:hover,
+.km-btn-group.body-font .km-btn:focus {
     background-color: #1b1b1b;
     color: #fefefe;
 }
-.button-group.header .button {
+.km-btn-group.header .km-btn {
     background-color: #222222;
     color: #fefefe;
 }
-.button-group.header .button:hover,
-.button-group.header .button:focus {
+.km-btn-group.header .km-btn:hover,
+.km-btn-group.header .km-btn:focus {
     background-color: #1b1b1b;
     color: #fefefe;
 }
-.button-group.stacked,
-.button-group.stacked-for-small,
-.button-group.stacked-for-medium {
+.km-btn-group.stacked,
+.km-btn-group.stacked-for-small,
+.km-btn-group.stacked-for-medium {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-.button-group.stacked .button,
-.button-group.stacked-for-small .button,
-.button-group.stacked-for-medium .button {
+.km-btn-group.stacked .km-btn,
+.km-btn-group.stacked-for-small .km-btn,
+.km-btn-group.stacked-for-medium .km-btn {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
 }
-.button-group.stacked .button:last-child,
-.button-group.stacked-for-small .button:last-child,
-.button-group.stacked-for-medium .button:last-child {
+.km-btn-group.stacked .km-btn:last-child,
+.km-btn-group.stacked-for-small .km-btn:last-child,
+.km-btn-group.stacked-for-medium .km-btn:last-child {
     margin-bottom: 0;
 }
 @media print,
 screen and (min-width: 40em) {
-    .button-group.stacked-for-small .button {
+    .km-btn-group.stacked-for-small .km-btn {
         -ms-flex: 1 1 0px;
         flex: 1 1 0px;
         margin-bottom: 0;
@@ -297,17 +297,17 @@ screen and (min-width: 40em) {
 }
 @media print,
 screen and (min-width: 64em) {
-    .button-group.stacked-for-medium .button {
+    .km-btn-group.stacked-for-medium .km-btn {
         -ms-flex: 1 1 0px;
         flex: 1 1 0px;
         margin-bottom: 0;
     }
 }
 @media screen and (max-width: 39.9375em) {
-    .button-group.stacked-for-small.expanded {
+    .km-btn-group.stacked-for-small.expanded {
         display: block;
     }
-    .button-group.stacked-for-small.expanded .button {
+    .km-btn-group.stacked-for-small.expanded .km-btn {
         display: block;
         margin-right: 0;
     }

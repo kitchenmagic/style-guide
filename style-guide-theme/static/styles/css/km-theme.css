@@ -161,6 +161,9 @@ blockquote, .reviews-blockquote {
     max-width: 25%; }
     @media (max-width: 991px) {
       blockquote cite, .reviews-blockquote cite {
+        max-width: 40%; } }
+    @media (max-width: 575px) {
+      blockquote cite, .reviews-blockquote cite {
         max-width: 80%; } }
 
 .reviews-blockquote::before {

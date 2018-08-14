@@ -222,6 +222,10 @@ blockquote, .reviews-blockquote {
     max-width: 25%;
 
     @include respond-below(md) {
+      max-width: 40%;
+    }
+
+    @include respond-below(xs) {
       max-width: 80%;
     }
   }
