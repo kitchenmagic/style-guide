@@ -86,6 +86,11 @@
             border: none;
             height: auto;
         }
+
+        input[type="submit"] {
+            padding: 9px 28px !important;
+        }
+
         // error messages
         ul.hs-error-msgs {
             display: block !important;

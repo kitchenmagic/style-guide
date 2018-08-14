@@ -1760,6 +1760,8 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
       width: 100%;
       border: none;
       height: auto; }
+    .dark-footer form input[type="submit"] {
+      padding: 9px 28px !important; }
     .dark-footer form ul.hs-error-msgs {
       display: block !important;
       color: white;
