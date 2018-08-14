@@ -471,16 +471,22 @@ blockquote, .reviews-blockquote {
   padding: 3em 5em 3.5em;
   line-height: 1.75rem;
   font-size: 1.125rem;
-  position: relative; }
+  position: relative;
+  margin-top: 3.125rem; }
   blockquote cite, .reviews-blockquote cite {
     padding: 0 15px;
     font-size: .8125rem;
     background: #fff;
     color: #F01834;
     position: absolute;
-    left: 50%;
-    transform: translateX(50%);
-    bottom: -16px; }
+    bottom: -16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 25%; }
+    @media (max-width: 991px) {
+      blockquote cite, .reviews-blockquote cite {
+        max-width: 80%; } }
 
 .reviews-blockquote::before {
   content: "\f10e";
@@ -4541,7 +4547,8 @@ THUMBNAIL GALLERY
     -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
     box-shadow: 0 2px 20px 0 #E1E5E4;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 100%; }
   .cabinet-card .product-title {
     font-size: 1rem;
     text-align: center;
@@ -4599,7 +4606,6 @@ THUMBNAIL GALLERY
  * !!! REMOVE from main.scss 
 **/
 .product-card {
-  padding: 18px 10px 20px;
   width: 100%;
   /**
         * Product numbers

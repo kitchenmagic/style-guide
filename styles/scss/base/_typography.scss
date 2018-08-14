@@ -206,6 +206,8 @@ blockquote, .reviews-blockquote {
   line-height: 1.75rem;
   font-size: px-to-rem(18px);
   position: relative;
+  // adds margin to accomodate the ::before element on top
+  margin-top: px-to-rem(50px);
 
   cite {
     padding: 0 15px;
@@ -213,9 +215,15 @@ blockquote, .reviews-blockquote {
     background: #fff;
     color: color(primary, base);
     position: absolute;
-    left: 50%;
-    transform: translateX(50%);
     bottom: -16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 25%;
+
+    @include respond-below(md) {
+      max-width: 80%;
+    }
   }
 }
 

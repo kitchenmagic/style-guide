@@ -16,6 +16,8 @@
         @include box-shadow($shadow-md);
         display: block;
         margin: 0 auto;
+        // fixes responsive issue
+        max-width: 100%;
     }
     .product-title {
         font-size: 1rem;
