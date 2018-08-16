@@ -38,7 +38,7 @@ npm run compile
 
 3. Components
 
-    * The components directory are the module based elements on the site and will be reused over and over. This directory also holds all *Hubspot Modules* as well. ⚠️ The Hubspot Module CSS will not be compiled to the _main.css_ but will be put in each specific Hubspot module.
+    * The components directory are the module based elements on the site that will be reused over and over. This directory also holds all *Hubspot Modules* as well. 
 
         * Buttons
         * Content Box
@@ -49,6 +49,8 @@ npm run compile
         * Progress Bars
         * Tables
         * Thumbnail Gallery
+
+⚠️  The Hubspot Module CSS files will not be compiled into the _main.css_ but will be added instead to each specific Hubspot module.
 
 4. Helpers
 
@@ -90,8 +92,16 @@ npm run compile
 ## Rules
 
 1. Must use variables for all fonts and colors.
-2. All font sizes must be in REM. (Use the `px-to-rem` mixin to calculate pixels to rems)
-3. 
+2. All font sizes must be in REM (Use the `px-to-rem` mixin to calculate pixels to rems). Example: 
+
+```sass 
+
+.class {
+    font-size: px-to-rem(12px);
+}
+
+```
+
 
 
 ## Contributing
