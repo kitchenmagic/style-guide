@@ -9,9 +9,8 @@
   .hero-wrapper {
     z-index: 1;
     position: relative;
-    border-bottom: 7px solid #c7c7c7;
+    border-bottom: 3px solid color(border);
     color: white;
-    font-family: 'Open Sans', sans-serif;
 
     .row-fluid-wrapper {
       position: static;
@@ -25,9 +24,7 @@
       margin: 0;
       padding: 0;
       color: white;
-      font-family: 'Open Sans', sans-serif;
       text-shadow: 3px 3px 8px rgba(0,0,0, .3);
-      font-weight:600;
     } 
 
     h1 {
@@ -86,7 +83,6 @@
   html .row-fluid .home-section-header { 
     text-align: center;
     padding: 0 9% 50px;
-    color: #555555;
     margin-bottom: 0; 
     padding-top: 20px;
   }
@@ -94,7 +90,6 @@
   .home-section-header2 { 
     text-align: center;
     padding: 10px 9% 20px;
-    color: #555555; 
   }
   
   .body-container .widget-span.home-section-header2 { 
@@ -145,11 +140,9 @@
           width: 100%;
           text-align:center;
           color: white;
-          font-family: 'Open Sans', sans-serif;
           text-shadow: 3px 3px 8px rgba(0,0,0, .3);
           font-size: 2rem;
           font-weight:600;
-          text-transform:uppercase;
         }
     }
 
@@ -161,17 +154,12 @@
       display: block;
       text-align: center;
       padding: 20px 0;
-      color: #555555;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 17px;
     }
 
     .solutions-cta {
       display: block;
       text-align: center;
-      font-size: 19px;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 600;
+      font-size: px-to-rem(19px);
     }
   }  
   
@@ -185,7 +173,6 @@
     color: white;
     padding: 20px 0 29px;
     margin: 15px 0;
-    font-family: 'Source Sans Pro', sans-serif;
 
     h1, & h2, & h3, & h4 {
       color: white;
@@ -296,9 +283,8 @@ html .row-fluid .wide-wrapper {
 }
 
 .remodel-monthly-wrapper { 
-  background: #F5F4F5;
+  background: color(border);
   padding: 30px 0 40px;
-  color: #555555; 
 
   .row-fluid-wrapper {
     position: static;
@@ -332,8 +318,7 @@ html .row-fluid .wide-wrapper {
 
   > span > div {
     padding: 10px 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:17px;
+    font-size: px-to-rem(17px);
 
     &:nth-child(1) {
       padding: 0 0 10px;
@@ -398,43 +383,6 @@ html a.arrow-after {
   }
 }
 
-html a {
-  &.red-cta {
-    box-shadow: 1px 1px 2px rgba(0,0,0, .3);
-    text-decoration: none;
-    background: #EF4136;
-    color: white;
-    display: inline-block;
-    padding: 16px 45px 16px 30px;
-    font-size: 21px;
-    border-radius: 3px;
-    border: 2px solid #EF4136;
-    text-align: center;
-
-    &:hover {
-      background: #EF4743;
-      border-color: #D82E2A;
-    }
-  }
-
-  &.green-cta {
-    box-shadow: 1px 1px 2px rgba(0,0,0, .3);
-    text-decoration: none;
-    background: #799805;
-    color: white;
-    display: inline-block;
-    padding: 13px 45px 15px 30px;
-    border-radius: 3px;
-    border: 2px solid #799805;
-    text-align: center;
-
-    &:hover {
-      background: #899E30;
-      border-color: #799805;
-    }
-  }
-}
-
 .hero-wrapper .hs-cta-node { 
   display: inline-block !important; 
 
@@ -475,8 +423,8 @@ html .row-fluid .month-slider-wrapper {
     background: rgba(85,85,85, .7);
     color: white;
     padding: 25px 10px 25px 25%;
-    font-family: perpetua, "Times New Roman", Times, serif;
-    font-size: 1.7em;
+    font-family: family(body);
+    font-size: px-to-rem(27px);
 
     &.no-img {
       padding: 25px 10px 25px 25px;
@@ -544,14 +492,14 @@ html .row-fluid .month-slider-wrapper {
     margin: 10px 0;
 
     li button {
-      background: #555555;
+      background: color(text, base);
       border-radius: 50%;
-      width: 17px;
-      height: 17px; 
+      width: 10px;
+      height: 10px; 
     }
 
     .slick-active button {
-      background: #c9c9c9;
+      background: color(gray, base);
     }
   }
 

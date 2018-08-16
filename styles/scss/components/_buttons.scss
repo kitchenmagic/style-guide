@@ -92,7 +92,7 @@
     @include btn();
     @include km-btn--primary();
 
-    &.km-btn-info, &.km-btn-warning {
+    &.km-btn-info, &.km-btn-warning, &.km-btn-success {
         @include km-btn--primary();
     }
 }
