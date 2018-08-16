@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*------------------------------------*\
+
+    KITCHEN MAGIC STYLES
+    Site:   www.kitchenmagic.com
+    Author: Joshua Todd
+
+\*------------------------------------*/
 /* ============================================================
    SUMMARY
 /* ============================================================
@@ -33,6 +40,7 @@
 20. Thumbnail Gallery
 
 /* HUBSPOT MODULES
+These partials will live on Hubspot Modules only and should be removed from importing.
 21. Accordion
 22. Before and After
 23. Cabinet Card
@@ -52,7 +60,7 @@
 
 */
 /* ============================================================
-   RESET
+   00. RESET
 /* ============================================================
 
 /*!
@@ -324,7 +332,7 @@ template {
   display: none !important; }
 
 /* ============================================================
-  GLOBAL
+  01. GLOBAL
 /* ============================================================ */
 html {
   font-size: 16px;
@@ -344,7 +352,7 @@ html, body {
   width: 100%; }
 
 /* ============================================================
-  LAYOUT
+   02. GRID
 /* ============================================================ */
 .km-row, .km-row-narrow, .km-row-wide, .km-row-full, .km-row .row-fluid,
 .km-row-wide .row-fluid, .km-wrapper, .km-wrapper-inner {
@@ -372,7 +380,7 @@ html, body {
   margin-bottom: 35px; }
 
 /* ============================================================
-  Typography
+   03. TYPOGRAPHY
 /* ============================================================ */
 /**
 * @stylesheet typography.css Typography
@@ -555,7 +563,7 @@ blockquote, .reviews-blockquote {
   border-radius: 150px; }
 
 /* ============================================================
-   RESPONSIVE
+   04. RESPONSIVE
 /* ============================================================ */
 /* This section will be removed and added to it's specific partial.
 ** It's only a temporary for launch
@@ -755,7 +763,7 @@ blockquote, .reviews-blockquote {
     padding: 0 20px; } }
 
 /* ============================================================
-  HEADER
+   05. HEADER
 /* ============================================================ */
 /**
  * Logo
@@ -1673,7 +1681,7 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
     display: none !important; } }
 
 /* ============================================================
-   PAGES
+   06. PAGES
 /* ============================================================ */
 /*
 /*  Page Titles
@@ -1738,7 +1746,7 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
     padding: 10px 0px 10px 10px; }
 
 /* ============================================================
-  FOOTER
+   07. FOOTER
 /* ============================================================ */
 /*
 /*  Global Top Footer CTA
@@ -2059,7 +2067,7 @@ i.km-icon-divider {
     margin-bottom: 1.25rem; } }
 
 /* ============================================================
-   CAREERS - www.kitchenmagic.com/careers
+   08. CAREERS - www.kitchenmagic.com/careers
 /* ============================================================ */
 /*
 /*  Hero section
@@ -2135,7 +2143,7 @@ div#jobs-widget {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
 
 /* ============================================================
-   ESTIMATE SPECIALS - www.kitchenmagic.com/estimate-specials
+   09. ESTIMATE SPECIALS - www.kitchenmagic.com/estimate-specials
 /* ============================================================ */
 .km-img-circle {
   border-radius: 150%;
@@ -2153,7 +2161,7 @@ form#hsForm_f12190c4-922f-4690-9ea0-03846d0b08c3, form#hsForm_78097024-1985-4808
   width: 100%; }
 
 /* ============================================================
-   HOMEPAGE
+   10. HOMEPAGE
 /* ============================================================  
   
 /*
@@ -2545,7 +2553,7 @@ html .row-fluid .last-cta {
   border-bottom: 1px solid #DDDDDD; }
 
 /* ============================================================
-   SHARE THE MAGIC - www.kitchenmagic.com/share
+   11. SHARE THE MAGIC - www.kitchenmagic.com/share
 /* ============================================================ */
 .km-hero-title {
   color: #fff;
@@ -2620,7 +2628,7 @@ html .row-fluid .last-cta {
   display: inline-block; }
 
 /* ============================================================
-   SELF SET
+   12. SELF SET
 /* ============================================================  */
 /** thank you self set page **/
 body.hs-content-id-3653805926.hs-site-page.page.hs-content-path-thank-you-self-set.hs-content-name-thank-you-post-lead-self-set {
@@ -2659,7 +2667,7 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
   display: block; }
 
 /* ============================================================
-   BUTTONS
+   13. BUTTONS
 /* ============================================================ */
 /**
 * @stylesheet buttons.css Buttons
@@ -3034,7 +3042,7 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
     margin-right: 0; } }
 
 /* ============================================================
-   CONTENT BOX
+   14. CONTENT BOX
 /* ============================================================ */
 .content-box {
   height: 333px;
@@ -3069,7 +3077,7 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
 
 /* ============================================================
-  FORMS
+   15. FORMS
 /* ============================================================ */
 .form-title {
   font-size: 1.6875rem;
@@ -3979,7 +3987,7 @@ html .date-picker-wrapper .date-picker-form form {
     font-size: 16px; } }
 
 /* ============================================================
-   ICONS
+   16. ICONS
 /* ============================================================ */
 /**
  * Arrow right on icons
@@ -4099,7 +4107,7 @@ ol.km-ol {
       border: none; }
 
 /* ============================================================
-   MODALS
+   17. MODALS
 /* ============================================================ */
 .reveal-modal {
   border-radius: 4px; }
@@ -4159,7 +4167,7 @@ ol.km-ol {
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.7); }
 
 /* ============================================================
-   PROGRESS BARS
+   18. PROGRESS BARS
 /* ============================================================  */
 .progress {
   background-color: #f2f2f2;
@@ -4290,13 +4298,13 @@ span.meter-tree-progress p {
   color: #fff; }
 
 /* ============================================================
-   TABLES
+   19. TABLES
 /* ============================================================  */
 .km-table-centered {
   margin: 0 auto; }
 
 /* ============================================================
-THUMBNAIL GALLERY
+   20. THUMBNAIL GALLERY
 /* ============================================================ */
 .km-slider .km-slide-title {
   text-align: center; }
@@ -4347,7 +4355,7 @@ THUMBNAIL GALLERY
     cursor: pointer; }
 
 /* ============================================================
-   ACCORDION
+   21. ACCORDION
 /* ============================================================ */
 /**
  * This file will live on Hubspot Modules only.
@@ -4432,7 +4440,7 @@ THUMBNAIL GALLERY
   display: block; }
 
 /* ============================================================
-   BEFORE AND AFTER MODULE
+   22. BEFORE AND AFTER MODULE
 /* ============================================================ */
 /**
 * This file will live on Hubspot Modules only.
@@ -4491,7 +4499,7 @@ THUMBNAIL GALLERY
   box-shadow: 0 2px 20px 0 #E1E5E4; }
 
 /* ============================================================
-   CABINET CARD
+   23. CABINET CARD
 /* ============================================================ */
 /**
 * Cabinet Card
@@ -4519,7 +4527,7 @@ THUMBNAIL GALLERY
     width: 100%; } }
 
 /* ============================================================
-   EVENTS
+   24. EVENTS
 /* ============================================================ */
 .event-card {
   border: 1px solid #ddd;
@@ -4828,7 +4836,7 @@ THUMBNAIL GALLERY
   transform: translate(-50%, -50%); }
 
 /* ============================================================
-   NEW PRODUCT SHOWCASE
+   27. NEW PRODUCT SHOWCASE
 /* ============================================================  */
 /* example: https://www.kitchenmagic.com/kitchen-cabinets/doors/wood */
 .new-product-wrapper {
@@ -4888,7 +4896,7 @@ THUMBNAIL GALLERY
     border-top: 4px solid #F01834; }
 
 /* ============================================================
-  AWARDS
+   28. AWARDS
 /* ============================================================ */
 .km-grayscale-awards {
   -webkit-filter: grayscale(1);
@@ -4896,7 +4904,7 @@ THUMBNAIL GALLERY
   opacity: .5; }
 
 /* ============================================================
-   FEATURED ITEM
+   29. FEATURED ITEM
 /* ============================================================ */
 /**
  * This file will live on Hubspot Modules only.
@@ -4933,7 +4941,7 @@ THUMBNAIL GALLERY
     font-size: 1.875rem; }
 
 /* ============================================================
-  FOUNDATION - VISIBILITY 
+   30. FOUNDATION - VISIBILITY 
 /* ============================================================ */
 /* small displays */
 @media only screen {
@@ -5341,7 +5349,7 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 /* ============================================================
-  FOUNDATION - GRID
+   31. FOUNDATION - GRID
 /* ============================================================ */
 .row {
   margin: 0 auto;
@@ -6169,7 +6177,7 @@ th.hide-for-touch {
     left: auto; } }
 
 /* ============================================================
-  UTITILIES
+   32. UTITILIES
 /* ============================================================ */
 .uppercase {
   text-transform: uppercase; }

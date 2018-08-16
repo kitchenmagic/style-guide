@@ -1,3 +1,11 @@
+/*------------------------------------*\
+
+    KITCHEN MAGIC STYLES
+    Site:   www.kitchenmagic.com
+    Author: Joshua Todd
+
+\*------------------------------------*/
+
 // Variables, Mixins, Functions
 @import 'styles/scss/helpers/_variables.scss';
 @import 'styles/scss/helpers/_functions.scss';
@@ -37,6 +45,7 @@
 20. Thumbnail Gallery
 
 /* HUBSPOT MODULES
+These partials will live on Hubspot Modules only and should be removed from importing.
 21. Accordion
 22. Before and After
 23. Cabinet Card
