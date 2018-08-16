@@ -1,8 +1,8 @@
  # Kitchen Magic Website Styles
 
-Our CSS/SCSS is based on [BEM](http://getbem.com/introduction/) and a modified version of [SMACSS](https://smacss.com/). The SASS files are broken out into four main directories (Base, Layout, Components, Helpers) which helps organize the files and compile into a clean CSS file. 
+Our CSS/SCSS is based on [BEM](http://getbem.com/introduction/) and a modified version of [SMACSS](https://smacss.com/). The SASS files are broken out into four main directories (Base, Layout, Components, Helpers) which helps organize the files and compile into a clean CSS file. We also use secondary directories due to the complexity of using Hubspot's CMS.
 
-<sub><sup>Built with ❤︎ by [Joshua Todd](https://github.com/Eruedraith)</sub></sup>
+<sub><sup>Built with ❤️  by [Joshua Todd](https://github.com/Eruedraith)</sub></sup>
 
 ## Installation
 ```
@@ -84,7 +84,7 @@ npm run compile
 
 8. Utilities 
 
-    * The utilities partial includes any global helpers classes. For example, text aligns and margins.
+    * The utilities partial includes any global helper classes. For example, text aligns and margins.
 
 
 ## Rules

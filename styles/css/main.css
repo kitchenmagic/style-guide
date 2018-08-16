@@ -3,6 +3,53 @@
    SUMMARY
 /* ============================================================
 
+/* BASE
+00. Reset/Normalize
+01. Global
+02. Grid
+03. Typography
+04. Responsive
+
+/* LAYOUT
+05. Header
+06. Page
+07. Footer
+
+/* PAGES
+08. Careers
+09. Estimate Specials
+10. Homepage
+11. Share the Magic
+12. Self Set
+
+/* COMPONENTS
+13. Buttons
+14. Content Box
+15. Forms
+16. Icons
+17. Modals
+18. Progress Bars
+19. Tables
+20. Thumbnail Gallery
+
+/* HUBSPOT MODULES
+21. Accordion
+22. Before and After
+23. Cabinet Card
+24. Event Card
+25. Product Card
+26. Testimonial Card
+27. New Product Showcase
+28. Awards
+29. Featured Item
+
+/* VENDORS
+30. Foundation Visibility
+31. Foundation Grid
+
+/* MISC
+32. Utilities
+
 */
 /* ============================================================
    RESET
