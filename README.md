@@ -1,3 +1,5 @@
+ 
+ ![Logo](https://www.kitchenmagic.com/hubfs/brand-guidelines/logo-github.png)
  # Kitchen Magic Website Styles
 
 Our CSS/SCSS is based on [BEM](http://getbem.com/introduction/) and a modified version of [SMACSS](https://smacss.com/). The SASS files are broken out into four main directories (Base, Layout, Components, Helpers) which helps organize the files and compile into a clean CSS file. We also use secondary directories due to the complexity of using Hubspot's CMS.
@@ -14,7 +16,7 @@ Our CSS/SCSS is based on [BEM](http://getbem.com/introduction/) and a modified v
         - [0.3.1. Secondary Directories](#031-secondary-directories)
     - [0.4. Usage](#04-usage)
         - [0.4.1. How to use Variables](#041-how-to-use-variables)
-        - [0.4.2. How to select font sizes](#042-how-to-select-font-sizes)
+        - [0.4.2. How to Select Font Sizes](#042-how-to-select-font-sizes)
         - [0.4.3. How to use Media Queries](#043-how-to-use-media-queries)
         - [0.4.4. Exporting for Hubspot Modules](#044-exporting-for-hubspot-modules)
     - [0.5. Rules](#05-rules)
@@ -136,7 +138,7 @@ $km-colors: (
 
 ```
 
-### 0.4.2. How to select font sizes 
+### 0.4.2. How to Select Font Sizes 
 If a typography element is not already selected in `_typography.scss` and you need to create a custom font size you need to use REM's instead of pixels. 
 ```sass 
 // Use the px-to-rem mixin to calculate pixels to rems
@@ -194,6 +196,7 @@ The Hubspot Module CSS files will not be compiled into the _main.css_ but will b
 
 1. Must use variables for all *fonts* and *colors*.
 2. All font sizes must be in REM values, not pixels.
+3. Hubspot Module CSS must be stored in Hubspot and not the `main.css` file.
 
 
 ## 0.6. Contributing
