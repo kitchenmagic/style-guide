@@ -92,7 +92,7 @@ npm run compile
 
 ### How to use Variables
 
-Almost all variables are put within SASS Maps and need to be accessed as such (the only exception is shadows). 
+Almost all variables are put within SASS Maps and need to be accessed as such (_the only exception is shadows_). 
 
 For example, if you are styling a button and need to access the primary color variables it would look like this:
 
@@ -119,17 +119,8 @@ $km-colors: (
 
 ```
 
-THIS IS MY NOTE:
-
-Add a section for how to use variables.
-How to select font sizes.
-How to use media queries.
-
-## Rules
-
-1. Must use variables for all fonts and colors.
-2. All font sizes must be in REM: 
-
+### How to select font sizes 
+If a typography element is not already selected in `_typography.scss` and you need to create a custom font size you need to use REM's instead of pixels. 
 ```sass 
 // Use the px-to-rem mixin to calculate pixels to rems
 
@@ -138,6 +129,50 @@ How to use media queries.
 }
 
 ```
+
+### How to use Media Queries
+All media queries must be added to their specific partial and not in `_responsive.scss` (_this is being deprecated in the upcoming versions_).
+
+The break points for the media queries are located in `_variables.scss`. 
+
+Use these three mixins to design for different screen sizes: 
+
+``` sass
+@include respond-below($breakpoint)
+@include respond-between($breakpoint-1, $breakpoint-2)
+@include respond-above($breakpoint)
+```
+
+The breakpoint variables are:
+* xs
+* sm
+* md 
+* lg
+
+Let's say you are updating the css for buttons on mobile, your code would look like:
+
+``` sass
+// Button Styles
+.km-btn {
+    display: inline-block;
+
+    // For mobile devices, display full width
+    @include respond-below(xs) {
+        display: block;
+    }
+}
+```
+
+
+
+THIS IS MY NOTE:
+
+How to use media queries.
+
+## Rules
+
+1. Must use variables for all fonts and colors.
+2. All font sizes must be in REM: 
 
 
 

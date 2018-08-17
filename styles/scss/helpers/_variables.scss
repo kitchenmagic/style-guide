@@ -66,6 +66,7 @@ $km-fonts: (
 
 // Map of breakpoints - Media Queries
 // !!! replace this with relative units
+// if you update these breakpoints, update in the README.md file as well
 $breakpoints: (
   xs: 576px,
   sm: 768px,
@@ -76,17 +77,8 @@ $breakpoints: (
 // ============================================================
 //  OLD VARIABLES - NEED TO BE SORTED AND REMOVED 
 // ============================================================ 
-$primary-color: 	#88441D;
-$secondary-color: 	#85695b;
-$tertiary-color:	lighten($secondary-color, 20);
-$alert-color: 		#EA002A;
-$success-color: 	#799A05;
-$warning-color: 	#F98E2B;
-$info-color: 		#5988DA;
-
 // icons
 $icon-padding: 1rem;
-
 $font-awesome: 'FontAwesome';
 
 $fa-chevron-up: f077;
