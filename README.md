@@ -88,13 +88,50 @@ npm run compile
 
     * The utilities partial includes any global helper classes. For example, text aligns and margins.
 
+## Usage
+
+### How to use Variables
+
+Almost all variables are put within SASS Maps and need to be accessed as such (the only exception is shadows). 
+
+For example, if you are styling a button and need to access the primary color variables it would look like this:
+
+```sass
+// This is an example of the color map in the _variables.scss partial
+$km-colors: (
+    primary: (
+        'base':        #F01834,
+        'light':       #FF999F,
+        'dark':        #C30019,
+    ),
+);
+
+// Button styling (with colors only).
+// This is how you would access the color variables
+
+.km-btn {
+    background: color(primary, base);
+
+    &:hover {
+        background: color(primary, dark);
+    }
+}
+
+```
+
+THIS IS MY NOTE:
+
+Add a section for how to use variables.
+How to select font sizes.
+How to use media queries.
 
 ## Rules
 
 1. Must use variables for all fonts and colors.
-2. All font sizes must be in REM (Use the `px-to-rem` mixin to calculate pixels to rems). Example: 
+2. All font sizes must be in REM: 
 
 ```sass 
+// Use the px-to-rem mixin to calculate pixels to rems
 
 .class {
     font-size: px-to-rem(12px);
