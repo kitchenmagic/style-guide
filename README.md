@@ -4,7 +4,7 @@
 
 # Kitchen Magic Website Styles
 
-![David](https://img.shields.io/david/dev/expressjs/express.svg) ![Website](https://img.shields.io/website-up-down-green-red/https/www.kitchenmagic.com.svg?label=my-website) ![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)
+![David](https://img.shields.io/david/dev/expressjs/express.svg) [![Website shields.io](https://img.shields.io/website-up-down-green-red/https/www.kitchenmagic.com.svg)](https://www.kitchenmagic.com) [![GitHub stars](https://img.shields.io/github/stars/kitchenmagic/style-guide.svg?style=social&label=Star&maxAge=2592000)](https://github.com/kitchenmagic/style-guide/)
 
 Our CSS/SCSS is based on [BEM](http://getbem.com/introduction/) and a modified version of [SMACSS](https://smacss.com/). The SASS files are broken out into four main directories (Base, Layout, Components, Helpers) which helps organize the files and compile into a clean CSS file. We also use secondary directories due to the complexity of using Hubspot's CMS.
 
