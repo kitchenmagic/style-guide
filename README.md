@@ -74,7 +74,7 @@ npm run compile
         * Tables
         * Thumbnail Gallery
 
-⚠️  The Hubspot Module CSS files will not be compiled into the _main.css_ but will be added instead to each specific Hubspot module.
+⚠️  The Hubspot Module CSS files will not be compiled into the `_main.css_` but will be added instead to each specific Hubspot module.
 
 4. Helpers
 
