@@ -1,6 +1,18 @@
- 
- ![Logo](https://www.kitchenmagic.com/hubfs/brand-guidelines/logo-github.png)
- # Kitchen Magic Website Styles
+<!-- Custom Styles -->
+<style>
+.text-center {
+    text-align: center;
+}
+</style>
+
+<!-- Logo -->
+<div class="text-center"><img src="https://www.kitchenmagic.com/hubfs/brand-guidelines/logo-github.png">
+</div>
+
+![David](https://img.shields.io/david/dev/expressjs/express.svg) ![Website](https://img.shields.io/website-up-down-green-red/https/www.kitchenmagic.com.svg?label=my-website) ![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)
+
+
+# Kitchen Magic Website Styles
 
 Our CSS/SCSS is based on [BEM](http://getbem.com/introduction/) and a modified version of [SMACSS](https://smacss.com/). The SASS files are broken out into four main directories (Base, Layout, Components, Helpers) which helps organize the files and compile into a clean CSS file. We also use secondary directories due to the complexity of using Hubspot's CMS.
 
