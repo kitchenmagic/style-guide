@@ -3,21 +3,38 @@
 Our CSS/SCSS is based on [BEM](http://getbem.com/introduction/) and a modified version of [SMACSS](https://smacss.com/). The SASS files are broken out into four main directories (Base, Layout, Components, Helpers) which helps organize the files and compile into a clean CSS file. We also use secondary directories due to the complexity of using Hubspot's CMS.
 
 <sub><sup>Built with ❤️  by [Joshua Todd](https://github.com/Eruedraith)</sub></sup>
+## Table of Contents
+<!-- TOC -->
 
-## Installation
+- [Kitchen Magic Website Styles](#kitchen-magic-website-styles)
+    - [Table of Contents](#table-of-contents)
+    - [0.1. Installation](#01-installation)
+    - [0.2. Compile SASS](#02-compile-sass)
+    - [0.3. SASS Directories](#03-sass-directories)
+        - [0.3.1. Secondary Directories](#031-secondary-directories)
+    - [0.4. Usage](#04-usage)
+        - [0.4.1. How to use Variables](#041-how-to-use-variables)
+        - [0.4.2. How to select font sizes](#042-how-to-select-font-sizes)
+        - [0.4.3. How to use Media Queries](#043-how-to-use-media-queries)
+        - [0.4.4. Exporting for Hubspot Modules](#044-exporting-for-hubspot-modules)
+    - [0.5. Rules](#05-rules)
+    - [0.6. Contributing](#06-contributing)
+
+<!-- /TOC -->
+## 0.1. Installation
 ```
 npm install
 ```
 
-## Compile SCSS
-Compiler uses [Gulp](https://gulpjs.com/). If you need to modify the tasks, go to  `gulpfile.js_`.
+## 0.2. Compile SASS
+We use [Gulp](https://gulpjs.com/) as our task manager. If you need to modify the tasks, go to  `gulpfile.js_`.
 To run the compiler use: 
 
 ```
 npm run compile
 ```
 
-## SASS Directories
+## 0.3. SASS Directories
 1. Base
 
     * The base directory contains the core styles.
@@ -61,7 +78,7 @@ npm run compile
         * Variables
 
 
-### Secondary Directories
+### 0.3.1. Secondary Directories
 
 5. Page
 
@@ -88,9 +105,9 @@ npm run compile
 
     * The utilities partial includes any global helper classes. For example, text aligns and margins.
 
-## Usage
+## 0.4. Usage
 
-### How to use Variables
+### 0.4.1. How to use Variables
 
 Almost all variables are put within SASS Maps and need to be accessed as such (_the only exception is shadows_). 
 
@@ -119,7 +136,7 @@ $km-colors: (
 
 ```
 
-### How to select font sizes 
+### 0.4.2. How to select font sizes 
 If a typography element is not already selected in `_typography.scss` and you need to create a custom font size you need to use REM's instead of pixels. 
 ```sass 
 // Use the px-to-rem mixin to calculate pixels to rems
@@ -130,7 +147,7 @@ If a typography element is not already selected in `_typography.scss` and you ne
 
 ```
 
-### How to use Media Queries
+### 0.4.3. How to use Media Queries
 All media queries must be added to their specific partial and not in `_responsive.scss` (_this is being deprecated in the upcoming versions_).
 
 The break points for the media queries are located in `_variables.scss`. 
@@ -162,16 +179,24 @@ Let's say you are updating the css for buttons on mobile, your code would look l
     }
 }
 ```
-### Exporting for Hubspot Modules
-Hubspot module CSS 
+### 0.4.4. Exporting for Hubspot Modules
+The Hubspot Module CSS files will not be compiled into the _main.css_ but will be added instead to each specific Hubspot module.
 
-## Rules
+1. To export a file to an individual css file, remove the *"_"* from the file name (for example: `_product-card.scss`--> `product-card.scss`) and this will automatically compile to the CSS folder. 
+
+2. Remove it from the `main.scss` file if it's currently being compiled to `main.css`. This helps our main stylesheet stay smaller and the styles for the modules will only be called when present on a page.
+
+3. Then copy and paste into the Hubspot Module 👍
+
+![hubspot-module](https://www.kitchenmagic.com/hubfs/brand-guidelines/hubspot-module-example.png)
+
+## 0.5. Rules
 
 1. Must use variables for all *fonts* and *colors*.
 2. All font sizes must be in REM values, not pixels.
 
 
-## Contributing
+## 0.6. Contributing
 1. Fork it
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
