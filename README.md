@@ -162,18 +162,13 @@ Let's say you are updating the css for buttons on mobile, your code would look l
     }
 }
 ```
-
-
-
-THIS IS MY NOTE:
-
-How to use media queries.
+### Exporting for Hubspot Modules
+Hubspot module CSS 
 
 ## Rules
 
-1. Must use variables for all fonts and colors.
-2. All font sizes must be in REM: 
-
+1. Must use variables for all *fonts* and *colors*.
+2. All font sizes must be in REM values, not pixels.
 
 
 ## Contributing
