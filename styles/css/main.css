@@ -1605,7 +1605,7 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
 .section-header {
   text-align: center; }
 
-.section-header > h1 {
+.section-header > h1, .section-header p {
   margin-bottom: 0.75rem; }
 
 /*
@@ -2250,7 +2250,6 @@ html .row-fluid .home-section-header {
   padding: 20px 0 29px;
   margin: 15px 0; }
   .color-wrapper h1, .color-wrapper h2, .color-wrapper h3, .color-wrapper h4 {
-    color: white;
     text-align: left;
     padding-bottom: 5px; }
   .color-wrapper .row-fluid-wrapper {
@@ -2327,7 +2326,7 @@ html .row-fluid .wide-wrapper {
   max-width: 90%; }
 
 .remodel-monthly-wrapper {
-  background: #E1E5E4;
+  background: #F9FAFC;
   padding: 30px 0 40px; }
   .remodel-monthly-wrapper .row-fluid-wrapper {
     position: static; }
@@ -3172,6 +3171,11 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
   border-top: 0;
   border-radius: 0; }
 
+fieldset {
+  margin-top: 10px !important; }
+  fieldset:first-child {
+    margin-top: 0; }
+
 /*
 /* Inputs 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -3262,6 +3266,10 @@ div.input input[type=checkbox] {
   div.input input[type=checkbox] + span {
     margin-left: 10px; }
 
+ul.inputs-list {
+  list-style: none;
+  padding-left: 0; }
+
 .hs_submit.hs-submit div.actions input {
   display: inline-block;
   text-align: center;
@@ -3316,6 +3324,11 @@ div.hs-dateinput input {
     cursor: pointer;
     border-color: #222222; }
 
+.hs-richtext {
+  font-size: .8rem;
+  margin-bottom: .5rem;
+  line-height: 1.5rem; }
+
 /*
 /* Datepicker / Calendar
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -3356,7 +3369,8 @@ div.hs-dateinput input {
 div.hs-form-field label {
   font-family: "ProximaNova-Bold", helvetica, sans-serif;
   color: #222;
-  font-size: .8rem; }
+  font-size: .8rem;
+  margin-bottom: 0; }
 
 .hs-form-required {
   color: #222222; }
@@ -6381,3 +6395,9 @@ th.hide-for-touch {
 
 .km-cta-background {
   background: #F9FAFC; }
+
+.km-light-bg {
+  background: #F9FAFC; }
+
+.km-dark-bg {
+  background: #222222; }

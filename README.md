@@ -22,6 +22,7 @@ Our CSS/SCSS is based on [BEM](http://getbem.com/introduction/) and a modified v
         - [0.4.2. How to Select Font Sizes](#042-how-to-select-font-sizes)
         - [0.4.3. How to use Media Queries](#043-how-to-use-media-queries)
         - [0.4.4. Exporting for Hubspot Modules](#044-exporting-for-hubspot-modules)
+    - [Updating Hubspot](#updating-hubspot)
     - [0.5. Rules](#05-rules)
     - [0.6. Contributing](#06-contributing)
 
@@ -206,6 +207,10 @@ The Hubspot Module CSS files will not be compiled into the _main.css_ but will b
 3. Then add your new file to Hubspot's Design Manager and link to the module 👍
 
 ![hubspot-module](https://www.kitchenmagic.com/hubfs/brand-guidelines/hubspot-module-example.png)
+
+## Updating Hubspot
+
+Add `main.css` in Hubspot's Design Manager under `System > Default > HS Default Custom Styles.css`
 
 ## 0.5. Rules
 

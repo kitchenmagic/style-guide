@@ -24,6 +24,14 @@
     border-top: 0;
     border-radius: 0;
 }
+// field columns
+fieldset {
+    margin-top: 10px !important;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
 
 /*
 /* Inputs 
@@ -31,19 +39,19 @@
 div.input {
 
     input.hs-input {
-        border: 1px solid color(border);
-        padding: .8rem;
-        background-color: #fff;
-        color: color(text, base);
-        border-radius: 0;
-        box-shadow: none;
-        font-size: 1rem;
-        font-family: family(body);
-        box-sizing:border-box;
-        // overrides hubspots width
-        width: 100% !important;
-        height: px-to-rem(45px);
-        @include transition(all 300ms ease);
+    border: 1px solid color(border);
+    padding: .8rem;
+    background-color: #fff;
+    color: color(text, base);
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: family(body);
+    box-sizing:border-box;
+    // overrides hubspots width
+    width: 100% !important;
+    height: px-to-rem(45px);
+    @include transition(all 300ms ease);
 
         @include placeholder {
             color: color(gray, base);
@@ -114,9 +122,14 @@ div.input {
             margin-left: 10px;
         }
     }
-
-    
 }
+
+// removes list style and padding from ul in forms
+ul.inputs-list {
+    list-style: none;
+    padding-left: 0;
+}
+
 // Submit button
 .hs_submit.hs-submit div.actions input {
     @include btn();
@@ -137,6 +150,13 @@ div.hs-dateinput {
             border-color: color(focus);
         }
     }
+}
+
+// Form Note
+.hs-richtext {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    line-height: 1.5rem;
 }
 
 /*
@@ -197,6 +217,7 @@ div.hs-form-field label {
     font-family: family(bold);
     color: #222;
     font-size: .8rem;
+    margin-bottom: 0;
 }
 // required
 .hs-form-required {
