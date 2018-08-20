@@ -52,7 +52,7 @@
       padding-right: 0 !important; }
     .gallery__action-bar-right form select {
       height: 2.3125rem;
-      border-color: #DFEAEE;
+      border-color: #E1E5E4;
       font-weight: bold; }
       .gallery__action-bar-right form select:after {
         content: "\f078";
@@ -69,18 +69,36 @@
   height: 42px;
   line-height: 42px;
   box-shadow: none;
-  border-color: #DFEAEE;
-  margin-bottom: 0; }
+  border-color: #E1E5E4;
+  margin-bottom: 0;
+  border: 1px solid #E1E5E4;
+  padding: .8rem;
+  background-color: #fff;
+  color: #222222;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1rem;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 100% !important;
+  height: 2.8125rem;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  #gallery-filter-search:focus {
+    outline: none; }
   #gallery-filter-search.placeholder {
-    color: #787878; }
+    color: #A3A5A8; }
   #gallery-filter-search:-moz-placeholder {
-    color: #787878; }
+    color: #A3A5A8; }
   #gallery-filter-search::-moz-placeholder {
-    color: #787878; }
+    color: #A3A5A8; }
   #gallery-filter-search:-ms-input-placeholder {
-    color: #787878; }
+    color: #A3A5A8; }
   #gallery-filter-search::-webkit-input-placeholder {
-    color: #787878; }
+    color: #A3A5A8; }
 
 /* ============================================================
    02. Sidebar Filters
@@ -104,7 +122,7 @@
     margin-top: 0; }
 
 .gallery__filter-card {
-  border: 1px solid #DFEAEE;
+  border: 1px solid #E1E5E4;
   border-radius: 3px;
   margin-top: 20px; }
 
@@ -128,7 +146,7 @@
 
 .gallery__filter-card--body {
   padding: 0 20px 14px;
-  border-top: 1px solid #DFEAEE; }
+  border-top: 1px solid #E1E5E4; }
   .gallery__filter-card--body form {
     border: none !important;
     background-color: #fff !important; }
@@ -149,7 +167,8 @@
   float: left;
   padding-left: .9375rem;
   padding-right: .9375rem;
-  width: 75%; }
+  width: 75%;
+  overflow: hidden; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .gallery__img-container {
       width: 60% !important; } }
@@ -166,7 +185,7 @@
   justify-content: space-between;
   /* testing image crop with img */ }
   .gallery__img .gallery__img--card {
-    border: 1px solid #DFEAEE;
+    border: 1px solid #E1E5E4;
     flex-basis: 31%;
     width: 31%;
     margin-bottom: 20px;
@@ -214,10 +233,13 @@
   .gallery__img .gallery__img--props {
     list-style: none;
     margin-left: 0;
-    font-size: 13px;
-    margin-bottom: 0; }
+    font-size: 0.8125rem;
+    margin-bottom: 0;
+    padding-left: 0; }
     .gallery__img .gallery__img--props li {
-      padding-bottom: 9px; }
+      padding-bottom: 9px;
+      margin: 0;
+      line-height: 1; }
       .gallery__img .gallery__img--props li:last-child {
         padding-bottom: 0; }
     .gallery__img .gallery__img--props > li img {
@@ -229,8 +251,8 @@
 .nice-select {
   background-color: #fff;
   font-weight: bold;
-  border-radius: 3px;
-  border: solid 1px #DFEAEE;
+  border-radius: 0;
+  border: solid 1px #E1E5E4;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
@@ -250,7 +272,7 @@
   white-space: nowrap;
   width: auto; }
   .nice-select:hover {
-    border-color: #cedfe5; }
+    border-color: #d3d9d8; }
   .nice-select:active, .nice-select.open, .nice-select:focus {
     border-color: #222; }
   .nice-select:after {
@@ -302,7 +324,7 @@
       min-height: 34px; }
   .nice-select .list {
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 0;
     box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
     box-sizing: border-box;
     margin-top: 4px;
@@ -374,6 +396,10 @@
   background: #F01834;
   color: #fff;
   opacity: 1;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
   transition: all 300ms ease;
   float: right;
   margin: 7px 2px 2px;

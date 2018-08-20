@@ -42,6 +42,11 @@
     text-align: center;
     line-height: initial;
 
+    //hide for mobile
+    @include respond-below(xs) {
+        display: none;
+    }
+
     li {
         display: inline-block;
         margin-bottom: 0;
@@ -101,6 +106,10 @@
         padding: 0px 0px 0px 0px;
         text-transform: uppercase;
         font-size: .8rem;
+
+        @include respond-below(xs) {
+            line-height: 0;
+        }
 
         &.first-crumb {
             padding-left: 0;

@@ -91,12 +91,17 @@ h1,h2,h3,h4,h5 {
 
   @include respond-below('md') {
     font-weight: normal;
+    overflow-wrap: break-word;
   }
 }
 
 h1 {
   font-size: 4.375rem;
   margin-top: 0;
+  // smaller font size for mobile
+  @include respond-below(xs) {
+    font-size: 3.5rem;
+  }
 }
 
 h2 {
