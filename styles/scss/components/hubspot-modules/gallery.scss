@@ -1,3 +1,8 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
 /*
  * Author:  Joshua Todd, Josh Mamroud
  * Version: 1.0.0
@@ -257,6 +262,12 @@ $dark-red:     #C30019;
 
 		}
 	}
+}
+
+// checkbox
+.gallery__filter-card-checkbox label {
+  margin-left: .5rem;
+  font-size: px-to-rem(14px);
 }
 
 

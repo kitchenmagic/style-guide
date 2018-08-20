@@ -137,6 +137,10 @@
       .gallery__filter-card--body form input:hover {
         cursor: pointer; }
 
+.gallery__filter-card-checkbox label {
+  margin-left: .5rem;
+  font-size: 0.875rem; }
+
 /* ============================================================
    03. Image Cards / Grid
 /* ============================================================ */

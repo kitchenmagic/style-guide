@@ -189,11 +189,21 @@ Let's say you are updating the css for buttons on mobile, your code would look l
 ### 0.4.4. Exporting for Hubspot Modules
 The Hubspot Module CSS files will not be compiled into the _main.css_ but will be added instead to each specific Hubspot module.
 
+*Note*: When creating Hubspot Module styles, add this to the top of your SASS file to access all the variables, mixins and functions:
+
+``` sass
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+```
+
 1. To export a file to an individual css file, remove the *"_"* from the file name (for example: `_product-card.scss`--> `product-card.scss`) and this will automatically compile to the CSS folder. 
 
 2. Remove it from the `main.scss` file if it's currently being compiled to `main.css`. This helps our main stylesheet stay smaller and the styles for the modules will only be called when present on a page.
 
-3. Then copy and paste into the Hubspot Module 👍
+3. Then add your new file to Hubspot's Design Manager and link to the module 👍
 
 ![hubspot-module](https://www.kitchenmagic.com/hubfs/brand-guidelines/hubspot-module-example.png)
 
