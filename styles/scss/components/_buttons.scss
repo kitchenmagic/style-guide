@@ -82,7 +82,7 @@
 }
 
 /*
-/*  Button Overrides for current website
+/*  Button Overrides for current website (all classes below)
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* !!! These will eventually be removed over time as old buttons 
@@ -311,4 +311,12 @@ screen and (min-width: 64em) {
         display: block;
         margin-right: 0;
     }
+}
+
+/*
+/*  Button Utilities
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.km-button-full-width {
+    width: 100%;
 }

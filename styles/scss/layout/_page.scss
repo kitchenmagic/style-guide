@@ -7,13 +7,27 @@
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .km-page-header {
-    background: none;
+    background: color(background);
     padding: 16px 16px;
     border: none;
+    text-align: center;
 }
 
 .section-header {
     text-align: center;
+}
+
+.section-header > h1 {
+    margin-bottom: px-to-rem(12px);
+}
+
+/*
+/*  Image Banner
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// currently hiding the top image
+.km-banner-wrapper {
+    display: none;
 }
 
 /*
@@ -30,6 +44,7 @@
 
     li {
         display: inline-block;
+        margin-bottom: 0;
         // turns navigation into a vertical list for mobile
         @include respond-below(xs) {
             display: block;
@@ -38,6 +53,16 @@
             &:last-child {
                 border-bottom: 0;
             }
+        }
+
+        ul {
+            display: inline-block;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 4em;
+            text-transform: uppercase;
         }
 
         a {
@@ -85,5 +110,29 @@
             float: left;
             padding: 10px 0px 10px 10px;
         }
+    }
+}
+
+/*
+/*  Related Pages
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.body-container .hs-menu-flow-horizontal ul {
+    margin: 0;
+    display: inline-block;
+    padding-left: 0;
+
+    li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+        a {
+            display: inline-block;
+            padding: .4em 1em;
+            margin: 0 .5em .5em 0;
+            border: solid 1px color(border);
+        }
+
     }
 }

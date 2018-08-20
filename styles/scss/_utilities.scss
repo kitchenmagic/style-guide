@@ -14,6 +14,20 @@
     font-size: 11px;
 }
 
+/* text aligns */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
   /**
     * A helper class used to center subtitles under main titles
     * example: www.kitchenmagic.com/cabinet-refacing
@@ -148,4 +162,12 @@
 
 .km-border-left {
   border-left: solid 1px color(border);
+}
+
+//
+//  Backgrounds
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.km-cta-background {
+  background: color(background);
 }

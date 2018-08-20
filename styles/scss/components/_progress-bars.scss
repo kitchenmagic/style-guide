@@ -15,7 +15,7 @@
     display: block;
     width: 0%;
     height: 100%;
-    background-color: color(primary, base);
+    background-color: color(text, base);
     border-radius: 3px;
 }
 
@@ -146,4 +146,5 @@ span.meter-tree-progress p {
     float: right;
     padding-right: 5px;
     color: #fff;
+    line-height: 22px;
 }

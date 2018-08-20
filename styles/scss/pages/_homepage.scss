@@ -9,7 +9,6 @@
   .hero-wrapper {
     z-index: 1;
     position: relative;
-    border-bottom: 3px solid color(border);
     color: white;
 
     .row-fluid-wrapper {
@@ -57,8 +56,8 @@
   
   
   html .row-fluid .hero-wrapper .flex-hero { 
-    min-height: 490px;
-    padding:50px 20px;
+    min-height: 400px;
+    padding: 50px 20px;
     box-sizing: border-box;
     display: -webkit-flex;
     display: flex;
@@ -72,7 +71,7 @@
 }
 
 .hero-cta.space { 
-  padding-top: 7%; 
+  padding-top: 5%; 
 }
   
   
@@ -119,6 +118,10 @@
 
     .solutions-link {
       display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     .solutions-img {
@@ -153,13 +156,18 @@
     .solutions-text {
       display: block;
       text-align: center;
-      padding: 20px 0;
+      padding: 20px 0; 
+      color: color(text, base);
     }
 
     .solutions-cta {
       display: block;
       text-align: center;
       font-size: px-to-rem(19px);
+      
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }  
   
@@ -402,7 +410,7 @@ html .row-fluid .month-slider-wrapper {
   margin-left: 0 !important; 
 }
 
-.slide-overlay {
+.slider-overlay {
   position: absolute;
   z-index: 1;
   left:0;
@@ -441,6 +449,10 @@ html .row-fluid .month-slider-wrapper {
 .slider-img { 
   padding-top:70%;
   position: relative; 
+
+  &:hover {
+    cursor: grab;
+  }
 }
 
 .month-slider {
@@ -457,17 +469,19 @@ html .row-fluid .month-slider-wrapper {
     border: none;
     font-size:0;
     height: 45px;
+    width: 45px;
     box-sizing: border-box;
-    opacity: 0.2;
-    margin-top:-20px;
-    margin-bottom: 0;
+    opacity: 0.6;
+    margin: -20px 5px 0;
     -moz-transition:all .2s ease-in-out;
     -o-transition:all .2s ease-in-out;
     transition:all .2s ease-in-out;
 
+
     &:hover {
       opacity: 1;
       background-color: transparent;
+      cursor: pointer;
     }
 
     &:focus {
@@ -491,15 +505,19 @@ html .row-fluid .month-slider-wrapper {
   .slick-dots {
     margin: 10px 0;
 
+    li {
+      margin: 0;
+    }
+
     li button {
-      background: color(text, base);
+      background: color(gray, base);
       border-radius: 50%;
       width: 10px;
       height: 10px; 
     }
 
     .slick-active button {
-      background: color(gray, base);
+      background: color(text, base);
     }
   }
 
@@ -533,5 +551,4 @@ html .row-fluid .month-slider-wrapper {
 
 html .row-fluid .last-cta { 
   margin:0;
-  border-bottom: 1px solid #DDDDDD; 
 }

@@ -1,0 +1,686 @@
+/*
+ * Author:  Joshua Todd, Josh Mamroud
+ * Version: 1.0.0
+ * Github:  https://github.com/Eruedraith/KM-gallery 
+ */
+
+/* ============================================================
+   SUMMARY
+/* ============================================================
+  
+  00. SCSS Mixins, Variables
+  01. Top Action Bar
+  02. Sidebar Filters
+  03. Image Cards / Grid
+  04. Select Styling - jQuery Nice Select
+  05. ModuloBox - popup overrides
+/* ============================================================
+   00. SCSS Mixins, Variables
+/* ============================================================ */
+/**/
+/* If you want to change mixins, variables: https://github.com/Eruedraith/KM-gallery */
+/**/
+
+// Mixins 
+@mixin form-override {
+	border: none !important;
+	background-color: #fff !important;
+}
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+@mixin box-shadow {
+	box-shadow: 0 2px 20px #D9DFF0;
+	-moz-box-shadow: 0 2px 20px #D9DFF0;
+	-webkit-box-shadow: 0 2px 20px #D9DFF0;
+}
+
+@mixin transition {
+	transition: all 300ms ease;
+}
+
+@mixin grid {
+  position: relative;
+  float: left;
+  padding-left: .9375rem; 
+  padding-right: .9375rem;
+}
+
+// Responsive Mixins
+@mixin desktop {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: 768px) and (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin tablet-landscape {
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin mobile {
+	@media (min-width: 320px) and (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin mobile-landscape {
+  @media (min-width: 481px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+
+// Variables 
+$border-color: #DFEAEE;
+$red:		       #F01834;
+$dark-red:     #C30019;
+
+
+/* ============================================================
+   01. Top Action Bar
+/* ============================================================ */
+
+.gallery__action-bar {
+	display: flex;
+	align-items: center;
+	margin-bottom: 28px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile-landscape {
+    display: none;
+  }
+	
+	@include mobile {
+		display: none;
+	}
+}
+
+.gallery__action-bar-left {
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery__action-bar-right {
+	display: flex;
+	align-items: center;
+	
+	form {
+		flex-basis: 100%;
+		// overrides default styling
+		@include form-override;
+    	padding: 0 16px !important;
+
+    	&:last-child {
+    		padding-right: 0 !important;
+    	}
+
+		// add labels
+    	// &#sort-by:before {
+    	// 	content: "Sort by:";
+    	// 	font-size: 12px;
+    	// }
+
+    	// &#solution-filter:before {
+    	// 	content:"Solutions:";
+    	// 	font-size: 12px;
+    	// }
+
+    	// &#search-bar:before {
+    	// 	content:".";
+    	// 	font-size: 12px;
+    	// 	color: #fff;
+    	// }
+
+    	select {
+    		height: 2.3125rem;
+    		border-color: $border-color;
+    		font-weight: bold;
+
+    		&:after {
+    			content: "\f078";
+    			font-family: fontawesome;
+    		}
+
+    		&:active {
+    			outline: none;
+
+    		}
+    	}
+	}
+}
+
+#gallery-filter-search {
+	background-image: url(https://cdn2.hubspot.net/hubfs/126868/graphics/icons/med-search.png);
+    background-repeat: no-repeat;
+    background-position: 12px 8px;
+    background-size: auto 55%;
+    text-indent: 35px;
+    height: 42px;
+    line-height: 42px;
+    box-shadow: none;
+    border-color: $border-color;
+    margin-bottom: 0;
+
+    @include input-placeholder {
+    	color: #787878;
+    }
+}
+
+/* ============================================================
+   02. Sidebar Filters
+/* ============================================================ */
+
+.gallery__filter {
+  @include grid;
+  width: 25%;
+
+  @include tablet {
+    width: 40% !important;
+  }
+
+  @include tablet-landscape {
+    width: 33.33333% !important;
+  }
+
+  @include mobile {
+    display: none !important;
+  }
+
+	.gallery__filter-card {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.gallery__filter-card {
+	border: 1px solid $border-color;
+	border-radius: 3px;
+	margin-top: 20px;
+}
+
+.gallery__filter-card--header {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	font-weight: bold;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.gallery__filter-card--dropdown {
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	color: $red;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.gallery__filter-card--body {
+
+	padding: 0 20px 14px;
+	border-top: 1px solid $border-color;
+	form {
+		// overrides default styling
+		@include form-override;
+
+		input {
+			transform: none !important;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+		}
+	}
+}
+
+
+/* ============================================================
+   03. Image Cards / Grid
+/* ============================================================ */
+
+.gallery__img-container {
+  @include grid;
+  width: 75%;
+
+  @include tablet {
+    width: 60% !important;
+  }
+
+  @include tablet-landscape {
+    width: 66.66667% !important;
+  }
+
+  @include mobile {
+    width: 100% !important;
+  }
+
+}
+
+.gallery__img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.gallery__img--card {
+		border: 1px solid $border-color;
+		flex-basis: 31%;
+		width: 31%;
+		margin-bottom: 20px;
+		border-radius: 3px;
+    transition: box-shadow 400ms ease;
+
+    @include tablet {
+      width: 45%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+		&:hover {
+			cursor: pointer;
+			@include box-shadow;
+
+      .gallery__img--background-overlay {
+        opacity: 1;
+      }
+		}
+
+    &:before {
+      transition: background-color 400ms ease;
+      content:"";
+    }
+
+    &:hover::before {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 210px;
+       background-color: rgba(0,0,0,.3);
+       content: "";
+    }
+   		//add animation for borders on hover
+		// &:before, &:after {
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: 0;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	transition: opacity .38s ease-in-out, transform .35s ease-in-out;
+		// 	content: '';
+		// 	opacity: 0;
+		// 	pointer-events: none;
+		// }
+
+		// &:before {
+		// 	transform: scale3d(0, 1, 1);
+		// 	transform-origin: left top;
+		// 	border-top: 1px solid $red;
+		// 	border-bottom: 1px solid $red;
+		// 	border-radius: 3px;
+		// }
+
+		// &:after {
+		// 	transform: scale3d(1, 0, 1);
+		// 	transform-origin: right top;
+		// 	border-right: 1px solid $red;
+		// 	border-left: 1px solid $red;
+		// 	border-radius: 3px;
+		// }
+
+		// &:hover::before, &:hover::after, &:focus::before, &:focus::after {
+		// 	transform: scale3d(1, 1, 1);
+		// 	opacity: 1;
+		// }
+  }
+
+  /* testing image crop with img */
+
+  // .crop {
+  //   position: relative;
+  //   overflow: hidden;
+  //   /* Width and height can be anything. */
+  //   width: 31vw;
+  //   height: 25vh;
+  //   display:inline-block;
+  //   margin:0;
+  //   padding:0;
+  //   box-sizing:border-box;
+
+  //   img {
+  //     position: absolute;
+  //     /* Position the image in the middle of its container. */
+  //     top: -9999px;
+  //     right: -9999px;
+  //     bottom: -9999px;
+  //     left: -9999px;
+  //     margin: auto;
+  //     /* The following values determine the exact image behaviour. */
+  //     /* You can simulate background-size: cover/contain/etc.
+  //        by changing between min/max/standard width/height values.
+  //        These values simulate background-size: cover
+  //     */
+  //     min-width: 100%;
+  //     min-height: 100%;
+  //     box-sizing:border-box;
+  //   }
+
+  // }
+    
+	.gallery__img--background {
+		background-size: cover;
+    height: 210px;
+    
+    .gallery__img--background-overlay {
+      transition: 400ms ease;
+      opacity: 0;
+      position: absolute;
+      text-align: center;
+      line-height: 210px;
+      width: 100%;
+
+      span i {
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+
+	}
+
+	.gallery__img--body {
+		padding: 13px 20px 18px;
+	}
+
+	.gallery__img--props {
+		list-style: none;
+		margin-left: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+
+		li {
+			padding-bottom: 9px;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+
+		> li img {
+			padding-right: 13px;
+		}
+	}
+}
+
+/* ============================================================
+   04. Selects - jQuery Nice Select
+/* ============================================================ */
+
+// variables 
+$font_size: 14px !default;
+$font_size_small: 12px !default;
+
+$input_border_radius: 3px !default;
+$input_height: 42px !default;
+$input_height_small: 36px !default;
+$dropdown_padding: 18px !default;
+
+$gray_dark: #444 !default;
+$gray: #222 !default;
+$gray_light: #e8e8e8 !default;
+$gray_lighter: #F0F2F8 !default;
+$primary_light: $gray !default;
+$arrow_color: $gray !default;
+
+// Style the dropdown
+.nice-select {
+  // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: $input_border_radius;
+  border: solid 1px $border-color; 
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: $font_size;
+  height: $input_height;
+  line-height: $input_height - 2;
+  outline: none;
+  padding-left: $dropdown_padding;
+  padding-right: $dropdown_padding + 12;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  width: auto;
+  &:hover {
+    border-color: darken($border-color, 5%);
+  }
+  &:active, &:focus {
+    border-color: $primary_light;
+  }
+  // Arrow
+  &:after { 
+   border-bottom: 3px solid $red;
+    border-right: 3px solid $red;
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    transition: all .15s ease-in-out;
+    width: 8px;
+  }
+  
+  &.open {
+    @extend :active;
+    &:after {
+      transform: rotate(-135deg);
+    }
+    .list {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1) translateY(0);
+    }
+  }
+  &.disabled {
+    border-color: lighten($gray_light, 2%);
+    color: $gray;
+    pointer-events: none;
+    &:after { 
+      border-color: lighten($arrow_color, 20%);
+    }
+  }
+  
+  // Modifiers
+  &.wide {
+    width: 100%;
+    .list {
+      left: 0 !important;
+      right: 0 !important;
+    }
+  }
+  &.right {
+    float: right;
+    .list {
+      left: auto;
+      right: 0;
+    }
+  }
+  &.small {
+    font-size: $font_size_small;
+    height: $input_height_small;
+    line-height: $input_height_small - 2;
+    &:after { 
+      height: 4px;
+      width: 4px;
+    }
+    .option {
+      line-height: $input_height_small - 2;
+      min-height: $input_height_small - 2;
+    }
+  }
+  
+  // List and options
+  .list {
+    background-color: #fff;
+    border-radius: $input_border_radius;
+    box-shadow: 0 0 0 1px rgba($gray_dark, .11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%; left: 0;
+    transform-origin: 50% 0;
+    transform: scale(.75) translateY(- $input_height / 2);
+    transition: all .2s cubic-bezier(0.5, 0, 0, 1.25), opacity .15s ease-out;
+    z-index: 9;
+    width: 100%;
+    &:hover .option:not(:hover) {
+      background-color: transparent !important;
+    }
+  }
+  .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: $input_height - 2;
+    list-style: none;
+    min-height: $input_height - 2;
+    outline: none;
+    padding-left: $dropdown_padding;
+    padding-right: $dropdown_padding + 11;
+    text-align: left;
+    transition: all 0.2s;
+    &:hover, &.focus, &.selected.focus { 
+      background-color: $gray_lighter;
+    }
+    &.selected { 
+      font-weight: bold;
+    }
+    &.disabled {
+      background-color: transparent;
+      color: $gray;
+      cursor: default;
+    }
+  }
+}
+
+// Use display instead of opacity for IE <= 10
+.no-csspointerevents .nice-select {
+  .list {
+    display: none;
+  }
+  &.open {
+    .list {
+      display: block;
+    }
+  }
+}
+
+/* ============================================================
+   05. ModuloBox - popup overrides
+/* ============================================================ */
+
+.mobx-holder {
+  z-index: 999999;
+}
+
+.mobx-overlay {
+    background: rgba(0,0,0,.9) !important;
+}
+
+.mobx-top-bar {
+  background-color: #000;
+}
+
+.mobx-ui {
+
+  a.km-mobx-button {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-appearance: none;
+    height: 32px;
+    line-height: 32px;
+    background: $red;
+    color: #fff;
+    opacity: 1;
+    @include transition;
+    float: right; 
+    margin: 7px 2px 2px;
+    padding: 0 10px;
+
+    &:hover {
+      background: $dark-red;
+    }
+  }
+
+  button {
+    &:hover, &:focus, &:active {
+      background-color: transparent;
+    }
+
+  }
+}
+
+.mobx-video:before, .mobx-video:after, .mobx-thumb-video:after, .mobx-ui button, .mobx-share-tooltip *:after {
+  background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/modulobox.svg);
+}
+
+.mobx-caption {
+
+  .mobx-caption-inner {
+    max-width: 600px;
+
+    .mobx-desc {
+      font-size: 15px;
+      text-align: left;
+      line-height: 1.45;
+      color: #dadada;
+    }
+  }
+}

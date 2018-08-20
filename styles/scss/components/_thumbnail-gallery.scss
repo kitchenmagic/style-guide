@@ -1,7 +1,10 @@
 /* ============================================================
    20. THUMBNAIL GALLERY
 /* ============================================================ */
-
+// hide thumbnail modal 
+#gallery-modal {
+    display: none;
+}
 .km-slider .km-slide-title{
     text-align: center;
 }

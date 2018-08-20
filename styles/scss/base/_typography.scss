@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5 {
   font-family: family(header);
   color: color(text, base);
   letter-spacing: 1px !important;
-  margin: 1.414rem 0 0.5rem;
+  margin: 1.414rem 0 1.5rem;
 
   @include respond-below('md') {
     font-weight: normal;
@@ -130,7 +130,7 @@ p {
   font-family: family(body);
   color: color(text, base);
   font-size: 1rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
   line-height: 1.75rem;
 }
 
@@ -164,6 +164,11 @@ a {
 ::-moz-selection {
   background: color(primary, base);
   color: #fff;
+}
+
+li {
+  margin-bottom: px-to-rem(10px);
+  line-height: 1.75rem;
 }
 
 /*
@@ -217,7 +222,7 @@ blockquote, .reviews-blockquote {
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 25%;
+    max-width: 30%;
 
     @include respond-below(md) {
       max-width: 40%;
@@ -230,7 +235,7 @@ blockquote, .reviews-blockquote {
 }
 
 // add quotation to the top
-.reviews-blockquote::before {
+.reviews-blockquote::before, blockquote::before {
   content: "\f10e";
   font-size: px-to-rem(25px);
   font-family: fontawesome;

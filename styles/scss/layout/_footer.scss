@@ -86,9 +86,10 @@
             border: none;
             height: auto;
         }
-
+        // overrides default styling for form submits
         input[type="submit"] {
             padding: 9px 28px !important;
+            margin: 0 !important;
         }
 
         // error messages

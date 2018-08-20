@@ -206,7 +206,9 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none;
+  max-width: 100%;
+  height: auto; }
 
 svg:not(:root) {
   overflow: hidden;
@@ -351,6 +353,19 @@ html, body {
   padding: 0;
   width: 100%; }
 
+.body-container {
+  margin: 0 auto;
+  max-width: 71.25rem;
+  padding: 0 16px;
+  min-height: 600px; }
+
+.km-page-full-width .body-container, .km-page-full .body-container {
+  max-width: 100%;
+  padding: 0; }
+
+.body-container-wrapper {
+  padding-top: 45px; }
+
 /* ============================================================
    02. GRID
 /* ============================================================ */
@@ -426,7 +441,7 @@ h1, h2, h3, h4, h5 {
   font-family: "DomaineDisplayNarrowBold", helvetica, serif;
   color: #222222;
   letter-spacing: 1px !important;
-  margin: 1.414rem 0 0.5rem; }
+  margin: 1.414rem 0 1.5rem; }
   @media (max-width: 991px) {
     h1, h2, h3, h4, h5 {
       font-weight: normal; } }
@@ -461,7 +476,7 @@ p {
   font-family: "ProximaNova-Regular", helvetica, sans-serif;
   color: #222222;
   font-size: 1rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
   line-height: 1.75rem; }
 
 strong {
@@ -490,6 +505,10 @@ a {
 ::-moz-selection {
   background: #F01834;
   color: #fff; }
+
+li {
+  margin-bottom: 0.625rem;
+  line-height: 1.75rem; }
 
 /*
 /*  Horizontal Rule
@@ -536,7 +555,7 @@ blockquote, .reviews-blockquote {
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 25%; }
+    max-width: 30%; }
     @media (max-width: 991px) {
       blockquote cite, .reviews-blockquote cite {
         max-width: 40%; } }
@@ -544,7 +563,7 @@ blockquote, .reviews-blockquote {
       blockquote cite, .reviews-blockquote cite {
         max-width: 80%; } }
 
-.reviews-blockquote::before {
+.reviews-blockquote::before, blockquote::before {
   content: "\f10e";
   font-size: 1.5625rem;
   font-family: fontawesome;
@@ -1686,12 +1705,22 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
 /*  Page Titles
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-page-header {
-  background: none;
+  background: #F9FAFC;
   padding: 16px 16px;
-  border: none; }
+  border: none;
+  text-align: center; }
 
 .section-header {
   text-align: center; }
+
+.section-header > h1 {
+  margin-bottom: 0.75rem; }
+
+/*
+/*  Image Banner
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-banner-wrapper {
+  display: none; }
 
 /*
 /*  Page Navigation
@@ -1704,13 +1733,20 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
   text-align: center;
   line-height: initial; }
   .km-nav-deeper li {
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 0; }
     @media (max-width: 575px) {
       .km-nav-deeper li {
         display: block;
         border-bottom: 1px solid #E1E5E4; }
         .km-nav-deeper li:last-child {
           border-bottom: 0; } }
+    .km-nav-deeper li ul {
+      display: inline-block; }
+    .km-nav-deeper li label {
+      display: inline-block;
+      min-width: 4em;
+      text-transform: uppercase; }
     .km-nav-deeper li a {
       margin: 0;
       padding: .8em 0 .7em 1em;
@@ -1743,6 +1779,24 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
   .km-nav-breadcrumb .hs-breadcrumb-menu .hs-breadcrumb-menu-item {
     float: left;
     padding: 10px 0px 10px 10px; }
+
+/*
+/*  Related Pages
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.body-container .hs-menu-flow-horizontal ul {
+  margin: 0;
+  display: inline-block;
+  padding-left: 0; }
+  .body-container .hs-menu-flow-horizontal ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left; }
+    .body-container .hs-menu-flow-horizontal ul li a {
+      display: inline-block;
+      padding: .4em 1em;
+      margin: 0 .5em .5em 0;
+      border: solid 1px #E1E5E4; }
 
 /* ============================================================
    07. FOOTER
@@ -1815,7 +1869,8 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
       border: none;
       height: auto; }
     .dark-footer form input[type="submit"] {
-      padding: 9px 28px !important; }
+      padding: 9px 28px !important;
+      margin: 0 !important; }
     .dark-footer form ul.hs-error-msgs {
       display: block !important;
       color: white;
@@ -2169,7 +2224,6 @@ form#hsForm_f12190c4-922f-4690-9ea0-03846d0b08c3, form#hsForm_78097024-1985-4808
 .hero-wrapper {
   z-index: 1;
   position: relative;
-  border-bottom: 3px solid #E1E5E4;
   color: white; }
   .hero-wrapper .row-fluid-wrapper {
     position: static; }
@@ -2202,7 +2256,7 @@ form#hsForm_f12190c4-922f-4690-9ea0-03846d0b08c3, form#hsForm_78097024-1985-4808
     height: 100%; }
 
 html .row-fluid .hero-wrapper .flex-hero {
-  min-height: 490px;
+  min-height: 400px;
   padding: 50px 20px;
   box-sizing: border-box;
   display: -webkit-flex;
@@ -2214,7 +2268,7 @@ html .row-fluid .hero-wrapper .flex-hero {
     width: 100%; }
 
 .hero-cta.space {
-  padding-top: 7%; }
+  padding-top: 5%; }
 
 /*
 /*  Section 1
@@ -2249,6 +2303,8 @@ html .row-fluid .home-section-header {
 
 .solutions-box .solutions-link {
   display: block; }
+  .solutions-box .solutions-link:hover {
+    text-decoration: none; }
 
 .solutions-box .solutions-img {
   display: block; }
@@ -2276,12 +2332,15 @@ html .row-fluid .home-section-header {
 .solutions-box .solutions-text {
   display: block;
   text-align: center;
-  padding: 20px 0; }
+  padding: 20px 0;
+  color: #222222; }
 
 .solutions-box .solutions-cta {
   display: block;
   text-align: center;
   font-size: 1.1875rem; }
+  .solutions-box .solutions-cta:hover {
+    text-decoration: underline; }
 
 /*
 /*  Section 2
@@ -2451,7 +2510,7 @@ html .row-fluid .month-slider-wrapper {
   width: 53%;
   margin-left: 0 !important; }
 
-.slide-overlay {
+.slider-overlay {
   position: absolute;
   z-index: 1;
   left: 0;
@@ -2459,19 +2518,19 @@ html .row-fluid .month-slider-wrapper {
   bottom: 10px;
   padding: 13% 0 3% 15%;
   box-sizing: border-box; }
-  .slide-overlay .circle-img {
+  .slider-overlay .circle-img {
     position: absolute;
     bottom: 0;
     left: 10px;
     border-radius: 200px;
     width: 30%; }
-  .slide-overlay .name-bar {
+  .slider-overlay .name-bar {
     background: rgba(85, 85, 85, 0.7);
     color: white;
     padding: 25px 10px 25px 25%;
     font-family: "ProximaNova-Regular", helvetica, sans-serif;
     font-size: 1.6875rem; }
-    .slide-overlay .name-bar.no-img {
+    .slider-overlay .name-bar.no-img {
       padding: 25px 10px 25px 25px; }
 
 .month-slider {
@@ -2482,6 +2541,8 @@ html .row-fluid .month-slider-wrapper {
 .slider-img {
   padding-top: 70%;
   position: relative; }
+  .slider-img:hover {
+    cursor: grab; }
 
 .month-slider:hover .slick-arrow {
   opacity: 0.6; }
@@ -2494,16 +2555,17 @@ html .row-fluid .month-slider-wrapper {
   border: none;
   font-size: 0;
   height: 45px;
+  width: 45px;
   box-sizing: border-box;
-  opacity: 0.2;
-  margin-top: -20px;
-  margin-bottom: 0;
+  opacity: 0.6;
+  margin: -20px 5px 0;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
   .month-slider .slick-arrow:hover {
     opacity: 1;
-    background-color: transparent; }
+    background-color: transparent;
+    cursor: pointer; }
   .month-slider .slick-arrow:focus {
     outline: none;
     background-color: transparent; }
@@ -2520,13 +2582,15 @@ html .row-fluid .month-slider-wrapper {
 
 .month-slider .slick-dots {
   margin: 10px 0; }
+  .month-slider .slick-dots li {
+    margin: 0; }
   .month-slider .slick-dots li button {
-    background: #222222;
+    background: #A3A5A8;
     border-radius: 50%;
     width: 10px;
     height: 10px; }
   .month-slider .slick-dots .slick-active button {
-    background: #A3A5A8; }
+    background: #222222; }
 
 .remodel-monthly-wrapper .slider-nav {
   padding: 8px;
@@ -2548,8 +2612,7 @@ html .row-fluid .month-slider-wrapper {
       background: #C9C9C9; }
 
 html .row-fluid .last-cta {
-  margin: 0;
-  border-bottom: 1px solid #DDDDDD; }
+  margin: 0; }
 
 /* ============================================================
    11. SHARE THE MAGIC - www.kitchenmagic.com/share
@@ -2677,7 +2740,6 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
 .km-btn {
   display: inline-block;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2745,14 +2807,13 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
     display: block !important; }
 
 /*
-/*  Button Overrides for current website
+/*  Button Overrides for current website (all classes below)
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* !!! These will eventually be removed over time as old buttons 
 /*     are deleted and new button classes are added. */
 .km-button {
   display: inline-block;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2809,7 +2870,6 @@ body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-conf
 .green-cta {
   display: inline-block;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3040,6 +3100,12 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
     display: block;
     margin-right: 0; } }
 
+/*
+/*  Button Utilities
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-button-full-width {
+  width: 100%; }
+
 /* ============================================================
    14. CONTENT BOX
 /* ============================================================ */
@@ -3081,10 +3147,11 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
 .form-title {
   font-size: 1.6875rem;
   text-align: center;
-  background: #F01834;
+  background: #222222;
   color: #fff;
   border: 0;
   line-height: 1;
+  margin-top: 0;
   margin-bottom: 0;
   padding: .5em; }
 
@@ -3116,19 +3183,19 @@ div.input input.hs-input {
   -o-transition: all 300ms ease;
   transition: all 300ms ease; }
   div.input input.hs-input::-webkit-input-placeholder {
-    color: #4a4a4a;
+    color: #A3A5A8;
     font-size: 1rem;
     font-family: "ProximaNova-Regular", helvetica, sans-serif; }
   div.input input.hs-input:-moz-placeholder {
-    color: #4a4a4a;
+    color: #A3A5A8;
     font-size: 1rem;
     font-family: "ProximaNova-Regular", helvetica, sans-serif; }
   div.input input.hs-input::-moz-placeholder {
-    color: #4a4a4a;
+    color: #A3A5A8;
     font-size: 1rem;
     font-family: "ProximaNova-Regular", helvetica, sans-serif; }
   div.input input.hs-input:-ms-input-placeholder {
-    color: #4a4a4a;
+    color: #A3A5A8;
     font-size: 1rem;
     font-family: "ProximaNova-Regular", helvetica, sans-serif; }
   div.input input.hs-input:focus {
@@ -3188,7 +3255,6 @@ div.input input[type=checkbox] {
 .hs_submit.hs-submit div.actions input {
   display: inline-block;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3210,8 +3276,13 @@ div.input input[type=checkbox] {
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
+  background-color: #F01834;
+  color: #fff;
+  border: 1px solid #F01834;
   margin-bottom: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 100%;
+  margin: 30px 0 10px; }
   .hs_submit.hs-submit div.actions input:hover {
     text-decoration: none;
     cursor: pointer; }
@@ -3220,6 +3291,14 @@ div.input input[type=checkbox] {
   @media (max-width: 575px) {
     .hs_submit.hs-submit div.actions input {
       width: 100%; } }
+  .hs_submit.hs-submit div.actions input:hover {
+    background-color: #222222;
+    border: 1px solid #222222;
+    color: #fff; }
+  .hs_submit.hs-submit div.actions input:active {
+    background-color: #C30019;
+    border-color: #C30019;
+    color: #fff; }
 
 div.hs-dateinput input {
   background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/calendar.png) no-repeat 95% center; }
@@ -3275,9 +3354,13 @@ div.hs-form-field label {
 /*
 /* Errors or States
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul.hs-error-msgs li label {
-  color: #F35B62;
-  font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+ul.hs-error-msgs {
+  list-style: none;
+  padding-left: 0; }
+  ul.hs-error-msgs li label {
+    color: #F35B62;
+    font-family: "ProximaNova-Regular", helvetica, sans-serif;
+    font-size: 0.75rem; }
 
 /** added icon to date field **/
 .km-form-calender {
@@ -4008,8 +4091,7 @@ html .date-picker-wrapper .date-picker-form form {
   margin-bottom: 30px; }
 
 .icon-box__title {
-  color: #F01834;
-  font-weight: bold; }
+  font-family: "ProximaNova-Bold", helvetica, sans-serif; }
 
 /* ============================================================
    LISTS
@@ -4043,11 +4125,11 @@ ul.km-list {
  */
 ol {
   margin: 0;
-  list-style: none;
   counter-reset: li; }
   ol.km-list {
     padding: 0 0 0 25px;
     margin: 0;
+    list-style: none;
     /**
         * Red list item
         */ }
@@ -4180,7 +4262,7 @@ ol.km-ol {
   display: block;
   width: 0%;
   height: 100%;
-  background-color: #F01834;
+  background-color: #222222;
   border-radius: 3px; }
 
 .progress-meter-text {
@@ -4294,7 +4376,8 @@ span.meter-tree-progress p {
   font-size: 0.75rem;
   float: right;
   padding-right: 5px;
-  color: #fff; }
+  color: #fff;
+  line-height: 22px; }
 
 /* ============================================================
    19. TABLES
@@ -4305,6 +4388,9 @@ span.meter-tree-progress p {
 /* ============================================================
    20. THUMBNAIL GALLERY
 /* ============================================================ */
+#gallery-modal {
+  display: none; }
+
 .km-slider .km-slide-title {
   text-align: center; }
 
@@ -5352,7 +5438,7 @@ th.hide-for-touch {
 /* ============================================================ */
 .row {
   margin: 0 auto;
-  max-width: 62.5rem;
+  max-width: 71.25rem;
   width: 100%; }
 
 .row:before, .row:after {
@@ -6184,6 +6270,16 @@ th.hide-for-touch {
 .km-small-text {
   font-size: 11px; }
 
+/* text aligns */
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
 /**
     * A helper class used to center subtitles under main titles
     * example: www.kitchenmagic.com/cabinet-refacing
@@ -6272,3 +6368,6 @@ th.hide-for-touch {
 
 .km-border-left {
   border-left: solid 1px #E1E5E4; }
+
+.km-cta-background {
+  background: #F9FAFC; }

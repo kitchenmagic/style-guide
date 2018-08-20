@@ -23,3 +23,20 @@ html, body {
   padding: 0;
   width: 100%;
 }
+
+.body-container {
+  margin: 0 auto;
+  max-width: 71.25rem;
+  padding: 0 16px;
+  min-height: 600px;
+}
+
+// Full width pages
+.km-page-full-width .body-container, .km-page-full .body-container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.body-container-wrapper {
+  padding-top: 45px;
+}

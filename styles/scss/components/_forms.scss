@@ -7,10 +7,11 @@
 .form-title {
     font-size: 1.6875rem;
     text-align: center;
-    background: color(primary, base);
+    background: color(text, base);
     color: #fff;
     border: 0;
     line-height: 1;
+    margin-top: 0;
     margin-bottom: 0;
     padding: .5em;
 }
@@ -45,7 +46,7 @@ div.input {
         @include transition(all 300ms ease);
 
         @include placeholder {
-            color: color(text, light);
+            color: color(gray, base);
             font-size: 1rem;
             font-family: family(body);
         }
@@ -119,8 +120,11 @@ div.input {
 // Submit button
 .hs_submit.hs-submit div.actions input {
     @include btn();
+    @include km-btn--primary;
     margin-bottom: 0;
     box-sizing: border-box;
+    width: 100%;
+    margin: 30px 0 10px;
 }
 
 // Date input
@@ -202,9 +206,16 @@ div.hs-form-field label {
 /*
 /* Errors or States
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul.hs-error-msgs li label {
-    color: color(error);
-    font-family: family(body);
+ul.hs-error-msgs {
+    list-style: none;
+    padding-left: 0;
+
+    li label {
+        color: color(error);
+        font-family: family(body);
+        font-size: px-to-rem(12px);
+    }
+
 }
 
 // ============================================================
