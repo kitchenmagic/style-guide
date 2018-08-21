@@ -3470,7 +3470,8 @@ ul.hs-error-msgs {
   ul.hs-error-msgs li label {
     color: #F35B62;
     font-family: "ProximaNova-Regular", helvetica, sans-serif;
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    line-height: 1.6; }
 
 /** added icon to date field **/
 .km-form-calender {

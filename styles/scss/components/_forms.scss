@@ -250,9 +250,10 @@ ul.hs-error-msgs {
     padding-left: 0;
 
     li label {
-        color: color(error);
-        font-family: family(body);
-        font-size: px-to-rem(12px);
+    color: color(error);
+    font-family: family(body);
+    font-size: px-to-rem(12px);
+     line-height: 1.6;
     }
 
 }
