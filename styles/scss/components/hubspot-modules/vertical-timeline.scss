@@ -1,3 +1,8 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
 /* ============================================================
    VERTICAL TIMELINE
 /* ============================================================ */
@@ -27,7 +32,7 @@
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #d6d4d4;
+    background: color(border);
     }
   }
   
@@ -82,7 +87,7 @@
     height: 40px;
     border-radius: 50%;
     -webkit-box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
   
   .cd-timeline__img img {
@@ -97,7 +102,7 @@
   }
   
   .cd-timeline__img.cd-timeline__img--picture {
-    background: #4e4e4e;
+    background: color(text, light);
   }
   
   @media only screen and (min-width: 1170px) {
@@ -160,8 +165,7 @@
     background: white;
     border-radius: 0.25em;
     padding: 1em;
-    -webkit-box-shadow: 0 3px 0 #d6d4d4;
-            box-shadow: 0 3px 0 #d6d4d4;
+    @include box-shadow($shadow-md);
   }
   
   .cd-timeline__title {
