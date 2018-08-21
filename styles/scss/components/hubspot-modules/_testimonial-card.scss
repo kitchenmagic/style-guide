@@ -10,7 +10,7 @@
  * example: https://www.kitchenmagic.com/careers
 **/
   .testimonial-card {
-    background: #4268a0;
+    background: color(gray, base);
     max-width: 315px;
     min-width: 235px;
     position: relative;
@@ -19,11 +19,12 @@
     padding-top: 120px;
     color: #fff;
     margin-bottom: 20px;
+    @include box-shadow($shadow-md);
 }
 
 .testimonial-container {
     width: 100%;
-    background-color: #38598A;
+    background-color: #fff;
     padding: 25px 25px 40px 25px;
     position: relative;
 }
@@ -37,27 +38,28 @@
     height: 0;
     border-style: solid;
     border-width: 55px 0 0 400px;
-    border-color: transparent transparent transparent #38598A; 
+    border-color: transparent transparent transparent #fff; 
 }
 
 .profile {
     position: absolute;
     max-width: 90px;
     bottom: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,.3);
     border-radius: 50%;
+    @include box-shadow($shadow-sm);
 }
 
+// quote
 .testimonial:after {
     font-family: 'FontAwesome';
     content: "\f10e";
     position: absolute;
-    font-size: 54px;
+    font-size: px-to-rem(50px);
     line-height: 1em;
-    color: #4268A0;
+    color: color(gray, light);
     font-style: normal;
     right: 26px;
-    bottom: 0px;
+    bottom: 8px;
 }
 
 .testimonial-name {
@@ -74,7 +76,6 @@
 .testimonial-job {
     font-size: .7em;
     display: block;
-    color: #F98E2B;
 }
 
 /**

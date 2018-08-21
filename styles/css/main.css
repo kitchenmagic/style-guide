@@ -466,6 +466,9 @@ h4 {
 h5 {
   font-size: 1.5rem; }
 
+h1 em, h2 em, h3 em, h4 em, h5 em {
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif; }
+
 /**
 * @styles typography-body Body Copy
 *
@@ -2091,15 +2094,11 @@ i.km-icon-divider {
 /*  White panels/cards
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-white-panel {
-  -moz-box-shadow: 0 1px 2px #ddd;
-  -webkit-box-shadow: 0 1px 2px #ddd;
-  box-shadow: 0 1px 2px #ddd;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
   padding: 10px 20px;
-  border-radius: 2px; }
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
 
 /*
 /*  Quote section
@@ -4939,7 +4938,7 @@ span.meter-tree-progress p {
  * example: https://www.kitchenmagic.com/careers
 **/
 .testimonial-card {
-  background: #4268a0;
+  background: #A3A5A8;
   max-width: 315px;
   min-width: 235px;
   position: relative;
@@ -4947,11 +4946,14 @@ span.meter-tree-progress p {
   overflow: hidden;
   padding-top: 120px;
   color: #fff;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
 
 .testimonial-container {
   width: 100%;
-  background-color: #38598A;
+  background-color: #fff;
   padding: 25px 25px 40px 25px;
   position: relative; }
 
@@ -4964,25 +4966,27 @@ span.meter-tree-progress p {
   height: 0;
   border-style: solid;
   border-width: 55px 0 0 400px;
-  border-color: transparent transparent transparent #38598A; }
+  border-color: transparent transparent transparent #fff; }
 
 .profile {
   position: absolute;
   max-width: 90px;
   bottom: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  border-radius: 50%; }
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
+  box-shadow: 0 2px 10px 0 #E1E5E4; }
 
 .testimonial:after {
   font-family: 'FontAwesome';
   content: "\f10e";
   position: absolute;
-  font-size: 54px;
+  font-size: 3.125rem;
   line-height: 1em;
-  color: #4268A0;
+  color: #E1E5E4;
   font-style: normal;
   right: 26px;
-  bottom: 0px; }
+  bottom: 8px; }
 
 .testimonial-name {
   font-size: 1.3em;
@@ -4996,8 +5000,7 @@ span.meter-tree-progress p {
 
 .testimonial-job {
   font-size: .7em;
-  display: block;
-  color: #F98E2B; }
+  display: block; }
 
 /**
  * Testimonial Card with image
