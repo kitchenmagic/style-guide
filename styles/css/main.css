@@ -2103,6 +2103,32 @@ div#jobs-widget {
   margin: 0 auto;
   margin-bottom: 2em; }
 
+.left-section {
+  background: url(https://www.kitchenmagic.com/hubfs/images/miscellaneous/full-width-background-cherry-kitchen-compressed.jpg);
+  background-position: 50% 54%;
+  height: 671px; }
+  @media (max-width: 991px) {
+    .left-section {
+      height: 100%;
+      width: 100% !important; } }
+  @media (max-width: 575px) {
+    .left-section {
+      height: 100%; } }
+
+.right-section {
+  height: 671px;
+  background: #F9FAFC;
+  width: 34%;
+  margin-left: 0; }
+  @media (max-width: 991px) {
+    .right-section {
+      height: 100%;
+      width: 100% !important;
+      margin-left: 0 !important; } }
+  @media (max-width: 575px) {
+    .right-section {
+      height: 100%; } }
+
 /* ============================================================
    10. HOMEPAGE
 /* ============================================================  

@@ -8,3 +8,35 @@
     margin: 0 auto;
     margin-bottom: 2em;
 }
+
+.left-section {
+    background: url(https://www.kitchenmagic.com/hubfs/images/miscellaneous/full-width-background-cherry-kitchen-compressed.jpg); 
+    background-position: 50% 54%; 
+    height: 671px;
+
+    @include respond-below(md) {
+        height: 100%;
+        width: 100% !important;
+    }
+
+    @include respond-below(xs) {
+        height: 100%;
+    }
+}
+
+.right-section {
+    height: 671px; 
+    background: #F9FAFC; 
+    width: 34%; 
+    margin-left: 0;
+
+    @include respond-below(md) {
+        height: 100%;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    @include respond-below(xs) {
+        height: 100%;
+    }
+}
