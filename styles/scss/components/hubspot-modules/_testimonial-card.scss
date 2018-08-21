@@ -89,38 +89,39 @@
     height: 250px;
     background-position: center center !important;
     background-size: cover !important;
+    border: 1px solid color(border);
+    border-bottom: none;
   }
   
   .tc-bottom-box {
-    background: color(gray, light);
     max-width: 400px;
     color: color(text, base);
     text-align: left;
     padding: 65px 30px 30px;
-    border-top: 4px solid #fff;
+    border: 1px solid color(border);
   }
   
   .tc-bottom-box h4 {
     text-align: center;
   }
   
-  .tc-bottom-box p:after {
-    font-family: 'FontAwesome';
-    content: "\f10d";
-    position: absolute;
-    font-size: 38px;
-    color: color(gray, lighter);
-    font-style: normal;
-    top: 265px;
-    left: 30px;
-  }
+//   .tc-bottom-box p:after {
+//     font-family: 'FontAwesome';
+//     content: "\f10d";
+//     position: absolute;
+//     font-size: 38px;
+//     color: color(gray, lighter);
+//     font-style: normal;
+//     top: 265px;
+//     left: 30px;
+//   }
   
   .testimonial-avatar {
     width: 115px;
     height: 115px;
     border-radius: 50%;
     position: relative;
-    border: 5px solid #fff;
+    border: 1px solid color(border);
     left: 50%;
     top: 100%;
     transform: translate(-50%,-50%);
