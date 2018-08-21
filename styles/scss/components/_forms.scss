@@ -27,6 +27,8 @@
 // field columns
 fieldset {
     margin-top: 10px !important;
+    // overrides hubspot's inline styling
+    max-width: none !important;
 
     &:first-child {
         margin-top: 0;

@@ -3163,7 +3163,8 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
   border-radius: 0; }
 
 fieldset {
-  margin-top: 10px !important; }
+  margin-top: 10px !important;
+  max-width: none !important; }
   fieldset:first-child {
     margin-top: 0; }
 
