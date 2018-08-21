@@ -2018,6 +2018,15 @@ i.km-icon-divider {
     display: inline-block;
     margin-bottom: 1.25rem; } }
 
+/*
+/*  Landing page footer
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hs-footer-company-copyright {
+  background: #222222;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-bottom: 0; }
+
 /* ============================================================
    08. CAREERS - www.kitchenmagic.com/careers
 /* ============================================================ */
@@ -3189,7 +3198,6 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
   border-radius: 0; }
 
 fieldset {
-  margin-top: 10px !important;
   max-width: none !important; }
   fieldset:first-child {
     margin-top: 0; }
@@ -3283,6 +3291,14 @@ div.input input[type=checkbox] {
       margin-bottom: 1.25rem !important; } }
   div.input input[type=checkbox] + span {
     margin-left: 10px; }
+
+div.input ul.inputs-list li {
+  margin-bottom: 0; }
+  div.input ul.inputs-list li:first-child label {
+    margin-top: 0.625rem; }
+  div.input ul.inputs-list li label {
+    margin-top: 0;
+    font-family: "ProximaNova-Regular", helvetica, sans-serif; }
 
 ul.inputs-list {
   list-style: none;
@@ -3388,7 +3404,8 @@ div.hs-form-field label {
   font-family: "ProximaNova-Bold", helvetica, sans-serif;
   color: #222;
   font-size: .8rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0.625rem; }
 
 .hs-form-required {
   color: #222222; }
@@ -3477,7 +3494,8 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
   display: block;
   /*font-size: 0.72222rem;*/
   font-weight: normal;
-  margin-bottom: 1.11111rem;
+  margin-top: 0.9375rem;
+  margin-bottom: -0;
   padding: 0.77778rem 1.33333rem 0.77778rem 0.77778rem;
   position: relative;
   transition: opacity 300ms ease-out;
@@ -4199,7 +4217,8 @@ ol.km-ol {
   ol.km-ol li {
     padding-bottom: 40px;
     position: relative;
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 0; }
     ol.km-ol li > img {
       padding-top: 17px; }
     ol.km-ol li::before {
@@ -4211,7 +4230,7 @@ ol.km-ol {
       top: 0;
       height: 50px;
       width: 50px;
-      background: #4e4e4e;
+      background: #A3A5A8;
       color: #fff;
       border-radius: 50%;
       text-align: center;
@@ -4220,14 +4239,15 @@ ol.km-ol {
       font-family: "ProximaNova-Regular", helvetica, sans-serif; }
     ol.km-ol li::after {
       content: "";
-      border-left: 1px solid #4e4e4e;
+      border-left: 1px solid #E1E5E4;
       height: 100%;
       position: absolute;
       top: 0;
       left: -50px;
       z-index: 0; }
-    ol.km-ol li::last-child::after {
-      border: none; }
+    ol.km-ol li:last-child:after {
+      border: none;
+      display: none; }
 
 /* ============================================================
    17. MODALS

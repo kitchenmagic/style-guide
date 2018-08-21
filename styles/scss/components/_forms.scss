@@ -26,7 +26,6 @@
 }
 // field columns
 fieldset {
-    margin-top: 10px !important;
     // overrides hubspot's inline styling
     max-width: none !important;
 
@@ -124,6 +123,24 @@ div.input {
             margin-left: 10px;
         }
     }
+
+    ul.inputs-list li {
+        margin-bottom: 0;
+
+        &:first-child label {
+            margin-top: px-to-rem(10px);
+        }
+
+        label {
+            margin-top: 0;
+            font-family: family(body);
+
+            &:first-child {
+
+            }
+        }
+
+    }
 }
 
 // removes list style and padding from ul in forms
@@ -220,6 +237,7 @@ div.hs-form-field label {
     color: #222;
     font-size: .8rem;
     margin-bottom: 0;
+    margin-top: px-to-rem(10px);
 }
 // required
 .hs-form-required {
@@ -348,7 +366,8 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
       display: block;
       /*font-size: 0.72222rem;*/
       font-weight: normal;
-      margin-bottom: 1.11111rem;
+      margin-top: px-to-rem(15px);
+      margin-bottom: -0;
       padding: 0.77778rem 1.33333rem 0.77778rem 0.77778rem;
       position: relative;
       transition: opacity 300ms ease-out;

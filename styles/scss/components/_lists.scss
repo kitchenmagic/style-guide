@@ -94,6 +94,7 @@ ol.km-ol {
     padding-bottom: 40px;
     position: relative;
     list-style: none;
+    margin-bottom: 0;
 
     &>img {
       padding-top: 17px;
@@ -108,7 +109,7 @@ ol.km-ol {
       top: 0;
       height: 50px;
       width: 50px;
-      background: #4e4e4e;
+      background: color(gray, base);
       color: #fff;
       border-radius: 50%;
       text-align: center;
@@ -119,7 +120,7 @@ ol.km-ol {
 
     &::after {
       content: "";
-      border-left: 1px solid #4e4e4e;
+      border-left: 1px solid color(border);
       height: 100%;
       position: absolute;
       top: 0;
@@ -127,8 +128,9 @@ ol.km-ol {
       z-index: 0;
     }
 
-    &::last-child::after {
+    &:last-child:after {
       border: none;
+      display: none;
     }
 
   }

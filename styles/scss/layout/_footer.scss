@@ -276,3 +276,14 @@ i.km-icon-divider {
     .dark-footer .footer-solutions-menu ul { -webkit-columns: auto auto;-moz-columns: auto auto;columns: auto auto; }
     .dark-footer .mobile-flag { display: inline-block; margin-bottom: px-to-rem(20px);}
 }
+
+
+/*
+/*  Landing page footer
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hs-footer-company-copyright {
+    background: color(text, base);
+    color: #fff;
+    font-size: px-to-rem(12px);
+    margin-bottom: 0;
+}
