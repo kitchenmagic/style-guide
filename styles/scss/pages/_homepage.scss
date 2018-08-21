@@ -158,15 +158,6 @@
           -o-transition:all .2s ease-in-out;
           transition:all .2s ease-in-out;
         }
-
-        .overlay h3 {
-          width: 100%;
-          text-align:center;
-          color: white;
-          text-shadow: 3px 3px 8px rgba(0,0,0, .3);
-          font-size: 2rem;
-          font-weight:600;
-        }
     }
 
     &:hover .solutions-img .overlay {
@@ -174,7 +165,7 @@
     }
 
     .solutions-box__body {
-      background: #ffff;
+      background-color: #fff;
       position: relative;
       width: 87%;
       text-align: center;
@@ -185,6 +176,8 @@
 
     .solutions-box__title {
       margin: 0;
+      text-transform: uppercase;
+      font-size: px-to-rem(26px);
     }
 
     .solutions-text {

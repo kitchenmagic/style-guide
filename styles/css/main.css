@@ -2287,19 +2287,12 @@ html .row-fluid .home-section-header {
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
-  .solutions-box .solutions-img .overlay h3 {
-    width: 100%;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
-    font-size: 2rem;
-    font-weight: 600; }
 
 .solutions-box:hover .solutions-img .overlay {
   background: rgba(38, 34, 32, 0.6); }
 
 .solutions-box .solutions-box__body {
-  background: #ffff;
+  background-color: #fff;
   position: relative;
   width: 87%;
   text-align: center;
@@ -2310,7 +2303,9 @@ html .row-fluid .home-section-header {
   padding: 25px 25px 12px; }
 
 .solutions-box .solutions-box__title {
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.625rem; }
 
 .solutions-box .solutions-text {
   display: block;
@@ -3235,9 +3230,6 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
 .content-box p {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
 
-/* ============================================================
-   15. FORMS
-/* ============================================================ */
 .form-title {
   font-size: 1.6875rem;
   text-align: center;
@@ -3878,7 +3870,26 @@ html .multi-form .multi-form-right {
   padding-top: 20px; }
 
 html .row-fluid .multi-form input {
-  box-shadow: none; }
+  box-shadow: none;
+  border: 1px solid #E1E5E4;
+  padding: .8rem;
+  background-color: #fff;
+  color: #222222;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1rem;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 100% !important;
+  height: 2.8125rem;
+  margin-top: 10px; }
+  html .row-fluid .multi-form input:focus {
+    border: 1px solid #222222;
+    outline: none; }
+
+html .row-fluid .multi-form input[type="checkbox"] {
+  height: auto;
+  width: auto !important; }
 
 /* Project Goal */
 .multi-questions {
