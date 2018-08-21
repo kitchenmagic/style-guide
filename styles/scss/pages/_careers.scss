@@ -38,6 +38,33 @@
 }
 
 /*
+/*  Box Cards
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.km-white-box {
+    background: #fff;
+    border: 1px solid color(border);
+    border-radius: 0;
+    @include box-shadow($shadow-md);
+    text-align: center;
+    padding: 20px 10px 4px;
+}
+
+.km-white-box__title {
+    color: color(primary, base);
+    font-family: proximanova-bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: .5rem 0 .75rem;
+}
+
+.km-white-box__icon {
+    color: color(text, light);
+    font-size: px-to-rem(30px);
+    color: color(primary, base);
+}
+
+/*
 /*  White panels/cards
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-white-panel {
