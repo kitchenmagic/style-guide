@@ -10,7 +10,10 @@
 div.post-header  {
 
     a {
-        @include transition(all 300ms ease);
+    
+        h3 {
+            @include transition(all 300ms ease);
+        }
 
         &:hover {
             text-decoration: none;

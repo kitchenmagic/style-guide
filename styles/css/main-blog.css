@@ -29,17 +29,19 @@ body.hs-blog-post h5 {
 /*
 /* List Card
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-div.post-header a {
+div.post-header a h3 {
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease; }
-  div.post-header a:hover {
-    text-decoration: none; }
-  div.post-header a:hover h3 {
-    text-decoration: none;
-    color: #F01834; }
+
+div.post-header a:hover {
+  text-decoration: none; }
+
+div.post-header a:hover h3 {
+  text-decoration: none;
+  color: #F01834; }
 
 div.post-header h3 {
   padding-bottom: 0;
@@ -194,7 +196,6 @@ figcaption {
 
 .anchor-cta {
   color: #F01834;
-  font-family: perpetua,"Times New Roman",Times,serif;
   font-size: 1.6875rem; }
   .anchor-cta:hover {
     color: #C30019; }
@@ -215,6 +216,10 @@ figcaption {
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .widget-span.widget-type-post_filter {
   background: #FFF; }
+
+.span12.widget-span.widget-type-post_filter h3 {
+  font-size: 1.875rem;
+  margin: 0; }
 
 /*
 /* Sidebar lists
@@ -259,6 +264,9 @@ input[type="submit"] {
 label {
   margin-bottom: 7px; }
 
+.widget-type-blog_subscribe {
+  border: 1px solid #E1E5E4; }
+
 h3#hs_cos_wrapper_blog_subscription_title {
   background: #fff;
   border: none;
@@ -266,13 +274,6 @@ h3#hs_cos_wrapper_blog_subscription_title {
   color: #222222;
   text-align: left;
   padding-bottom: 0; }
-
-/*
-/* Post Filter
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.span12.widget-span.widget-type-post_filter h3 {
-  font-size: 1.875rem;
-  margin: 0; }
 
 /*
 /* Search
