@@ -9,23 +9,99 @@ body.hs-blog-listing.hs-blog-name-primary-blog, body.hs-blog-listing.hs-blog-nam
   background-color: #F9FAFC; }
 
 /* ============================================================
-   BLOG TYPOGRAPHY 
+   BLOG LISTING
 /* ============================================================ */
 /*
-/* BLOG LISTING
+/* List Card
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-div.post-header h2 {
-  padding-bottom: 0;
-  margin-bottom: 15px;
-  line-height: 1.1em; }
-  div.post-header h2 > a {
-    color: #222222; }
-    div.post-header h2 > a:hover {
-      color: #F01834; }
+div.post-header a {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  div.post-header a:hover {
+    text-decoration: none; }
+  div.post-header a:hover h3 {
+    text-decoration: none;
+    color: #F01834; }
 
-/*
-/* POST
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+div.post-header h3 {
+  padding-bottom: 0;
+  margin: 2px 0 16px;
+  line-height: 1.2; }
+
+.post-item {
+  padding: 0;
+  margin-bottom: 2rem;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
+
+.featured-image-listing {
+  padding: 0;
+  margin-bottom: 10px; }
+
+.km-blog-image-listing {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 353px;
+  border-radius: 3px 0 0 3px; }
+
+.km-right-card {
+  padding: 15px 25px 10px 25px; }
+
+p#hubspot-topic_data {
+  margin-bottom: 0;
+  font-size: 0.8125rem; }
+
+a.topic-link {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  color: #F01834;
+  letter-spacing: .5px; }
+  a.topic-link:nth-last-child(1) {
+    border-right: none; }
+  a.topic-link:nth-child(n+2):before {
+    content: "|";
+    color: #F01834;
+    padding: 0 2px; }
+
+div.read-more {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  z-index: 9999; }
+
+a.more-link {
+  margin-right: 20px;
+  float: right;
+  margin-bottom: 3px;
+  background: #F01834;
+  color: #fff;
+  padding: 5px 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease; }
+  a.more-link:hover {
+    background: #C30019; }
+
+.blog-arrows {
+  margin-bottom: -5px; }
+
+h3.post-listing-simple {
+  padding: 10px; }
+
+/* ============================================================
+   BLOG POST
+/* ============================================================ */
 .section.post-header h1 {
   text-align: left;
   padding-bottom: 0; }
@@ -36,7 +112,9 @@ h1 a {
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
-  transition: all 300ms ease; }
+  transition: all 300ms ease;
+  font-size: 3rem;
+  line-height: 1.2; }
 
 .blog-title {
   border-top: 1px solid #E1E5E4;
@@ -104,78 +182,6 @@ figcaption {
   font-size: 1.6875rem; }
   .anchor-cta:hover {
     color: #C30019; }
-
-/* ============================================================
-   BLOG LISTING
-/* ============================================================ */
-/*
-/* List Card
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.post-item {
-  padding: 0;
-  margin-bottom: 2rem;
-  background: #fff;
-  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
-  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
-  box-shadow: 0 2px 20px 0 #E1E5E4; }
-
-.featured-image-listing {
-  padding: 0;
-  margin-bottom: 10px; }
-
-.km-blog-image-listing {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 353px;
-  border-radius: 3px 0 0 3px; }
-
-.km-right-card {
-  padding: 15px 25px 10px 25px; }
-
-p#hubspot-topic_data {
-  margin-bottom: 0;
-  font-size: 0.8125rem; }
-
-a.topic-link {
-  font-size: 0.8125rem;
-  text-transform: uppercase;
-  color: #F01834; }
-  a.topic-link:nth-last-child(1) {
-    border-right: none; }
-  a.topic-link:nth-child(n+2):before {
-    content: "/ ";
-    color: #4a4a4a; }
-
-div.read-more {
-  position: absolute;
-  right: 0;
-  bottom: 12px;
-  z-index: 9999; }
-
-a.more-link {
-  margin-right: 20px;
-  float: right;
-  margin-bottom: 3px;
-  background: #F01834;
-  color: #fff;
-  padding: 5px 11px;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.8125rem;
-  -webkit-transition: all 150ms ease;
-  -moz-transition: all 150ms ease;
-  -ms-transition: all 150ms ease;
-  -o-transition: all 150ms ease;
-  transition: all 150ms ease; }
-  a.more-link:hover {
-    background: #C30019; }
-
-.blog-arrows {
-  margin-bottom: -5px; }
-
-h3.post-listing-simple {
-  padding: 10px; }
 
 /* ============================================================
    BLOG SHARING
@@ -255,6 +261,70 @@ div#hs-search-module input {
 div#hs-search-module a {
   width: 30%;
   padding: 8px; }
+
+/* ============================================================
+   POPULAR POSTS
+/* ============================================================ */
+.pop-post-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.pop-post {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  border-radius: 0 0 3px 3px;
+  margin: 14px 5px;
+  width: 31.33%;
+  overflow: hidden;
+  position: relative;
+  background: #fff; }
+
+.pop-post__tag {
+  background: #5988da;
+  color: #fff;
+  padding: 1px 16px;
+  border-radius: 150px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  margin-left: 9px;
+  position: absolute;
+  top: 11px;
+  z-index: 999; }
+
+.pop-post__img-container {
+  overflow: hidden;
+  height: 210px; }
+
+.pop-post__img {
+  height: 210px;
+  border-radius: 3px 3px 0 0;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 10px;
+  transition: all .5s; }
+
+.pop-post__img:hover {
+  transform: scale3d(1.1, 1.1, 1); }
+
+.pop-post__content {
+  text-align: center;
+  padding: 12px 20px 0;
+  background: #fff; }
+
+.pop-post__title {
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  padding-top: .2rem;
+  font-size: 1.6875rem;
+  font-family: perpetua; }
+
+.pop-post__title a {
+  color: #555;
+  transition: all .3s ease; }
 
 /* ============================================================
    BLOG SHARING

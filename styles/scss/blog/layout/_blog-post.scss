@@ -1,28 +1,6 @@
 /* ============================================================
-   BLOG TYPOGRAPHY 
+   BLOG POST
 /* ============================================================ */
-
-/*
-/* BLOG LISTING
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-div.post-header h2 {
-    padding-bottom: 0;
-    margin-bottom: 15px;
-    line-height: 1.1em;
-
-    &>a {
-    color: color(text, base);
-
-        &:hover {
-            color: color(primary, base);
-        }
-    }
-}
-
-/*
-/* POST
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 // titles
 .section.post-header h1 {
@@ -33,6 +11,8 @@ div.post-header h2 {
 h1 a {
     color: color(text, base);
     @include transition(all 300ms ease);
+    font-size: 3rem;
+    line-height: 1.2;
 }
 
 .blog-title {
