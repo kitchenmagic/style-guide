@@ -1,6 +1,8 @@
 /* ============================================================
-   BLOG SHARING
+   BLOG SHARING TOOLS
 /* ============================================================ */
+
+// from addthis.com
 
 a.at-svc-google {
     background: #DA4F46 !important;
@@ -10,3 +12,23 @@ a.at-svc-google {
     color: #FFF !important;
 }
 
+/*
+/* Jumbo Share Counter
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// add spacing below
+div#atstbx {
+    margin-bottom: 2rem;
+    border: 1px solid color(border);
+}
+
+.at4-count {
+    font-family: family(header) !important;
+}
+
+.at4-title {
+    font-family: family(body) !important;
+    letter-spacing: 2px;
+    font-size: 15px !important;
+    line-height: 30px !important;
+}

@@ -24,7 +24,7 @@ body.hs-blog-post h5 {
   font-size: 1.2rem; }
 
 /* ============================================================
-   BLOG LISTING
+   LISTING / FEED
 /* ============================================================ */
 /*
 /* List Card
@@ -139,12 +139,10 @@ h1 a {
   margin-bottom: 2rem;
   margin-top: 2rem; }
 
-p#hubspot-author_data, a.author-link {
-  font-size: 0.75rem; }
-
 h6.date {
   font-size: 0.75rem;
-  display: inline-block; }
+  display: inline-block;
+  color: #A3A5A8; }
 
 .section.post-body img {
   margin: .8rem 0; }
@@ -171,7 +169,9 @@ figure {
   margin-bottom: 0.8rem; }
 
 figcaption {
-  font-size: 12px; }
+  font-size: 0.8125rem;
+  margin-bottom: 2rem;
+  color: #A3A5A8; }
 
 .twitter-quote {
   font-family: "ProximaNova-Regular", helvetica, sans-serif;
@@ -233,6 +233,9 @@ figcaption {
 /*
 /* Forms
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+div#hs_form_target_module_150289543551974 {
+  border: 1px solid #E1E5E4; }
+
 .body-container-wrapper .hs-form,
 .body-container-wrapper form {
   background: #FFF;
@@ -265,7 +268,7 @@ h3#hs_cos_wrapper_blog_subscription_title {
   padding-bottom: 0; }
 
 /*
-/* Search
+/* Post Filter
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .span12.widget-span.widget-type-post_filter h3 {
   font-size: 1.875rem;
@@ -387,13 +390,29 @@ div#hs-search-module a {
   margin-top: 0; }
 
 /* ============================================================
-   BLOG SHARING
+   BLOG SHARING TOOLS
 /* ============================================================ */
 a.at-svc-google {
   background: #DA4F46 !important; }
 
 .at-svc-google span.label {
   color: #FFF !important; }
+
+/*
+/* Jumbo Share Counter
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+div#atstbx {
+  margin-bottom: 2rem;
+  border: 1px solid #E1E5E4; }
+
+.at4-count {
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif !important; }
+
+.at4-title {
+  font-family: "ProximaNova-Regular", helvetica, sans-serif !important;
+  letter-spacing: 2px;
+  font-size: 15px !important;
+  line-height: 30px !important; }
 
 #blog-subnav-wrapper {
   transition: all .3s ease;
@@ -404,7 +423,8 @@ a.at-svc-google {
   justify-content: space-between;
   align-items: center; }
   #blog-subnav-container p {
-    margin-bottom: 6px; }
+    margin-bottom: 6px;
+    color: #4a4a4a; }
 
 #blog-subnav {
   margin-bottom: 0; }
@@ -453,7 +473,6 @@ a.at-svc-google {
   width: 200px; }
 
 #blog-subnav-search input {
-  border-radius: 150px;
   max-width: 300px;
   background-image: url(https://cdn2.hubspot.net/hubfs/126868/graphics/icons/med-search.png);
   background-repeat: no-repeat;

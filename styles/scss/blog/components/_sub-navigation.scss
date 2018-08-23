@@ -10,6 +10,7 @@
     
     p {
         margin-bottom: 6px;
+        color: color(text, light);
     }
 }
 
@@ -77,7 +78,6 @@
 }
 
 #blog-subnav-search input {
-	border-radius: 150px;
 	max-width: 300px;
 	background-image: url(https://cdn2.hubspot.net/hubfs/126868/graphics/icons/med-search.png);
 	background-repeat: no-repeat;

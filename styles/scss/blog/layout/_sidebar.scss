@@ -43,6 +43,11 @@
 /* Forms
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+// Estimate Request
+div#hs_form_target_module_150289543551974 {
+    border: 1px solid color(border);
+}
+
 .body-container-wrapper .hs-form,
 .body-container-wrapper form {
   background: #FFF;
@@ -59,6 +64,7 @@
     margin-top: 2em;
     margin-bottom: 0;
 }
+
 
 // subscribe form
 .hs-form input[type="radio"] {
@@ -84,7 +90,7 @@ h3#hs_cos_wrapper_blog_subscription_title {
 }
 
 /*
-/* Search
+/* Post Filter
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .span12.widget-span.widget-type-post_filter h3 {
     font-size: 1.875rem;
