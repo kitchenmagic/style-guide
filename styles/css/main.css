@@ -3351,6 +3351,12 @@ div.input ul.inputs-list li {
     margin-top: 0;
     font-family: "ProximaNova-Regular", helvetica, sans-serif; }
 
+div.input input[type="radio"] {
+  height: auto;
+  width: auto !important; }
+  div.input input[type="radio"] + span {
+    margin-left: 10px; }
+
 ul.inputs-list {
   list-style: none;
   padding-left: 0; }

@@ -139,6 +139,16 @@ div.input {
         }
 
     }
+
+    // radio
+    input[type="radio"] {
+        height: auto;
+        width: auto !important;
+        
+        + span {
+            margin-left: 10px;
+        }
+    }
 }
 
 // removes list style and padding from ul in forms
