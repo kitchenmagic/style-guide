@@ -8,37 +8,31 @@
   }
   
   .pop-post {
-    box-shadow: 0 4px 6px 0 rgba(0,0,0,.10);
-    max-width: 300px;
+    max-width: 100%;
     border-radius: 0 0 3px 3px;
     margin: 14px 5px;
     width: 31.33%;
     overflow: hidden;
     position: relative;
-    background: #fff;
   }
   
   .pop-post__tag {
-    background: #5988da;
+    background: color(primary, base);
     color: #fff;
     padding: 1px 16px;
     border-radius: 150px;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 11px;
-    margin-left: 9px;
-    position: absolute;
-    top: 11px;
-    z-index: 999;
+    font-family: family(bold);
+    font-size: px-to-rem(11px);
   }
   
   .pop-post__img-container {
     overflow: hidden;
-    height: 210px;
+    height: 300px;
   }
   
   .pop-post__img {
-    height: 210px;
+    height: 300px;
     border-radius: 3px 3px 0 0;
     background-position: center center;
     background-size: cover;
@@ -46,29 +40,32 @@
     transition: all .5s;
   }
   
-  .pop-post__img:hover {
-    transform: scale3d(1.1,1.1,1);
-  }
-  
   .pop-post__content {
-    text-align: center;
     padding: 12px 20px 0;
     background: #fff;
+    padding: 12px 20px 0;
+    background: #fff;
+    width: 92%;
+    margin: -95px auto 0;
+    @include box-shadow($shadow-md);
   }
   
   .pop-post__title {
-    line-height: 1.1;
-    letter-spacing: -.01em;
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 1rem;
     padding-top: .2rem;
-    font-size: 1.6875rem;
-    font-family: perpetua;
+    font-size: px-to-rem(24px);
+    font-family: family(header);
   }
   
   .pop-post__title a {
-    color: #555;
-    transition: all .3s ease;
+      color: color(text, base);
+
+      &:hover {
+          text-decoration: none;
+          color: color(primary, base);
+      }
   }
+
   

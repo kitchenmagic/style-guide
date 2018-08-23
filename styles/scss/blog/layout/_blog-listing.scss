@@ -67,6 +67,7 @@ a.topic-link {
     text-transform: uppercase;
     color: color(primary, base);
     letter-spacing: .5px;
+    font-family: family(bold);
 
     &:nth-last-child(1) {
         border-right: none;

@@ -1,5 +1,5 @@
 /* ============================================================
-   BLOG SHARING
+   SIDEBAR
 /* ============================================================ */
 
 /*
@@ -25,6 +25,7 @@
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .widget-module ul {
     margin-left: 0;
+    padding-left: 0;
 
     li {
         border-bottom: 1px dotted color(border);
@@ -72,11 +73,22 @@ label {
     margin-bottom: 7px;
 }
 
+// blog subscribe
 h3#hs_cos_wrapper_blog_subscription_title {
     background: #fff;
     border: none;
+    margin: 0;
+    color: color(text, base);
     text-align: left;
-    padding: 20px 25px 4px 21px;
+    padding-bottom: 0;
+}
+
+/*
+/* Search
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.span12.widget-span.widget-type-post_filter h3 {
+    font-size: 1.875rem;
+    margin: 0;
 }
 
 /*

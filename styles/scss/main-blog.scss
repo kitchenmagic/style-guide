@@ -9,6 +9,7 @@
 
 // base
 @import 'styles/scss/blog/base/_global.scss';
+@import 'styles/scss/blog/base/_typography.scss';
 
 // layout 
 @import 'styles/scss/blog/layout/_blog-listing.scss';
@@ -17,6 +18,7 @@
 
 // components
 @import 'styles/scss/blog/components/_popular-post.scss';
+@import 'styles/scss/blog/components/_popular-post-sidebar.scss';
 @import 'styles/scss/blog/components/_sharing.scss';
 @import 'styles/scss/blog/components/_sub-navigation.scss';
 @import 'styles/scss/blog/components/_video.scss';

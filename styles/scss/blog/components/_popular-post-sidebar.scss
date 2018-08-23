@@ -1,0 +1,44 @@
+/* ============================================================
+   POPULAR POST - SIDEBAR
+/* ============================================================ */
+
+.pop-post-sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pop-post-sidebar__item {
+    margin-top: 15px;
+    border: 1px solid color(border);
+    height: 58px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  .pop-post-sidebar__item:hover {
+    text-decoration: underline;
+  }
+  
+  .pop-post-sidebar__img {
+    float: left;
+    width: 58px;
+    height: 58px;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 10px;
+  }
+  
+  .pop-post-sidebar__content {
+    line-height: 50px;
+    font-size: 13px;
+    line-height: 1.1;
+    padding: 5px 4px;
+    display: flex;
+    align-items: center;
+    height: 58px;
+  }
+  
+  
+  .pop-post-sidebar > .pop-post-sidebar__item:first-child {
+    margin-top: 0; 
+  }
