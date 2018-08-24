@@ -1,12 +1,12 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
 /* ============================================================
-   21. ACCORDION
+   ACCORDION
 /* ============================================================ */
 
-/**
- * This file will live on Hubspot Modules only.
- * !!! REMOVE from main.scss 
- * example: https://www.kitchenmagic.com/cabinet-refacing
- **/
 .accordion {
     font-size: 1rem;
     margin: 0 auto;

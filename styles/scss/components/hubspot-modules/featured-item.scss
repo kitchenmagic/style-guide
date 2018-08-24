@@ -1,11 +1,13 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+
 /* ============================================================
-   29. FEATURED ITEM
+   FEATURED ITEM
 /* ============================================================ */
-/**
- * This file will live on Hubspot Modules only.
- * !!! REMOVE from main.scss 
- * example: https://www.kitchenmagic.com/products
- **/
+/* example: https://www.kitchenmagic.com/products */
 
 .km-featured-item-title {
     color: #FFF;

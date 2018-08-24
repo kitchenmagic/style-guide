@@ -1,13 +1,11 @@
-/* ============================================================
-   23. CABINET CARD
-/* ============================================================ */
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
 
-/**
-* Cabinet Card
-* This file will live on Hubspot Modules only.
-* !!! REMOVE from main.scss 
-* example: https://www.kitchenmagic.com/kitchen-cabinets/doors/wood
-**/
+/* ============================================================
+   CABINET CARD
+/* ============================================================ */
 
 .cabinet-card {
     width: 100%;

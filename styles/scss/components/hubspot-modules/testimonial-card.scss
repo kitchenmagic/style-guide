@@ -1,14 +1,12 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
 /* ============================================================
    TESTIMONIALS
 /* ============================================================ */
 
-/**
- * Testimonial Card
- * This is only used on the careers page.
- * This file will live on Hubspot Modules only.
- * !!! REMOVE from main.scss 
- * example: https://www.kitchenmagic.com/careers
-**/
   .testimonial-card {
     background: color(gray, base);
     max-width: 315px;

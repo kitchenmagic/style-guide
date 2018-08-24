@@ -1,11 +1,12 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+
 /* ============================================================
    PRODUCT CARDS
 /* ============================================================ */
-
-/**
- * This file will live on Hubspot Modules only.
- * !!! REMOVE from main.scss 
-**/
 
 .product-card {
     width: 100%;

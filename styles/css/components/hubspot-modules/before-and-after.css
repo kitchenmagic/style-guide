@@ -1,0 +1,53 @@
+/* ============================================================
+   BEFORE AND AFTER MODULE
+/* ============================================================ */
+.ba-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  height: 350px;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
+  .ba-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -moz-transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    border-bottom: 0; }
+    .ba-container img.before {
+      z-index: 2; }
+    .ba-container img.after {
+      z-index: 1; }
+
+.ba-container:hover img.before {
+  opacity: 0; }
+
+.ba-title {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "ProximaNova-Bold", helvetica, sans-serif;
+  z-index: 999;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 7px 0 8px;
+  font-size: 1.0625rem; }
+
+.ba-description {
+  padding: 15px 20px 20px 20px;
+  border-radius: 1px;
+  border-top: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }

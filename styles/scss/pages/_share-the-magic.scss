@@ -1,35 +1,8 @@
 /* ============================================================
-   11. SHARE THE MAGIC - www.kitchenmagic.com/share
+   SHARE THE MAGIC - www.kitchenmagic.com/share
 /* ============================================================ */  
 
-.km-hero-title {
-    color: #fff;
-    text-align: left;
-    padding: 0;
-    text-shadow: 0 1px 2px rgba(0,0,0,.4);
-}
-
-.km-hero-description {
-    color: #fff;
-    padding: 0;
-    margin: 0;
-}
-
-.km-hero-button {
-    background: none;
-    border: 1px solid #fff;
-
-    &:hover {
-        background: rgba(0,0,0,.3);
-        border: 1px solid #fff;
-    }
-}
-
-.km-orange {
-    color: color(primary, base);
-}
-
-.km-blue {
+.km-orange, .km-blue {
     color: color(primary, base);
 }
 

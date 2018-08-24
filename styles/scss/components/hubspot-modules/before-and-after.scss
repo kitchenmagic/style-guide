@@ -1,12 +1,11 @@
-/* ============================================================
-   22. BEFORE AND AFTER MODULE
-/* ============================================================ */
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
 
-/**
-* This file will live on Hubspot Modules only.
-* !!! REMOVE from main.scss 
-* example: https://www.kitchenmagic.com/gallery/before-and-after
-**/
+/* ============================================================
+   BEFORE AND AFTER MODULE
+/* ============================================================ */
 
 .ba-container {
     position:relative;

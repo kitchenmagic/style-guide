@@ -1,0 +1,101 @@
+/* ============================================================
+   TESTIMONIALS
+/* ============================================================ */
+.testimonial-card {
+  background: #A3A5A8;
+  max-width: 315px;
+  min-width: 235px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  padding-top: 120px;
+  color: #fff;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
+
+.testimonial-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 25px 40px 25px;
+  position: relative; }
+
+.testimonial-container:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #fff; }
+
+.profile {
+  position: absolute;
+  max-width: 90px;
+  bottom: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
+  box-shadow: 0 2px 10px 0 #E1E5E4; }
+
+.testimonial:after {
+  font-family: 'FontAwesome';
+  content: "\f10e";
+  position: absolute;
+  font-size: 3.125rem;
+  line-height: 1em;
+  color: #E1E5E4;
+  font-style: normal;
+  right: 26px;
+  bottom: 8px; }
+
+.testimonial-name {
+  font-size: 1.3em;
+  margin: 25px;
+  font-weight: 300;
+  position: absolute;
+  top: -11px;
+  right: 0;
+  text-align: right;
+  color: #fff; }
+
+.testimonial-job {
+  font-size: .7em;
+  display: block; }
+
+/**
+ * Testimonial Card with image
+ * This file will live on Hubspot Modules only.
+ * !!! REMOVE from main.scss 
+ * example: https://www.kitchenmagic.com/estimate-specials
+**/
+.tc-top-box {
+  max-width: 400px;
+  height: 250px;
+  background-position: center center !important;
+  background-size: cover !important;
+  border: 1px solid #E1E5E4;
+  border-bottom: none; }
+
+.tc-bottom-box {
+  max-width: 400px;
+  color: #222222;
+  text-align: left;
+  padding: 65px 30px 30px;
+  border: 1px solid #E1E5E4; }
+
+.tc-bottom-box h4 {
+  text-align: center; }
+
+.testimonial-avatar {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #E1E5E4;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%); }

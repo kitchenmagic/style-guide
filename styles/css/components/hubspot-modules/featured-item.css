@@ -1,0 +1,32 @@
+/* ============================================================
+   FEATURED ITEM
+/* ============================================================ */
+/* example: https://www.kitchenmagic.com/products */
+.km-featured-item-title {
+  color: #FFF;
+  text-align: center;
+  padding-top: .3em;
+  padding-bottom: .2em;
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase; }
+
+.km-featured-item a:hover {
+  text-decoration: none; }
+
+.km-featured-item .km-featured-item-image {
+  position: relative; }
+
+.km-featured-item .km-featured-item-caption {
+  padding: 1em 1.3em;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
+  box-shadow: 0 2px 10px 0 #E1E5E4; }
+  .km-featured-item .km-featured-item-caption h3, .km-featured-item .km-featured-item-caption h4 {
+    margin-top: 0;
+    font-size: 1.875rem; }

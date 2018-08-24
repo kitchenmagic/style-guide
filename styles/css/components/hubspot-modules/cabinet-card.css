@@ -1,0 +1,21 @@
+/* ============================================================
+   CABINET CARD
+/* ============================================================ */
+.cabinet-card {
+  width: 100%; }
+  .cabinet-card img {
+    -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+    -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+    box-shadow: 0 2px 20px 0 #E1E5E4;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
+  .cabinet-card .product-title {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.75rem;
+    padding-bottom: 0.125rem; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .cabinet-card img {
+    width: 100%; } }

@@ -1,0 +1,38 @@
+/* ============================================================
+   EVENTS
+/* ============================================================ */
+.event-card {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 9px 0 20px 0;
+  border-radius: 4px; }
+
+.event-card p {
+  padding: 0;
+  margin: 0; }
+
+.event-card p:nth-child(1) {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #85695b; }
+
+.event-card p:nth-child(2) {
+  font-size: 2.8em;
+  line-height: .925em;
+  font-weight: 300; }
+
+.event-card p > span {
+  font-size: 15px;
+  display: block; }
+
+.event-info-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px; }
+
+.event-info-card h3 {
+  padding-bottom: 0; }
+
+.event-info-card p:nth-child(2) {
+  font-style: italic; }

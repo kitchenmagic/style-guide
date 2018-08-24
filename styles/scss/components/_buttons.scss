@@ -1,5 +1,5 @@
 /* ============================================================
-   13. BUTTONS
+   BUTTONS
 /* ============================================================ */
 
 /**
@@ -46,8 +46,8 @@
         }
 
     }
-
-    &.km-btn--ghost {
+    // clear button with dark border
+    &.km-btn--ghost-dark {
         background-color: transparent;
         border: 1px solid color(text, base);
         color: color(text, base);
@@ -64,19 +64,37 @@
             color: #fff;
         }
     }
+ // clear button with white border
+    &.km-btn--ghost-light {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid darken(#fff, 15%);
+            color: darken(#fff, 15%)
+        }
+
+        &:active {
+            background-color: transparent;
+            border: 1px solid darken(#fff, 30%);
+            color: darken(#fff, 30%);
+        }
+    }
 
     //button sizes
-    .km-btn--large {
+    &.km-btn--large {
         padding: 1rem 3rem;
     }
 
-    .km-btn--sm {
+    &.km-btn--sm {
         padding: .5rem 1rem;
         font-size: .8rem;
     }
 
     // button helpers
-    .km-btn-block {
+    &.km-btn-block, &.km-btn--block {
         display: block !important;
     }
 }

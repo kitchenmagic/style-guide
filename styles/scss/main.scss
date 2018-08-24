@@ -96,15 +96,8 @@ Utilities
 
 // Hubspot Modules
 // NOTE: this section will eventually be removed from the compile and put into individual Hubspot Modules 
-@import 'components/hubspot-modules/_accordion.scss';
-@import 'components/hubspot-modules/_before-and-after.scss';
-@import 'components/hubspot-modules/_cabinet-card.scss';
-@import 'components/hubspot-modules/_event-card.scss';
-@import 'components/hubspot-modules/_product-card.scss';
-@import 'components/hubspot-modules/_testimonial-card.scss';
-@import 'components/hubspot-modules/_new-product-showcase.scss';
 @import 'components/hubspot-modules/_awards.scss';
-@import 'components/hubspot-modules/_featured-item.scss';
+
 
 // Vendors
 @import 'vendors/_foundation-visibility.scss';
