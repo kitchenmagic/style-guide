@@ -22,7 +22,7 @@ Our CSS/SCSS is based on [BEM](http://getbem.com/introduction/) and a modified v
         - [0.4.2. How to Select Font Sizes](#042-how-to-select-font-sizes)
         - [0.4.3. How to use Media Queries](#043-how-to-use-media-queries)
         - [0.4.4. Exporting for Hubspot Modules](#044-exporting-for-hubspot-modules)
-    - [Updating Hubspot](#updating-hubspot)
+    - [Updating Global CSS in Hubspot](#updating-global-css-in-hubspot)
     - [0.5. Rules](#05-rules)
     - [0.6. Contributing](#06-contributing)
 
@@ -200,17 +200,21 @@ The Hubspot Module CSS files will not be compiled into the _main.css_ but will b
 
 ```
 
-1. To export a file to an individual css file, remove the *"_"* from the file name (for example: `_product-card.scss`--> `product-card.scss`) and this will automatically compile to the CSS folder. 
+1. To export a file to an individual css file, remove the *"_"* in front of the file name (for example: `_product-card.scss` --> `product-card.scss`) and this will automatically compile to the CSS folder. 
 
 2. Remove it from the `main.scss` file if it's currently being compiled to `main.css`. This helps our main stylesheet stay smaller and the styles for the modules will only be called when present on a page.
 
-3. Then add your new file to Hubspot's Design Manager and link to the module 👍
+3. Then copy/paste your new file into Hubspot's Design Manager under `Coded files > Custom > pages > css > components > "your-new-file.css"`.
 
-![hubspot-module](https://www.kitchenmagic.com/hubfs/brand-guidelines/hubspot-module-example.png)
+    ![hubspot-module](https://www.kitchenmagic.com/hubfs/developer-documentation/hubspot-upload-css.jpg)
 
-## Updating Hubspot
+4. Link the new stylesheet to the appropriate Module.
+ 
+    ![hubspot-module](https://www.kitchenmagic.com/hubfs/developer-documentation/hubspot-link-stylesheet.jpg)
 
-Add `main.css` in Hubspot's Design Manager under `System > Default > HS Default Custom Styles.css`
+## Updating Global CSS in Hubspot
+
+Add `main.css` in Hubspot's Design Manager under `System > Default > HS_Default_Custom Styles.css`
 
 ## 0.5. Rules
 
