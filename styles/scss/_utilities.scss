@@ -103,6 +103,13 @@
    justify-content: center;
 }
 
+.flex-vertical-align {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
 // Vertical align
 .km-vertical-align {
   display: inline-block;

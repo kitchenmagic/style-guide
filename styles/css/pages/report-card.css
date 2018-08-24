@@ -1,0 +1,608 @@
+@charset "UTF-8";
+/* ============================================================
+   03. TYPOGRAPHY
+/* ============================================================ */
+/**
+* @stylesheet typography.css Typography
+* @parent css.theme
+*
+* @description 
+* We use 4 primary fonts `Domaine Display Narrow Bold`, `Proxima Nova Regular`, `Proxima Nova Regular Italic` and `Proxima Nova Bold`. 
+* Maintaining typographic clarity and hierarchy is important; here is a showcase of different ways to structure content.
+*
+* @styles typography-headers Typography
+* @iframe demos/base/typography/headers.html
+**/
+/**
+ * Import for font springs traffic counter
+ */
+@import url("//hello.myfonts.net/count/37001a");
+/* For Hubspot dev - in production */
+@font-face {
+  font-family: 'DomaineDisplayNarrowBold';
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff") format("embedded-opentype");
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff?#iefix") format("embedded-opentype");
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff") format("woff");
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.eot");
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.woff2") format("woff2"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.woff") format("woff"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.eot");
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.eot?#iefix") format("embedded-opentype"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.woff2") format("woff2"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.woff") format("woff"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'ProximaNova-RegularIt';
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.eot");
+  src: url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.eot?#iefix") format("embedded-opentype"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.woff2") format("woff2"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.woff") format("woff"), url("https://www.kitchenmagic.com/hubfs/fonts/proxima-nova/proxima-nova-regular-italic.ttf") format("truetype"); }
+
+/**
+ * Headers
+ */
+h1, h2, h3, h4, h5 {
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+  color: #222222;
+  letter-spacing: 1px !important;
+  margin: 1.414rem 0 1.5rem; }
+  @media (max-width: 991px) {
+    h1, h2, h3, h4, h5 {
+      font-weight: normal;
+      overflow-wrap: break-word; } }
+
+h1 {
+  font-size: 4.375rem;
+  margin-top: 0; }
+  @media (max-width: 575px) {
+    h1 {
+      font-size: 3.5rem; } }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h4 {
+  font-size: 1.875rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h1 em, h2 em, h3 em, h4 em, h5 em {
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif; }
+
+/**
+* @styles typography-body Body Copy
+*
+* @description
+* Body copy description
+* @iframe demos/base/typography/body-copy.html
+*/
+/**
+ * Body text
+ */
+p {
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  color: #222222;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.75rem; }
+
+strong {
+  font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+
+em {
+  font-family: "ProximaNova-RegularIt", helvetica, sans-serif; }
+
+a {
+  color: #F01834;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  a:hover {
+    color: #F01834;
+    text-decoration: underline; }
+  a:active {
+    color: #C30019; }
+
+::selection {
+  background: #F01834;
+  color: #fff; }
+
+::-moz-selection {
+  background: #F01834;
+  color: #fff; }
+
+li {
+  margin-bottom: 0.625rem;
+  line-height: 1.75rem; }
+
+/*
+/*  Horizontal Rule
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  border: solid #E1E5E4;
+  border-width: 2px 0 0;
+  clear: both;
+  height: 0;
+  margin: 1.25rem 0 1.875rem;
+  position: relative; }
+  hr:after {
+    content: "";
+    height: 10px;
+    text-align: center;
+    transform: rotate(45deg);
+    width: 10px;
+    display: inline-block;
+    position: absolute;
+    border: 2px solid #e1e5e4;
+    left: 50%;
+    background: #fff;
+    top: -6px; }
+
+/*
+/*  Blockquotes
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote, .reviews-blockquote {
+  border: 1px solid #222222;
+  text-align: center;
+  font-family: "ProximaNova-RegularIt", helvetica, sans-serif;
+  padding: 3em 5em 3.5em;
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+  position: relative;
+  margin-top: 3.125rem; }
+  blockquote cite, .reviews-blockquote cite {
+    padding: 0 15px;
+    font-size: .8125rem;
+    background: #fff;
+    color: #F01834;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 30%; }
+    @media (max-width: 991px) {
+      blockquote cite, .reviews-blockquote cite {
+        max-width: 40%; } }
+    @media (max-width: 575px) {
+      blockquote cite, .reviews-blockquote cite {
+        max-width: 80%; } }
+
+.reviews-blockquote::before, blockquote::before {
+  content: "\f10e";
+  font-size: 1.5625rem;
+  font-family: fontawesome;
+  border: 1px solid #222;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -25px;
+  height: 50px;
+  width: 50px;
+  line-height: 55px;
+  color: #F01834;
+  border-radius: 150px; }
+
+/* ============================================================
+   02. GRID
+/* ============================================================ */
+.km-row, .km-row-narrow, .km-row-wide, .km-row-full, .km-row .row-fluid,
+.km-row-wide .row-fluid, .km-wrapper, .km-wrapper-inner {
+  width: 100%;
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 71.25rem; }
+
+.km-row-narrow {
+  max-width: 60rem; }
+
+.km-row-wide {
+  max-width: 83.75rem; }
+
+.km-row-full {
+  max-width: 100% !important; }
+
+@media (max-width: 991px) {
+  .km-mobile-padding-horizontal {
+    padding-right: 16px;
+    padding-left: 16px; } }
+
+.body-container .widget-span {
+  margin-bottom: 35px; }
+
+/* ============================================================
+   REPORT CARD - https://landing.kitchenmagic.com/report-card
+/* ============================================================ */
+body {
+  background: #F9FAFC;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  font-size: 16px; }
+
+h1 {
+  font-size: 2.5em; }
+
+/* Form */
+.km-report-card {
+  max-width: 1150px;
+  margin: 0 auto !important;
+  padding: 10px 5%;
+  float: none !important;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
+
+/************************************/
+/*        Form Section Header       */
+/************************************/
+.km-report-card .hs-form .hs-richtext {
+  margin-bottom: 35px;
+  line-height: 2;
+  font-size: 1.5em;
+  border-bottom: solid 1px #E1E5E4;
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif; }
+
+.section-heading {
+  color: #222222; }
+  .section-heading strong {
+    font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+    letter-spacing: 1px; }
+
+/************************************/
+/*           Input Fields           */
+/************************************/
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select, textarea {
+  border: solid 1px #E1E5E4;
+  height: 2.1875rem;
+  width: 100%;
+  padding: 0 .8rem;
+  font-size: 1rem; }
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  select:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #222222; }
+
+.km-report-card .hs-form .input {
+  width: 50%;
+  padding: 0 0 10px; }
+
+/************************************************/
+/*                Radio Buttons                 */
+/************************************************/
+.km-report-card .inputs-list.multi-container {
+  padding: 0;
+  margin: 0;
+  float: right; }
+
+.inputs-list.multi-container .hs-form-radio {
+  list-style: none;
+  float: left; }
+
+.km-report-card .hs-form input[type=radio]:not(old) {
+  display: block;
+  width: 2em;
+  height: 2em;
+  margin: .5em auto 0;
+  border: 0.0625em solid silver;
+  border-radius: .05em;
+  background: #e0e0e0;
+  background-image: -moz-linear-gradient(#f0f0f0, #e0e0e0);
+  background-image: -ms-linear-gradient(#f0f0f0, #e0e0e0);
+  background-image: -o-linear-gradient(#f0f0f0, #e0e0e0);
+  background-image: -webkit-linear-gradient(#f0f0f0, #e0e0e0);
+  background-image: linear-gradient(#f0f0f0, #e0e0e0);
+  vertical-align: bottom; }
+
+/************************************/
+/*             Labels               */
+/************************************/
+.km-report-card .hs-form label {
+  vertical-align: top;
+  line-height: 2;
+  font-size: 1rem;
+  width: 50%;
+  padding: 0;
+  color: #4a4a4a; }
+
+.km-report-card .hs-form .hs-form-radio > label {
+  text-align: center;
+  padding: 0;
+  margin: 0 2em 0 0;
+  width: inherit;
+  max-width: 100%; }
+
+.km-report-card .hs-form .hs-form-radio:last-of-type > label {
+  margin-right: 0 !important; }
+
+.km-report-card .input input[type=text],
+.km-report-card .input input[type=email],
+.km-report-card .input > select,
+.km-report-card .input > textarea {
+  margin: 10px 0; }
+
+[data-reactid*=".$A."] {
+  color: #799A05; }
+
+[data-reactid*=".$B."] {
+  color: yellowgreen; }
+
+[data-reactid*=".$C."] {
+  color: #ffc200; }
+
+[data-reactid*=".$D."] {
+  color: #F98E2B; }
+
+[data-reactid*=".$F."] {
+  color: #EA002A; }
+
+.hs-footer-company-copyright {
+  color: #222222;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+  text-align: center; }
+
+/************************************/
+/*              Classes             */
+/************************************/
+/************************************/
+/*              Buttons             */
+/************************************/
+.hs-button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 0 1.25rem;
+  padding: .9rem 1.8rem;
+  line-height: 1.5;
+  border-radius: 0;
+  border: none;
+  font-size: 1rem;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  background-color: #F01834;
+  color: #fff;
+  border: 1px solid #F01834;
+  margin: 20px auto;
+  display: block; }
+  .hs-button:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .hs-button:focus {
+    outline: none; }
+  @media (max-width: 575px) {
+    .hs-button {
+      width: 100%; } }
+  .hs-button:hover {
+    background-color: #222222;
+    border: 1px solid #222222;
+    color: #fff; }
+  .hs-button:active {
+    background-color: #C30019;
+    border-color: #C30019;
+    color: #fff; }
+
+.hs-button.primary {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 0 1.25rem;
+  padding: .9rem 1.8rem;
+  line-height: 1.5;
+  border-radius: 0;
+  border: none;
+  font-size: 1rem;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  background-color: #F01834;
+  color: #fff;
+  border: 1px solid #F01834;
+  margin: 20px auto;
+  display: block; }
+  .hs-button.primary:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .hs-button.primary:focus {
+    outline: none; }
+  @media (max-width: 575px) {
+    .hs-button.primary {
+      width: 100%; } }
+  .hs-button.primary:hover {
+    background-color: #222222;
+    border: 1px solid #222222;
+    color: #fff; }
+  .hs-button.primary:active {
+    background-color: #C30019;
+    border-color: #C30019;
+    color: #fff; }
+
+/*********************************************/
+/*                General                    */
+/*********************************************/
+.logo img {
+  max-width: 90% !important; }
+
+.phone-number {
+  text-align: center;
+  font-size: 2em; }
+
+/*********************************************/
+/*                 Mobile                    */
+/*********************************************/
+/*********************************************/
+/*                 Tablet                    */
+/*********************************************/
+@media (max-width: 767px) {
+  .km-report-card .hs-form label {
+    width: 100%;
+    max-width: 100%; }
+  .km-report-card .hs-form .input {
+    width: 100%; }
+  .km-report-card .inputs-list.multi-container {
+    float: none; }
+  textarea, input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"],
+  select {
+    border-width: 2px;
+    padding: .5em 6px;
+    font-size: 1.5em; }
+  .km-report-card form input[type=radio]:not(old) {
+    width: 3em;
+    height: 3em; }
+  .logo {
+    text-align: center; }
+  .logo img {
+    max-width: 50% !important; } }
+
+/*********************************************/
+/*               Smartphone                  */
+/*********************************************/
+@media (max-width: 360px) {
+  .km-report-card form input[type=radio]:not(old) {
+    width: 2em;
+    height: 2em; }
+  .km-report-card .hs-form .hs-form-radio > label {
+    margin-right: 1em; }
+  .km-report-card .hs-form .hs-form-radio:last-of-type > label {
+    margin-right: 0em; } }
+
+/*
+body {
+    font-family: helvetica, sans-serif;
+    background: #EEEBE6;
+}
+
+.phone-number {
+    text-align: right;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.top-title {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sub-title {
+    margin-top: 5px;
+}
+
+form label {
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+.hs-richtext {
+  font-family: raleway;
+  margin-bottom: .5em;
+  margin-top: 2em;
+}
+
+.input {
+    margin: 8px 0;
+}
+
+input.hs-button.primary.large {
+  background-color: #5988DA;
+  color: #FFF;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 0;
+  transition: all 0.8s, color 0.3s 0.3s;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}  
+
+input.hs-button.primary.large:hover {
+    cursor: pointer;
+    box-shadow: 300px 0 0 0 rgba(0, 0, 0, 0.25) inset, -300px 0 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+footer {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+span.hs-footer-company-copyright {
+  font-size: 12px;
+  text-align: center;
+}
+*/

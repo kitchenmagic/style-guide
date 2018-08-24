@@ -1,0 +1,379 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+@import 'styles/scss/base/_typography.scss';
+@import 'styles/scss/base/_grid.scss';
+
+/* ============================================================
+   REPORT CARD - https://landing.kitchenmagic.com/report-card
+/* ============================================================ */ 
+
+body{
+    background: color(background);
+    font-family: family(body);
+    font-size: 16px;
+}
+
+h1 {
+  font-size:2.5em;  
+}
+
+/* Form */
+.km-report-card {
+    max-width: 1150px;
+    margin: 0 auto!important;
+    padding: 10px 5%;
+    float: none!important;
+    background-color: #fff;
+    @include box-shadow($shadow-md);
+}
+
+/************************************/
+/*        Form Section Header       */
+/************************************/
+.km-report-card .hs-form .hs-richtext {
+  margin-bottom: 35px;
+  line-height: 2;
+  font-size: 1.5em;
+  border-bottom: solid 1px color(border);
+  font-family: family(header);
+}
+
+.section-heading {
+  color: color(text, base);
+
+  strong {
+    font-family: family(header);
+    letter-spacing: 1px;
+  }
+}
+
+
+
+
+/************************************/
+/*           Input Fields           */
+/************************************/
+    textarea, 
+    input[type="text"], 
+    input[type="password"], 
+    input[type="datetime"], 
+    input[type="datetime-local"], 
+    input[type="date"], 
+    input[type="month"], 
+    input[type="time"], 
+    input[type="week"], 
+    input[type="number"], 
+    input[type="email"], 
+    input[type="url"], 
+    input[type="search"], 
+    input[type="tel"], 
+    input[type="color"], 
+    select, textarea {
+      border: solid 1px color(border);
+      height: px-to-rem(35px);
+      width: 100%;
+      padding: 0 .8rem;
+      font-size: 1rem;
+
+      &:focus {
+          outline: none;
+          border: 1px solid color(text, base);
+      }
+    }
+    
+    .km-report-card .hs-form .input{
+      width: 50%;
+      padding: 0 0 10px;
+    }
+
+
+        /************************************************/
+        /*                Radio Buttons                 */
+        /************************************************/
+            .km-report-card .inputs-list.multi-container {
+              padding: 0;
+              margin: 0;
+              float: right;
+            }
+            
+            .inputs-list.multi-container .hs-form-radio {
+              list-style: none;
+              float: left;
+            }
+            
+            .km-report-card .hs-form input[type=radio]:not(old) {
+                display: block;
+                width: 2em;
+                height: 2em;
+                margin: .5em auto 0;
+                border: .0625em solid rgb(192, 192, 192);
+                border-radius: .05em;
+                background: rgb(224, 224, 224);
+                background-image: -moz-linear-gradient(#f0f0f0,#e0e0e0);
+                background-image: -ms-linear-gradient(#f0f0f0,#e0e0e0);
+                background-image: -o-linear-gradient(#f0f0f0,#e0e0e0);
+                background-image: -webkit-linear-gradient(rgb(240, 240, 240),rgb(224, 224, 224));
+                background-image: linear-gradient(rgb(240, 240, 240),rgb(224, 224, 224));
+                vertical-align: bottom;
+            }
+
+
+/************************************/
+/*             Labels               */
+/************************************/
+    .km-report-card .hs-form label{
+      vertical-align: top;
+      line-height: 2;
+      font-size: 1rem;
+      width: 50%;
+      padding: 0;
+      color: color(text, light);
+    }
+    
+    .km-report-card .hs-form .hs-form-radio > label {
+        text-align: center;
+        padding: 0;
+        margin: 0 2em 0 0;
+        width: inherit;
+        max-width: 100%;
+    }
+    
+    .km-report-card .hs-form .hs-form-radio:last-of-type > label{
+        margin-right: 0!important;
+    }
+    
+    .km-report-card .input input[type=text],
+    .km-report-card .input input[type=email],
+    .km-report-card .input > select,
+    .km-report-card .input > textarea {
+        margin: 10px 0;
+    }
+
+[data-reactid*=".$A."]{
+    color:#799A05;
+}
+
+[data-reactid*=".$B."]{
+    color:yellowgreen;
+}
+
+[data-reactid*=".$C."]{
+    color: rgb(255, 194, 0);
+}
+
+[data-reactid*=".$D."]{
+    color:#F98E2B;
+}
+
+[data-reactid*=".$F."]{
+    color:#EA002A;
+}
+
+// Footer
+.hs-footer-company-copyright {
+    color: color(text, base);
+    font-size: px-to-rem(12px);
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+
+/************************************/
+/*              Classes             */
+/************************************/
+
+
+        /************************************/
+        /*              Buttons             */
+        /************************************/
+            .hs-button{
+                @include btn();
+                @include km-btn--primary();
+                margin: 20px auto;
+                display: block;            
+            }
+            
+            .hs-button.primary {
+                @include btn();
+                @include km-btn--primary();
+                margin: 20px auto;
+                display: block; 
+            }
+    
+
+
+        /*********************************************/
+        /*                General                    */
+        /*********************************************/
+            .logo{  }
+            
+            .logo img{
+                max-width:90%!important;
+            }
+            
+            .phone-number{
+                text-align:center;
+                font-size:2em;
+            }
+    
+            
+
+
+
+
+
+/*********************************************/
+/*                 Mobile                    */
+/*********************************************/
+
+    /*********************************************/
+    /*                 Tablet                    */
+    /*********************************************/
+        @media (max-width: 767px) {
+        
+            .km-report-card .hs-form label{
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .km-report-card .hs-form .input {
+                width: 100%;
+            }
+            
+            .km-report-card .inputs-list.multi-container {
+                float:none;
+            }
+        
+            textarea, input[type="text"], 
+            input[type="password"], 
+            input[type="datetime"], 
+            input[type="datetime-local"], 
+            input[type="date"], 
+            input[type="month"], 
+            input[type="time"], 
+            input[type="week"], 
+            input[type="number"], 
+            input[type="email"], 
+            input[type="url"], 
+            input[type="search"], 
+            input[type="tel"], 
+            input[type="color"], 
+            select {
+                border-width: 2px;
+                padding: .5em 6px;
+                font-size: 1.5em;
+                }
+                
+            .km-report-card form input[type=radio   ]:not(old) {
+                width: 3em;
+                height: 3em;
+            }
+            
+                            
+            .logo{
+                text-align:center;
+            }
+            
+            .logo img{
+                max-width:50%!important;
+            }
+            
+        }
+
+
+
+        /*********************************************/
+        /*               Smartphone                  */
+        /*********************************************/
+            @media(max-width:360px){
+                .km-report-card form input[type=radio   ]:not(old) {
+                    width: 2em;
+                    height: 2em;
+                }
+                
+                .km-report-card .hs-form .hs-form-radio > label {
+                    margin-right: 1em;
+                }
+                
+                .km-report-card .hs-form .hs-form-radio:last-of-type > label{
+                    margin-right: 0em;
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+/*
+body {
+    font-family: helvetica, sans-serif;
+    background: #EEEBE6;
+}
+
+.phone-number {
+    text-align: right;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.top-title {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sub-title {
+    margin-top: 5px;
+}
+
+form label {
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+.hs-richtext {
+  font-family: raleway;
+  margin-bottom: .5em;
+  margin-top: 2em;
+}
+
+.input {
+    margin: 8px 0;
+}
+
+input.hs-button.primary.large {
+  background-color: #5988DA;
+  color: #FFF;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 0;
+  transition: all 0.8s, color 0.3s 0.3s;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}  
+
+input.hs-button.primary.large:hover {
+    cursor: pointer;
+    box-shadow: 300px 0 0 0 rgba(0, 0, 0, 0.25) inset, -300px 0 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+footer {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+span.hs-footer-company-copyright {
+  font-size: 12px;
+  text-align: center;
+}
+*/
