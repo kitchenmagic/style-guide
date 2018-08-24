@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ============================================================
-   03. TYPOGRAPHY
+   TYPOGRAPHY
 /* ============================================================ */
 /**
 * @stylesheet typography.css Typography
@@ -194,7 +194,7 @@ blockquote, .reviews-blockquote {
   border-radius: 150px; }
 
 /* ============================================================
-   02. GRID
+   GRID
 /* ============================================================ */
 .km-row, .km-row-narrow, .km-row-wide, .km-row-full, .km-row .row-fluid,
 .km-row-wide .row-fluid, .km-wrapper, .km-wrapper-inner {

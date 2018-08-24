@@ -1,5 +1,6 @@
-
-
+/* ============================================================
+   FORMS
+/* ============================================================ */
 
 // form title
 .form-title {
@@ -67,6 +68,17 @@ div.input {
 
         &.error{
             border: 1px solid color(error);
+        }
+
+        &:disabled {
+            opacity: .5;
+            cursor: inherit;
+
+            // removes border on hover for disabled inputs
+            &:hover {
+                border: 1px solid color(border);
+            }
+        
         }
     }
 
@@ -260,10 +272,11 @@ ul.hs-error-msgs {
     padding-left: 0;
 
     li label {
-    color: color(error);
-    font-family: family(body);
-    font-size: px-to-rem(12px);
-     line-height: 1.6;
+        color: color(error);
+        font-family: family(body);
+        font-size: px-to-rem(12px);
+        line-height: 1.6;
+        margin-top: 0;
     }
 
 }

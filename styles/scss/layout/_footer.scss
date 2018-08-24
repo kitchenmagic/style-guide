@@ -81,10 +81,16 @@
             }  
         }
         // blog subscribe form
-        &#hsForm_757a36fb-ee8e-4d27-a531-040172cc2965 .hs_email input { 
-            width: 100%;
+        &#hsForm_757a36fb-ee8e-4d27-a531-040172cc2965  { 
+            background-color: transparent;
             border: none;
-            height: auto;
+            padding: 0 !important;
+
+            .hs_email input {
+                width: 100%;
+                border: none;
+                height: auto;
+            }
         }
         // overrides default styling for form submits
         input[type="submit"] {

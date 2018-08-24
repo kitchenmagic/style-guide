@@ -11,56 +11,56 @@
 /* ============================================================
 
 /* BASE
-00. Reset/Normalize
-01. Global
-02. Grid
-03. Typography
-04. Responsive
+Reset/Normalize
+Global
+Grid
+Typography
+Responsive
 
 /* LAYOUT
-05. Header
-06. Page
-07. Footer
+Header
+Page
+Footer
 
 /* PAGES
-08. Careers
-09. Estimate Specials
-10. Homepage
-11. Share the Magic
-12. Self Set
+Careers
+Estimate Specials
+Homepage
+Share the Magic
+Self Set
 
 /* COMPONENTS
-13. Buttons
-14. Content Box
-15. Forms
-16. Icons
-17. Modals
-18. Progress Bars
-19. Tables
-20. Thumbnail Gallery
+Buttons
+Content Box
+Forms
+Icons
+Modals
+Progress Bars
+Tables
+Thumbnail Gallery
 
 /* HUBSPOT MODULES
 These partials will live on Hubspot Modules only and should be removed from importing.
-21. Accordion
-22. Before and After
-23. Cabinet Card
-24. Event Card
-25. Product Card
-26. Testimonial Card
-27. New Product Showcase
-28. Awards
-29. Featured Item
+Accordion
+Before and After
+Cabinet Card
+Event Card
+Product Card
+Testimonial Card
+New Product Showcase
+Awards
+Featured Item
 
 /* VENDORS
-30. Foundation Visibility
-31. Foundation Grid
+Foundation Visibility
+Foundation Grid
 
 /* MISC
-32. Utilities
+Utilities
 
 */
 /* ============================================================
-   00. RESET
+   RESET
 /* ============================================================
 
 /*!
@@ -334,7 +334,7 @@ template {
   display: none !important; }
 
 /* ============================================================
-  01. GLOBAL
+  GLOBAL
 /* ============================================================ */
 html {
   font-size: 16px;
@@ -367,7 +367,7 @@ html, body {
   padding-top: 45px; }
 
 /* ============================================================
-   02. GRID
+   GRID
 /* ============================================================ */
 .km-row, .km-row-narrow, .km-row-wide, .km-row-full, .km-row .row-fluid,
 .km-row-wide .row-fluid, .km-wrapper, .km-wrapper-inner {
@@ -395,7 +395,7 @@ html, body {
   margin-bottom: 35px; }
 
 /* ============================================================
-   03. TYPOGRAPHY
+   TYPOGRAPHY
 /* ============================================================ */
 /**
 * @stylesheet typography.css Typography
@@ -588,7 +588,7 @@ blockquote, .reviews-blockquote {
   border-radius: 150px; }
 
 /* ============================================================
-   04. RESPONSIVE
+   RESPONSIVE
 /* ============================================================ */
 /* This section will be removed and added to it's specific partial.
 ** It's only a temporary for launch
@@ -1768,10 +1768,14 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
         .dark-footer form .field {
           width: 100%;
           padding-right: 0; } }
-    .dark-footer form#hsForm_757a36fb-ee8e-4d27-a531-040172cc2965 .hs_email input {
-      width: 100%;
+    .dark-footer form#hsForm_757a36fb-ee8e-4d27-a531-040172cc2965 {
+      background-color: transparent;
       border: none;
-      height: auto; }
+      padding: 0 !important; }
+      .dark-footer form#hsForm_757a36fb-ee8e-4d27-a531-040172cc2965 .hs_email input {
+        width: 100%;
+        border: none;
+        height: auto; }
     .dark-footer form input[type="submit"] {
       padding: 9px 28px !important;
       margin: 0 !important; }
@@ -2783,7 +2787,7 @@ html .row-fluid .last-cta {
 /* ============================================================  */
 /** thank you self set page **/
 body.hs-content-id-3653805926.hs-site-page.page.hs-content-path-thank-you-self-set.hs-content-name-thank-you-post-lead-self-set {
-  background: linear-gradient(to right, rgba(247, 147, 30, 0.5) 0%, rgba(212, 20, 90, 0.5) 100%), url(https://www.kitchenmagic.com/hubfs/images/miscellaneous/kitchen-background.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://www.kitchenmagic.com/hubfs/images/miscellaneous/kitchen-background.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2801,7 +2805,7 @@ body.hs-content-id-3653805926.hs-site-page.page.hs-content-path-thank-you-self-s
 
 /** sweepstakes confirmation self set page **/
 body.hs-content-id-5271686399.hs-site-page.page.hs-content-path-sweepstakes-confirmation.hs-content-name-sweepstakes-confirmation-self-set {
-  background: linear-gradient(to right, rgba(247, 147, 30, 0.5) 0%, rgba(212, 20, 90, 0.5) 100%), url(https://www.kitchenmagic.com/hubfs/images/miscellaneous/kitchen-background.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://www.kitchenmagic.com/hubfs/images/miscellaneous/kitchen-background.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3230,6 +3234,9 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
 .content-box p {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
 
+/* ============================================================
+   FORMS
+/* ============================================================ */
 .form-title {
   font-size: 1.6875rem;
   text-align: center;
@@ -3296,6 +3303,11 @@ div.input input.hs-input {
     outline: none; }
   div.input input.hs-input.error {
     border: 1px solid #F35B62; }
+  div.input input.hs-input:disabled {
+    opacity: .5;
+    cursor: inherit; }
+    div.input input.hs-input:disabled:hover {
+      border: 1px solid #E1E5E4; }
 
 div.input select {
   padding: .8rem;
@@ -3477,7 +3489,8 @@ ul.hs-error-msgs {
     color: #F35B62;
     font-family: "ProximaNova-Regular", helvetica, sans-serif;
     font-size: 0.75rem;
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin-top: 0; }
 
 /** added icon to date field **/
 .km-form-calender {
