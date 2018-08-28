@@ -452,7 +452,7 @@ h1 {
   margin-top: 0; }
   @media (max-width: 575px) {
     h1 {
-      font-size: 3.5rem; } }
+      font-size: 3rem; } }
 
 h2 {
   font-size: 3rem; }
@@ -2353,8 +2353,6 @@ html .row-fluid .home-section-header {
     .color-wrapper .cta-main h3 {
       font-size: 2rem;
       padding: 0; }
-    .color-wrapper .cta-main p:nth-last-child(1) {
-      margin-bottom: 5px; }
     .color-wrapper .cta-main a {
       -moz-transition: all .2s ease-in-out;
       -o-transition: all .2s ease-in-out;
@@ -3018,6 +3016,9 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
   background: #C30019;
   border: 3px solid #C30019;
   color: #fff; }
+
+a.cta_button {
+  box-sizing: border-box !important; }
 
 .gallery-popup-btn {
   position: fixed;

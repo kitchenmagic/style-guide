@@ -153,6 +153,10 @@ a.km-btn-clear-green:hover, button.km-btn-clear-green:hover, .km-btn-clear-green
   color: #fff;
 }
 
+// hubspot cta button fix (overflows on mobile)
+a.cta_button {
+    box-sizing: border-box !important;
+}
 
 // gallery popup
 .gallery-popup-btn {
