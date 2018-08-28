@@ -391,6 +391,26 @@ div#hs-search-module a {
   margin-top: 0; }
 
 /* ============================================================
+   PROGRESS BAR INDICATOR
+/* ============================================================ */
+#reading-progress {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 2px;
+  margin: 0px;
+  left: 0px;
+  z-index: 99; }
+
+.bar {
+  height: 3px;
+  background: #F01834;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+  left: 0; }
+
+/* ============================================================
    BLOG SHARING TOOLS
 /* ============================================================ */
 a.at-svc-google {

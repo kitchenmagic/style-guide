@@ -1,0 +1,51 @@
+/* ============================================================
+   SEARCH RESULTS
+/* ============================================================ */
+
+img#addsearch-logo-img {
+    visibility: hidden;
+}
+
+#addsearch-results {
+    font-family: family(body);
+}
+
+#addsearch-results .addsearch-result-item-sub {
+    border-bottom: 2px solid color(border) !important;
+
+    &-active {
+        background-color: color(background) !important;
+    }
+}
+
+#addsearch-results .addsearch-result-item-sub h1 a,
+#addsearch-results .addsearch-result-item-sub h2 a {
+    color: color(primary, base) !important;
+    font-family: family(bold) !important;
+    font-size: 1.3rem !important;
+}
+
+#addsearch-results .addsearch-result-item-sub-active {
+background-color: rgba(34, 116, 172, 0.15);
+}
+
+#addsearch-results .addsearch-result-item-sub p em {
+    font-family: family(italic);
+    line-height: .8 !important;
+}
+    
+#addsearch-results .addsearch-result-item-sub p span em {
+    letter-spacing: 1px;
+    color: color(text, light);
+}
+
+// pagination
+#addsearch-results #addsearch-rp-paging a {
+    border: 1px solid color(border) !important;
+    color: color(primary, base) !important;
+    padding: 6px 10px !important;
+
+    &:hover {
+        color: color(primary, dark);
+    }
+}
