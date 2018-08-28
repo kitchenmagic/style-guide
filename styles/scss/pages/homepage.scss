@@ -1,3 +1,8 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
 /* ============================================================
    HOMEPAGE
 /* ============================================================  
@@ -134,69 +139,6 @@
       margin:0;
     }
   }
-
-  .solutions-box {
-
-    .solutions-link {
-      display: block;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    .solutions-img {
-      display: block;
-
-        .overlay {
-          height: 400px;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-align-items: center;
-          align-items: center;
-          -moz-transition:all .2s ease-in-out;
-          -o-transition:all .2s ease-in-out;
-          transition:all .2s ease-in-out;
-        }
-    }
-
-    &:hover .solutions-img .overlay {
-      background: rgba(38,34,32, .6);
-    }
-
-    .solutions-box__body {
-      background-color: #fff;
-      position: relative;
-      width: 87%;
-      text-align: center;
-      @include box-shadow($shadow-md);
-      margin:-100px auto 0;
-      padding: 25px 25px 12px;
-    }
-
-    .solutions-box__title {
-      margin: 0;
-      text-transform: uppercase;
-      font-size: px-to-rem(26px);
-    }
-
-    .solutions-text {
-      display: block;
-      text-align: center;
-      padding: 20px 0; 
-      color: color(text, base);
-    }
-
-    .solutions-cta {
-      display: block;
-      text-align: center;
-      font-size: px-to-rem(19px);
-      
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }  
   
 /*
 /*  Section 2
@@ -615,14 +557,4 @@ html .row-fluid .last-cta {
   html .row-fluid .last-cta { border: none;padding: 0 9% 30px; }
   html .row-fluid .home-section-header { padding: 0 3% 30px; }
   .new-mobile-contact .mobile-call-btns a { display: block;width: 100%; }
-  
-  .dark-footer form { display: -webkit-flex; display: flex;-webkit-flex-wrap: wrap; flex-wrap: wrap; }
-  .dark-footer form .field, .dark-footer .hs_submit { width: 100%;padding: 0; }
-  .dark-footer { text-align: center; }
-  .dark-footer h2 { font-size: 1.9em; }
-  html .row-fluid .dark-footer .top-left { width: 100%; }
-  .dark-footer .footer-contact { padding: 10px 0 0 !important; }
-  .footer-privacy { text-align: center !important; }
-  .dark-footer .small-6 { width: 100%;text-align: center !important; }
-  .dark-footer .middle-right em { padding: 20px 0 0;width: 100%; }
 }

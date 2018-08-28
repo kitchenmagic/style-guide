@@ -227,6 +227,18 @@
  html .footer-container .dark-footer .km-sub-footer { border-top: 1px solid rgba(255,255,255, .7);padding: 12px 0 !important; }
  html .footer-container .dark-footer .km-sub-footer a { font-size: 0.75rem; }
 
+@media (max-width: 767px) {
+    .dark-footer form { display: -webkit-flex; display: flex;-webkit-flex-wrap: wrap; flex-wrap: wrap; }
+    .dark-footer form .field, .dark-footer .hs_submit { width: 100%;padding: 0; }
+    .dark-footer { text-align: center; }
+    .dark-footer h2 { font-size: 1.9em; }
+    html .row-fluid .dark-footer .top-left { width: 100%; }
+    .dark-footer .footer-contact { padding: 10px 0 0 !important; }
+    .footer-privacy { text-align: center !important; }
+    .dark-footer .small-6 { width: 100%;text-align: center !important; }
+    .dark-footer .middle-right em { padding: 20px 0 0;width: 100%; }
+}
+
 /**
  * Style the bottom left menu of the footer
  */

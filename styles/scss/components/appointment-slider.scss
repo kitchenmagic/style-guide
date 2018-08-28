@@ -1,0 +1,371 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   APPOINTMENT SLIDER
+/* ============================================================ */
+
+// used at the end of the multi-step form to schedule a consultation online
+// This file is imported into Hubspot directly -> appointment-slider.css
+
+.appointment-date-slider-section * {
+    outline:none !important;
+}
+ .popup-overlay .date-picker-wrapper .date-picker {
+     width:100% !important;
+ }
+.appointment-date-slider-section .slider img {
+    max-width: 200px;
+    display: inline;
+}
+.appointment-date-slider-section .month-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: color(primary, base);
+    font-size: px-to-rem(23px);
+    display: inline-block;
+}
+.appointment-date-slider-section {
+   padding: 0 40px;
+}
+ .appointment-date-slider-section .appointment-slider {
+   padding:40px 0; 
+}
+.appointment-date-slider-section .slick-slide {
+    display: inline-block !important;
+    float: none !important;
+    text-align: center;
+    vertical-align: middle;
+    height:auto;
+}
+.appointment-date-slider-section .slider .slick-arrow {
+    width: 35px;
+    height: 45px;
+    background-size: 100%;
+    background-repeat: no-repeat !important;
+    border: 0 none;
+    /* background: no-repeat; */
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    background-color: transparent !important;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.appointment-date-slider-section .slider .slick-prev
+{
+    background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/left-arrow-dark.png);
+    padding: 0 !important;
+    text-indent: -9999px;
+    background-position: left center;
+    left: -30px;
+}
+.appointment-date-slider-section .slider .slick-next {
+    background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/form_icons/right-arrow-dark.png);
+    padding: 0 !important;
+    text-indent: -9999px;
+    background-position: left center;
+    right: -30px;
+}
+.appointment-date-slider-section.slider .slick-prev {left:-5px;}
+.appointment-date-slider-section .slider .slick-next {
+    background-position: right center;
+}
+.appointment-date-slider-section .calendar-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    float: none;
+}
+.appointment-date-slider-section .date-block {
+    border: 1px solid color(border);
+    padding: 30px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    @include transition(all 400ms ease-in-out);
+    position:relative;
+    cursor:pointer;
+}
+.appointment-date-slider-section .date-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid color(border);
+    opacity: 0;
+    opacity:0;
+    @include transition(all 400ms ease-in-out);
+    border-radius: 5px;
+}
+.appointment-date-slider-section .date-block:hover, .appointment-date-slider-section .date-block.booked {
+    @include box-shadow($shadow-md);
+   /* border:3px solid #ccc;*/
+}
+.appointment-date-slider-section .date-block:hover:before, .appointment-date-slider-section .date-block.booked:before {
+    opacity:1;
+}
+.appointment-date-slider-section .date-block.disable:before {
+    display:none;
+}
+.appointment-date-slider-section .date-block.disable {
+ opacity: 0.3;
+ cursor: not-allowed;
+}
+.appointment-date-slider-section .date-block.disable:hover, .appointment-date-slider-section .date-block.disable.booked {
+   -webkit-box-shadow:none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    border:1px solid color(border);
+}
+.appointment-date-slider-section .day {
+    text-transform: uppercase;
+    color: color(primary, base);
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+.appointment-date-slider-section .date {
+color: color(gray, base);
+font-size: 48px;
+}
+.appointment-date-slider-section .button-input {
+    background: transparent;
+    border: 1px solid color(border);
+    border-radius: none;
+    padding: 11px 44px;
+    cursor: pointer;
+    color: color(primary, base);
+    margin: 0 10px 10px;
+    font-weight: 600;
+    background: none;
+    position:relative;
+    border-radius:5px;
+}
+.appointment-date-slider-section .button-input:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid color(border);
+    opacity: 0;
+    opacity:0;
+    @include transition(all 400ms ease-in-out);
+    border-radius: 5px;
+}
+ .appointment-date-slider-section .button-input:hover,  .appointment-date-slider-section .button-input.booked {
+    @include box-shadow($shadow-md);
+}
+.appointment-date-slider-section .button-input:hover:before, .appointment-date-slider-section .button-input.booked:before {
+  opacity:1;  
+}
+
+.appointment-date-slider-section .button-input.disabled {
+    background: #ececec;
+    cursor: not-allowed;
+    border: 1px solid #ececec;
+    color: #b1b1b1;
+}
+.appointment-date-slider-section .button-input.disabled::before {
+    opacity: 1;
+    border: 2px dashed #d9d9d9;
+}
+.appointment-date-slider-section .button-input.disabled:hover, .appointment-date-slider-section .button-input.disabled.booked {
+    box-shadow:none;
+    border: 1px solid #ececec;
+}
+.appointment-date-slider-section .appointment-buttons button {
+    color:#F01834;    
+}
+ .appointment-date-slider-section  .appointment-button-hd {
+    margin-bottom:25px;
+    font-size: 20px;
+}
+ .appointment-date-slider-section  .appointment-button-section.remove-it .appointment-button-hd {
+     margin-bottom:0;
+ }
+.appointment-date-slider-section .appointment-buttons .button-input {
+    padding: 11px 15px;
+    min-width: 140px;
+}
+#km-form-self-set .form form {
+display: block !important;
+padding: 0;
+box-shadow: none;
+}
+.appointment-date-slider-section .date-picker-form {
+width: 100%;
+box-shadow: none !important;
+background: none;
+margin: 10px 0 0;
+}
+.appointment-date-slider-section .hs-form .actions .hs-button, .appointment-date-slider-section .weekend-cta .saturday-appointment-cta {
+margin: 0;
+box-shadow: none !important;
+display: inline-block !important;
+width: auto;
+background: color(primary, base) !important;
+padding: 15px 20px !important;
+min-width: 260px !important;
+font-weight: 500 !important;
+border-radius: 4px !important;
+border: 1px solid color(border) !important;
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+font-size: 18px !important;
+color: #fff;
+}
+.appointment-date-slider-section .hs-form .actions .hs-button:hover, .appointment-date-slider-section .weekend-cta .saturday-appointment-cta:hover {
+    background:color(text, base) !important;
+    color: #fff !important;
+}
+.appointment-date-slider-section .hs-form .actions .hs-button.disable {
+    display:none !important;
+}
+.appointment-date-slider-section .weekend-cta {
+    margin-top: 15px;
+}
+#km-form-self-set form .hs-form-field {
+    display: none;
+}
+.slick-arrow.slick-disabled { 
+    z-index: -999;
+}
+@media(max-width:900px){
+    .appointment-date-slider-section .date-block {
+        padding: 30px 10px;
+        margin:0 5px;
+    }
+    .appointment-date-slider-section .day {
+        font-size:20px;
+        margin-bottom:15px;
+    }
+    .appointment-date-slider-section .date {
+        font-size:35px;
+    }
+}
+ @media(max-width:700px){ 
+   .appointment-date-slider-section .slider .slick-arrow {
+       width:15px;
+       height:33px;
+   }  
+    .appointment-date-slider-section {
+        padding: 0px 25px;
+    }
+    .appointment-date-slider-section .slider .slick-prev {
+        left:-25px;
+    }
+    .appointment-date-slider-section .slider .slick-next {
+        right:-25px;
+    }
+    .appointment-date-slider-section .day {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .appointment-date-slider-section .date {
+    font-size: 30px;
+    }
+    .appointment-date-slider-section .date-block {
+    padding: 20px 5px;
+    }
+ }
+ 
+  @media(max-width:550px){ 
+        .appointment-date-slider-section .day {
+        font-size: 12px;
+        margin-bottom: 5px;
+        }  
+        .appointment-date-slider-section .date {
+        font-size: 25px;
+        }
+        .appointment-date-slider-section .date-block {
+        padding: 15px 3px;
+        margin: 0 5px;
+        }
+        .appointment-date-slider-section .weekend-cta .saturday-appointment-cta {
+            font-size: 16px !important;
+            padding: 15px 15px !important;
+        }
+        .appointment-date-slider-section .weekend-text-msg {
+            font-size: 15px;
+            line-height: 1.6;   
+        }
+  }
+  @media(max-width:480px) {
+        .appointment-date-slider-section .date-block {
+            padding: 15px 1px;
+            margin: 0 3px;
+        }
+        .appointment-date-slider-section {
+            padding: 0px 0;
+        }
+        /*
+        .appointment-date-slider-section .slider .slick-arrow {
+        top: 0;
+        transform: none !important;
+        -webkit-transform: none !important;
+        -moz-transform: none !important;
+        margin: 0;
+        }
+        .appointment-date-slider-section .slider .slick-prev {
+        left: 0;
+        } 
+        .appointment-date-slider-section .slider .slick-next {
+             right: 0;
+        }*/
+        .appointment-date-slider-section .date {
+            font-size: 24px;
+        }
+        .appointment-date-slider-section .day {
+            font-size: 16px;
+        }
+        .appointment-date-slider-section .hs-form .actions .hs-button, .appointment-date-slider-section .weekend-cta .saturday-appointment-cta {
+            min-width: 94% !important;
+            padding: 10px 10px !important;
+            font-size: 16px !important;
+        }
+        .popup-overlay .date-picker-wrapper .date-picker {
+            padding: 0 27px;
+        }
+        .appointment-date-slider-section .appointment-slider {
+            padding: 10px 0;
+        }
+        .appointment-date-slider-section .appointment-button-hd {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .appointment-date-slider-section .appointment-buttons .button-input {
+            padding: 10px 10px;
+            min-width: 45%;
+            font-size: 16px;
+            margin: 0 5px 15px;
+        }
+        .appointment-date-slider-section .date-picker-form {
+           margin: 5px 0 0;
+        }
+        .appointment-date-slider-section .month-heading {
+            font-size: 18px;
+        }
+        .multi-calendar .multi-item-body {
+            padding-bottom: 15px;
+        }
+        
+   }
+   @media(max-width:400px) {
+       .appointment-date-slider-section .appointment-buttons .button-input {
+            font-size: 14px;
+        }
+        .appointment-date-slider-section .hs-form .actions .hs-button, .appointment-date-slider-section .weekend-cta .saturday-appointment-cta {
+            font-size: 14px !important;
+        }
+   }

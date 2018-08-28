@@ -1,0 +1,71 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   SOLUTIONS BOX
+/* ============================================================ */ 
+
+.solutions-box {
+
+    .solutions-link {
+      display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .solutions-img {
+      display: block;
+
+        .overlay {
+          height: 400px;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          -moz-transition:all .2s ease-in-out;
+          -o-transition:all .2s ease-in-out;
+          transition:all .2s ease-in-out;
+        }
+    }
+
+    &:hover .solutions-img .overlay {
+      background: rgba(38,34,32, .6);
+    }
+
+    .solutions-box__body {
+      background-color: #fff;
+      position: relative;
+      width: 87%;
+      text-align: center;
+      @include box-shadow($shadow-md);
+      margin:-100px auto 0;
+      padding: 25px 25px 12px;
+    }
+
+    .solutions-box__title {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: px-to-rem(26px);
+    }
+
+    .solutions-text {
+      display: block;
+      text-align: center;
+      padding: 20px 0; 
+      color: color(text, base);
+    }
+
+    .solutions-cta {
+      display: block;
+      text-align: center;
+      font-size: px-to-rem(19px);
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }  
