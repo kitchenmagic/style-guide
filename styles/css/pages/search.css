@@ -1,0 +1,37 @@
+/* ============================================================
+   SEARCH RESULTS
+/* ============================================================ */
+img#addsearch-logo-img {
+  visibility: hidden; }
+
+#addsearch-results {
+  font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+
+#addsearch-results .addsearch-result-item-sub {
+  border-bottom: 2px solid #E1E5E4 !important; }
+  #addsearch-results .addsearch-result-item-sub-active {
+    background-color: #F9FAFC !important; }
+
+#addsearch-results .addsearch-result-item-sub h1 a,
+#addsearch-results .addsearch-result-item-sub h2 a {
+  color: #F01834 !important;
+  font-family: "ProximaNova-Bold", helvetica, sans-serif !important;
+  font-size: 1.3rem !important; }
+
+#addsearch-results .addsearch-result-item-sub-active {
+  background-color: rgba(34, 116, 172, 0.15); }
+
+#addsearch-results .addsearch-result-item-sub p em {
+  font-family: "ProximaNova-RegularIt", helvetica, sans-serif;
+  line-height: .8 !important; }
+
+#addsearch-results .addsearch-result-item-sub p span em {
+  letter-spacing: 1px;
+  color: #4a4a4a; }
+
+#addsearch-results #addsearch-rp-paging a {
+  border: 1px solid #E1E5E4 !important;
+  color: #F01834 !important;
+  padding: 6px 10px !important; }
+  #addsearch-results #addsearch-rp-paging a:hover {
+    color: #C30019; }

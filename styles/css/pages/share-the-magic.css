@@ -1,0 +1,53 @@
+/* ============================================================
+   SHARE THE MAGIC - www.kitchenmagic.com/share
+/* ============================================================ */
+.km-orange, .km-blue {
+  color: #F01834; }
+
+.km-btn-fw {
+  display: block;
+  margin: 0 auto; }
+
+.learn-more {
+  color: white;
+  padding: .2rem;
+  max-width: 100%;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 4px; }
+
+.learn-more:before, .learn-more:after {
+  content: "";
+  border: solid 6px transparent;
+  border-top-color: #fff;
+  border-bottom-width: 2px;
+  margin: 0 8px;
+  width: 0;
+  height: 0;
+  display: inline-block; }
+
+.learn-more-dark {
+  color: #8a939e;
+  padding: .2rem;
+  max-width: 100%;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 4px; }
+
+.learn-more-dark:before, .learn-more-dark:after {
+  content: "";
+  border: solid 6px transparent;
+  border-top-color: #8a939e;
+  border-bottom-width: 2px;
+  margin: 0 8px;
+  width: 0;
+  height: 0;
+  display: inline-block; }
