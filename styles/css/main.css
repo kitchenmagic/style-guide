@@ -23,10 +23,6 @@ Page
 Footer
 
 /* PAGES
-Careers
-Estimate Specials
-Homepage
-Share the Magic
 Self Set
 
 /* COMPONENTS
@@ -41,15 +37,7 @@ Thumbnail Gallery
 
 /* HUBSPOT MODULES
 These partials will live on Hubspot Modules only and should be removed from importing.
-Accordion
-Before and After
-Cabinet Card
-Event Card
-Product Card
-Testimonial Card
-New Product Showcase
 Awards
-Featured Item
 
 /* VENDORS
 Foundation Visibility
@@ -3898,6 +3886,16 @@ span.meter-tree-progress p {
     margin: 0 5px;
     padding: 0;
     cursor: pointer; }
+
+.km-gallery-thumbs {
+  text-align: center; }
+
+.km-gallery-thumbs > div > div.span3:nth-child(4n+4), .km-gallery-thumbs > div > div.span3:nth-child(4n + 5) {
+  margin-left: 0; }
+
+.km-thumb-title {
+  font-size: 1rem;
+  margin-top: 4px; }
 
 /* ============================================================
    AWARDS

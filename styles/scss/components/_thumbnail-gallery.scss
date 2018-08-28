@@ -60,3 +60,18 @@
         cursor: pointer;
     }
 }
+
+// thumbnail gallery
+
+.km-gallery-thumbs {
+    text-align: center;
+}
+
+.km-gallery-thumbs > div > div.span3:nth-child(4n+4), .km-gallery-thumbs > div > div.span3:nth-child(4n + 5) {
+    margin-left: 0;
+}
+
+.km-thumb-title {
+    font-size: 1rem;
+    margin-top: 4px;
+}
