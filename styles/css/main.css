@@ -374,7 +374,7 @@ html, body {
 .km-row-full {
   max-width: 100% !important; }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .km-mobile-padding-horizontal {
     padding-right: 16px;
     padding-left: 16px; } }

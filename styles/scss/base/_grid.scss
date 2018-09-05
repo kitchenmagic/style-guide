@@ -25,7 +25,7 @@
 
 // used for mobile padding 
 .km-mobile-padding-horizontal {
-  @include respond-below ('md') {
+  @include respond-below ('lg') {
     padding-right: 16px;
     padding-left: 16px;
   }
