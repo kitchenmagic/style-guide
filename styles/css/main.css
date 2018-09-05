@@ -5228,6 +5228,10 @@ th.hide-for-touch {
   display: inline-block;
   vertical-align: middle; }
 
+.km-flex-row > span {
+  display: flex;
+  justify-content: center; }
+
 .right {
   float: right !important; }
 
