@@ -1580,7 +1580,7 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
   font-size: 1.5em;
   color: #222222; }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .new-mobile, html .row-fluid .new-mobile-contact, html .row-fluid .new-mobile-navigation, .new-mobile-group {
     display: none !important; } }
 
