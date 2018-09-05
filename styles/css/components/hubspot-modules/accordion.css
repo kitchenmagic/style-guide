@@ -4,7 +4,8 @@
 .accordion {
   font-size: 1rem;
   margin: 0 auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-bottom: 2.1875rem; }
   .accordion .accordion__item {
     border: 1px solid #E1E5E4;
     border-bottom: none; }
