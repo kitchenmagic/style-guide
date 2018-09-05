@@ -3531,7 +3531,8 @@ html .date-picker-wrapper .date-picker-form form {
 /* example: www.kitchenmagic.com/cabinet-refacing */
 .icon-box {
   text-align: center;
-  padding: 0 10px; }
+  padding: 0 10px;
+  margin-bottom: 2.1875rem; }
 
 .icon-box__icon {
   max-height: 80px;
@@ -5170,7 +5171,7 @@ th.hide-for-touch {
     */
 .km-subtitle-centered {
   max-width: 800px;
-  margin: 0 auto; }
+  margin: 0 auto 2rem; }
 
 /**
  * Used to force white font on hero sections - primarily used on landing pages
@@ -5231,6 +5232,9 @@ th.hide-for-touch {
 .km-flex-row > span {
   display: flex;
   justify-content: center; }
+  @media (max-width: 767px) {
+    .km-flex-row > span {
+      flex-wrap: wrap; } }
 
 .right {
   float: right !important; }

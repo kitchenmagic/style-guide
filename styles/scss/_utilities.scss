@@ -34,7 +34,7 @@
     */  
   .km-subtitle-centered {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
 }
 
 /**
@@ -120,6 +120,11 @@
 .km-flex-row > span {
   display: flex;
   justify-content: center;
+
+  // wraps flex items on mobile
+  @include respond-below('sm') {
+    flex-wrap: wrap;
+  }
 }
 
 //
