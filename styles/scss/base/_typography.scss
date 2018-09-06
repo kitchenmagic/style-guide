@@ -261,3 +261,15 @@ blockquote, .reviews-blockquote {
   color: color(primary, base);
   border-radius: 150px;
 }
+
+/*
+/*  Text CTA's
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.anchor-cta {
+  color: color(primary, base);
+  font-size: 1.6875rem;
+
+  &:hover {
+      color: color(primary, dark);    
+  }
+}

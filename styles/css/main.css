@@ -575,6 +575,15 @@ blockquote, .reviews-blockquote {
   color: #F01834;
   border-radius: 150px; }
 
+/*
+/*  Text CTA's
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.anchor-cta {
+  color: #F01834;
+  font-size: 1.6875rem; }
+  .anchor-cta:hover {
+    color: #C30019; }
+
 /* ============================================================
    RESPONSIVE
 /* ============================================================ */
@@ -5235,6 +5244,10 @@ th.hide-for-touch {
   @media (max-width: 767px) {
     .km-flex-row > span {
       flex-wrap: wrap; } }
+
+.align-center {
+  margin: 0 auto;
+  display: block; }
 
 .right {
   float: right !important; }
