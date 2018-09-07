@@ -51,3 +51,16 @@
   -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
   -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
   box-shadow: 0 2px 20px 0 #E1E5E4; }
+
+.bx-wrapper .bx-controls-direction a {
+  width: 67px !important;
+  height: 50px !important;
+  opacity: .65; }
+
+.bx-wrapper .bx-next {
+  right: 0 !important;
+  background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/before-after-slider/next-arrow-before-after.png) no-repeat !important; }
+
+.bx-wrapper .bx-prev {
+  left: 0 !important;
+  background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/before-after-slider/prev-arrow-before-after.jpg) no-repeat !important; }

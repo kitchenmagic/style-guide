@@ -346,7 +346,7 @@
 }
 html body.no-scroll { height: 100vh;overflow: hidden;position: fixed; }
 
-.new-mobile { position: fixed;top:0;z-index: 100200;background: white;padding: 15px 30px; @include box-shadow($shadow-md);width: 100% !important;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; }
+.new-mobile { position: fixed !important;top:0;z-index: 100200;background: white;padding: 15px 30px; @include box-shadow($shadow-md);width: 100% !important;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; }
 .new-mobile.top { padding: 30px 30px; position: relative;}
 .new-mobile .row-fluid [class*="span"] { min-height: 0; }
 .new-mobile> .row-fluid-wrapper > .row-fluid { display: -webkit-flex; display: flex;-webkit-align-items: center; align-items: center; }

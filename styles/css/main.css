@@ -340,6 +340,9 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%; }
+  @media (max-width: 1199px) {
+    html, body {
+      margin-top: 37px; } }
 
 .body-container {
   margin: 0 auto;
@@ -1150,7 +1153,7 @@ html body.no-scroll {
   position: fixed; }
 
 .new-mobile {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   z-index: 100200;
   background: white;

@@ -22,6 +22,10 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+
+  @include respond-below('lg') {
+    margin-top: 37px;
+  }
 }
 
 .body-container {

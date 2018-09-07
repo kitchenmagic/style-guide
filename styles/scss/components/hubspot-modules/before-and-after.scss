@@ -65,3 +65,24 @@
     background: #fff;
     @include box-shadow($shadow-md);
   }
+
+//
+//  Mobile Slider
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// overrides bxslider.css 
+.bx-wrapper .bx-controls-direction a {
+  width: 67px !important;
+  height: 50px !important;
+  opacity: .65;
+}
+
+.bx-wrapper .bx-next {
+  right: 0 !important;
+  background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/before-after-slider/next-arrow-before-after.png) no-repeat !important;
+}
+
+.bx-wrapper .bx-prev {
+  left: 0 !important;
+  background: url(https://www.kitchenmagic.com/hubfs/graphics/icons/before-after-slider/prev-arrow-before-after.jpg) no-repeat !important;
+}
