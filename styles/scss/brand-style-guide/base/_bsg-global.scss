@@ -17,3 +17,27 @@
 .row {
     margin-bottom: 35px;
 }
+
+// typography
+.bsg-heading {
+    margin-bottom: 35px;
+
+    .bsg-heading__item {
+        margin: 0 !important;
+        border-bottom: 1px solid color(border);
+        padding: 10px 0;
+
+        & h1, & h2, & h3, & h4, & h5, & h6 {
+            margin: 0 !important;
+        }
+    }
+}
+
+p {
+    max-width: 635px;
+}
+
+.title {
+    margin: 0 0 10px;
+}
+
