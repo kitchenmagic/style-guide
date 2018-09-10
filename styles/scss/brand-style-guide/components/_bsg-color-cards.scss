@@ -3,15 +3,45 @@
 /* ============================================================ */
 
 .bsg-color-card {
-    padding: 25px 0;
+    padding: 35px 0;
     color: #fff;
     border-radius: 5px;
+
+    // used to show copy function
+    .bsg-copy-text {
+        position: absolute;
+        opacity: 0;
+        @include transition(all 0.2s ease);
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: .8rem;
+    }
+
+    &:hover {
+        cursor: copy;
+
+        .bsg-copy-text {
+            margin-bottom: 10px;
+            margin-top: -10px;
+            opacity: 1;
+        }
+
+        .bsg-color-card__hash {
+            margin-bottom: -10px;
+            margin-top: 10px;
+        }
+    }
 
     &__hash {
         height: 20px;
         line-height: 20px;
         width: 100%;
         text-align: center;
+        @include transition(all 0.2s ease);
+
+        &--dark {
+            color: color(text, base);
+        }
     }
     // primary
     &--primary {
@@ -33,6 +63,24 @@
 
     &--text-light {
         background-color: color(text, light);
+    }
+
+    // grays
+
+    &--gray {
+        background-color: color(gray, base);
+    }
+
+    &--gray-light {
+        background-color: color(gray, light);
+    }
+
+    &--gray-lighter {
+        background-color: color(gray, lighter);
+    }
+
+    &--gray-lightest {
+        background-color: color(gray, lightest);
     }
     
     // states
