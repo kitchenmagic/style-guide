@@ -1,0 +1,54 @@
+/* ============================================================
+   BSG SIDEBAR
+/* ============================================================ */
+
+.bsg-color-card {
+    padding: 25px 0;
+    color: #fff;
+    border-radius: 5px;
+
+    &__hash {
+        height: 20px;
+        line-height: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    // primary
+    &--primary {
+        background-color: color(primary, base);
+    }
+
+    &--primary-dark {
+        background-color: color(primary, dark);
+    }
+
+    &--primary-light {
+        background-color: color(primary, light);
+    }
+
+    // text
+    &--text {
+        background-color: color(text, base);
+    }
+
+    &--text-light {
+        background-color: color(text, light);
+    }
+    
+    // states
+    &--error {
+        background-color: color(error);
+    }
+
+    &--success {
+        background-color: color(success);
+    }
+
+    &--info {
+        background-color: color(info);
+    }
+
+    &--warning {
+        background-color: color(warning);
+    }
+}

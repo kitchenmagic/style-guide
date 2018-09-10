@@ -1,0 +1,39 @@
+/* ============================================================
+   BSG SIDEBAR
+/* ============================================================ */
+
+.bsg-sidebar {
+}
+
+.bsg-sidebar-nav-card {
+    background: #fff;
+    margin-bottom: 25px;
+    @include box-shadow($shadow-sm);
+
+    &__title {
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border-bottom: 2px solid color(border);
+        color: color(primary, base);
+        letter-spacing: 1px;
+    }
+
+    > a {
+        border-bottom: 1px solid color(border);
+        padding: 10px 15px;
+        margin-bottom: 0;
+        display: block;
+        color: color(text, base);
+        font-size: .8rem;
+
+        &:hover {
+            color: #fff;
+            background-color: color(primary, base);
+            text-decoration: none;
+        }
+    }
+
+    > a:last-child {
+        border-bottom: none;
+    }
+}

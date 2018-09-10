@@ -8,13 +8,6 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('styles/css'));
 });
 
-// Compiles km-theme - will be used for style guide theme only
-gulp.task('theme-styles', function() {
-    gulp.src('style-guide-theme/static/styles/scss/km-theme.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('style-guide-theme/static/styles/css'));
-});
-
 // Compiles to main.css which will be our primary CSS file for the website
 gulp.task('main-compile', function() {
     gulp.src('styles/scss/main.scss')
@@ -29,6 +22,14 @@ gulp.task('blog-compile', function() {
         .pipe(gulp.dest('styles/css'));
 });
 
+// Compiles to  which will be the CSS file for the living style guide
+gulp.task('bsg-compile', function() {
+    gulp.src('styles/scss/main-bsg.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('styles/css'));
+});
+
+
 gulp.task('default', function() {
-    gulp.watch(['styles/scss/**/*.scss','style-guide-theme/static/styles/scss/km-theme.scss', 'styles/sass/main.scss'],  ['styles', 'theme-styles', 'main-compile']);
+    gulp.watch(['styles/scss/**/*.scss', 'styles/scss/brand-style-guide/**/*.scss' ],  ['styles', 'main-compile']);
 });

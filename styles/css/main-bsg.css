@@ -1,0 +1,116 @@
+/* ============================================================
+   BRAND STYLE GUIDE
+/* ============================================================ */
+/* ============================================================
+   BSG GLOBAL
+/* ============================================================ */
+.header-container.container-fluid {
+  padding: 0; }
+
+.body-container {
+  max-width: 100% !important; }
+
+.body-container-wrapper {
+  background-color: #F9FAFC; }
+
+.row {
+  margin-bottom: 35px; }
+
+/* ============================================================
+   BSG HEADER
+/* ============================================================ */
+.bsg-header {
+  background: #F01834; }
+
+.bsg-wrapper {
+  padding: 20px 16px; }
+
+.bsg-logo {
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1.1875rem; }
+
+/* ============================================================
+   BSG SIDEBAR
+/* ============================================================ */
+.bsg-sidebar-nav-card {
+  background: #fff;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
+  box-shadow: 0 2px 10px 0 #E1E5E4; }
+  .bsg-sidebar-nav-card__title {
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-bottom: 2px solid #E1E5E4;
+    color: #F01834;
+    letter-spacing: 1px; }
+  .bsg-sidebar-nav-card > a {
+    border-bottom: 1px solid #E1E5E4;
+    padding: 10px 15px;
+    margin-bottom: 0;
+    display: block;
+    color: #222222;
+    font-size: .8rem; }
+    .bsg-sidebar-nav-card > a:hover {
+      color: #fff;
+      background-color: #F01834;
+      text-decoration: none; }
+  .bsg-sidebar-nav-card > a:last-child {
+    border-bottom: none; }
+
+/* ============================================================
+   CARDS
+/* ============================================================ */
+.bsg-card {
+  background: #fff;
+  margin-bottom: 35px;
+  -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
+  box-shadow: 0 2px 10px 0 #E1E5E4;
+  padding: 20px 15px 30px;
+  overflow: hidden; }
+  .bsg-card__title {
+    font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 35px; }
+  .bsg-card__body-title {
+    display: block;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    color: #4a4a4a; }
+
+/* ============================================================
+   BSG SIDEBAR
+/* ============================================================ */
+.bsg-color-card {
+  padding: 25px 0;
+  color: #fff;
+  border-radius: 5px; }
+  .bsg-color-card__hash {
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center; }
+  .bsg-color-card--primary {
+    background-color: #F01834; }
+  .bsg-color-card--primary-dark {
+    background-color: #C30019; }
+  .bsg-color-card--primary-light {
+    background-color: #FF999F; }
+  .bsg-color-card--text {
+    background-color: #222222; }
+  .bsg-color-card--text-light {
+    background-color: #4a4a4a; }
+  .bsg-color-card--error {
+    background-color: #F35B62; }
+  .bsg-color-card--success {
+    background-color: #1ABE6F; }
+  .bsg-color-card--info {
+    background-color: #0099FA; }
+  .bsg-color-card--warning {
+    background-color: #FFA800; }

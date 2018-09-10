@@ -1,0 +1,18 @@
+/* ============================================================
+   BSG HEADER
+/* ============================================================ */
+
+.bsg-header {
+    background: color(primary, base);
+}
+
+.bsg-wrapper {
+    padding: 20px 16px;
+}
+
+.bsg-logo {
+    font-family: family(header);
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: px-to-rem(19px);
+}
