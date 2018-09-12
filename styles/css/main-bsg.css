@@ -25,6 +25,10 @@
     .bsg-heading .bsg-heading__item h1, .bsg-heading .bsg-heading__item h2, .bsg-heading .bsg-heading__item h3, .bsg-heading .bsg-heading__item h4, .bsg-heading .bsg-heading__item h5, .bsg-heading .bsg-heading__item h6 {
       margin: 0 !important; }
 
+.bsg-heading__item-right {
+  float: right;
+  color: #A3A5A8; }
+
 p {
   max-width: 635px; }
 

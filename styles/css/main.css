@@ -1546,9 +1546,6 @@ html .row-fluid .new-mobile-contact .widget-type-form h3, html .row-fluid .new-m
   padding: 15px 0;
   text-align: center; }
 
-html .row-fluid .new-mobile-contact form .field > label {
-  display: none; }
-
 html .row-fluid .new-mobile-contact form .field input {
   border: 1px solid #E1E5E4;
   padding: .8rem;
