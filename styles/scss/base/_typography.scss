@@ -92,6 +92,7 @@ h1,h2,h3,h4,h5 {
   @include respond-below('md') {
     font-weight: normal;
     overflow-wrap: break-word;
+    line-height: 1.3;
   }
 }
 
@@ -122,6 +123,14 @@ h5 {
 
 h1 em, h2 em, h3 em, h4 em, h5 em {
   font-family: family(header);
+}
+
+h1.header--secondary, h2.header--secondary, h3.header--secondary, h4.header--secondary, h5.header--secondary {
+  font-family: family(body);
+}
+
+.header--subtitle {
+  margin-top: 0 !important;
 }
 
 /**
