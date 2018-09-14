@@ -133,6 +133,10 @@ h1.header--secondary, h2.header--secondary, h3.header--secondary, h4.header--sec
   margin-top: 0 !important;
 }
 
+h1.header--no-margin-b, h2.header--no-margin-b, h3.header--no-margin-b, h4.header--no-margin-b {
+  margin-bottom: 0 !important;
+}
+
 /**
 * @styles typography-body Body Copy
 *

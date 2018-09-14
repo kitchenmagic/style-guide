@@ -2,6 +2,11 @@
    HEADER
 /* ============================================================ */
 
+.header-container-wrapper{
+	position: relative;
+	z-index: 1;
+}
+
 /**
  * Logo
  */

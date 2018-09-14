@@ -104,7 +104,7 @@
 }
 
 .flex-vertical-align {
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;

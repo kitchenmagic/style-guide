@@ -467,6 +467,9 @@ h1.header--secondary, h2.header--secondary, h3.header--secondary, h4.header--sec
 .header--subtitle {
   margin-top: 0 !important; }
 
+h1.header--no-margin-b, h2.header--no-margin-b, h3.header--no-margin-b, h4.header--no-margin-b {
+  margin-bottom: 0 !important; }
+
 /**
 * @styles typography-body Body Copy
 *
@@ -685,6 +688,10 @@ blockquote, .reviews-blockquote {
 /* ============================================================
    HEADER
 /* ============================================================ */
+.header-container-wrapper {
+  position: relative;
+  z-index: 1; }
+
 /**
  * Logo
  */
@@ -2695,6 +2702,12 @@ a.cta_button {
 /* ============================================================
    FORMS
 /* ============================================================ */
+.body-container-wrapper form.form--clear {
+  background-color: transparent;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0; }
+
 .form-title {
   font-size: 1.6875rem;
   text-align: center;
@@ -5546,7 +5559,7 @@ th.hide-for-touch {
   justify-content: center; }
 
 .flex-vertical-align {
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
