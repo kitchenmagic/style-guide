@@ -7,7 +7,7 @@
 /*  Hero
 /*–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero-wrapper {
-  z-index: 1;
+  z-index: -1000;
   position: relative;
   color: white; }
   .hero-wrapper .row-fluid-wrapper {

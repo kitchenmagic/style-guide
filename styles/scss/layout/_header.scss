@@ -477,17 +477,41 @@ html #addsearch-results .addsearch-result-item-sub h1 a { font-size: 1.5em; colo
 //  Header
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+.km-header {
+  margin-bottom: 41px;
+  @include transition(all .5s ease);
+  //over sticky.js index
+  z-index: 999999 !important;
+  // show only on desktop
+  @include respond-below('lg') {
+    display: none !important;
+  }
+}
+
 .km-header-top {
   background: color(text, base);
   color: #fff;
   padding: 9px 0 4px;
   font-size: px-to-rem(14px);
+  transition: all .5s ease;
+  position: fixed;
+  top: 0;
+
+  &.remove {
+    transform: translateY(-100%);
+  }
 }
 
 .km-header-bottom {
   padding: 10px 0 13px;
   background-color: #fff;
   @include box-shadow($shadow-sm);
+  transform: translateY(40px);
+  @include transition(all .5s ease);
+
+  &.adjust {
+    transform:translateY(0);
+  }
 }
 
 .km-logo img {
@@ -523,7 +547,7 @@ html #addsearch-results .addsearch-result-item-sub h1 a { font-size: 1.5em; colo
 
   &:hover {
     text-decoration: none;
-    color: #fff;
+    color: color(gray, light);
   }
 }
 
@@ -573,4 +597,3 @@ input.header-search.header-search--open {
 .km-header .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul li:last-child a{ border-bottom: none; }
 .km-header .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul a:hover { background: color(primary, base); color: #fff; }
 .km-header .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul a:active { background: color(primary, dark); }
-
