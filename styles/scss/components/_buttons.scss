@@ -342,3 +342,12 @@ screen and (min-width: 64em) {
 .km-button-full-width {
     width: 100%;
 }
+
+/*
+/*  Form Buttons
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.km-btn--form-inline {
+    margin-bottom: 0 !important;
+    padding: .6rem 1.8rem !important;
+}

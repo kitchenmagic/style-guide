@@ -90,8 +90,7 @@ a.topic-link {
 div.read-more {
   position: absolute;
   right: 0;
-  bottom: 12px;
-  z-index: 9999; }
+  bottom: 12px; }
 
 a.more-link {
   margin-right: 20px;

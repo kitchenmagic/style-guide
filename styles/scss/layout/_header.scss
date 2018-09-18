@@ -4,13 +4,7 @@
 
 .header-container-wrapper{
 	position: relative;
-	z-index: 1;
-}
-
-@media (max-width: 1199px) {
-  .header-container-wrapper {
-    position: inherit;
-  }
+	z-index: 999;
 }
 
 /**
@@ -409,7 +403,7 @@ html .new-mobile.top .mobile-logo-large { height:auto;opacity:1;overflow: visibl
 .ham-wrap.open .ham2 { -moz-transform: scale(0); -ms-transform: scale(0);  -o-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); }
 .ham-wrap.open .ham3 { -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg);  transform: rotate(-45deg);bottom: 50%;margin-bottom: -1px; }
 
-.menu-overlay { z-index: -1;position: fixed;top:0;bottom:0;left:0;right:0;width: 100% !important;opacity:0;background: rgba(0,0,0, .2);-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; }
+.menu-overlay { z-index: -1;top:0;bottom:0;left:0;right:0;width: 100% !important;opacity:0;background: rgba(0,0,0, .2);-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; }
 .menu-overlay.open { z-index: 9999;opacity: 1; }
 
 html .row-fluid .new-mobile-navigation { position: fixed;top:0;bottom:0;left:-100%;z-index: 100100;background: rgba(0,0,0, 0);width: 90%;box-sizing: border-box;-webkit-transition: all .3s ease-in-out; -moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out; }

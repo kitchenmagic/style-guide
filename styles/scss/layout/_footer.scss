@@ -161,7 +161,7 @@
     padding: 12px 0 20px;
 
     a {
-        margin-right: 10px;
+        margin-right: 20px;
         font-size: 0;
         @include transition(all 300ms ease);
 
@@ -304,4 +304,138 @@ i.km-icon-divider {
     color: #fff;
     font-size: px-to-rem(12px);
     margin-bottom: 0;
+}
+
+
+/*
+/*  NEW footer
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.km-footer-2 {
+    background: color(text, base);
+    padding: 54px 0 18px;
+
+    @include respond-below(sm) {
+        padding: 54px 20px 18px !important;
+    }
+}
+
+.km-footer__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: family(bold);
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+}
+
+.km-footer__list {
+    list-style: none;
+    padding-left: 0;
+    font-size: px-to-rem(15px);
+
+    & li {
+        color: #fff;
+        padding-bottom: 12px;
+    }
+
+    & li a {
+        color: #fff;
+        @include transition(all 300ms ease);
+
+        &:hover {
+            color: color(primary, base);
+            text-decoration: none;
+        }
+    }
+}
+
+// subscribe
+.km-footer__subscribe {
+
+    .km-footer__title {
+        margin-bottom: 9px;
+    }
+}
+
+// social media links
+.km-footer__social {
+    margin-top: 43px; 
+
+    .km-footer__title {
+        margin-bottom: 0;
+    }
+}
+
+.km-footer__flag {
+    height: 25px;
+    width: 25px;
+    background: url(https://www.kitchenmagic.com/hs-fs/hub/126868/file-345246926.png?t=1537292421240);
+    border-radius: 150px;
+    display: inline-block;
+    background-position: 0px -9px;
+    margin: 0;
+    padding: 0;
+    margin-right: 8px;
+    position: relative;
+    top: 6px;
+}
+
+// moves content over the divider
+.km-footer__visible {
+    position: relative;
+    z-index: 1;
+    background: color(text, base);
+    padding: 0 10px;
+}
+
+.km-footer__divider {
+    border-bottom: 1px solid color(border);
+    position: relative;
+    top: -36px;
+    z-index: 0;
+}
+
+.km-footer__back-to-top {
+    top: 9px;
+
+    .km-footer__back-to-top-btn {
+        padding: 10px;
+        border-radius: 150px;
+        color: #fff;
+        background: color(primary, base);
+        cursor: pointer;
+        margin-left: 5px;
+        @include transition(all 300ms ease);
+
+        & i {
+            position: relative;
+            right: 1px;
+        }
+
+        &:hover {
+            background: color(primary, dark);
+            text-decoration: none;
+        }
+    }   
+}
+
+// add spacing 
+.km-footer__spacer {
+    margin-top: 43px;
+}
+
+// copyright and privacy 
+.km-footer__bottom {
+    color: color(gray, base);
+    font-size: px-to-rem(13px);
+    margin-top: 13px;
+
+    a {
+        color: color(gray, base);
+
+        &:hover {
+            text-decoration: none;
+            color: color(gray, light);
+        }
+    }
 }

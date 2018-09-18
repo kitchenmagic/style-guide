@@ -690,11 +690,7 @@ blockquote, .reviews-blockquote {
 /* ============================================================ */
 .header-container-wrapper {
   position: relative;
-  z-index: 1; }
-
-@media (max-width: 1199px) {
-  .header-container-wrapper {
-    position: inherit; } }
+  z-index: 999; }
 
 /**
  * Logo
@@ -1312,7 +1308,6 @@ html .new-mobile.top .mobile-logo-large {
 
 .menu-overlay {
   z-index: -1;
-  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1994,7 +1989,7 @@ input.header-search.header-search--open {
 .footer-social {
   padding: 12px 0 20px; }
   .footer-social a {
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 0;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
@@ -2235,6 +2230,108 @@ i.km-icon-divider {
   color: #fff;
   font-size: 0.75rem;
   margin-bottom: 0; }
+
+/*
+/*  NEW footer
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-footer-2 {
+  background: #222222;
+  padding: 54px 0 18px; }
+  @media (max-width: 767px) {
+    .km-footer-2 {
+      padding: 54px 20px 18px !important; } }
+
+.km-footer__title {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "ProximaNova-Bold", helvetica, sans-serif;
+  margin-bottom: 22px;
+  letter-spacing: 1px; }
+
+.km-footer__list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9375rem; }
+  .km-footer__list li {
+    color: #fff;
+    padding-bottom: 12px; }
+  .km-footer__list li a {
+    color: #fff;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease; }
+    .km-footer__list li a:hover {
+      color: #F01834;
+      text-decoration: none; }
+
+.km-footer__subscribe .km-footer__title {
+  margin-bottom: 9px; }
+
+.km-footer__social {
+  margin-top: 43px; }
+  .km-footer__social .km-footer__title {
+    margin-bottom: 0; }
+
+.km-footer__flag {
+  height: 25px;
+  width: 25px;
+  background: url(https://www.kitchenmagic.com/hs-fs/hub/126868/file-345246926.png?t=1537292421240);
+  border-radius: 150px;
+  display: inline-block;
+  background-position: 0px -9px;
+  margin: 0;
+  padding: 0;
+  margin-right: 8px;
+  position: relative;
+  top: 6px; }
+
+.km-footer__visible {
+  position: relative;
+  z-index: 1;
+  background: #222222;
+  padding: 0 10px; }
+
+.km-footer__divider {
+  border-bottom: 1px solid #E1E5E4;
+  position: relative;
+  top: -36px;
+  z-index: 0; }
+
+.km-footer__back-to-top {
+  top: 9px; }
+  .km-footer__back-to-top .km-footer__back-to-top-btn {
+    padding: 10px;
+    border-radius: 150px;
+    color: #fff;
+    background: #F01834;
+    cursor: pointer;
+    margin-left: 5px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease; }
+    .km-footer__back-to-top .km-footer__back-to-top-btn i {
+      position: relative;
+      right: 1px; }
+    .km-footer__back-to-top .km-footer__back-to-top-btn:hover {
+      background: #C30019;
+      text-decoration: none; }
+
+.km-footer__spacer {
+  margin-top: 43px; }
+
+.km-footer__bottom {
+  color: #A3A5A8;
+  font-size: 0.8125rem;
+  margin-top: 13px; }
+  .km-footer__bottom a {
+    color: #A3A5A8; }
+    .km-footer__bottom a:hover {
+      text-decoration: none;
+      color: #E1E5E4; }
 
 /* ============================================================
    SELF SET
@@ -2667,6 +2764,13 @@ a.cta_button {
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-button-full-width {
   width: 100%; }
+
+/*
+/*  Form Buttons
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-btn--form-inline {
+  margin-bottom: 0 !important;
+  padding: .6rem 1.8rem !important; }
 
 /* ============================================================
    CONTENT BOX
