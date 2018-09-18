@@ -692,6 +692,10 @@ blockquote, .reviews-blockquote {
   position: relative;
   z-index: 1; }
 
+@media (max-width: 1199px) {
+  .header-container-wrapper {
+    position: inherit; } }
+
 /**
  * Logo
  */
