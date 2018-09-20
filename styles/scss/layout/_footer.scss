@@ -165,6 +165,14 @@
         font-size: 0;
         @include transition(all 300ms ease);
 
+        @include respond-below('lg') {
+            margin-right: 11px;
+        }
+
+        @include respond-below('sm') {
+            margin-right: 7px;
+        }
+
         &:hover {
 
             i {
@@ -357,6 +365,14 @@ i.km-icon-divider {
     }
 }
 
+.km-footer__submit-btn {
+    // overrides normal button hover state
+    &:hover {
+        background-color: color(primary, dark) !important;
+        border: 1px solid color(primary, dark) !important;
+    }
+}
+
 // social media links
 .km-footer__social {
     margin-top: 43px; 
@@ -396,16 +412,26 @@ i.km-icon-divider {
 }
 
 .km-footer__back-to-top {
-    top: 9px;
+    top: 6px;
+    position: relative;
+
+    @include respond-below('sm') {
+        top: 0;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
 
     .km-footer__back-to-top-btn {
-        padding: 10px;
+        padding: 6px 10px;
         border-radius: 150px;
         color: #fff;
         background: color(primary, base);
         cursor: pointer;
         margin-left: 5px;
         @include transition(all 300ms ease);
+        display: inline-block;
 
         & i {
             position: relative;
@@ -422,6 +448,10 @@ i.km-icon-divider {
 // add spacing 
 .km-footer__spacer {
     margin-top: 43px;
+}
+
+.km-footer__middle-section {
+    margin-top: 15px;
 }
 
 // copyright and privacy 
