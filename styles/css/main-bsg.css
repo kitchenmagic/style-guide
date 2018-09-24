@@ -36,6 +36,34 @@ p {
   margin: 0 0 10px; }
 
 /* ============================================================
+   TYPOGRAPHY
+/* ============================================================ */
+.note {
+  border: 1px solid #E1E5E4;
+  padding: 5px 10px;
+  color: #4a4a4a;
+  margin-top: 20px;
+  border-radius: 6px;
+  background: #EEF3F5; }
+  .note:before {
+    content: "\f06a";
+    font-family: fontawesome;
+    margin-right: 8px;
+    top: 1px;
+    position: relative; }
+
+.hubspot-module {
+  border: 1px solid #E1E5E4;
+  padding: 10px;
+  border-radius: 6px; }
+  .hubspot-module:before {
+    content: "\f0ad";
+    font-family: fontawesome;
+    margin-right: 8px;
+    top: 1px;
+    position: relative; }
+
+/* ============================================================
    BSG HEADER
 /* ============================================================ */
 .bsg-header {
