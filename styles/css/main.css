@@ -3865,6 +3865,7 @@ html .date-picker-wrapper .date-picker-form form {
 ul.km-list {
   padding: 0 0 0 25px;
   margin: 0;
+  margin-bottom: 2rem;
   /**
         * Red list item
         */ }

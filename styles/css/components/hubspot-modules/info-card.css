@@ -11,7 +11,6 @@
   .info-card__icon {
     width: 100px;
     height: 100px;
-    background: #F01834;
     margin: 0 auto;
     border-radius: 150px;
     color: #fff;
@@ -19,6 +18,8 @@
     margin-bottom: 19px;
     font-size: 3.125rem;
     font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+    .info-card__icon--background {
+      background: #F01834; }
   .info-card__title {
     font-family: "DomaineDisplayNarrowBold", helvetica, serif;
     font-size: 1.5rem;

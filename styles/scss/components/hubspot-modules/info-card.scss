@@ -16,7 +16,6 @@
     &__icon {
         width: 100px;
         height: 100px;
-        background: color(primary, base);
         margin: 0 auto;
         border-radius: 150px;
         color: #fff;
@@ -24,6 +23,15 @@
         margin-bottom: 19px;
         font-size: px-to-rem(50px);
         font-family: family(bold);
+
+        // variants 
+        &--border {
+
+        }
+
+        &--background {
+            background: color(primary, base);
+        }
     }
 
     &__title {
