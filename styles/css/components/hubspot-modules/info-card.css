@@ -20,6 +20,21 @@
     font-family: "ProximaNova-Bold", helvetica, sans-serif; }
     .info-card__icon--background {
       background: #F01834; }
+      .info-card__icon--background-dark {
+        background: #222222;
+        color: #fff; }
+      .info-card__icon--background-gray {
+        background: #E1E5E4;
+        color: #222222; }
+    .info-card__icon--border {
+      border: 1px solid #F01834;
+      color: #F01834; }
+      .info-card__icon--border-dark {
+        border-color: #222222;
+        color: #222222; }
+      .info-card__icon--border-gray {
+        border-color: #E1E5E4;
+        color: #A3A5A8; }
   .info-card__title {
     font-family: "DomaineDisplayNarrowBold", helvetica, serif;
     font-size: 1.5rem;
