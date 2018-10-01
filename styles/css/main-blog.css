@@ -292,6 +292,21 @@ div#hs-search-module a {
   padding: 8px; }
 
 /* ============================================================
+   BLOG CARD
+/* ============================================================ */
+.blog-card {
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
+  .blog-card__img {
+    height: 300px;
+    width: 100%;
+    position: relative; }
+  .blog-card__body {
+    padding: 20px;
+    background: #fff; }
+
+/* ============================================================
    POPULAR POSTS
 /* ============================================================ */
 .pop-post-container {

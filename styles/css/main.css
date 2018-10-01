@@ -385,6 +385,12 @@ html, body {
 .body-container .widget-span {
   margin-bottom: 35px; }
 
+.km-fw-container {
+  padding: 35px 0; }
+
+.km-first-item {
+  margin-top: -45px; }
+
 /* ============================================================
    TYPOGRAPHY
 /* ============================================================ */
@@ -2306,11 +2312,10 @@ i.km-icon-divider {
 .km-footer__divider {
   border-bottom: 1px solid #E1E5E4;
   position: relative;
-  top: -36px;
+  top: -40px;
   z-index: 0; }
 
 .km-footer__back-to-top {
-  top: 6px;
   position: relative; }
   @media (max-width: 767px) {
     .km-footer__back-to-top {
@@ -3091,6 +3096,26 @@ ul.hs-error-msgs {
     font-size: 0.75rem;
     line-height: 1.6;
     margin-top: 0; }
+
+/*
+/* Form Variants
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+form.hs-form.km-form--clear {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important; }
+  form.hs-form.km-form--clear input[type=submit] {
+    margin-top: 0; }
+
+form.hs-form.km-form--inline .input {
+  margin-left: 0 !important; }
+
+form.hs-form.km-form--inline .actions {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+form.hs-form.km-form--hide-labels div.hs-form-field label {
+  display: none; }
 
 /** added icon to date field **/
 .km-form-calender {
@@ -7732,3 +7757,5 @@ th.hide-for-touch {
 
 .km-dark-bg {
   background: #222222; }
+  .km-dark-bg h1, .km-dark-bg h2, .km-dark-bg h3, .km-dark-bg h4, .km-dark-bg h5, .km-dark-bg p {
+    color: #fff; }

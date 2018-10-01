@@ -289,6 +289,47 @@ ul.hs-error-msgs {
 
 }
 
+/*
+/* Form Variants
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+form.hs-form { 
+    // colors
+    &.km-form--clear {
+        background: none !important;
+        border: none !important;
+        padding: 0 !important; 
+        
+        input[type=submit] {
+            margin-top: 0;
+        }
+    }
+
+    // layouts
+    &.km-form--inline {
+
+        .input {
+            margin-left: 0 !important;
+        }
+
+        .actions {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+
+    // modifiers 
+    &.km-form--hide-labels {
+
+        div.hs-form-field label {
+            display: none;
+        }
+        
+    }
+
+
+}
+
 // ============================================================
 //  FORM FIXES
 // ============================================================ */

@@ -407,12 +407,11 @@ i.km-icon-divider {
 .km-footer__divider {
     border-bottom: 1px solid color(border);
     position: relative;
-    top: -36px;
+    top: -40px;
     z-index: 0;
 }
 
 .km-footer__back-to-top {
-    top: 6px;
     position: relative;
 
     @include respond-below('sm') {

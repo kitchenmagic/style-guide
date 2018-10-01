@@ -1,0 +1,18 @@
+/* ============================================================
+   BLOG CARD
+/* ============================================================ */
+
+.blog-card {
+    @include box-shadow($shadow-md);
+
+    &__img {
+        height: 300px;
+        width: 100%;
+        position: relative;
+    }
+
+    &__body {
+        padding: 20px;
+        background: #fff;
+    }
+}
