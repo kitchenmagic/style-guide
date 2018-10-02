@@ -11,13 +11,17 @@
     padding: 16px 16px;
     border: none;
     text-align: center;
+
+    & h1 {
+        margin-bottom: 0;
+    }
 }
 
 .section-header {
     text-align: center;
 }
 
-.section-header > h1, .section-header p {
+.section-header h1, .section-header p {
     margin-bottom: px-to-rem(12px);
 }
 

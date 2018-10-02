@@ -242,8 +242,18 @@ blockquote, .reviews-blockquote {
 
 .km-fw-container {
   padding: 35px 0; }
+  .km-fw-container h1, .km-fw-container h2, .km-fw-container h3, .km-fw-container h4, .km-fw-container h5 {
+    margin-top: 0; }
+  .km-fw-container--sm {
+    margin-bottom: 1.25rem; }
+  .km-fw-container--md {
+    margin-bottom: 1.875rem; }
+  .km-fw-container--lg {
+    margin-bottom: 2.5rem; }
+  .km-fw-container--has-bg {
+    padding: 3.75rem 0 4.25rem; }
 
-.km-first-item {
+.first-item {
   margin-top: -45px; }
 
 /* ============================================================

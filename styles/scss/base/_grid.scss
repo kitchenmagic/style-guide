@@ -40,8 +40,30 @@
 // full width grids
 .km-fw-container {
   padding: 35px 0;
+
+  // removes heading margin top and let grid control spacing
+  h1, & h2, & h3, & h4, & h5 {
+    margin-top: 0;
+  }
+
+  // margings & padding variants
+  &--sm {
+    margin-bottom: px-to-rem(20px);
+  }
+
+  &--md {
+    margin-bottom: px-to-rem(30px);
+  }
+
+  &--lg {
+    margin-bottom: px-to-rem(40px);
+  }
+
+  &--has-bg {
+    padding: px-to-rem(60px) 0 px-to-rem(68px);
+  }
 }
 
-.km-first-item {
+.first-item {
   margin-top: -45px;
 }
