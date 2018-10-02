@@ -1,0 +1,40 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   IMAGE GRID
+/* ============================================================ */
+
+// add shadow for light background
+.km-light-bg .image-grid__card {
+    @include box-shadow($shadow-sm);
+}
+
+.image-grid {
+
+    img {
+        position: relative;
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: 0;
+        padding: 5px 5px;
+        background-color: rgba(0,0,0,.5);
+        color: #fff;
+        font-size: 14px;
+        width: calc(100% - 30px);
+        letter-spacing: .5px;
+
+        &--below {
+            position: relative;
+            background-color: #fff;
+            color: color(text, base);
+            width: 100%;
+            padding: 16px 0;
+        }
+    }
+
+}

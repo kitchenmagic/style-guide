@@ -92,18 +92,6 @@ html .row-fluid .home-section-header {
 .home-section-header h2, .home-section-header2 h2 {
   padding-top: 0; }
 
-.flex-solutions > span {
-  -webkit-justify-content: center;
-  justify-content: center;
-  display: -webkit-flex;
-  display: flex; }
-  .flex-solutions > span > div {
-    max-width: 33.3333%;
-    flex: 1;
-    box-sizing: border-box;
-    padding: 10px 10px 30px;
-    margin: 0; }
-
 /*
 /*  Section 2
 /*–––––––––––––––––––––––––––––––––––––––––––––––––– */
