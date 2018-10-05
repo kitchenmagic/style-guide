@@ -377,14 +377,12 @@ html, body {
 .km-row-full {
   max-width: 100% !important; }
 
-@media (max-width: 1199px) {
-  .km-mobile-padding-horizontal {
-    padding-right: 16px;
-    padding-left: 16px; } }
-
 .body-container .widget-span {
   margin-bottom: 35px; }
 
+/*
+/*  Full Width Grids
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-fw-container {
   padding: 35px 0; }
   .km-fw-container h1, .km-fw-container h2, .km-fw-container h3, .km-fw-container h4, .km-fw-container h5 {
@@ -400,6 +398,18 @@ html, body {
 
 .first-item {
   margin-top: -45px; }
+
+/*
+/*  Mobile Grid
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 991px) {
+  .row {
+    padding: 0 15px; } }
+
+@media (max-width: 1199px) {
+  .km-mobile-padding-horizontal {
+    padding-right: 16px;
+    padding-left: 16px; } }
 
 /* ============================================================
    TYPOGRAPHY

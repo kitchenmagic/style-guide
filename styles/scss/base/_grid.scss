@@ -23,21 +23,15 @@
   max-width: 100% !important;
 }
 
-// used for mobile padding 
-.km-mobile-padding-horizontal {
-  @include respond-below ('lg') {
-    padding-right: 16px;
-    padding-left: 16px;
-  }
-}
-
 // add spacing between widgets
 .body-container .widget-span {
   margin-bottom: 35px;
 }
 
 
-// full width grids
+/*
+/*  Full Width Grids
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-fw-container {
   padding: 35px 0;
 
@@ -66,4 +60,23 @@
 
 .first-item {
   margin-top: -45px;
+}
+
+/*
+/*  Mobile Grid
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// adds padding to all rows in bootstrap for mobile
+.row {
+  @include respond-below('md') {
+    padding: 0 15px;
+  }
+}
+
+// used for mobile padding 
+.km-mobile-padding-horizontal {
+  @include respond-below ('lg') {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }

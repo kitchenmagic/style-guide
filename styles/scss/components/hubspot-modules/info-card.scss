@@ -14,14 +14,22 @@
     margin-bottom: 35px;
     background: #fff;
 
-    &__icon {
+    &__img, &__icon {
         width: 100px;
         height: 100px;
         margin: 0 auto;
+        margin: 0 auto;
         border-radius: 150px;
-        color: #fff;
         line-height: 100px;
         margin-bottom: 19px;
+    }
+
+    &__img {
+        background-size: cover;
+    }
+
+    &__icon {
+        color: #fff;
         font-size: px-to-rem(50px);
         font-family: family(bold);
 
