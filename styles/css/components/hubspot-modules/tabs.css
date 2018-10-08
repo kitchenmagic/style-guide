@@ -1,0 +1,28 @@
+/* ============================================================
+   TABS
+/* ============================================================ */
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+  ul.tabs li {
+    background: none;
+    color: #222222;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 40px;
+    border: 1px solid #E1E5E4;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-right: -4px; }
+    ul.tabs li.current {
+      background-color: #F01834;
+      color: #fff;
+      border-color: #F01834; }
+
+.tab-content {
+  display: none;
+  padding: 35px 20px 26px 20px;
+  border: 1px solid #E1E5E4; }
+  .tab-content.current {
+    display: inherit; }

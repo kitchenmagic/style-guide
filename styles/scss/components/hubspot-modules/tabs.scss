@@ -1,0 +1,42 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   TABS
+/* ============================================================ */
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    li {
+        background: none;
+        color: color(text, base);
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 40px;
+        border: 1px solid color(border);
+        border-bottom: none;
+        margin-bottom: 0;
+        margin-right: -4px;
+
+        &.current {
+            background-color: color(primary, base);
+            color: #fff;
+            border-color: color(primary, base);
+        }
+    }
+}
+
+.tab-content{
+    display: none;
+    padding: 35px 20px 26px 20px;
+    border: 1px solid color(border);
+
+    &.current {
+        display: inherit;
+    }
+}
