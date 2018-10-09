@@ -13,7 +13,7 @@ ul.tabs{
     list-style: none;
 
     li {
-        background: none;
+        background: #fff;
         color: color(text, base);
         display: inline-block;
         cursor: pointer;
@@ -21,7 +21,7 @@ ul.tabs{
         border: 1px solid color(border);
         border-bottom: none;
         margin-bottom: 0;
-        margin-right: -4px;
+        margin-right: -5px;
 
         &.current {
             background-color: color(primary, base);
@@ -33,6 +33,7 @@ ul.tabs{
 
 .tab-content{
     display: none;
+    background: #fff;
     padding: 35px 20px 26px 20px;
     border: 1px solid color(border);
 
