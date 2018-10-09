@@ -147,6 +147,9 @@ h6.date {
 
 .section.post-body img {
   margin: .8rem 0; }
+  @media (max-width: 767px) {
+    .section.post-body img {
+      width: 100%; } }
 
 .houzz-caption {
   margin-bottom: 0;
@@ -198,6 +201,22 @@ figcaption {
   font-size: 1.6875rem; }
   .anchor-cta:hover {
     color: #C30019; }
+
+.embed {
+  background: #F9FAFC;
+  padding: 20px 20px 0;
+  margin: 10px 0 35px; }
+  .embed__title {
+    display: block;
+    margin-bottom: 5px; }
+  .embed textarea {
+    margin-bottom: 20px;
+    border: 1px solid #222222;
+    font-size: 0.875rem;
+    max-width: 100%; }
+    .embed textarea:focus {
+      outline: none;
+      border: 1px solid #F01834; }
 
 /* ============================================================
    SIDEBAR

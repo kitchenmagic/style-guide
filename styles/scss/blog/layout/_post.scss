@@ -34,6 +34,9 @@ h6.date {
 // adds margins for all images in the body
 .section.post-body img {
     margin: .8rem 0;
+    @include respond-below(sm) {
+        width: 100%;
+    }
 }
 
 .houzz-caption {
@@ -102,5 +105,30 @@ figcaption {
 
     &:hover {
         color: color(primary, dark);    
+    }
+}
+
+// Embed code
+
+.embed {
+    background: color(background);
+    padding: 20px 20px 0;
+    margin: 10px 0 35px;
+
+    &__title {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    textarea {
+        margin-bottom: 20px;
+        border: 1px solid color(text, base);
+        font-size: px-to-rem(14px);
+        max-width: 100%;
+
+        &:focus {
+            outline: none;
+            border: 1px solid color(primary, base);
+        }
     }
 }
