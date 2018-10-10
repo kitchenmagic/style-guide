@@ -396,6 +396,9 @@ html, body {
   .km-fw-container--has-bg {
     padding: 3.75rem 0 4.25rem; }
 
+.km-fw-container--no-padding-bot {
+  padding-bottom: 0; }
+
 .first-item {
   margin-top: -45px; }
 
@@ -1901,6 +1904,9 @@ input.header-search.header-search--open {
 /* ============================================================
    FOOTER
 /* ============================================================ */
+.footer-container-wrapper {
+  margin-top: -35px; }
+
 /*
 /*  Global Top Footer CTA
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1946,6 +1952,11 @@ input.header-search.header-search--open {
     padding: 0 5px; }
   .dark-footer .hs-menu-flow-vertical {
     margin-top: 7px; }
+  .dark-footer div#footer-blog form {
+    background: #222222;
+    border: none;
+    padding: 0 !important;
+    margin: 0; }
   .dark-footer form {
     display: -webkit-flex;
     display: flex;
@@ -3139,6 +3150,10 @@ form.hs-form.km-form--inline .actions {
 form.hs-form.km-form--hide-labels div.hs-form-field label {
   display: none; }
 
+.km-form-inline--centered {
+  max-width: 600px;
+  margin: 0 auto; }
+
 /** added icon to date field **/
 .km-form-calender {
   position: relative;
@@ -3930,6 +3945,8 @@ ul.km-list {
       vertical-align: center; }
   ul.km-list--red li:before {
     color: #F01834; }
+  ul.km-list ul li:before {
+    content: "\f1db"; }
 
 /**
  * Ordered list

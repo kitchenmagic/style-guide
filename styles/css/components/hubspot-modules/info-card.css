@@ -18,7 +18,9 @@
     line-height: 100px;
     margin-bottom: 19px; }
   .info-card__img {
-    background-size: cover; }
+    background-size: cover !important;
+    width: 130px;
+    height: 130px; }
   .info-card__icon {
     color: #fff;
     font-size: 3.125rem;

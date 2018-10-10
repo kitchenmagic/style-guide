@@ -10,6 +10,10 @@
   margin-bottom: 35px; }
   .image-grid img {
     position: relative; }
+  .image-grid__title {
+    font-family: "ProximaNova-Bold", helvetica, sans-serif;
+    margin-bottom: 7px;
+    font-size: 1.0625rem; }
   .image-grid__caption {
     position: absolute;
     bottom: 0;
@@ -24,4 +28,4 @@
       background-color: #fff;
       color: #222222;
       width: 100%;
-      padding: 16px 0; }
+      padding: 18px 15px 20px; }

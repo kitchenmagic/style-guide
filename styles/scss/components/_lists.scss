@@ -37,6 +37,10 @@ ul {
           color: color(primary, base);
         }
       }
+
+      ul li:before {
+        content: "\f1db";
+      }
   
     }
   }

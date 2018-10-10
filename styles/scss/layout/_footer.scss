@@ -2,6 +2,10 @@
    FOOTER
 /* ============================================================ */
 
+.footer-container-wrapper {
+    margin-top: -35px;
+}
+
 /*
 /*  Global Top Footer CTA
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -59,6 +63,14 @@
     }
 
     // Footer forms
+
+    div#footer-blog form {
+        background: color(text, base);
+        border: none;
+        padding: 0 !important;
+        margin: 0;
+    }
+
     form {
         display: -webkit-flex; 
         display: flex; 

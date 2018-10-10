@@ -25,7 +25,9 @@
     }
 
     &__img {
-        background-size: cover;
+        background-size: cover !important;
+        width: 130px;
+        height: 130px;
     }
 
     &__icon {

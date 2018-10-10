@@ -19,6 +19,12 @@
         position: relative;
     }
 
+    &__title {
+        font-family: family(bold);
+        margin-bottom: 7px;
+        font-size: px-to-rem(17px);
+    }
+
     &__caption {
         position: absolute;
         bottom: 0;
@@ -34,7 +40,7 @@
             background-color: #fff;
             color: color(text, base);
             width: 100%;
-            padding: 16px 0;
+            padding: 18px 15px 20px;
         }
     }
 

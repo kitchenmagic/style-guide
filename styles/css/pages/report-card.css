@@ -251,6 +251,9 @@ blockquote, .reviews-blockquote {
   .km-fw-container--has-bg {
     padding: 3.75rem 0 4.25rem; }
 
+.km-fw-container--no-padding-bot {
+  padding-bottom: 0; }
+
 .first-item {
   margin-top: -45px; }
 
