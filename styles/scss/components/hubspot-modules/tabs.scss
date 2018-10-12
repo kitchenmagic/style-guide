@@ -26,6 +26,11 @@ ul.tabs{
             display: block;
             text-align: center;
         }
+        @include transition(all 200ms ease);
+
+        &:hover {
+            color: color(primary, base);
+        }
 
         &.current {
             background-color: color(primary, base);
