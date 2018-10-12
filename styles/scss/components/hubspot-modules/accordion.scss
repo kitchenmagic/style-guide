@@ -42,6 +42,8 @@
     transition: all .3s;
     font-family: family(header);
     letter-spacing: 1px;
+    position: relative;
+    padding-right: 43px;
   }
   
   .accordion-header:hover {
@@ -80,6 +82,8 @@
     top: 50%;
     transition: .3s all;
     transform: rotate(0deg);
+    position: absolute;
+    right: 15px;
   }
   
   .accordion__item.active > .accordion-header:after {

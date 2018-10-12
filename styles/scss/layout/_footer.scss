@@ -63,14 +63,6 @@
     }
 
     // Footer forms
-
-    div#footer-blog form {
-        background: color(text, base);
-        border: none;
-        padding: 0 !important;
-        margin: 0;
-    }
-
     form {
         display: -webkit-flex; 
         display: flex; 
@@ -375,6 +367,13 @@ i.km-icon-divider {
     .km-footer__title {
         margin-bottom: 9px;
     }
+}
+
+div#footer-blog form {
+    background: color(text, base);
+    border: none;
+    padding: 0 !important;
+    margin: 0;
 }
 
 .km-footer__submit-btn {

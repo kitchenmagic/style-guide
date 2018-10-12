@@ -1659,7 +1659,7 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
     transform: translateY(-100%); }
 
 .km-header-bottom {
-  padding: 10px 0 13px;
+  padding: 6px 0 13px;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
   -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
@@ -1952,11 +1952,6 @@ input.header-search.header-search--open {
     padding: 0 5px; }
   .dark-footer .hs-menu-flow-vertical {
     margin-top: 7px; }
-  .dark-footer div#footer-blog form {
-    background: #222222;
-    border: none;
-    padding: 0 !important;
-    margin: 0; }
   .dark-footer form {
     display: -webkit-flex;
     display: flex;
@@ -2313,6 +2308,12 @@ i.km-icon-divider {
 
 .km-footer__subscribe .km-footer__title {
   margin-bottom: 9px; }
+
+div#footer-blog form {
+  background: #222222;
+  border: none;
+  padding: 0 !important;
+  margin: 0; }
 
 .km-footer__submit-btn:hover {
   background-color: #C30019 !important;

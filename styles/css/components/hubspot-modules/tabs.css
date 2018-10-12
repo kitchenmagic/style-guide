@@ -15,6 +15,10 @@ ul.tabs {
     border-bottom: none;
     margin-bottom: 0;
     margin-right: -5px; }
+    @media (max-width: 767px) {
+      ul.tabs li {
+        display: block;
+        text-align: center; } }
     ul.tabs li.current {
       background-color: #F01834;
       color: #fff;
