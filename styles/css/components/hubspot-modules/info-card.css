@@ -21,6 +21,11 @@
     background-size: cover !important;
     width: 130px;
     height: 130px; }
+    .info-card__img--no-border-radius {
+      border-radius: 0; }
+    .info-card__img--sm {
+      width: 80px;
+      height: 80px; }
   .info-card__icon {
     color: #fff;
     font-size: 3.125rem;

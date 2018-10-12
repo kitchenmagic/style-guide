@@ -1,0 +1,18 @@
+/* ============================================================
+   CONTENT BOX
+/* ============================================================ */
+.content-box--center {
+  margin: 0 auto;
+  text-align: center; }
+
+.content-box__icon {
+  max-width: 50px; }
+  .content-box__icon--left {
+    position: absolute;
+    left: 15px; }
+  .content-box__icon--top {
+    padding-bottom: 20px;
+    margin: 0 auto; }
+
+.content-box__body--left {
+  padding-left: calc(60px + 15px); }
