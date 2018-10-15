@@ -4276,6 +4276,11 @@ span.meter-tree-progress p {
     width: auto !important;
     height: 125px;
     opacity: .5; }
+    @media (max-width: 767px) {
+      .km-awards img {
+        margin-bottom: 30px; }
+        .km-awards img:first-child {
+          margin-top: 35px; } }
 
 /* ============================================================
    PRODUCT CARDS

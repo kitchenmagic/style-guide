@@ -32,6 +32,14 @@
         width: auto !important;
         height: 125px;
         opacity: .5;
+
+        @include respond-below(sm) {
+            margin-bottom: 30px;
+            
+            &:first-child {
+                margin-top: 35px;
+            }
+        }
     }
   }
   
