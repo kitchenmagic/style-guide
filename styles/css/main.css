@@ -2855,7 +2855,6 @@ a.cta_button {
   background-color: #F9FAFC;
   padding: 1em 1em .5em 1em !important;
   border: 1px solid #E1E5E4;
-  border-top: 0;
   border-radius: 0; }
 
 fieldset {
@@ -4255,6 +4254,28 @@ span.meter-tree-progress p {
   -webkit-filter: grayscale(1);
   filter: grayscale 1;
   opacity: .5; }
+
+.km-awards {
+  text-align: center;
+  border: 1px solid #E1E5E4;
+  padding: 29px 20px 23px;
+  position: relative; }
+  .km-awards__title {
+    top: -7px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 0 25px;
+    font-family: "ProximaNova-Bold", helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    text-transform: uppercase; }
+  .km-awards img {
+    width: auto !important;
+    height: 125px;
+    opacity: .5; }
 
 /* ============================================================
    PRODUCT CARDS

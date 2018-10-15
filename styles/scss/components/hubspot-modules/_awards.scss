@@ -7,3 +7,31 @@
     filter: grayscale (1);
     opacity: .5;
 }
+
+.km-awards {
+    text-align: center;
+    border: 1px solid color(border);
+    padding: 29px 20px 23px;
+    position: relative;
+
+    &__title {
+        top: -7px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background: #fff;
+        padding: 0 25px;
+        font-family: family(bold);
+        letter-spacing: 2px;
+        font-size: px-to-rem(12px);
+        text-transform: uppercase;
+    }
+
+    img {
+        width: auto !important;
+        height: 125px;
+        opacity: .5;
+    }
+  }
+  
