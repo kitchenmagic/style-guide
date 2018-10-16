@@ -1,0 +1,202 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+// Mixins 
+@mixin form-override {
+	border: none !important;
+	background-color: #fff !important;
+}
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+/* ============================================================
+   01. Top Action Bar
+/* ============================================================ */
+
+.gallery__action-bar {
+	display: flex;
+	align-items: center;
+	margin-bottom: 28px;
+
+  @include respond-below(lg) {
+    display: none;
+  }
+}
+
+.gallery__action-bar-left {
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery__action-bar-right {
+	display: flex;
+	align-items: center;
+	
+	form {
+		flex-basis: 100%;
+		// overrides default styling
+		@include form-override;
+    	padding: 0 16px !important;
+
+    	&:last-child {
+    		padding-right: 0 !important;
+    	}
+
+		// add labels
+    	// &#sort-by:before {
+    	// 	content: "Sort by:";
+    	// 	font-size: 12px;
+    	// }
+
+    	// &#solution-filter:before {
+    	// 	content:"Solutions:";
+    	// 	font-size: 12px;
+    	// }
+
+    	// &#search-bar:before {
+    	// 	content:".";
+    	// 	font-size: 12px;
+    	// 	color: #fff;
+    	// }
+
+    	select {
+    		height: 2.3125rem;
+    		border-color: color(border);
+    		font-weight: bold;
+
+    		&:after {
+    			content: "\f078";
+    			font-family: fontawesome;
+    		}
+
+    		&:active {
+    			outline: none;
+
+    		}
+    	}
+	}
+}
+
+#gallery-filter-search {
+	background-image: url(https://cdn2.hubspot.net/hubfs/126868/graphics/icons/med-search.png);
+    background-repeat: no-repeat;
+    background-position: 12px 8px;
+    background-size: auto 55%;
+    text-indent: 35px;
+    height: 42px;
+    line-height: 42px;
+    box-shadow: none;
+    border-color: color(border);
+    margin-bottom: 0;
+    border: 1px solid color(border);
+    padding: .8rem;
+    background-color: #fff;
+    color: color(text, base);
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: family(body);
+    box-sizing:border-box;
+    // overrides hubspots width
+    width: 100% !important;
+    height: px-to-rem(45px);
+    @include transition(all 300ms ease);
+
+    &:focus {
+      outline: none;
+    }
+
+    @include input-placeholder {
+    	color: color(gray, base);
+    }
+}
+
+/* ============================================================
+   02. Sidebar Filters
+/* ============================================================ */
+
+.gallery__filter {
+    // @include grid;
+    // width: 25%;
+  
+    // @include tablet {
+    //   width: 40% !important;
+    // }
+  
+    // @include tablet-landscape {
+    //   width: 33.33333% !important;
+    // }
+  
+    // @include mobile {
+    //   display: none !important;
+    // }
+  
+      .gallery__filter-card {
+          &:first-child {
+              margin-top: 0;
+          }
+      }
+  }
+  
+  .gallery__filter-card {
+      border: 1px solid color(border);
+      border-radius: 3px;
+      margin-top: 20px;
+  }
+  
+  .gallery__filter-card--header {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      font-weight: bold;
+  
+      &:hover {
+          cursor: pointer;
+      }
+  }
+  
+  .gallery__filter-card--dropdown {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: color(primary, base);
+  
+      &:hover {
+          cursor: pointer;
+      }
+  }
+  
+  .gallery__filter-card--body {
+  
+      padding: 0 20px 14px;
+      border-top: 1px solid color(border);
+      form {
+          // overrides default styling
+          @include form-override;
+  
+          input {
+              transform: none !important;
+  
+              &:hover {
+                  cursor: pointer;
+              }
+  
+          }
+      }
+  }
+  
+  // checkbox
+  .gallery__filter-card-checkbox label {
+    margin-left: .5rem;
+    font-size: px-to-rem(14px);
+  }

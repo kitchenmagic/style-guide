@@ -1,0 +1,118 @@
+/* ============================================================
+   01. Top Action Bar
+/* ============================================================ */
+.gallery__action-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px; }
+  @media (max-width: 1199px) {
+    .gallery__action-bar {
+      display: none; } }
+
+.gallery__action-bar-left {
+  display: flex;
+  justify-content: space-between; }
+
+.gallery__action-bar-right {
+  display: flex;
+  align-items: center; }
+  .gallery__action-bar-right form {
+    flex-basis: 100%;
+    border: none !important;
+    background-color: #fff !important;
+    padding: 0 16px !important; }
+    .gallery__action-bar-right form:last-child {
+      padding-right: 0 !important; }
+    .gallery__action-bar-right form select {
+      height: 2.3125rem;
+      border-color: #E1E5E4;
+      font-weight: bold; }
+      .gallery__action-bar-right form select:after {
+        content: "\f078";
+        font-family: fontawesome; }
+      .gallery__action-bar-right form select:active {
+        outline: none; }
+
+#gallery-filter-search {
+  background-image: url(https://cdn2.hubspot.net/hubfs/126868/graphics/icons/med-search.png);
+  background-repeat: no-repeat;
+  background-position: 12px 8px;
+  background-size: auto 55%;
+  text-indent: 35px;
+  height: 42px;
+  line-height: 42px;
+  box-shadow: none;
+  border-color: #E1E5E4;
+  margin-bottom: 0;
+  border: 1px solid #E1E5E4;
+  padding: .8rem;
+  background-color: #fff;
+  color: #222222;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1rem;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 100% !important;
+  height: 2.8125rem;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  #gallery-filter-search:focus {
+    outline: none; }
+  #gallery-filter-search.placeholder {
+    color: #A3A5A8; }
+  #gallery-filter-search:-moz-placeholder {
+    color: #A3A5A8; }
+  #gallery-filter-search::-moz-placeholder {
+    color: #A3A5A8; }
+  #gallery-filter-search:-ms-input-placeholder {
+    color: #A3A5A8; }
+  #gallery-filter-search::-webkit-input-placeholder {
+    color: #A3A5A8; }
+
+/* ============================================================
+   02. Sidebar Filters
+/* ============================================================ */
+.gallery__filter .gallery__filter-card:first-child {
+  margin-top: 0; }
+
+.gallery__filter-card {
+  border: 1px solid #E1E5E4;
+  border-radius: 3px;
+  margin-top: 20px; }
+
+.gallery__filter-card--header {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-weight: bold; }
+  .gallery__filter-card--header:hover {
+    cursor: pointer; }
+
+.gallery__filter-card--dropdown {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #F01834; }
+  .gallery__filter-card--dropdown:hover {
+    cursor: pointer; }
+
+.gallery__filter-card--body {
+  padding: 0 20px 14px;
+  border-top: 1px solid #E1E5E4; }
+  .gallery__filter-card--body form {
+    border: none !important;
+    background-color: #fff !important; }
+    .gallery__filter-card--body form input {
+      transform: none !important; }
+      .gallery__filter-card--body form input:hover {
+        cursor: pointer; }
+
+.gallery__filter-card-checkbox label {
+  margin-left: .5rem;
+  font-size: 0.875rem; }
