@@ -13,7 +13,11 @@
     text-align: center;
 
     & h1 {
-        margin-bottom: 0;
+        margin-bottom: 0.75rem;
+    }
+
+    & p {
+        margin-bottom: px-to-rem(6px);
     }
 }
 

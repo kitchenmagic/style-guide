@@ -41,6 +41,11 @@
             color: color(text, base);
             width: 100%;
             padding: 18px 15px 20px;
+
+            a {
+                display: block;
+                margin-top: 8px;
+            }
         }
     }
 

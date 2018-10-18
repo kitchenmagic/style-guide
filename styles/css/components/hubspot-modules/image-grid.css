@@ -29,3 +29,6 @@
       color: #222222;
       width: 100%;
       padding: 18px 15px 20px; }
+      .image-grid__caption--below a {
+        display: block;
+        margin-top: 8px; }

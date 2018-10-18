@@ -482,6 +482,14 @@ html #addsearch-results .addsearch-result-item-sub h1 a { font-size: 1.5em; colo
 //  Header
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// fix ipad and mobile body margin
+
+.header-container-wrapper {
+  @include respond-below(lg) {
+    margin-top: 76px;
+  }
+}
+
 .km-header {
   margin-bottom: 41px;
   @include transition(all .5s ease);
@@ -491,6 +499,7 @@ html #addsearch-results .addsearch-result-item-sub h1 a { font-size: 1.5em; colo
   @include respond-below('lg') {
     display: none !important;
   }
+
 }
 
 .km-header-top {

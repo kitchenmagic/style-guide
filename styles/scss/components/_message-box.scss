@@ -1,0 +1,25 @@
+/* ============================================================
+   MESSAGE BOX
+/* ============================================================ */
+
+.message-box {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: px-to-rem(14px);
+    position: relative;
+    padding-left: 50px;
+
+    &--warning {
+        border: 1px solid color(warning);
+        background: #ffe0a3;
+
+        &:before {
+            content: "\f071";
+            font-family: fontawesome;
+            position: absolute;
+            font-size: 20px;
+            left: 15px;
+            top: 16px;
+        }
+    }
+}
