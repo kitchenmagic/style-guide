@@ -8,10 +8,11 @@
     font-size: px-to-rem(14px);
     position: relative;
     padding-left: 50px;
+    max-width: 600px;
 
     &--warning {
         border: 1px solid color(warning);
-        background: #ffe0a3;
+        background: #ffe9bc;
 
         &:before {
             content: "\f071";
