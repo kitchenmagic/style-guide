@@ -30,7 +30,7 @@
       .gallery__action-bar-right form select:after {
         content: "\f078";
         font-family: fontawesome; }
-      .gallery__action-bar-right form select:active {
+      .gallery__action-bar-right form select:active, .gallery__action-bar-right form select.nice-select.open {
         outline: none; }
 
 #gallery-filter-search {
@@ -116,3 +116,296 @@
 .gallery__filter-card-checkbox label {
   margin-left: .5rem;
   font-size: 0.875rem; }
+
+/* ============================================================
+   03. Image Cards / Grid
+/* ============================================================ */
+.gallery__img-container {
+  position: relative;
+  float: left;
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+  width: 75%;
+  overflow: hidden; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .gallery__img-container {
+      width: 60% !important; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .gallery__img-container {
+      width: 66.66667% !important; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .gallery__img-container {
+      width: 100% !important; } }
+
+.gallery__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* testing image crop with img */ }
+  .gallery__img .gallery__img--card {
+    border: 1px solid #E1E5E4;
+    flex-basis: 23%;
+    width: 23%;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    transition: box-shadow 400ms ease; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .gallery__img .gallery__img--card {
+        width: 45%; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .gallery__img .gallery__img--card {
+        width: 100%; } }
+  .gallery__img .gallery__img--background {
+    background-size: cover;
+    height: 160px; }
+    .gallery__img .gallery__img--background:hover {
+      cursor: pointer; }
+      .gallery__img .gallery__img--background:hover .gallery__img--background-overlay {
+        opacity: 1; }
+    .gallery__img .gallery__img--background:before {
+      transition: background-color 400ms ease;
+      content: ""; }
+    .gallery__img .gallery__img--background:hover::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 160px;
+      background-color: rgba(0, 0, 0, 0.3);
+      content: ""; }
+    .gallery__img .gallery__img--background .gallery__img--background-overlay {
+      transition: 400ms ease;
+      opacity: 0;
+      position: absolute;
+      text-align: center;
+      line-height: 160px;
+      width: 100%; }
+      .gallery__img .gallery__img--background .gallery__img--background-overlay span i {
+        font-size: 30px;
+        color: #fff; }
+  .gallery__img .gallery__img--body {
+    padding: 13px 20px 21px; }
+  .gallery__img .gallery__img--props {
+    list-style: none;
+    margin-left: 0;
+    font-size: 0.8125rem;
+    margin-bottom: 0;
+    padding-left: 0; }
+    .gallery__img .gallery__img--props li {
+      padding-bottom: 10px;
+      margin: 0;
+      line-height: 1;
+      color: #A3A5A8; }
+      .gallery__img .gallery__img--props li:last-child {
+        padding-bottom: 0; }
+      .gallery__img .gallery__img--props li.gallery__img--props__name {
+        font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+        font-size: 1.25rem;
+        letter-spacing: 1px !important;
+        padding-bottom: 16px;
+        color: #222222; }
+    .gallery__img .gallery__img--props > li img {
+      padding-right: 13px; }
+
+.gallery__img-button-bar {
+  border-top: 1px solid #E1E5E4; }
+  .gallery__img-button-bar__btn {
+    display: inline-block;
+    padding: 6px 11px 5px;
+    border-right: 1px solid #E1E5E4;
+    text-align: center; }
+    .gallery__img-button-bar__btn a, .gallery__img-button-bar__btn button {
+      padding: 0;
+      margin: 0; }
+    .gallery__img-button-bar__btn svg {
+      max-width: 18px;
+      height: 18px; }
+      .gallery__img-button-bar__btn svg path {
+        fill: #F01834; }
+    .gallery__img-button-bar__btn a i.fa-pinterest {
+      color: #F01834;
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease;
+      font-size: 1.125rem; }
+      .gallery__img-button-bar__btn a i.fa-pinterest:hover {
+        color: #C30019;
+        cursor: pointer; }
+
+/* ============================================================
+     04. Selects - jQuery Nice Select
+  /* ============================================================ */
+.nice-select {
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 0;
+  border: solid 1px #E1E5E4;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 14px;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  width: auto; }
+  .nice-select:hover {
+    border-color: #d3d9d8; }
+  .nice-select:active, .nice-select.open, .nice-select:focus {
+    border-color: #222; }
+  .nice-select:after {
+    border-bottom: 3px solid #F01834;
+    border-right: 3px solid #F01834;
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    transition: all .15s ease-in-out;
+    width: 8px; }
+  .nice-select.open:after {
+    transform: rotate(-135deg); }
+  .nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1) translateY(0); }
+  .nice-select.disabled {
+    border-color: #ededed;
+    color: #222;
+    pointer-events: none; }
+    .nice-select.disabled:after {
+      border-color: #555555; }
+  .nice-select.wide {
+    width: 100%; }
+    .nice-select.wide .list {
+      left: 0 !important;
+      right: 0 !important; }
+  .nice-select.right {
+    float: right; }
+    .nice-select.right .list {
+      left: auto;
+      right: 0; }
+  .nice-select.small {
+    font-size: 12px;
+    height: 36px;
+    line-height: 34px; }
+    .nice-select.small:after {
+      height: 4px;
+      width: 4px; }
+    .nice-select.small .option {
+      line-height: 34px;
+      min-height: 34px; }
+  .nice-select .list {
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform-origin: 50% 0;
+    transform: scale(0.75) translateY(-21px);
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9;
+    width: 100%; }
+    .nice-select .list:hover .option:not(:hover) {
+      background-color: transparent !important; }
+  .nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    transition: all 0.2s; }
+    .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+      background-color: #F0F2F8; }
+    .nice-select .option.selected {
+      font-weight: bold; }
+    .nice-select .option.disabled {
+      background-color: transparent;
+      color: #222;
+      cursor: default; }
+
+.no-csspointerevents .nice-select .list {
+  display: none; }
+
+.no-csspointerevents .nice-select.open .list {
+  display: block; }
+
+/* ============================================================
+     05. ModuloBox - popup overrides
+  /* ============================================================ */
+.mobx-holder {
+  z-index: 999999; }
+
+.mobx-overlay {
+  background: rgba(0, 0, 0, 0.9) !important; }
+
+.mobx-top-bar {
+  background-color: #000; }
+
+.mobx-ui a.km-mobx-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  height: 32px;
+  line-height: 32px;
+  background: #F01834;
+  color: #fff;
+  opacity: 1;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  float: right;
+  margin: 7px 2px 2px;
+  padding: 0 10px; }
+  .mobx-ui a.km-mobx-button:hover {
+    background: #C30019; }
+
+.mobx-ui button:hover, .mobx-ui button:focus, .mobx-ui button:active, .mobx-ui button.nice-select.open {
+  background-color: transparent; }
+
+.mobx-video:before, .mobx-video:after, .mobx-thumb-video:after, .mobx-ui button, .mobx-share-tooltip *:after {
+  background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/modulobox.svg); }
+
+.mobx-caption .mobx-caption-inner {
+  max-width: 600px; }
+  .mobx-caption .mobx-caption-inner .mobx-desc {
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.45;
+    color: #dadada; }
