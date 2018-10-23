@@ -31,4 +31,5 @@
       padding: 18px 15px 20px; }
       .image-grid__caption--below a {
         display: block;
-        margin-top: 8px; }
+        margin-top: 11px;
+        font-family: "ProximaNova-Bold", helvetica, sans-serif; }

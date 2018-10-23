@@ -40,6 +40,11 @@
     margin-top: 0;
   }
 
+  // remove padding top for certain instances such as an HR module
+  &--no-pad-t {
+    padding-top: 0;
+  }
+
   // margings & padding variants
   &--sm {
     margin-bottom: px-to-rem(20px);
@@ -57,6 +62,7 @@
     padding: px-to-rem(60px) 0 px-to-rem(68px);
   }
 }
+
 
 .km-fw-container--no-padding-bot {
   padding-bottom: 0;

@@ -384,6 +384,8 @@ html, body {
   padding: 35px 0; }
   .km-fw-container h1, .km-fw-container h2, .km-fw-container h3, .km-fw-container h4, .km-fw-container h5 {
     margin-top: 0; }
+  .km-fw-container--no-pad-t {
+    padding-top: 0; }
   .km-fw-container--sm {
     margin-bottom: 1.25rem; }
   .km-fw-container--md {
