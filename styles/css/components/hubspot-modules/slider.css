@@ -1,0 +1,89 @@
+/* ============================================================
+   SLIDER
+/* ============================================================ */
+.km-slider__footer {
+  background: #222222;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 575px) {
+    .km-slider__footer {
+      display: block;
+      text-align: center;
+      height: 100%; } }
+
+.km-slider__nav {
+  display: inline-block; }
+  @media (max-width: 575px) {
+    .km-slider__nav {
+      background: #fff;
+      display: flex; } }
+
+.km-button-prev, .km-button-next {
+  color: #fff;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  display: inline-block;
+  border-left: 1px solid #4a4a4a;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  @media (max-width: 575px) {
+    .km-button-prev, .km-button-next {
+      border-left: none;
+      color: #222222;
+      border: 1px solid #222222;
+      width: 50%;
+      padding: 2px; } }
+
+.km-button-prev:hover, .km-button-next:hover {
+  cursor: pointer;
+  color: #A3A5A8; }
+
+.km-button-prev:focus, .km-button-next:focus {
+  outline: none; }
+
+.km-button-prev i, .km-button-next i {
+  font-size: 13px; }
+
+.km-button-prev i {
+  padding-right: 4px; }
+
+.km-button-next i {
+  padding-left: 4px; }
+
+.km-pagination {
+  color: #fff;
+  display: inline-block; }
+
+.km-bullet {
+  padding: 0 16px;
+  display: inline-block;
+  color: #F01834;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  .km-bullet:hover {
+    cursor: pointer;
+    color: #C30019; }
+
+.km-bullet--active {
+  color: #fff;
+  background: #F01834;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  .km-bullet--active:hover {
+    color: #fff; }
+  .km-bullet--active:focus {
+    outline: none; }
