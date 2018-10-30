@@ -8,6 +8,9 @@
     border-right: 1px solid #E1E5E4;
     border-top: 1px solid #E1E5E4;
     border-bottom: 1px solid #E1E5E4; }
+    @media (max-width: 575px) {
+      .rating-card__container {
+        border-bottom: none; } }
   .rating-card__title {
     font-family: "ProximaNova-Bold", helvetica, sans-serif;
     text-transform: uppercase;
@@ -19,3 +22,7 @@
     color: #A3A5A8; }
     .rating-card__stars .fa-star {
       color: #FFA800; }
+
+@media (max-width: 575px) {
+  .rating-card__wrapper .rating-card__container:last-child {
+    border-bottom: 1px solid #E1E5E4; } }

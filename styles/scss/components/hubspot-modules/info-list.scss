@@ -1,0 +1,38 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   INFO LIST
+/* ============================================================ */
+
+.km-info-list {
+
+    &__item {
+        border-bottom: 1px solid color(border);
+        padding-bottom: 10px;
+        padding: 14px 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__title {
+        font-size: px-to-rem(20px);
+        font-family: family(bold);
+        margin-bottom: 9px;
+    }
+
+    &__description {
+        p {
+            margin-bottom: 0;
+            line-height: 30px;
+        }
+    }
+}

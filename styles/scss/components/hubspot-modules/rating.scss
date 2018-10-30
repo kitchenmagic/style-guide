@@ -15,6 +15,10 @@
     border-right: 1px solid color(border);
     border-top: 1px solid color(border);
     border-bottom: 1px solid color(border);
+
+    @include respond-below(xs) {
+      border-bottom: none;
+    }
   }
 
   &__title {
@@ -34,4 +38,12 @@
     }
 
   }
+}
+
+// adds border bottom for last card on mobile
+.rating-card__wrapper .rating-card__container:last-child {
+  @include respond-below(xs) {
+    border-bottom: 1px solid color(border);
+  }
+
 }
