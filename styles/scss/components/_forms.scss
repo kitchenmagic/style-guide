@@ -151,10 +151,6 @@ div.input {
         label {
             margin-top: 0;
             font-family: family(body);
-
-            &:first-child {
-
-            }
         }
 
     }
@@ -331,6 +327,17 @@ form.hs-form {
     max-width: 600px;
     margin: 0 auto;
 }
+
+
+// ============================================================
+//  FORM MESSAGES
+// ============================================================ */
+
+.km-form--white-msg .submitted-message {
+    color: #fff;
+    font-size: px-to-rem(20px);
+}
+
 
 // ============================================================
 //  FORM FIXES
@@ -555,7 +562,6 @@ html .multi-form .multi-form-right { width:55px;text-align:center;position: abso
 .multi-item-footer.hide { color: transparent; }
 .multi-item-footer p { margin: 0; line-height: 1.9; margin: 6px 0; }
 
-.multi-item-progress {}
 .multi-form .progress { height: auto;margin-bottom:0;width: 0%;box-shadow: none;background: transparent;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; }
 .progress-count { text-align: right;padding: 5px 100px 5px 10px; font-size: px-to-rem(13px); }
 .progress .count { white-space: nowrap; }
