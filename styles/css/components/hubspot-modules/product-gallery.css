@@ -234,6 +234,45 @@
         color: #C30019;
         cursor: pointer; }
 
+.heart-btn {
+  background: none;
+  border: none; }
+  .heart-btn:hover {
+    cursor: pointer; }
+  .heart-btn:focus {
+    outline: none; }
+
+g#love-icon-active path:nth-child(2) {
+  fill: #fff; }
+
+.like-count {
+  color: #A3A5A8;
+  font-size: 0.8125rem;
+  padding-left: 3px; }
+
+.like-count__container {
+  position: relative;
+  display: inline-block; }
+
+.like-count-animate {
+  position: absolute;
+  opacity: 0;
+  font-size: 14px;
+  left: 3px;
+  color: #A3A5A8; }
+  .like-count-animate--active {
+    animation: like .8s ease-in-out; }
+
+@keyframes like {
+  0% {
+    opacity: 0;
+    top: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    top: -22px; } }
+
 /* ============================================================
      04. Selects - jQuery Nice Select
   /* ============================================================ */
