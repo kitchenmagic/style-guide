@@ -8,8 +8,9 @@
 /* ============================================================ */ 
 
 .solutions-box {
-  margin-bottom: 35px;
-
+  @include respond-below(xs) {
+    margin-bottom: 35px;
+  }
     .solutions-link {
       display: block;
 
