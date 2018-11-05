@@ -41,7 +41,7 @@ p {
 .note {
   border: 1px solid #E1E5E4;
   padding: 5px 10px;
-  color: #4a4a4a;
+  color: #A3A5A8;
   margin-top: 20px;
   border-radius: 6px;
   background: #EEF3F5; }
@@ -138,7 +138,7 @@ p {
     text-transform: uppercase;
     font-size: .9rem;
     letter-spacing: 1px;
-    color: #4a4a4a; }
+    color: #A3A5A8; }
 
 /* ============================================================
    BSG SIDEBAR
@@ -188,7 +188,7 @@ p {
   .bsg-color-card--text {
     background-color: #222222; }
   .bsg-color-card--text-light {
-    background-color: #4a4a4a; }
+    background-color: #A3A5A8; }
   .bsg-color-card--gray {
     background-color: #A3A5A8; }
   .bsg-color-card--gray-light {

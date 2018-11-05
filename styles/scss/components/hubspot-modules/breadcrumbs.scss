@@ -1,0 +1,52 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   BREADCRUMBS
+/* ============================================================ */
+
+.breadcrumbs__container {
+    margin-top: -17px;
+}
+
+#breadcrumbs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    li {
+        text-transform: uppercase;
+        font-size: px-to-rem(11px);
+        display: inline-block;
+        padding-right: 10px;
+        letter-spacing: 1px;
+        color: color(text, base);
+        font-family: family(bold);
+
+        a {
+            color: color(text, light);
+            font-family: family(body);
+
+            &:hover {
+                color: color(primary, base);
+            }
+        }
+
+        &:after {
+            content: "\f054";
+            font-family: fontawesome;
+            font-size: px-to-rem(8px);
+            padding-left: 14px;
+            position: relative;
+            top: -1px;
+            color: color(text, light);
+        }
+
+        &:last-child:after {
+            display: none;
+        }
+    }
+}

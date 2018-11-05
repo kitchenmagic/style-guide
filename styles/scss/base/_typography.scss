@@ -286,3 +286,14 @@ blockquote, .reviews-blockquote {
       color: color(primary, dark);    
   }
 }
+
+/*
+/*  Text colors
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.km-text {
+
+  &--highlight {
+    color: color(primary, base);
+  }
+}

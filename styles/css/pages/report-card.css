@@ -212,6 +212,12 @@ blockquote, .reviews-blockquote {
   .anchor-cta:hover {
     color: #C30019; }
 
+/*
+/*  Text colors
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-text--highlight {
+  color: #F01834; }
+
 /* ============================================================
    GRID
 /* ============================================================ */
@@ -244,6 +250,8 @@ blockquote, .reviews-blockquote {
     margin-top: 0; }
   .km-fw-container--no-pad-t {
     padding-top: 0; }
+  .km-fw-container--no-pad-b {
+    padding-bottom: 0 !important; }
   .km-fw-container--sm {
     margin-bottom: 1.25rem; }
   .km-fw-container--md {
@@ -392,7 +400,7 @@ select, textarea {
   font-size: 1rem;
   width: 50%;
   padding: 0;
-  color: #4a4a4a; }
+  color: #A3A5A8; }
 
 .km-report-card .hs-form .hs-form-radio > label {
   text-align: center;

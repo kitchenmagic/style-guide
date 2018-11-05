@@ -1,0 +1,34 @@
+/* ============================================================
+   BREADCRUMBS
+/* ============================================================ */
+.breadcrumbs__container {
+  margin-top: -17px; }
+
+#breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  #breadcrumbs li {
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    display: inline-block;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    color: #222222;
+    font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+    #breadcrumbs li a {
+      color: #A3A5A8;
+      font-family: "ProximaNova-Regular", helvetica, sans-serif; }
+      #breadcrumbs li a:hover {
+        color: #F01834; }
+    #breadcrumbs li:after {
+      content: "\f054";
+      font-family: fontawesome;
+      font-size: 0.5rem;
+      padding-left: 14px;
+      position: relative;
+      top: -1px;
+      color: #A3A5A8; }
+    #breadcrumbs li:last-child:after {
+      display: none; }

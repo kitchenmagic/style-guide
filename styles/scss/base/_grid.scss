@@ -45,6 +45,10 @@
     padding-top: 0;
   }
 
+  &--no-pad-b {
+    padding-bottom: 0 !important;
+  }
+
   // margings & padding variants
   &--sm {
     margin-bottom: px-to-rem(20px);
@@ -61,6 +65,7 @@
   &--has-bg {
     padding: px-to-rem(60px) 0 px-to-rem(68px);
   }
+  
 }
 
 

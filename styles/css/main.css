@@ -386,6 +386,8 @@ html, body {
     margin-top: 0; }
   .km-fw-container--no-pad-t {
     padding-top: 0; }
+  .km-fw-container--no-pad-b {
+    padding-bottom: 0 !important; }
   .km-fw-container--sm {
     margin-bottom: 1.25rem; }
   .km-fw-container--md {
@@ -624,6 +626,12 @@ blockquote, .reviews-blockquote {
   font-size: 1.6875rem; }
   .anchor-cta:hover {
     color: #C30019; }
+
+/*
+/*  Text colors
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-text--highlight {
+  color: #F01834; }
 
 /* ============================================================
    RESPONSIVE
@@ -3247,7 +3255,7 @@ form#hsForm_3ecb0607-1bfe-4310-8a84-dfb681c7ae92 .hs-input.error {
   .alert-box.secondary {
     background-color: #E1E5E4;
     border-color: #E1E5E4;
-    color: #4a4a4a; }
+    color: #A3A5A8; }
 
 /*
 /*  Date Picker
@@ -4365,7 +4373,7 @@ span.meter-tree-progress p {
     text-align: center;
     margin-bottom: -9px;
     font-style: "ProximaNova-RegularIt", helvetica, sans-serif;
-    color: #4a4a4a; }
+    color: #A3A5A8; }
 
 /**
  * Helper class
