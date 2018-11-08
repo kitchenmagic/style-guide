@@ -1,0 +1,69 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   ONE-OFFS
+/* ============================================================ */ 
+
+/* This stylesheet is used to create custom styles 
+   for promo pages when we have a unique one-off design
+
+   It will be deleted and updated often with new styles
+   when a promo ends and will be linked directly to pages on the 
+   Hubspot Page level.
+*/
+
+.km-temp-hero-banner__border {
+    border: 11px solid #fff;
+    padding: 20px;
+    @include box-shadow(0 2px 6px rgba(0,0,0,.4));
+}
+
+.km-temp-hero-banner {
+    background: #fff;
+    padding: 20px 28px 31px;
+    @include box-shadow(0 2px 6px rgba(0,0,0,.4));
+
+    & h1 {
+        color: color(text, base);
+        text-transform: uppercase;
+
+        @include respond-below('xs') {
+            font-size: px-to-rem(31px);
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+        color: #434341;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: px-to-rem(20px);
+        letter-spacing: 1px;
+
+        @include respond-below('xs') {
+            font-size: px-to-rem(18px);
+        }
+    }
+
+    p.km-temp-standout {
+        font-size: px-to-rem(42px);
+        padding: 15px 0px;
+        font-family: family(bold);
+        color: color(primary, dark);
+        letter-spacing: 2px;
+
+        @include respond-below('xs') {
+            font-size: px-to-rem(25px);
+        }
+    }
+
+}
+
+.km-temp-subheader {
+    font-family: family(body);
+    text-transform: uppercase;
+    font-size: px-to-rem(20px);
+}

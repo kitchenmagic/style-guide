@@ -1,0 +1,103 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   MOBILE OVERLAY
+/* ============================================================ */
+
+.overlay {
+    position: fixed;
+    background: color(background);
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, width .35s;
+    overflow: hidden;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        overflow: scroll;
+    }
+
+    // top bar
+    &__top-bar {
+        width: 100%;
+        background: #fff;
+        height: 48px;
+        line-height: 48px;
+        position: relative;
+        text-align: center;
+    }
+
+    // top bar title
+    &__title {
+        text-transform: uppercase;
+        font-family: family(bold);
+        letter-spacing: 1px;
+    }
+
+    // body container
+    &__body {
+        padding: 20px 20px 94px;
+    }
+
+    // card item
+    &__card {
+        background: #fff;
+        margin-bottom: 20px;
+        @include box-shadow($shadow-sm);
+
+        &-top {
+            padding: 10px 20px;
+        }
+    }
+    
+    // card content (this is the tab content)
+    &__card-content {
+        max-height: 0;
+        overflow: hidden;
+        @include transition(all .35s);
+
+        &.open {
+            max-height: 300px;
+            padding: 20px 10px;
+        }
+    }
+
+    // close button
+    &__close-btn {
+        font-size: px-to-rem(28px);
+        position: absolute;
+        right: 20px;
+        top: 0;
+        color: color(primary, base);
+
+        &:focus {
+            color: color(primary, dark);
+        }
+    }
+
+    // footer 
+    &__footer {
+        background: #fff;
+        position: fixed;
+        bottom: 0;
+        padding: 20px 20px 0;
+        width: 100%;
+        left: 0;
+
+        & button:first-child {
+            margin-right: 15px;
+        }
+    }
+  }
+  

@@ -1,0 +1,53 @@
+/* ============================================================
+   ONE-OFFS
+/* ============================================================ */
+/* This stylesheet is used to create custom styles 
+   for promo pages when we have a unique one-off design
+
+   It will be deleted and updated often with new styles
+   when a promo ends and will be linked directly to pages on the 
+   Hubspot Page level.
+*/
+.km-temp-hero-banner__border {
+  border: 11px solid #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
+
+.km-temp-hero-banner {
+  background: #fff;
+  padding: 20px 28px 31px;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
+  .km-temp-hero-banner h1 {
+    color: #222222;
+    text-transform: uppercase; }
+    @media (max-width: 575px) {
+      .km-temp-hero-banner h1 {
+        font-size: 1.9375rem; } }
+  .km-temp-hero-banner p {
+    margin-bottom: 0;
+    color: #434341;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 1px; }
+    @media (max-width: 575px) {
+      .km-temp-hero-banner p {
+        font-size: 1.125rem; } }
+  .km-temp-hero-banner p.km-temp-standout {
+    font-size: 2.625rem;
+    padding: 15px 0px;
+    font-family: "ProximaNova-Bold", helvetica, sans-serif;
+    color: #C30019;
+    letter-spacing: 2px; }
+    @media (max-width: 575px) {
+      .km-temp-hero-banner p.km-temp-standout {
+        font-size: 1.5625rem; } }
+
+.km-temp-subheader {
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem; }

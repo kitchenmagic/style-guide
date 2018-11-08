@@ -1,0 +1,70 @@
+/* ============================================================
+   MOBILE OVERLAY
+/* ============================================================ */
+.overlay {
+  position: fixed;
+  background: #F9FAFC;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, width .35s;
+  overflow: hidden; }
+  .overlay.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    overflow: scroll; }
+  .overlay__top-bar {
+    width: 100%;
+    background: #fff;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    text-align: center; }
+  .overlay__title {
+    text-transform: uppercase;
+    font-family: "ProximaNova-Bold", helvetica, sans-serif;
+    letter-spacing: 1px; }
+  .overlay__body {
+    padding: 20px 20px 94px; }
+  .overlay__card {
+    background: #fff;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
+    -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
+    box-shadow: 0 2px 10px 0 #E1E5E4; }
+    .overlay__card-top {
+      padding: 10px 20px; }
+  .overlay__card-content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s; }
+    .overlay__card-content.open {
+      max-height: 300px;
+      padding: 20px 10px; }
+  .overlay__close-btn {
+    font-size: 1.75rem;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: #F01834; }
+    .overlay__close-btn:focus {
+      color: #C30019; }
+  .overlay__footer {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    padding: 20px 20px 0;
+    width: 100%;
+    left: 0; }
+    .overlay__footer button:first-child {
+      margin-right: 15px; }
