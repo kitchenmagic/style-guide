@@ -8,11 +8,15 @@
 /* ============================================================ */ 
 
 .hero {
-position: relative;
+    position: relative;
+
+    @include respond-below('xs') {
+        height: 100% !important;
+    }
 }
 
 .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero p {
-color: #fff;
+    color: #fff;
 }
 
 .hero__background-overlay {
@@ -50,8 +54,48 @@ position: absolute;
 // cta card
 .hero__cta-card {
     background: #fff;
-    padding: 20px;
+    padding: 20px 20px 0;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 40px;
+    text-align: center;
+    border-bottom: 1px solid color(border);
+
+    @include respond-below('xs') {
+        position: relative;
+        display: block;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/*** temp promo styles for cta card ***/
+.hero-temp {
+    &-header {
+        font-family: family(header);
+        text-transform: uppercase;
+        font-size: px-to-rem(29px);
+        margin-bottom: 20px;
+    }
+
+    &-description {
+        margin-bottom: 20px;
+
+        & span {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: px-to-rem(14px);
+            letter-spacing: 1px;
+            display: block;
+        }
+
+        & span.km-temp-standout {
+            font-size: px-to-rem(21px);
+            padding: 1px 0;
+            font-family: family(bold);
+            color: color(primary, dark);
+            letter-spacing: 2px;
+        }
+    }
 }

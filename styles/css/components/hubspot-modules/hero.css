@@ -3,6 +3,9 @@
 /* ============================================================ */
 .hero {
   position: relative; }
+  @media (max-width: 575px) {
+    .hero {
+      height: 100% !important; } }
 
 .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero p {
   color: #fff; }
@@ -38,7 +41,38 @@
 
 .hero__cta-card {
   background: #fff;
-  padding: 20px;
+  padding: 20px 20px 0;
   position: absolute;
   bottom: 0;
-  right: 0; }
+  right: 40px;
+  text-align: center;
+  border-bottom: 1px solid #E1E5E4; }
+  @media (max-width: 575px) {
+    .hero__cta-card {
+      position: relative;
+      display: block;
+      width: 100%;
+      bottom: 0;
+      left: 0; } }
+
+/*** temp promo styles for cta card ***/
+.hero-temp-header {
+  font-family: "DomaineDisplayNarrowBold", helvetica, serif;
+  text-transform: uppercase;
+  font-size: 1.8125rem;
+  margin-bottom: 20px; }
+
+.hero-temp-description {
+  margin-bottom: 20px; }
+  .hero-temp-description span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    display: block; }
+  .hero-temp-description span.km-temp-standout {
+    font-size: 1.3125rem;
+    padding: 1px 0;
+    font-family: "ProximaNova-Bold", helvetica, sans-serif;
+    color: #C30019;
+    letter-spacing: 2px; }
