@@ -36,6 +36,7 @@
         line-height: 48px;
         position: relative;
         text-align: center;
+        @include box-shadow(0 2px 20px 0 #E1E5E4);
     }
 
     // top bar title
@@ -52,12 +53,13 @@
 
     // card item
     &__card {
-        background: #fff;
         margin-bottom: 20px;
-        @include box-shadow($shadow-sm);
-
-        &-top {
-            padding: 10px 20px;
+        
+        &-label {
+            font-family: family(bold);
+            color: color(text, light);
+            text-transform: uppercase;
+            font-size: px-to-rem(14px);
         }
     }
     
@@ -66,10 +68,12 @@
         max-height: 0;
         overflow: hidden;
         @include transition(all .35s);
+        opacity: 0;
 
         &.open {
             max-height: 300px;
             padding: 20px 10px;
+            opacity: 1;
         }
     }
 
@@ -77,9 +81,11 @@
     &__close-btn {
         font-size: px-to-rem(28px);
         position: absolute;
-        right: 20px;
+        right: 10px;
         top: 0;
         color: color(primary, base);
+        background: none;
+        border: none;
 
         &:focus {
             color: color(primary, dark);
@@ -94,6 +100,7 @@
         padding: 20px 20px 0;
         width: 100%;
         left: 0;
+        @include box-shadow(0 -2px 20px 0 #E1E5E4);
 
         & button:first-child {
             margin-right: 15px;

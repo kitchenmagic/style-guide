@@ -299,6 +299,15 @@ g#love-icon-active path:nth-child(2) {
   user-select: none;
   white-space: nowrap;
   width: auto; }
+  @media (max-width: 575px) {
+    .nice-select {
+      font-size: 1.125rem;
+      height: 60px;
+      line-height: 60px;
+      letter-spacing: .5px;
+      font-family: "ProximaNova-Regular", helvetica, sans-serif;
+      font-weight: normal;
+      text-transform: none; } }
   .nice-select:hover {
     border-color: #d3d9d8; }
   .nice-select:active, .nice-select.open, .nice-select:focus {

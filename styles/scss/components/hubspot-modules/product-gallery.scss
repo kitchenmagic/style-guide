@@ -568,6 +568,16 @@
     user-select: none;
     white-space: nowrap;
     width: auto;
+    // mobile styling for filters
+    @include respond-below('xs') {
+      font-size: px-to-rem(18px);
+      height: 60px;
+      line-height: 60px;
+      letter-spacing: .5px;
+      font-family: family(body);
+      font-weight: normal;
+      text-transform: none;
+    }
     &:hover {
       border-color: darken(color(border), 5%);
     }

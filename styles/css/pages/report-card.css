@@ -133,6 +133,9 @@ li {
   margin-bottom: 0.625rem;
   line-height: 1.75rem; }
 
+small {
+  font-size: 0.75rem; }
+
 /*
 /*  Horizontal Rule
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
