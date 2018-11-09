@@ -633,6 +633,12 @@ blockquote, .reviews-blockquote {
 .km-text--highlight {
   color: #F01834; }
 
+/*
+/*  Text sizes
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-text--large {
+  font-size: 1.5rem; }
+
 /* ============================================================
    RESPONSIVE
 /* ============================================================ */
@@ -2708,150 +2714,8 @@ a.cta_button {
 /*
 /*  Button Groups
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.km-btn-group {
-  margin-bottom: 1rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  list-style: none; }
-
-.km-btn-group::before,
-.km-btn-group::after {
-  display: table;
-  content: ' ';
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -ms-flex-order: 1;
-  order: 1; }
-
-.km-btn-group::after {
-  clear: both; }
-
-.km-btn-group .km-btn {
-  margin: 0;
-  margin-right: 1px;
-  margin-bottom: 1px;
-  font-size: 0.9rem;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto; }
-
-.km-btn-group .km-btn:last-child {
-  margin-right: 0; }
-
-.km-btn-group.tiny .km-btn {
-  font-size: 0.6rem; }
-
-.km-btn-group.small .km-btn {
-  font-size: 0.75rem; }
-
-.km-btn-group.large .km-btn {
-  font-size: 1.25rem; }
-
-.km-btn-group.expanded .km-btn {
-  -ms-flex: 1 1 0px;
-  flex: 1 1 0px; }
-
-.km-btn-group.primary .km-btn {
-  background-color: #2ba6cb;
-  color: #0a0a0a; }
-
-.km-btn-group.primary .km-btn:hover,
-.km-btn-group.primary .km-btn:focus {
-  background-color: #2285a2;
-  color: #0a0a0a; }
-
-.km-btn-group.secondary .km-btn {
-  background-color: #e9e9e9;
-  color: #0a0a0a; }
-
-.km-btn-group.secondary .km-btn:hover,
-.km-btn-group.secondary .km-btn:focus {
-  background-color: #bababa;
-  color: #0a0a0a; }
-
-.km-btn-group.alert .km-btn {
-  background-color: #c60f13;
-  color: #fefefe; }
-
-.km-btn-group.alert .km-btn:hover,
-.km-btn-group.alert .km-btn:focus {
-  background-color: #9e0c0f;
-  color: #fefefe; }
-
-.km-btn-group.success .km-btn {
-  background-color: #5da423;
-  color: #0a0a0a; }
-
-.km-btn-group.success .km-btn:hover,
-.km-btn-group.success .km-btn:focus {
-  background-color: #4a831c;
-  color: #0a0a0a; }
-
-.km-btn-group.warning .km-btn {
-  background-color: #ffae00;
-  color: #0a0a0a; }
-
-.km-btn-group.warning .km-btn:hover,
-.km-btn-group.warning .km-btn:focus {
-  background-color: #cc8b00;
-  color: #0a0a0a; }
-
-.km-btn-group.body-font .km-btn {
-  background-color: #222222;
-  color: #fefefe; }
-
-.km-btn-group.body-font .km-btn:hover,
-.km-btn-group.body-font .km-btn:focus {
-  background-color: #1b1b1b;
-  color: #fefefe; }
-
-.km-btn-group.header .km-btn {
-  background-color: #222222;
-  color: #fefefe; }
-
-.km-btn-group.header .km-btn:hover,
-.km-btn-group.header .km-btn:focus {
-  background-color: #1b1b1b;
-  color: #fefefe; }
-
-.km-btn-group.stacked,
-.km-btn-group.stacked-for-small,
-.km-btn-group.stacked-for-medium {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-.km-btn-group.stacked .km-btn,
-.km-btn-group.stacked-for-small .km-btn,
-.km-btn-group.stacked-for-medium .km-btn {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%; }
-
-.km-btn-group.stacked .km-btn:last-child,
-.km-btn-group.stacked-for-small .km-btn:last-child,
-.km-btn-group.stacked-for-medium .km-btn:last-child {
-  margin-bottom: 0; }
-
-@media print, screen and (min-width: 40em) {
-  .km-btn-group.stacked-for-small .km-btn {
-    -ms-flex: 1 1 0px;
-    flex: 1 1 0px;
-    margin-bottom: 0; } }
-
-@media print, screen and (min-width: 64em) {
-  .km-btn-group.stacked-for-medium .km-btn {
-    -ms-flex: 1 1 0px;
-    flex: 1 1 0px;
-    margin-bottom: 0; } }
-
-@media screen and (max-width: 39.9375em) {
-  .km-btn-group.stacked-for-small.expanded {
-    display: block; }
-  .km-btn-group.stacked-for-small.expanded .km-btn {
-    display: block;
-    margin-right: 0; } }
+.km-btn-group .km-btn:first-child {
+  margin-right: 15px; }
 
 /*
 /*  Button Utilities

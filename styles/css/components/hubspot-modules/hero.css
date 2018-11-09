@@ -3,7 +3,7 @@
 /* ============================================================ */
 .hero {
   position: relative; }
-  @media (max-width: 575px) {
+  @media (max-width: 991px) {
     .hero {
       height: 100% !important; } }
 
@@ -47,13 +47,16 @@
   right: 40px;
   text-align: center;
   border-bottom: 1px solid #E1E5E4; }
-  @media (max-width: 575px) {
+  @media (max-width: 991px) {
     .hero__cta-card {
       position: relative;
       display: block;
       width: 100%;
-      bottom: 0;
+      bottom: -35px;
       left: 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .hero__cta-card {
+      right: 0; } }
 
 /*** temp promo styles for cta card ***/
 .hero-temp-header {

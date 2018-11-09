@@ -297,3 +297,14 @@ blockquote, .reviews-blockquote {
     color: color(primary, base);
   }
 }
+
+/*
+/*  Text sizes
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.km-text {
+
+  &--large {
+    font-size: px-to-rem(24px);
+  }
+}
