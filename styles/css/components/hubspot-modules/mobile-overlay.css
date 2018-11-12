@@ -42,6 +42,10 @@
       color: #A3A5A8;
       text-transform: uppercase;
       font-size: 0.875rem; }
+    .overlay__card-radio {
+      padding: 18px 20px 8px; }
+      .overlay__card-radio label {
+        padding-left: 10px; }
   .overlay__card-content {
     max-height: 0;
     overflow: hidden;
@@ -64,7 +68,8 @@
     background: none;
     border: none; }
     .overlay__close-btn:focus {
-      color: #C30019; }
+      color: #C30019;
+      outline: none; }
   .overlay__footer {
     background: #fff;
     position: fixed;

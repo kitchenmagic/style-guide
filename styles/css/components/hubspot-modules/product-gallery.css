@@ -391,12 +391,14 @@ g#love-icon-active path:nth-child(2) {
     text-align: left;
     transition: all 0.2s; }
     .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-      background-color: #F0F2F8; }
+      background-color: #F01834;
+      color: #fff; }
     .nice-select .option.selected {
       font-weight: bold; }
     .nice-select .option.disabled {
-      background-color: transparent;
-      color: #222;
+      background: #fff !important;
+      color: #A3A5A8 !important;
+      font-weight: normal;
       cursor: default; }
 
 .no-csspointerevents .nice-select .list {

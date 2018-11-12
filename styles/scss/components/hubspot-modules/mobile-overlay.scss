@@ -61,6 +61,14 @@
             text-transform: uppercase;
             font-size: px-to-rem(14px);
         }
+
+        &-radio {
+            padding: 18px 20px 8px;
+
+            & label {
+                padding-left: 10px;
+            }
+        }
     }
     
     // card content (this is the tab content)
@@ -89,6 +97,7 @@
 
         &:focus {
             color: color(primary, dark);
+            outline: none;
         }
     }
 
