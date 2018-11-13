@@ -101,8 +101,6 @@
     #bsg-nav li a:hover {
       color: #F01834;
       text-decoration: none; }
-      #bsg-nav li a:hover ul.sub {
-        display: block; }
   #bsg-nav li ul {
     display: none;
     position: absolute;
