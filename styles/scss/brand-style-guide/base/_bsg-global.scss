@@ -2,21 +2,6 @@
    BSG GLOBAL
 /* ============================================================ */
 
-.header-container.container-fluid {
-    padding: 0;
-}
-
-.body-container {
-    max-width: 100% !important;
-}
-
-.body-container-wrapper {
-    background-color: color(background);
-}
-
-.row {
-    margin-bottom: 35px;
-}
 
 // typography
 .bsg-heading {
@@ -36,10 +21,6 @@
 .bsg-heading__item-right {
     float: right;
     color: color(gray, base);
-}
-
-p {
-    max-width: 635px;
 }
 
 .title {

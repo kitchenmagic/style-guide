@@ -3,7 +3,16 @@
 /* ============================================================ */
 
 .bsg-header {
-    background: color(primary, base);
+    padding: 7px 0;
+    @include box-shadow($shadow-sm);
+    position: relative;
+}
+
+#bsg-gnome {
+    position: absolute;
+    right: 20px;
+    max-width: 59px;
+    bottom: 0;
 }
 
 .bsg-wrapper {
@@ -11,8 +20,79 @@
 }
 
 .bsg-logo {
-    font-family: family(header);
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: px-to-rem(19px);
+    img {
+        max-width: 133px;
+    }
+}
+
+// navigation
+#bsg-nav {
+
+    ul {
+        margin: 5px 0 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+    }
+
+    li {
+        display: inline-block;
+        padding-right: 20px;
+        margin-bottom: 0;
+    
+        &:last-child {
+            padding-right: 0;
+        }
+
+        // parent links
+        a {
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            color: color(text, base);
+            font-size: px-to-rem(13px);
+            font-family: family(bold);
+            @include transition(all 300ms ease);
+
+            i {
+                font-size: px-to-rem(7px);
+                position: relative;
+                top: -2px;
+                padding-left: 2px;
+            }
+
+            &:hover {
+                color: color(primary, base);
+                text-decoration: none;
+
+                ul.sub {
+                    display: block;
+                }
+                
+            }
+        }
+        // children links
+        ul {
+            display: none;
+            position: absolute;
+            background: #fff;
+            @include box-shadow($shadow-sm);
+            padding: 10px 20px;
+            border-radius: 6px;
+            top: 25px;
+
+            &.open {
+                display: block;
+            }
+
+            li {
+                display: block;
+
+                a {
+                    text-transform: none;
+                    font-family: family(body);
+                    font-size: px-to-rem(15px);
+                }
+            }
+        }
+    }
 }
