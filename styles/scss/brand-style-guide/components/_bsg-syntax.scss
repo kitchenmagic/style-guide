@@ -1,0 +1,48 @@
+// ============================================================
+//  BSG SYNTAX
+// ============================================================ 
+
+syntax-container {
+    position: relative;
+  }
+  
+  .syntax-copy-btn {
+      position: absolute;
+    right: 7px;
+    top: 7px;
+    background: color(background-dark);
+    padding: 0 2px 0 9px;
+  }
+  
+  .syntax-copy-btn span {
+    color: color(background-dark);
+    font-size: px-to-rem(12px);
+    opacity: 0;
+    position: absolute;
+    right: 25px;
+    color: #fff;
+    top: 4px;
+  }
+  
+  .syntax-copy-btn span.active {
+    animation: like .9s ease-in-out;
+  }
+  
+   @keyframes like {
+        0%   {opacity: 0;}
+        50%  {opacity: 1;}
+        100% {opacity: 0;}
+      }
+  
+  .syntax-copy-btn svg:hover {
+    cursor: pointer;
+  }
+  
+  .syntax-copy-btn svg path {
+      transition: all 300ms ease;
+  }
+  
+  
+  .syntax-copy-btn svg:hover path {
+    fill: color(primary, base);
+  }

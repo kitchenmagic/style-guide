@@ -19,6 +19,12 @@
     }
 }
 
+.bsg-title {
+    font-family: family(bold);
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
 .hubspot-module {
     border: 1px solid color(border);
     padding: 10px;
@@ -32,3 +38,24 @@
         position: relative;
     }
 }
+
+/** container for typography section **/
+.bsg-tag-container {
+    border-bottom: 1px solid color(border);
+    padding: 16px 0;
+  }
+  
+  .bsg-tag-container:first-child {
+    padding-top: 0;
+  }
+  
+  .bsg-tag-container span {
+      color: color(text, light);
+      border: 1px solid color(border);
+      text-align: center;
+      padding: 2px 0;
+      border-radius: 6px;
+      width: 28px;
+      font-size: px-to-rem(12px);
+  }
+  
