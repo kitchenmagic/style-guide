@@ -549,7 +549,8 @@ li {
   line-height: 1.75rem; }
 
 small {
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+  margin-bottom: 2rem; }
 
 /*
 /*  Horizontal Rule
@@ -7696,16 +7697,19 @@ th.hide-for-touch {
   display: none !important; }
 
 .km-border-top {
-  border-top: solid 1px #E1E5E4; }
+  border-top: 1px solid #E1E5E4; }
 
 .km-border-right {
-  border-right: solid 1px #E1E5E4; }
+  border-right: 1px solid #E1E5E4; }
 
 .km-border-bottom {
-  border-bottom: solid 1px #E1E5E4; }
+  border-bottom: 1px solid #E1E5E4; }
 
 .km-border-left {
-  border-left: solid 1px #E1E5E4; }
+  border-left: 1px solid #E1E5E4; }
+
+.km-border {
+  border: 1px solid #E1E5E4; }
 
 .km-cta-background {
   background: #F9FAFC; }

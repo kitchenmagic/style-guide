@@ -9,7 +9,6 @@ var paths = {
     srcMainSCSS: 'styles/scss/main.scss',
     srcBlogSCSS: 'styles/scss/main-blog.scss',
     srcBsgSCSS:  'styles/scss/main-bsg.scss',
-
     distCSS:     'styles/css'
 }
 

@@ -280,6 +280,10 @@
           margin-bottom: 20px;
           border-radius: 3px;
           transition: box-shadow 400ms ease;
+
+          @include respond-below('xs') {
+            max-width: 47%;
+          }
   
       @include tablet {
         width: 45%;
@@ -358,8 +362,7 @@
     // }
       
       .gallery__img--background {
-        background-size: cover;
-        height: 160px;
+        position: relative;
 
         &:hover {
             cursor: pointer;
@@ -379,7 +382,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 160px;
+            height: 193px;
             background-color: rgba(0,0,0,.3);
             content: "";
         }
@@ -387,9 +390,10 @@
       .gallery__img--background-overlay {
         transition: 400ms ease;
         opacity: 0;
+        top: 0;
         position: absolute;
         text-align: center;
-        line-height: 160px;
+        line-height: 193px;
         width: 100%;
   
         span i {
@@ -423,7 +427,7 @@
 
               &.gallery__img--props__name {
                 font-family: family(header);
-                font-size: px-to-rem(20px);
+                font-size: px-to-rem(18px);
                 letter-spacing: 1px !important;
                 padding-bottom: 16px;
                 color: color(text, base);
@@ -445,6 +449,11 @@
             padding: 6px 11px 5px;
             border-right: 1px solid color(border);
             text-align: center;
+            width: 100%;
+
+            &:last-child {
+              border-right: 0;
+            }
 
             & a, & button {
                 padding: 0;
@@ -466,6 +475,8 @@
                 color: color(primary, base);
                 @include transition(all 300ms ease);
                 font-size: px-to-rem(18px);
+                top: 2px;
+                position: relative;
 
                 &:hover {
                     color: color(primary, dark);
@@ -522,6 +533,37 @@
       50%  {opacity: 1;}
       100% {opacity: 0; top: -22px;}
     }
+
+    // favorite button
+
+    .km-btn--fav {
+      color: color(text, light);
+      background: transparent;
+
+      &:hover {
+        color: color(warning);
+      }
+    }
+
+    // empty state
+
+.km-empty-state {
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+
+  img {
+    opacity: .5;
+  }
+
+  p {
+    color: color(text, light);
+
+    span {
+      color: color(warning);
+    }
+  }
+}
   
   /* ============================================================
      04. Selects - jQuery Nice Select
@@ -672,6 +714,10 @@
       &:hover .option:not(:hover) {
         background-color: transparent !important;
       }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
     }
     .option {
       cursor: pointer;
@@ -685,11 +731,11 @@
       text-align: left;
       transition: all 0.2s;
       &:hover, &.focus, &.selected.focus { 
-        background-color: color(primary, base);
-        color: #fff;
+        background-color: color(gray, lighter);
+        color: color(text, base);
       }
       &.selected { 
-        font-weight: bold;
+        font-weight: normal;
       }
       &.disabled {
         background: #fff !important;
