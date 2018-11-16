@@ -55,11 +55,11 @@
     }
   }
 
-  @mixin box-shadow {
-	box-shadow: 0 2px 20px #D9DFF0;
-	-moz-box-shadow: 0 2px 20px #D9DFF0;
-	-webkit-box-shadow: 0 2px 20px #D9DFF0;
-}
+//   @mixin box-shadow {
+// 	box-shadow: 0 2px 20px #D9DFF0;
+// 	-moz-box-shadow: 0 2px 20px #D9DFF0;
+// 	-webkit-box-shadow: 0 2px 20px #D9DFF0;
+// }
 
 /* ============================================================
    01. Top Action Bar
@@ -130,7 +130,8 @@
 }
 
 #gallery-filter-search {
-	background-image: url(https://cdn2.hubspot.net/hubfs/126868/graphics/icons/med-search.png);
+  background-image: url(https://cdn2.hubspot.net/hubfs/126868/graphics/icons/med-search.png);
+  background-color: color(background) !important;
     background-repeat: no-repeat;
     background-position: 12px 8px;
     background-size: auto 55%;
@@ -167,6 +168,12 @@
    02. Sidebar Filters
 /* ============================================================ */
 
+#sidebar-filters {
+  @include respond-below('xs') {
+    display: none !important;
+  }
+}
+
 .gallery__filter {
     // @include grid;
     // width: 25%;
@@ -202,7 +209,10 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px 20px;
-      font-weight: bold;
+      text-transform: uppercase;
+      font-size: px-to-rem(14px);
+      letter-spacing: 1px;
+      font-family: family(bold);
   
       &:hover {
           cursor: pointer;
@@ -274,12 +284,11 @@
       justify-content: space-between;
   
       .gallery__img--card {
-          border: 1px solid color(border);
           flex-basis: 23%;
           width: 23%;
           margin-bottom: 20px;
           border-radius: 3px;
-          transition: box-shadow 400ms ease;
+          @include box-shadow($shadow-sm);
 
           @include respond-below('xs') {
             max-width: 47%;
@@ -535,7 +544,12 @@
     }
 
     // favorite button
-
+    // #km-fav use this ID to hide the whole button container
+    #km-fav {
+      @include respond-below('xs') {
+        display: none !important;
+      }
+    }
     .km-btn--fav {
       color: color(text, light);
       background: transparent;
@@ -564,7 +578,7 @@
     }
   }
 }
-  
+
   /* ============================================================
      04. Selects - jQuery Nice Select
   /* ============================================================ */
