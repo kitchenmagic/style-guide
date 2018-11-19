@@ -58,4 +58,19 @@
       width: 28px;
       font-size: px-to-rem(12px);
   }
+
+  /** fix spacing for sub headers ***/
+  h4 {
+      margin-bottom: 0;
+  }
+
+  // standout
+
+  .bsg-standout {
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: color(primary, light);
+    background: color(gray, lighter);
+    border: 1px solid color(border);
+  }
   

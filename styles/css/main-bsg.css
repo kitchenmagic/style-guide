@@ -70,6 +70,17 @@
   width: 28px;
   font-size: 0.75rem; }
 
+/** fix spacing for sub headers ***/
+h4 {
+  margin-bottom: 0; }
+
+.bsg-standout {
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: #FF999F;
+  background: #EEF3F5;
+  border: 1px solid #E1E5E4; }
+
 /* ============================================================
    BSG HEADER
 /* ============================================================ */

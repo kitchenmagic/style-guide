@@ -3804,11 +3804,12 @@ ul.km-list {
         * Red list item
         */ }
   ul.km-list li {
-    line-height: 2.5rem;
+    line-height: 1.6rem;
     padding-left: 18px;
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 11px; }
     ul.km-list li:before {
       content: "\f111";
       font-family: fontawesome;
