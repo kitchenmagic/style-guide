@@ -226,7 +226,7 @@
     padding: 6px 11px 5px;
     border-right: 1px solid #E1E5E4;
     text-align: center;
-    width: 100%; }
+    margin: 0 auto; }
     .gallery__img-button-bar__btn:last-child {
       border-right: 0; }
     .gallery__img-button-bar__btn a, .gallery__img-button-bar__btn button {
@@ -236,7 +236,7 @@
       max-width: 18px;
       height: 18px; }
       .gallery__img-button-bar__btn svg path {
-        fill: #F01834; }
+        fill: #A3A5A8; }
     .gallery__img-button-bar__btn a i.fa-pinterest {
       color: #F01834;
       -webkit-transition: all 300ms ease;
@@ -251,16 +251,8 @@
         color: #C30019;
         cursor: pointer; }
 
-.heart-btn {
-  background: none;
-  border: none; }
-  .heart-btn:hover {
-    cursor: pointer; }
-  .heart-btn:focus {
-    outline: none; }
-
-g#love-icon-active path:nth-child(2) {
-  fill: #fff; }
+.heart-btn img {
+  width: 0.8125rem; }
 
 .like-count {
   color: #A3A5A8;
@@ -290,15 +282,22 @@ g#love-icon-active path:nth-child(2) {
     opacity: 0;
     top: -22px; } }
 
-@media (max-width: 575px) {
-  #km-fav {
-    display: none !important; } }
-
-.km-btn--fav {
-  color: #A3A5A8;
-  background: transparent; }
-  .km-btn--fav:hover {
-    color: #FFA800; }
+button.km-btn.km-btn--fav.km-btn--ghost-dark {
+  font-size: 0.75rem;
+  text-transform: none;
+  padding: 1px 5px !important;
+  border-radius: 4px; }
+  button.km-btn.km-btn--fav.km-btn--ghost-dark.active {
+    background: #222222;
+    color: #fff; }
+    button.km-btn.km-btn--fav.km-btn--ghost-dark.active svg path {
+      fill: #fff; }
+  button.km-btn.km-btn--fav.km-btn--ghost-dark svg {
+    margin: 0 3px; }
+    button.km-btn.km-btn--fav.km-btn--ghost-dark svg path {
+      fill: #222222; }
+  button.km-btn.km-btn--fav.km-btn--ghost-dark:hover svg path {
+    fill: #fff; }
 
 .km-empty-state {
   width: 100%;
@@ -429,10 +428,23 @@ g#love-icon-active path:nth-child(2) {
     padding-left: 18px;
     padding-right: 29px;
     text-align: left;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    padding-left: 32px;
+    background-repeat: no-repeat;
+    background-position: 3%; }
+    @media (max-width: 575px) {
+      .nice-select .option {
+        background-image: none !important;
+        padding-left: 10px; } }
     .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
       background-color: #EEF3F5;
       color: #222222; }
+    .nice-select .option:first-child {
+      background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/gallery-icons/heart-dropdown-icon.svg); }
+    .nice-select .option:nth-child(2) {
+      background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/gallery-icons/colors-dropdown-icon.svg); }
+    .nice-select .option:last-child {
+      background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/gallery-icons/like-dropdown-icon.svg); }
     .nice-select .option.selected {
       font-weight: normal; }
     .nice-select .option.disabled {
@@ -499,3 +511,28 @@ g#love-icon-active path:nth-child(2) {
     text-align: left;
     line-height: 1.45;
     color: #dadada; }
+
+/* ============================================================
+   06. Sticky footer
+/* ============================================================ */
+.gallery__sticky-footer {
+  position: fixed;
+  bottom: 0;
+  background: #222222;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 4px 4px 0 0;
+  right: 200px;
+  font-size: 0.9375rem; }
+  .gallery__sticky-footer:hover {
+    cursor: pointer; }
+
+.gallery__sticky-footer-text {
+  font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+  .gallery__sticky-footer-text span {
+    color: #A3A5A8;
+    font-size: 0.875rem; }
+  .gallery__sticky-footer-text svg {
+    margin-right: 9px; }
+  .gallery__sticky-footer-text svg path {
+    fill: #fff; }

@@ -458,7 +458,7 @@
             padding: 6px 11px 5px;
             border-right: 1px solid color(border);
             text-align: center;
-            width: 100%;
+            margin: 0 auto;
 
             &:last-child {
               border-right: 0;
@@ -475,7 +475,7 @@
                 height: 18px;
                 
                 path {
-                    fill: color(primary, base);
+                    fill: color(gray, base);
                 }
             }
 
@@ -495,22 +495,11 @@
         }
     }
 
-    // like button
+    // heart count
     .heart-btn {
-      background: none;
-      border: none;
-
-      &:hover {
-        cursor: pointer;
+      img {
+        width: px-to-rem(13px);
       }
-
-      &:focus {
-        outline: none;
-      }
-    }
-    
-    g#love-icon-active path:nth-child(2) {
-        fill: #fff;
     }
     
     // like count
@@ -544,20 +533,37 @@
     }
 
     // favorite button
-    // #km-fav use this ID to hide the whole button container
-    #km-fav {
-      @include respond-below('xs') {
-        display: none !important;
+    button.km-btn.km-btn--fav.km-btn--ghost-dark {
+      font-size: px-to-rem(12px);
+      text-transform: none;
+      padding: 1px 5px !important;
+      border-radius: 4px;
+
+      &.active {
+        background: color(text, base);
+        color: #fff;
+
+        svg path {
+          fill: #fff;
+        }
       }
-    }
-    .km-btn--fav {
-      color: color(text, light);
-      background: transparent;
+
+      svg {
+        margin: 0 3px;
+
+        path {
+          fill: color(text, base);
+        }
+      }
 
       &:hover {
-        color: color(warning);
+        svg path {
+          fill: #fff;
+        }
       }
     }
+
+
 
     // empty state
 
@@ -744,9 +750,29 @@
       padding-right: $dropdown_padding + 11;
       text-align: left;
       transition: all 0.2s;
+      padding-left: 32px;
+      background-repeat: no-repeat;
+      background-position: 3%;
+
+      @include respond-below('xs') {
+        background-image: none !important;
+        padding-left: 10px;
+      }
+
       &:hover, &.focus, &.selected.focus { 
         background-color: color(gray, lighter);
         color: color(text, base);
+      }
+      // add icons
+      &:first-child {
+        background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/gallery-icons/heart-dropdown-icon.svg);
+      }
+      &:nth-child(2) {
+        background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/gallery-icons/colors-dropdown-icon.svg);
+      }
+
+      &:last-child {
+        background-image: url(https://www.kitchenmagic.com/hubfs/graphics/icons/gallery-icons/like-dropdown-icon.svg);
       }
       &.selected { 
         font-weight: normal;
@@ -841,3 +867,42 @@
       }
     }
   }
+
+  /* ============================================================
+   06. Sticky footer
+/* ============================================================ */
+
+.gallery {
+  
+  &__sticky-footer {
+    position: fixed;
+    bottom: 0;
+    background: color(text, base);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 4px 4px 0 0;
+    right: 200px;
+    font-size: px-to-rem(15px);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__sticky-footer-text {
+    font-family: family(bold);
+
+    span {
+      color: color(text, light);
+      font-size: px-to-rem(14px);
+    }
+
+    svg {
+      margin-right: 9px;
+    }
+
+    svg path {
+      fill: #fff;
+    }
+  }
+}
