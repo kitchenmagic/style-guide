@@ -257,3 +257,24 @@ syntax-container {
 
 .syntax-copy-btn svg:hover path {
   fill: #F01834; }
+
+.km-table.bsg-table {
+  width: auto; }
+  .km-table.bsg-table th {
+    font-family: "ProximaNova-Bold", helvetica, sans-serif;
+    padding: 15px 10px;
+    text-align: center;
+    border: 1px solid #E1E5E4; }
+  .km-table.bsg-table tr.bsg-table--header {
+    background: #F9FAFC;
+    border: 1px solid #E1E5E4; }
+    .km-table.bsg-table tr.bsg-table--header td {
+      border: none;
+      font-family: "ProximaNova-Bold", helvetica, sans-serif; }
+  .km-table.bsg-table td {
+    font-family: "ProximaNova-Regular", helvetica, sans-serif;
+    font-weight: normal; }
+    .km-table.bsg-table td:first-child {
+      border-left: 1px solid #E1E5E4; }
+    .km-table.bsg-table td.bsg-table--default-td {
+      color: #1ABE6F; }

@@ -1,0 +1,40 @@
+// ============================================================
+// BSG TABLES
+// ============================================================ 
+
+.km-table.bsg-table {
+    width: auto;
+
+    th {
+        font-family: family(bold);
+        padding: 15px 10px;
+        text-align: center;
+        border: 1px solid color(border);
+    }
+
+    tr {
+
+        &.bsg-table--header {
+            background: color(background);
+            border: 1px solid color(border);
+
+            & td {
+                border: none;
+                font-family: family(bold);
+            }
+        }
+    }
+
+    td {
+        font-family: family(body);
+        font-weight: normal;
+
+        &:first-child {
+            border-left: 1px solid color(border);
+        }
+
+        &.bsg-table--default-td {
+            color: color(success);
+        }
+    }
+}
