@@ -1,0 +1,114 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   MEGA MENU
+/* ============================================================ */ 
+
+// core navigation styles
+.km-mm {
+    line-height: 44px;
+    margin-top: 20px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 10px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &:hover > .km-mm__column {
+            opacity: 1;
+            visibility: visible;
+            overflow: visible;
+        }
+
+        a {
+            text-transform: uppercase;
+            font-size: px-to-rem(14px);
+            color: color(text, base);
+            letter-spacing: .47px;
+            @include transition(all 300ms ease);
+
+            //hover effects
+            &:hover {
+                text-decoration: none;
+                color: color(primary, base);
+            }
+        }
+    }
+}
+
+// mega menu container and items
+
+.km-mm {
+
+    &__column {
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 96px;
+        left: 0;
+     
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+     
+        background: #ffffff;
+        border-radius: 0 0 3px 3px;
+     
+        -webkit-transition: all .3s ease .15s;
+        -moz-transition: all .3s ease .15s;
+        -o-transition: all .3s ease .15s;
+        -ms-transition: all .3s ease .15s;
+        transition: all .3s ease .15s;
+
+        border: 1px solid color(border);
+
+        // @include box-shadow($shadow-sm);
+
+        &__container {
+            padding: 0 35px;
+        }
+    }
+
+    &__title {
+        font-family: family(header);
+        font-size: px-to-rem(20px);
+        border-bottom: 1px solid color(border);
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+        margin: 20px 0;
+    }
+
+    &__subtitle {
+        font-family: family(bold);
+        font-size: px-to-rem(16px);
+    }
+}
+
+// children
+.km-mm {
+    ul.km-mm__children {
+        margin-bottom: 20px;
+        
+        li {
+            display: block;
+            padding: 0 10px;
+        }
+    }
+}
