@@ -11,7 +11,7 @@
   .km-mm li {
     display: inline-block;
     margin: 0;
-    padding: 0 10px; }
+    padding: 0 20px; }
     .km-mm li:first-child {
       padding-left: 0; }
     .km-mm li:last-child {
@@ -44,19 +44,21 @@
   visibility: hidden;
   overflow: hidden;
   background: #ffffff;
-  border-radius: 0 0 3px 3px;
-  -webkit-transition: all .3s ease .15s;
-  -moz-transition: all .3s ease .15s;
-  -o-transition: all .3s ease .15s;
-  -ms-transition: all .3s ease .15s;
-  transition: all .3s ease .15s;
-  border: 1px solid #E1E5E4; }
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  border: 1px solid #E1E5E4;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(225, 229, 228, 0.4);
+  -moz-box-shadow: 0 5px 10px 0 rgba(225, 229, 228, 0.4);
+  box-shadow: 0 5px 10px 0 rgba(225, 229, 228, 0.4); }
   .km-mm__column__container {
-    padding: 0 35px; }
+    padding: 0 35px !important; }
 
 .km-mm__title {
   font-family: "DomaineDisplayNarrowBold", helvetica, serif;
-  font-size: 1.25rem;
+  font-size: 1.4375rem;
   border-bottom: 1px solid #E1E5E4;
   letter-spacing: 1px;
   padding-bottom: 10px;
@@ -64,10 +66,29 @@
 
 .km-mm__subtitle {
   font-family: "ProximaNova-Bold", helvetica, sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem !important; }
 
 .km-mm ul.km-mm__children {
   margin-bottom: 20px; }
   .km-mm ul.km-mm__children li {
     display: block;
     padding: 0 10px; }
+  .km-mm ul.km-mm__children a {
+    font-size: 0.8125rem;
+    text-transform: none; }
+
+.km-mm__img-card {
+  text-align: center; }
+  .km-mm__img-card a img {
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease; }
+    .km-mm__img-card a img:hover {
+      -webkit-box-shadow: 0 2px 10px 0 #E1E5E4;
+      -moz-box-shadow: 0 2px 10px 0 #E1E5E4;
+      box-shadow: 0 2px 10px 0 #E1E5E4; }
+  .km-mm__img-card .km-mm__icon {
+    max-width: 16px;
+    margin-left: 5px; }
