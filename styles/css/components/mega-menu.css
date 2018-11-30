@@ -1,9 +1,13 @@
 /* ============================================================
    MEGA MENU
 /* ============================================================ */
+.km-header-bottom {
+  padding-bottom: 0 !important; }
+
 .km-mm {
   line-height: 44px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  float: right; }
   .km-mm ul {
     margin: 0;
     padding: 0;
@@ -12,14 +16,17 @@
     display: inline-block;
     margin: 0;
     padding: 0 20px; }
+    .km-mm li.no-link {
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      color: #222222;
+      letter-spacing: .47px; }
     .km-mm li:first-child {
       padding-left: 0; }
     .km-mm li:last-child {
       padding-right: 0; }
-    .km-mm li:hover > .km-mm__column {
-      opacity: 1;
-      visibility: visible;
-      overflow: visible; }
+    .km-mm li.km-mm__top-level-item {
+      height: 66px; }
     .km-mm li a {
       text-transform: uppercase;
       font-size: 0.875rem;
@@ -38,7 +45,7 @@
   position: absolute;
   display: block;
   width: 100%;
-  top: 96px;
+  top: 100px;
   left: 0;
   opacity: 0;
   visibility: hidden;
@@ -53,6 +60,10 @@
   -webkit-box-shadow: 0 5px 10px 0 rgba(225, 229, 228, 0.4);
   -moz-box-shadow: 0 5px 10px 0 rgba(225, 229, 228, 0.4);
   box-shadow: 0 5px 10px 0 rgba(225, 229, 228, 0.4); }
+  .km-mm__column.open {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible; }
   .km-mm__column__container {
     padding: 0 35px !important; }
   .km-mm__column__body {
@@ -64,7 +75,8 @@
   border-bottom: 1px solid #E1E5E4;
   letter-spacing: 1px;
   padding-bottom: 10px;
-  margin: 20px 0; }
+  margin: 20px 0;
+  text-transform: uppercase; }
 
 .km-mm__subtitle {
   font-family: "ProximaNova-Bold", helvetica, sans-serif;
@@ -115,4 +127,46 @@
 .km-mm__img-card__description {
   font-size: 0.875rem;
   color: #A3A5A8;
-  line-height: 1.35; }
+  line-height: 1.35;
+  text-transform: none; }
+
+.km-mm__cta span a {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 0 1.25rem;
+  padding: .9rem 1.8rem;
+  line-height: 1.5;
+  border-radius: 0;
+  border: none;
+  font-size: 1rem;
+  font-family: "ProximaNova-Regular", helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  background-color: #F01834;
+  color: #fff;
+  border: 1px solid #F01834;
+  font-size: 0.8125rem; }
+  .km-mm__cta span a:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .km-mm__cta span a:focus {
+    outline: none; }
+  @media (max-width: 575px) {
+    .km-mm__cta span a {
+      width: 100%; } }
+  .km-mm__cta span a:hover {
+    background-color: #222222;
+    color: #fff;
+    border: 1px solid #222222; }

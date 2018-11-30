@@ -7,10 +7,16 @@
    MEGA MENU
 /* ============================================================ */ 
 
+// OVERRIDE but needs to be moved to header.scss
+.km-header-bottom {
+    padding-bottom: 0 !important;
+}
+
 // core navigation styles
 .km-mm {
     line-height: 44px;
     margin-top: 20px;
+    float: right;
 
     ul {
         margin: 0;
@@ -22,6 +28,13 @@
         display: inline-block;
         margin: 0;
         padding: 0 20px;
+        
+        &.no-link {
+            text-transform: uppercase;
+            font-size: px-to-rem(14px);
+            color: color(text, base);
+            letter-spacing: .47px;
+        }
 
         &:first-child {
             padding-left: 0;
@@ -31,10 +44,15 @@
             padding-right: 0;
         }
 
-        &:hover > .km-mm__column {
-            opacity: 1;
-            visibility: visible;
-            overflow: visible;
+        // &:hover > .km-mm__column {
+        //     opacity: 1;
+        //     visibility: visible;
+        //     overflow: visible;
+        // }
+
+
+        &.km-mm__top-level-item {
+            height: 66px;
         }
 
         a {
@@ -61,7 +79,7 @@
         position: absolute;
         display: block;
         width: 100%;
-        top: 96px;
+        top: 100px;
         left: 0;
      
         opacity: 0;
@@ -73,6 +91,12 @@
 
         border: 1px solid color(border);
         @include box-shadow(0 5px 10px 0 rgba(225, 229, 228, .4));
+
+        &.open {
+            opacity: 1;
+            visibility: visible;
+            overflow: visible;
+        }
 
         &__container {
             padding: 0 35px !important;
@@ -90,6 +114,7 @@
         letter-spacing: 1px;
         padding-bottom: 10px;
         margin: 20px 0;
+        text-transform: uppercase;
     }
 
     &__subtitle {
@@ -155,5 +180,24 @@
         font-size: px-to-rem(14px);
         color: color(text, light);
         line-height: 1.35;
+        text-transform: none;
+    }
+}
+
+// cta button 
+
+.km-mm__cta {
+    span a {
+        @include btn();
+        background-color: color(primary, base);
+        color: #fff;
+        border: 1px solid color(primary, base);
+        font-size: px-to-rem(13px);
+
+        &:hover {
+            background-color: color(text, base);
+            color: #fff;
+            border: 1px solid color(text, base);
+        }
     }
 }
