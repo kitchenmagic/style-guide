@@ -278,6 +278,23 @@
   font-size: px-to-rem(14px);
 }
 
+// form occurences
+.form-occurences {
+  white-space: nowrap;
+  font-size: px-to-rem(12px);
+  opacity: inherit;
+  color: color(text, light);
+  margin-left: 4px;
+  cursor: default;
+}
+
+// form disable
+
+.form-disable {
+  opacity: .5;
+  pointer-events: none;
+}
+
 
 /* ============================================================
    03. Image Cards / Grid
@@ -308,7 +325,6 @@
 	justify-content: space-between;
 
 	.gallery__img--card {
-		border: 1px solid color(border);
 		flex-basis: 31%;
 		width: 31%;
 		margin-bottom: 20px;
@@ -323,28 +339,9 @@
       width: 100%;
     }
 
-		&:hover {
-			cursor: pointer;
-			@include box-shadow;
-
-      .gallery__img--background-overlay {
-        opacity: 1;
-      }
-		}
-
     &:before {
       transition: background-color 400ms ease;
       content:"";
-    }
-
-    &:hover::before {
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 210px;
-       background-color: rgba(0,0,0,.3);
-       content: "";
     }
    		//add animation for borders on hover
 		// &:before, &:after {
@@ -417,6 +414,24 @@
 	.gallery__img--background {
 		background-size: cover;
     height: 210px;
+
+    &:hover {
+      cursor: pointer;
+
+      .gallery__img--background-overlay {
+        opacity: 1;
+      }
+    }
+
+    &:hover::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 210px;
+      background-color: rgba(0,0,0,.3);
+      content: "";
+   }
     
     .gallery__img--background-overlay {
       transition: 400ms ease;
@@ -435,7 +450,9 @@
 	}
 
 	.gallery__img--body {
-		padding: 13px 20px 18px;
+    padding: 13px 20px 18px;
+    border-left: 1px solid color(border);
+    border-right: 1px solid color(border);
 	}
 
 	.gallery__img--props {
@@ -459,6 +476,74 @@
 			padding-right: 13px;
 		}
 	}
+}
+
+// buttopn bars
+
+// bottom footer bar with buttons
+.gallery__img-button-bar {
+  border: 1px solid color(border);
+
+  &__btn {
+      display: inline-block;
+      padding: 6px 11px 5px;
+      text-align: center;
+      margin: 0 auto;
+
+      &:first-child {
+        padding-right: 0;
+      }
+
+      // &:last-child {
+      //   border-right: 0;
+      //   padding-left: 5px;
+      // }
+
+      & a, & button {
+          padding: 0;
+          margin: 0;
+      }
+
+      // love button
+      svg {
+          max-width: 18px;
+          height: 18px;
+          
+          path {
+              fill: color(gray, base);
+          }
+      }
+
+      // pinterest button
+      & a i.fa-pinterest {
+          color: color(primary, base);
+          @include transition(all 300ms ease);
+          font-size: px-to-rem(18px);
+          top: 2px;
+          position: relative;
+
+          &:hover {
+              color: color(primary, dark);
+              cursor: pointer;
+          }
+      }
+  }
+}
+
+// pin it button 
+a.km-btn.km-btn--pin.km-btn--ghost-dark {
+  font-size: px-to-rem(12px);
+  text-transform: none;
+  padding: 1px 5px !important;
+  border-radius: 4px;
+
+  i {
+    font-size: px-to-rem(15px);
+  }
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 /* ============================================================

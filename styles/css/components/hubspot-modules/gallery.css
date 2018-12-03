@@ -159,6 +159,18 @@
   margin-left: .5rem;
   font-size: 0.875rem; }
 
+.form-occurences {
+  white-space: nowrap;
+  font-size: 0.75rem;
+  opacity: inherit;
+  color: #A3A5A8;
+  margin-left: 4px;
+  cursor: default; }
+
+.form-disable {
+  opacity: .5;
+  pointer-events: none; }
+
 /* ============================================================
    03. Image Cards / Grid
 /* ============================================================ */
@@ -185,7 +197,6 @@
   justify-content: space-between;
   /* testing image crop with img */ }
   .gallery__img .gallery__img--card {
-    border: 1px solid #E1E5E4;
     flex-basis: 31%;
     width: 31%;
     margin-bottom: 20px;
@@ -197,17 +208,17 @@
     @media (min-width: 320px) and (max-width: 480px) {
       .gallery__img .gallery__img--card {
         width: 100%; } }
-    .gallery__img .gallery__img--card:hover {
-      cursor: pointer;
-      box-shadow: 0 2px 20px #D9DFF0;
-      -moz-box-shadow: 0 2px 20px #D9DFF0;
-      -webkit-box-shadow: 0 2px 20px #D9DFF0; }
-      .gallery__img .gallery__img--card:hover .gallery__img--background-overlay {
-        opacity: 1; }
     .gallery__img .gallery__img--card:before {
       transition: background-color 400ms ease;
       content: ""; }
-    .gallery__img .gallery__img--card:hover::before {
+  .gallery__img .gallery__img--background {
+    background-size: cover;
+    height: 210px; }
+    .gallery__img .gallery__img--background:hover {
+      cursor: pointer; }
+      .gallery__img .gallery__img--background:hover .gallery__img--background-overlay {
+        opacity: 1; }
+    .gallery__img .gallery__img--background:hover::before {
       position: absolute;
       top: 0;
       left: 0;
@@ -215,9 +226,6 @@
       height: 210px;
       background-color: rgba(0, 0, 0, 0.3);
       content: ""; }
-  .gallery__img .gallery__img--background {
-    background-size: cover;
-    height: 210px; }
     .gallery__img .gallery__img--background .gallery__img--background-overlay {
       transition: 400ms ease;
       opacity: 0;
@@ -229,7 +237,9 @@
         font-size: 30px;
         color: #fff; }
   .gallery__img .gallery__img--body {
-    padding: 13px 20px 18px; }
+    padding: 13px 20px 18px;
+    border-left: 1px solid #E1E5E4;
+    border-right: 1px solid #E1E5E4; }
   .gallery__img .gallery__img--props {
     list-style: none;
     margin-left: 0;
@@ -244,6 +254,47 @@
         padding-bottom: 0; }
     .gallery__img .gallery__img--props > li img {
       padding-right: 13px; }
+
+.gallery__img-button-bar {
+  border: 1px solid #E1E5E4; }
+  .gallery__img-button-bar__btn {
+    display: inline-block;
+    padding: 6px 11px 5px;
+    text-align: center;
+    margin: 0 auto; }
+    .gallery__img-button-bar__btn:first-child {
+      padding-right: 0; }
+    .gallery__img-button-bar__btn a, .gallery__img-button-bar__btn button {
+      padding: 0;
+      margin: 0; }
+    .gallery__img-button-bar__btn svg {
+      max-width: 18px;
+      height: 18px; }
+      .gallery__img-button-bar__btn svg path {
+        fill: #A3A5A8; }
+    .gallery__img-button-bar__btn a i.fa-pinterest {
+      color: #F01834;
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease;
+      font-size: 1.125rem;
+      top: 2px;
+      position: relative; }
+      .gallery__img-button-bar__btn a i.fa-pinterest:hover {
+        color: #C30019;
+        cursor: pointer; }
+
+a.km-btn.km-btn--pin.km-btn--ghost-dark {
+  font-size: 0.75rem;
+  text-transform: none;
+  padding: 1px 5px !important;
+  border-radius: 4px; }
+  a.km-btn.km-btn--pin.km-btn--ghost-dark i {
+    font-size: 0.9375rem; }
+  a.km-btn.km-btn--pin.km-btn--ghost-dark:hover {
+    color: #fff; }
 
 /* ============================================================
    04. Selects - jQuery Nice Select

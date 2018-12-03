@@ -468,16 +468,6 @@
                 margin: 0;
             }
 
-            // love button
-            svg {
-                max-width: 18px;
-                height: 18px;
-                
-                path {
-                    fill: color(gray, base);
-                }
-            }
-
             // pinterest button
             & a i.fa-pinterest {
                 color: color(primary, base);

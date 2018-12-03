@@ -229,11 +229,6 @@
     .gallery__img-button-bar__btn a, .gallery__img-button-bar__btn button {
       padding: 0;
       margin: 0; }
-    .gallery__img-button-bar__btn svg {
-      max-width: 18px;
-      height: 18px; }
-      .gallery__img-button-bar__btn svg path {
-        fill: #A3A5A8; }
     .gallery__img-button-bar__btn a i.fa-pinterest {
       color: #F01834;
       -webkit-transition: all 300ms ease;
