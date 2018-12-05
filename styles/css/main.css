@@ -336,7 +336,6 @@ html {
     -webkit-font-smoothing: antialiased; } }
 
 html, body {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: 100%; }
@@ -1729,6 +1728,9 @@ html #addsearch-results .addsearch-result-item-sub h1 a {
   padding: 9px 21px !important;
   position: relative;
   top: -4px; }
+
+.km-header__estimate-number img, .km-header__service-number img {
+  margin-right: 4px; }
 
 .km-header__service-number {
   margin-left: 15px; }

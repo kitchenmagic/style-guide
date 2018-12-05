@@ -43,27 +43,31 @@
 
 .km-mm__column {
   position: absolute;
-  display: block;
   width: 100%;
   top: 100px;
   left: 0;
+  max-height: 0;
   opacity: 0;
-  visibility: hidden;
   overflow: hidden;
-  background: #ffffff;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
   border: 1px solid #E1E5E4;
+  background: #ffffff;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
   -webkit-box-shadow: 0 5px 10px 0 rgba(225, 229, 228, 0.4);
   -moz-box-shadow: 0 5px 10px 0 rgba(225, 229, 228, 0.4);
   box-shadow: 0 5px 10px 0 rgba(225, 229, 228, 0.4); }
   .km-mm__column.open {
     opacity: 1;
-    visibility: visible;
-    overflow: visible; }
+    overflow: visible;
+    max-height: 800px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
   .km-mm__column__container {
     padding: 0 35px !important; }
   .km-mm__column__body {
@@ -174,7 +178,8 @@
   background-color: #F01834;
   color: #fff;
   border: 1px solid #F01834;
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  margin-bottom: 0; }
   .km-mm__cta span a:hover {
     text-decoration: none;
     cursor: pointer; }
