@@ -93,3 +93,6 @@ Utilities
 // Utilities 
 @import 'styles/scss/helpers/_utilities.scss';
 
+
+// Fixes for IE
+@import "base/_ie-only.scss";
