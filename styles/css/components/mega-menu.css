@@ -47,6 +47,7 @@
   top: 100px;
   left: 0;
   max-height: 0;
+  z-index: -1;
   opacity: 0;
   overflow: hidden;
   border: 1px solid #E1E5E4;
@@ -67,7 +68,8 @@
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    transition: all 500ms ease; }
+    transition: all 500ms ease;
+    z-index: 1; }
   .km-mm__column__container {
     padding: 0 35px !important; }
   .km-mm__column__body {
