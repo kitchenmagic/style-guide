@@ -3827,9 +3827,10 @@ ol {
   margin: 0;
   counter-reset: li; }
   ol.km-list {
-    padding: 0 0 0 25px;
+    padding: 0 0 0 5px;
     margin: 0;
     list-style: none;
+    margin-bottom: 2rem;
     /**
         * Red list item
         */ }
