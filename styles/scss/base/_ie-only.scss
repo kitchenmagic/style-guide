@@ -4,6 +4,13 @@
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
+    // header font fix
+    @font-face {
+      font-family: 'DomaineDisplayNarrowBold';
+      src: url('https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff') format('woff'),
+           url('https://www.kitchenmagic.com/hubfs/fonts/domaine-display-narrow-bold/DomaineDisplayNarrowWeb-Bold.woff2') format('woff2');
+    }
+
     // fix flexbox
     .d-flex {
         display: block !important;
