@@ -3841,7 +3841,7 @@ ol {
       margin: 0;
       counter-increment: li; }
       ol.km-list li:before {
-        content: counter(li);
+        content: counter(li) ". ";
         margin-right: 18px;
         vertical-align: center; }
     ol.km-list--red li:before {

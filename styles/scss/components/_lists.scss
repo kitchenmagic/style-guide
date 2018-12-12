@@ -69,7 +69,7 @@ ul {
         counter-increment: li;
   
         &:before {
-          content: counter(li);
+          content: counter(li) ". ";
           margin-right: 18px;
           vertical-align: center;
         }
