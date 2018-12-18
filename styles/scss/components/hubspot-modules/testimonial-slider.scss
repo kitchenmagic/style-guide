@@ -39,6 +39,16 @@
     height: 270px;
     border-radius: 3px 3px 0 0;
   }
+
+  .testimonial-slide-avatar {
+    max-width: 100px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    & img {
+      border-radius: 150px;
+    }
+  }
   
   .testimonial-slide--container {
     background: #fff;
