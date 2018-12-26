@@ -301,6 +301,11 @@ form.hs-form {
         }
     }
 
+    &.km-form--light {
+        background: #fff !important;
+        @include box-shadow($shadow-md);
+    }
+
     // layouts
     &.km-form--inline {
 

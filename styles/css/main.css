@@ -3007,6 +3007,12 @@ form.hs-form.km-form--clear {
   form.hs-form.km-form--clear input[type=submit] {
     margin-top: 0; }
 
+form.hs-form.km-form--light {
+  background: #fff !important;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
+
 form.hs-form.km-form--inline .input {
   margin-left: 0 !important; }
 
