@@ -411,30 +411,31 @@ html .row-fluid .new-mobile-navigation > div { background: white;width: 100%;box
 html .row-fluid .new-mobile-navigation.open { left: 0;width: 100%; }
 html .row-fluid .new-mobile-navigation.open > div { width: 90%; }
 html .row-fluid .new-mobile-navigation > div:nth-child(1) { height: 100%;overflow: auto;background: white;box-sizing: border-box;padding: 65px 0 55px;box-shadow: 5px 0px 20px rgba(0,0,0, 0);-webkit-transition: all .3s ease-in-out; -moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out; }
-html .row-fluid .new-mobile-navigation.open > div:nth-child(1) { box-shadow: 5px 0px 20px rgba(0,0,0, .2); }
+html .row-fluid .new-mobile-navigation.open > div:nth-child(1) { box-shadow: 5px 0px 20px #e1e5e4; }
 html .row-fluid .new-mobile-group.top .new-mobile-navigation > div:nth-child(1) { padding: 97px 0 55px; }
 
 .new-mobile-navigation ul { width: 100%; }
 .new-mobile-navigation ul a { color: color(text,base);text-transform: uppercase;font-size: 18px;font-family: family(body); }
-.new-mobile-navigation .hs-menu-wrapper > ul > li { border-bottom: 2px solid color(border); }
-.new-mobile-navigation .hs-menu-wrapper.flyouts ul li > a { padding: 10px 30px;margin: 0;width: 100%;max-width: 100%;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; font-size: px-to-rem(18px); letter-spacing: .47px; color: color(text, base); }
+.new-mobile-navigation .hs-menu-wrapper > ul > li { border-bottom: 1px solid color(border); }
+.new-mobile-navigation .hs-menu-wrapper.flyouts ul li > a { padding: 17px 30px;margin: 0;width: 100%;max-width: 100%;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out; font-size: px-to-rem(18px); letter-spacing: .47px; color: color(text, base); }
 .new-mobile-navigation .hs-menu-wrapper.flyouts ul > li:nth-child(1) > a { padding-top: 15px; }
 .new-mobile-navigation .hs-menu-wrapper.flyouts ul li > a:hover { border-color: transparent; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children { position: relative;z-index:1; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children > a { position: relative;z-index:2; }
-.new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children > a:after { content: '\f067';right: 30px; font-size: px-to-rem(19px);line-height: 45px;bottom: 0;}
+.new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children > a:after { content: '\f067';right: 30px; font-size: px-to-rem(19px);line-height: 61px;bottom: 0;}
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children.open > a:after { content: '\f068'; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children > ul { position: relative;z-index:1; }
 .new-mobile-navigation .hs-item-has-children.open { background: color(gray, light); }
-.new-mobile-navigation .hs-item-has-children.open > a { background: color(gray, light); @include box-shadow($shadow-sm); color: #fff; }
+.new-mobile-navigation .hs-item-has-children.open > a { background: color(primary, base); @include box-shadow($shadow-sm); color: #fff !important; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper { position: static;display: none;box-shadow: 0px 2px 6px rgba(0,0,0, .05) inset;background: #F7F9F9; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper li { border-top: 2px solid #F4F4F4; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper li:nth-child(1) { border-top: none; }
 .new-mobile-navigation .hs-menu-flow-vertical.flyouts li.hs-item-has-children ul.hs-menu-children-wrapper li a { padding: 10px 50px;visibility: visible;width: 100%;max-width: 100%;font-size: 0.9375rem; letter-spacing: .47px; }
 
 .new-mobile-navigation .row-fluid-wrapper { position: static; }
-.new-mobile-navigation .mobile-search { position: absolute;z-index:2;left:0;bottom:0;width: 90% !important;box-shadow: 0px -1px 8px rgba(0,0,0, .3); }
-.new-mobile-navigation .mobile-search .header-search { margin-bottom: 0;background: #fff url(https://www.kitchenmagic.com/hubfs/graphics/icons/search-dark.png) 20px center no-repeat;border: none;border-radius: 0;box-shadow: none;padding: 17px 20px 17px 60px;height: 55px; width: 100%; }
+.new-mobile-navigation .mobile-search { position: absolute;z-index:2;left:0;bottom:0;width: 90% !important; border-top: 1px solid color(border); }
+.new-mobile-navigation .mobile-search .header-search { margin-bottom: 0;background: #fff url(https://www.kitchenmagic.com/hubfs/graphics/icons/search-icon.svg) 20px center no-repeat;border: none;border-radius: 0;box-shadow: none;padding: 17px 20px 17px 60px;height: 52px; width: 100%; }
+.new-mobile-navigation .mobile-search .header-search::placeholder{ color: color(text, light);}
 .mobile-search .header-search::-webkit-input-placeholder { color: color(text, base); }
 .mobile-search .header-search::-moz-placeholder { color: color(text, base); }
 .mobile-search .header-search:-ms-input-placeholder { color: color(text, base); }
@@ -451,7 +452,7 @@ html .row-fluid .new-mobile-contact.open { right:0;width: 100%; }
 html .row-fluid .new-mobile-contact.open > div { width: 90%;box-shadow: -5px 0px 20px rgba(0,0,0, .2); }
 html .row-fluid .new-mobile-contact .scroll-wrapper { height: 100%;overflow: auto;padding-right: 20px;-webkit-overflow-scrolling: touch; }
 .new-mobile-contact .mobile-call-btns { text-align: center; }
-.new-mobile-contact .mobile-call-btns a { display: block ;background: color(primary,base) url(https://www.kitchenmagic.com/hubfs/graphics/icons/phone-white.png) 92% 50% no-repeat;background-size: 30px;color: white;margin-bottom: 25px;padding: 15px 40px 15px 20px;border-radius: 3px;text-transform: uppercase;font-family: family(body); }
+.new-mobile-contact .mobile-call-btns a { display: block ;background: color(primary,base) url(https://www.kitchenmagic.com/hubfs/graphics/icons/header/customer-support-icon.svg) 92% 50% no-repeat;background-size: 30px;color: white;margin-bottom: 25px;padding: 15px 40px 15px 20px;border-radius: 3px;text-transform: uppercase;font-family: family(body); }
 html .row-fluid .new-mobile-contact .widget-type-form { border-top: 1px solid #E0E0E0; }
 html .row-fluid .new-mobile-contact .widget-type-form h3, html .row-fluid .new-mobile-contact .contact-header { font-family: family(body);font-weight: 600;font-size: 18px;padding: 15px 0;text-align: center; }
 
