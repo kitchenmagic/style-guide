@@ -12,11 +12,12 @@
   }
   
   .slick--dark button:before {
-    color: #222;
+    color: color(primary, base);
   }
   
   .testimonial-slide {
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    // box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    @include box-shadow($shadow-sm);
     transform: scale(.9);
     transition: .4s;
     width: 550px;
@@ -36,7 +37,7 @@
   }
   
   .testimonial-slide--img {
-    height: 270px;
+    height: 220px;
     border-radius: 3px 3px 0 0;
   }
 
@@ -52,7 +53,7 @@
   
   .testimonial-slide--container {
     background: #fff;
-    padding: 30px;
+    padding: 27px 30px 20px;
     text-align: center;
     border-radius: 0 0 3px 3px;
   }
@@ -70,15 +71,16 @@
   
   .testimonial-slide--title {
     padding-bottom: 20px;
-    font-size: 22px;
+    font-size: px-to-rem(20px);
     line-height: 1.4;
     color: #222;
+    font-family: family(bold);
   }
   
   .testimonial-slide--title::after {
       content: "";
       width: 50px;
-      background: #555;
+      background: color(text, light);
       height: 1px;
       display: block;
       position: relative;
@@ -88,18 +90,20 @@
   }
   
   .testimonial-slide--quote {
-    font-family: georgia;
     color: #222;
   }
   
   .testimonial-slide--quote p {
-      color: #222 !important;;
+      color: #222 !important;
+      font-size: px-to-rem(14px);
+
   }
   
   .testimonial-slide--cite {
-    color: #c7c7c7;
+    color: color(text, light);
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: px-to-rem(13px);
   }
   
   /***** SLIDER STYLING *****/
@@ -114,13 +118,13 @@
   .slick-dots li button::before {
     opacity: 1 !important;
     font-size: 11px !important;
-    color: #989898 !important;
+    color: color(text, light) !important;
        content: "\f111" !important;
     font-family: fontawesome;
   }
   
   .slick-dots li.slick-active button:before {
-    color: #101010 !important;
+    color: color(primary, base)!important;
     opacity: 1 !important;
   }
   
