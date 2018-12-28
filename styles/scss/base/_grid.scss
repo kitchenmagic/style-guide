@@ -34,6 +34,8 @@
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-fw-container {
   padding: 35px 0;
+  position: relative;
+  overflow: hidden;
 
   // removes heading margin top and let grid control spacing
   h1, & h2, & h3, & h4, & h5 {
@@ -94,4 +96,13 @@
     padding-right: 16px;
     padding-left: 16px;
   }
+}
+
+/*
+/*  Background Texture
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.km-texture {
+  position: absolute;
+  top: 198px;
 }

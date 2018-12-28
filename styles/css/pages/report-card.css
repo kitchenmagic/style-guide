@@ -252,7 +252,9 @@ blockquote, .reviews-blockquote {
 /*  Full Width Grids
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .km-fw-container {
-  padding: 35px 0; }
+  padding: 35px 0;
+  position: relative;
+  overflow: hidden; }
   .km-fw-container h1, .km-fw-container h2, .km-fw-container h3, .km-fw-container h4, .km-fw-container h5 {
     margin-top: 0; }
   .km-fw-container--no-pad-t {
@@ -285,6 +287,13 @@ blockquote, .reviews-blockquote {
   .km-mobile-padding-horizontal {
     padding-right: 16px;
     padding-left: 16px; } }
+
+/*
+/*  Background Texture
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.km-texture {
+  position: absolute;
+  top: 198px; }
 
 /* ============================================================
    REPORT CARD - https://landing.kitchenmagic.com/report-card
