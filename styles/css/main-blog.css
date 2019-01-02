@@ -68,11 +68,11 @@ div.post-header h3 {
   border-radius: 3px 0 0 3px; }
 
 .km-right-card {
-  padding: 15px 25px 10px 25px; }
+  padding: 25px 25px 10px 25px; }
 
 p#hubspot-topic_data {
   margin-bottom: 11px;
-  font-size: 0.75rem; }
+  font-size: 0.8125rem; }
 
 a.topic-link {
   font-size: 0.75rem;
@@ -196,7 +196,8 @@ figcaption {
 
 .anchor-cta {
   color: #F01834;
-  font-size: 1.6875rem; }
+  font-size: 1.6875rem;
+  line-height: 1.3; }
   .anchor-cta:hover {
     color: #C30019; }
 
