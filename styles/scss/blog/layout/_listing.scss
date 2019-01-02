@@ -61,26 +61,35 @@ div.post-header  {
 
 // blog tags
 p#hubspot-topic_data {
-    margin-bottom: 0;
-    font-size: px-to-rem(13px);
+    margin-bottom: 11px;
+    font-size: px-to-rem(12px);
 }
 
 a.topic-link {
-    font-size: px-to-rem(13px);
+    font-size: px-to-rem(12px);
     text-transform: uppercase;
-    color: color(primary, base);
-    letter-spacing: .5px;
-    font-family: family(bold);
+    background-color: color(primary, base);
+    color: #fff;
+    padding: 9px 10px;
+    border-radius: 150px;
 
-    &:nth-last-child(1) {
-        border-right: none;
+    &:hover {
+        text-decoration: none;
+        background-color: color(primary, dark);
     }
 
-    &:nth-child(n+2):before {
-        content: "|";
-        color: color(primary, base);
-        padding: 0 2px;
-    }
+    // color: color(primary, base);
+    // letter-spacing: .5px;
+
+    // &:nth-last-child(1) {
+    //     border-right: none;
+    // }
+
+    // &:nth-child(n+2):before {
+    //     content: "|";
+    //     color: color(primary, base);
+    //     padding: 0 2px;
+    // }
 }
 
 // read more button 

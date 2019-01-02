@@ -24,7 +24,7 @@ h1 a {
 }
 
 // date
-h6.date {
+h6.date, span.date {
     font-size: px-to-rem(12px);
     display: inline-block;
     color: color(gray, base);
@@ -129,6 +129,20 @@ figcaption {
         &:focus {
             outline: none;
             border: 1px solid color(primary, base);
+        }
+    }
+}
+
+// in post body typography
+
+.post-body {
+    a {
+        text-decoration: none;
+        box-shadow: inset 0 -0.01em #fff, inset 0 -0.1em color(primary, base);
+        color: #2C2D2B;
+
+        &:hover {
+            color: color(primary, dark);
         }
     }
 }
