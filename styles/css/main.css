@@ -58,7 +58,6 @@ Utilities
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-@import url("//hello.myfonts.net/count/37001a");
 *,
 *::before,
 *::after {
@@ -437,9 +436,6 @@ html, body {
 * @styles typography-headers Typography
 * @iframe demos/base/typography/headers.html
 **/
-/**
- * Import for font springs traffic counter
- */
 /* For Hubspot dev - in production */
 @font-face {
   font-family: 'DomaineDisplayNarrowBold';

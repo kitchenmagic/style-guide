@@ -13,10 +13,6 @@
 * @styles typography-headers Typography
 * @iframe demos/base/typography/headers.html
 **/
-/**
- * Import for font springs traffic counter
- */
-@import url("//hello.myfonts.net/count/37001a");
 /* For Hubspot dev - in production */
 @font-face {
   font-family: 'DomaineDisplayNarrowBold';
