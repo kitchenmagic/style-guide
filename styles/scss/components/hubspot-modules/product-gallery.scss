@@ -366,6 +366,10 @@
       .gallery__img--background {
         position: relative;
 
+        img {
+          width: 100%;
+        }
+
         &:hover {
             cursor: pointer;
 

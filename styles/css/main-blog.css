@@ -227,13 +227,6 @@ figcaption {
       outline: none;
       border: 1px solid #F01834; }
 
-.post-body a {
-  text-decoration: none;
-  box-shadow: inset 0 -0.01em #fff, inset 0 -0.1em #F01834;
-  color: #2C2D2B; }
-  .post-body a:hover {
-    color: #C30019; }
-
 /* ============================================================
    SIDEBAR
 /* ============================================================ */

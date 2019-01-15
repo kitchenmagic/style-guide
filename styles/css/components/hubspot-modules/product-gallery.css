@@ -162,6 +162,8 @@
         flex-basis: 47%; } }
   .gallery__img .gallery__img--background {
     position: relative; }
+    .gallery__img .gallery__img--background img {
+      width: 100%; }
     .gallery__img .gallery__img--background:hover {
       cursor: pointer; }
       .gallery__img .gallery__img--background:hover .gallery__img--background-overlay {
