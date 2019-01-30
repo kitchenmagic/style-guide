@@ -1,0 +1,103 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   COMPARISON SLIDER
+/* ============================================================ */
+  
+  
+/* the slides */
+.slick-slide {
+  margin: 0 27px;
+  padding: 20px 30px;
+  position: relative;
+  background: #fff;
+  @include box-shadow($shadow-md)
+}
+/* the parent */
+.slick-list {
+  margin: 0 -27px;
+}
+
+.slick-track {
+  padding: 10px 0;
+}
+
+  /* icons */
+.icon {
+  max-width: 37px;
+  position: absolute;
+  right: -11px;
+  @include box-shadow(0 2px 10px 0 #e1e5e4);
+  border-radius: 150px;
+  background: #fff;
+  padding: 5px;
+  top: -9px;
+}
+
+.slick-next:before, .slick-prev:before {
+  color: color(primary, base);
+}
+
+.slick-arrow.slick-next:before {
+    content: '\f054';
+    font-family: fontawesome;
+    font-size: 32px;
+    transition: all 300ms ease;
+}
+
+.slick-arrow.slick-prev:before {
+    content: '\f053';
+    font-family: fontawesome;
+    font-size: 32px;
+}
+
+.slick-prev {
+  @include respond-below('sm') {
+    left: -9px;
+  }
+}
+
+.slick-next {
+  @include respond-below('sm') {
+    right: -9px;
+  }
+}
+
+.slick-dots li button::before {
+    opacity: 1 !important;
+    font-size: 11px !important;
+    color: #a3a5a8 !important;
+    content: "\f111" !important;
+    font-family: fontawesome;
+}
+
+.slick-dots li.slick-active button:before {
+    color: color(primary, base) !important;
+    opacity: 1 !important;
+}
+
+.km-comparison__title {
+  margin-bottom: 13px;
+}
+
+.km-comparison__tag {
+  background: color(text, base);
+  padding: 5px 10px;
+  font-family: family(bold);
+  border: 0;
+  position: absolute;
+  left: 0px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  bottom: -5px;
+  width: 100%;
+  text-align: center;
+}
+  
