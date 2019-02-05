@@ -230,6 +230,15 @@
 // 	//@include box-shadow(0 0px 1px rgba(0,0,0, .6), inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 0px 1px rgba(255,255,255, .5));
 // }
 
+// Forms 
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
 
 
 

@@ -1,0 +1,128 @@
+// Variables, Mixins, Functions
+@import 'styles/scss/helpers/_variables.scss';
+@import 'styles/scss/helpers/_functions.scss';
+@import 'styles/scss/helpers/_mixins.scss';
+
+/* ============================================================
+   ALL GALLERIES
+   // this shares styles for all galleries
+/* ============================================================ */
+
+// Gallery & Cards
+.km-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 35px;
+
+  &__card {
+    @include box-shadow($shadow-md);
+    padding: 23px 20px 20px;
+    position: relative;
+    flex-basis: 22.3%;
+    width: 22.3%;
+    margin-bottom: 20px;
+    border-radius: 3px;
+
+    &--5-col {
+      flex-basis: 19.3%;
+      width: 19.3%;
+    }
+
+    // medium devices
+    @include respond-below('md') {
+      flex-basis: 50%;
+      width: 50%;
+    }
+
+    // small devices
+    @include respond-below('sm') {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+    font-family: family(header);
+    letter-spacing: 1px !important;
+  }
+
+  &__img {
+    max-width: 171px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 24px;
+  }
+}
+
+// Pinterest Button
+// pin it button 
+a.km-btn.km-btn--pin.km-btn--ghost-dark {
+  font-size: px-to-rem(12px);
+  text-transform: none;
+  padding: 1px 5px !important;
+  border-radius: 4px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+  width: auto;
+
+  i {
+    font-size: px-to-rem(15px);
+    color: #c8232c;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+// Forms
+label {
+  font-family: family(bold);
+  color: color(text, base);
+  font-size: .8rem;
+  margin-bottom: 0;
+  margin-top: 0.625rem;
+}
+
+
+// Search
+#gallery-filter-search {
+	background-image: url(https://cdn2.hubspot.net/hubfs/126868/graphics/icons/med-search.png);
+    background-repeat: no-repeat;
+    background-position: 12px 8px;
+    background-size: auto 55%;
+    text-indent: 35px;
+    height: 42px;
+    line-height: 42px;
+    box-shadow: none;
+    border-color: color(border);
+    margin-bottom: 0;
+    border: 1px solid color(border);
+    padding: .8rem;
+    background-color: #fff;
+    color: color(text, base);
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: family(body);
+    box-sizing:border-box;
+    // overrides hubspots width
+    width: 100% !important;
+    height: px-to-rem(45px);
+    @include transition(all 300ms ease);
+
+    &:focus {
+      outline: none;
+    }
+
+    @include input-placeholder {
+    	color: color(gray, base);
+    }
+}
+
