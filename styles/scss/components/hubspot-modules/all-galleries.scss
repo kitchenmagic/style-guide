@@ -12,7 +12,6 @@
 .km-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 35px;
 
   &__card {
@@ -24,6 +23,11 @@
     margin-bottom: 20px;
     border-radius: 3px;
 
+    &--4-col {
+      flex-basis: 23.6%;
+      width: 23.6%;
+    }
+
     &--5-col {
       flex-basis: 19.3%;
       width: 19.3%;
@@ -31,8 +35,8 @@
 
     // medium devices
     @include respond-below('md') {
-      flex-basis: 50%;
-      width: 50%;
+      flex-basis: 48%;
+      width: 48%;
     }
 
     // small devices

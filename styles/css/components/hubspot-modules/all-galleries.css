@@ -5,7 +5,6 @@
 .km-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 35px; }
   .km-gallery__card {
     -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
@@ -17,13 +16,16 @@
     width: 22.3%;
     margin-bottom: 20px;
     border-radius: 3px; }
+    .km-gallery__card--4-col {
+      flex-basis: 23.6%;
+      width: 23.6%; }
     .km-gallery__card--5-col {
       flex-basis: 19.3%;
       width: 19.3%; }
     @media (max-width: 991px) {
       .km-gallery__card {
-        flex-basis: 50%;
-        width: 50%; } }
+        flex-basis: 48%;
+        width: 48%; } }
     @media (max-width: 767px) {
       .km-gallery__card {
         flex-basis: 100%;
