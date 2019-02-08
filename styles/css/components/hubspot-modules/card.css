@@ -1,0 +1,19 @@
+/* ============================================================
+   CARD
+/* ============================================================ */
+.card {
+  border: 1px solid #E1E5E4;
+  background: #F9FAFC;
+  color: #F01834;
+  padding: 20px;
+  -webkit-box-shadow: 0 2px 20px 0 #E1E5E4;
+  -moz-box-shadow: 0 2px 20px 0 #E1E5E4;
+  box-shadow: 0 2px 20px 0 #E1E5E4; }
+  .card__title {
+    font-size: 1.375rem; }
+  .card__description p {
+    color: #A3A5A8; }
+  .card--clear {
+    background: #fff; }
+  .card img {
+    max-width: 200px; }
