@@ -104,3 +104,15 @@ label {
     color: #A3A5A8; }
   #gallery-filter-search::-webkit-input-placeholder {
     color: #A3A5A8; }
+
+.km-empty-state {
+  max-width: 400px;
+  text-align: center;
+  padding-top: 25px;
+  margin: 0 auto; }
+  .km-empty-state img {
+    opacity: .5; }
+  .km-empty-state p {
+    color: #A3A5A8; }
+    .km-empty-state p span {
+      color: #FFA800; }

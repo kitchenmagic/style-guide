@@ -130,3 +130,23 @@ label {
     }
 }
 
+  // empty state
+
+  .km-empty-state {
+    max-width: 400px;
+    text-align: center;
+    padding-top: 25px;
+    margin: 0 auto;
+  
+    img {
+      opacity: .5;
+    }
+  
+    p {
+      color: color(text, light);
+  
+      span {
+        color: color(warning);
+      }
+    }
+  }
