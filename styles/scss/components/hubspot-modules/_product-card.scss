@@ -10,6 +10,7 @@
 
 .product-card {
     width: 100%;
+    position: relative;
 
     img {
         margin: 0 auto;
@@ -77,13 +78,20 @@
  */
 .tag {
     font-size: 12px;
-    background: #5988da;
-    background: -moz-linear-gradient(top, #5988da 0%, #4d7ac7 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #5988da), color-stop(100%, #4d7ac7));
-    background: -webkit-linear-gradient(top, #5988da 0%, #4d7ac7 100%);
-    background: -o-linear-gradient(top, #5988da 0%, #4d7ac7 100%);
-    background: -ms-linear-gradient(top, #5988da 0%, #4d7ac7 100%);
-    background: linear-gradient(to bottom, #5988da 0%, #4d7ac7 100%);
+    // background: #5988da;
+    // background: -moz-linear-gradient(top, #5988da 0%, #4d7ac7 100%);
+    // background: -webkit-gradient(left top, left bottom, color-stop(0%, #5988da), color-stop(100%, #4d7ac7));
+    // background: -webkit-linear-gradient(top, #5988da 0%, #4d7ac7 100%);
+    // background: -o-linear-gradient(top, #5988da 0%, #4d7ac7 100%);
+    // background: -ms-linear-gradient(top, #5988da 0%, #4d7ac7 100%);
+    // background: linear-gradient(to bottom, #5988da 0%, #4d7ac7 100%);
+    background: #F01834;
+    background: -moz-linear-gradient(top, #F01834 0%, #d60d27 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #F01834), color-stop(100%, #d60d27));
+    background: -webkit-linear-gradient(top, #F01834 0%, #d60d27 100%);
+    background: -o-linear-gradient(top, #F01834 0%, #d60d27 100%);
+    background: -ms-linear-gradient(top, #F01834 0%, #d60d27 100%);
+    background: linear-gradient(to bottom, #F01834 0%, #d60d27 100%);
     color: white;
     padding: 2px 18px 2px 15px;
     position: absolute;
@@ -94,7 +102,7 @@
     border-radius: 1px;
     z-index: 999;
     transition: all .4s ease;
-    display: none;
+    // display: none;
   }
   
   .tag:before {
@@ -102,7 +110,8 @@
     display: block;
     width: 0;
     height: 0;
-    border-right: solid 7px #4970B5;
+    border-right: solid 7px #860717;
+    // border-right: solid 7px #4970B5;
     border-bottom: solid 10px rgba(0, 0, 0, 0);
     position: absolute;
     left: 0px;

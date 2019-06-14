@@ -221,6 +221,12 @@ blockquote, .reviews-blockquote {
 .km-text--large {
   font-size: 1.625rem; }
 
+.km-text--xlarge {
+  font-size: 3.4375rem; }
+  @media (max-width: 991px) {
+    .km-text--xlarge {
+      font-size: 2.8125rem; } }
+
 #km-hp-title {
   font-size: 3.5rem; }
 

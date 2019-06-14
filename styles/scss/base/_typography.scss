@@ -308,6 +308,13 @@ blockquote, .reviews-blockquote {
   &--large {
     font-size: px-to-rem(26px);
   }
+
+  &--xlarge {
+    font-size: px-to-rem(55px);
+    @include respond-below(md){
+      font-size: px-to-rem(45px);
+    } 
+  }
 }
 
 // one-off for the homepage title
